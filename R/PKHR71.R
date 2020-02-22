@@ -1,0 +1,4576 @@
+#' @title Pakistan Demographic and Health Survey 2017-18 Household Recode Data
+#' @name  PKHR71
+#' @description \code{PKHR71} data of Household Recode from Pakistan Demographic and Health Survey 2017-18.
+#' \describe{
+#'     \item{\code{HHID}}{Case Identification}
+#'     \item{\code{HV000}}{Country code and phase}
+#'     \item{\code{HV001}}{Cluster number}
+#'     \item{\code{HV002}}{Household number}
+#'     \item{\code{HV003}}{Respondent's line number (answering Household questionnaire)}
+#'     \item{\code{HV004}}{Ultimate area unit}
+#'     \item{\code{HV005}}{Household sample weight (6 decimals)}
+#'     \item{\code{HV006}}{Month of interview}
+#'     \item{\code{HV007}}{Year of interview}
+#'     \item{\code{HV008}}{Date of interview (CMC)}
+#'     \item{\code{HV008A}}{Date of interview Century Day Code (CDC)}
+#'     \item{\code{HV009}}{Number of household members}
+#'     \item{\code{HV010}}{Number of eligible women in household}
+#'     \item{\code{HV011}}{Number of eligible men in household}
+#'     \item{\code{HV012}}{Number of de jure members}
+#'     \item{\code{HV013}}{Number of de facto members}
+#'     \item{\code{HV014}}{Number of children 5 and under (de jure)}
+#'     \item{\code{HV015}}{Result of household interview}
+#'     \item{\code{HV016}}{Day of interview}
+#'     \item{\code{HV017}}{Number of visits}
+#'     \item{\code{HV018}}{Interviewer identification}
+#'     \item{\code{HV019}}{Keyer identification}
+#'     \item{\code{HV020}}{Ever-married sample}
+#'     \item{\code{HV021}}{Primary sampling unit}
+#'     \item{\code{HV022}}{Sample strata for sampling errors}
+#'     \item{\code{HV023}}{Stratification used in sample design}
+#'     \item{\code{HV024}}{Region}
+#'     \item{\code{HV025}}{Type of place of residence}
+#'     \item{\code{HV026}}{NA - Place of residence}
+#'     \item{\code{HV027}}{Household selected for male interview}
+#'     \item{\code{HV028}}{Household weight for male subsample (6 decimals)}
+#'     \item{\code{HV030}}{Field supervisor}
+#'     \item{\code{HV031}}{Field editor}
+#'     \item{\code{HV032}}{NA - Office editor}
+#'     \item{\code{HV035}}{Number of eligible children for height and weight}
+#'     \item{\code{HV040}}{NA - Cluster altitude in meters}
+#'     \item{\code{HV041}}{Total adults measured}
+#'     \item{\code{HV042}}{Household selected for hemoglobin}
+#'     \item{\code{HV044}}{Household selected for Domestic Violence module}
+#'     \item{\code{HV045A}}{Language of questionnaire}
+#'     \item{\code{HV045B}}{Language of interview}
+#'     \item{\code{HV045C}}{Native language of respondent}
+#'     \item{\code{HV046}}{Translator used}
+#'     \item{\code{HV801}}{Time interview started (hhmm - 24 hour clock)}
+#'     \item{\code{HV802}}{Time interview ended (hhmm - 24 hour clock)}
+#'     \item{\code{HV803}}{Length of interview in minutes}
+#'     \item{\code{HV804}}{Number of visits for biomarker}
+#'     \item{\code{HV807D}}{Day of biomarker visit}
+#'     \item{\code{HV807M}}{Month of biomarker visit}
+#'     \item{\code{HV807Y}}{Year of biomarker visit}
+#'     \item{\code{HV807C}}{Date of biomarker (CMC)}
+#'     \item{\code{HV807A}}{Date of biomarker Century Day Code (CDC)}
+#'     \item{\code{HV201}}{Source of drinking water}
+#'     \item{\code{HV202}}{Source of non-drinking water}
+#'     \item{\code{HV201A}}{Water not available for at least a day last two weeks}
+#'     \item{\code{HV204}}{Time to get to water source (minutes)}
+#'     \item{\code{HV205}}{Type of toilet facility}
+#'     \item{\code{HV206}}{Has electricity}
+#'     \item{\code{HV207}}{Has radio}
+#'     \item{\code{HV208}}{Has television}
+#'     \item{\code{HV209}}{Has refrigerator}
+#'     \item{\code{HV210}}{Has bicycle}
+#'     \item{\code{HV211}}{Has motorcycle/scooter}
+#'     \item{\code{HV212}}{Has car/truck}
+#'     \item{\code{HV213}}{Main floor material}
+#'     \item{\code{HV214}}{Main wall material}
+#'     \item{\code{HV215}}{Main roof material}
+#'     \item{\code{HV216}}{Number of rooms used for sleeping}
+#'     \item{\code{HV217}}{Relationship structure}
+#'     \item{\code{HV218}}{Line number of head of household}
+#'     \item{\code{HV219}}{Sex of head of household}
+#'     \item{\code{HV220}}{Age of head of household}
+#'     \item{\code{HV221}}{Has telephone (land-line)}
+#'     \item{\code{HV225}}{Share toilet with other households}
+#'     \item{\code{HV226}}{Type of cooking fuel}
+#'     \item{\code{HV227}}{Has mosquito bed net for sleeping}
+#'     \item{\code{HV228}}{Children under 5 slept under mosquito bed net last night}
+#'     \item{\code{HV230A}}{Place where household members wash their hands}
+#'     \item{\code{HV230B}}{Presence of water at hand washing place}
+#'     \item{\code{HV232}}{Items present: Soap or detergent}
+#'     \item{\code{HV232B}}{Items present: Ash, mud, sand}
+#'     \item{\code{HV232C}}{NA - Items present: CS}
+#'     \item{\code{HV232D}}{NA - Items present: CS}
+#'     \item{\code{HV232E}}{NA - Items present: CS}
+#'     \item{\code{HV232Y}}{Items present: None}
+#'     \item{\code{HV234}}{NA - Result of salt test for iodine (PPM)}
+#'     \item{\code{HV234A}}{NA - Result of salt test for iodine}
+#'     \item{\code{HV235}}{Location of source for water}
+#'     \item{\code{HV236}}{NA - Person fetching water}
+#'     \item{\code{HV237}}{Anything done to water to make safe to drink}
+#'     \item{\code{HV237A}}{Water usually treated by: boil}
+#'     \item{\code{HV237B}}{Water usually treated by: add bleach/chlorine}
+#'     \item{\code{HV237C}}{Water usually treated by: strain through a cloth}
+#'     \item{\code{HV237D}}{Water usually treated by: use water filter}
+#'     \item{\code{HV237E}}{Water usually treated by: solar disinfection}
+#'     \item{\code{HV237F}}{Water usually treated by: let it stand and settle}
+#'     \item{\code{HV237G}}{NA - Water usually treated by: CS}
+#'     \item{\code{HV237H}}{NA - Water usually treated by: CS}
+#'     \item{\code{HV237I}}{NA - Water usually treated by: CS}
+#'     \item{\code{HV237J}}{NA - Water usually treated by: CS}
+#'     \item{\code{HV237K}}{NA - Water usually treated by: CS}
+#'     \item{\code{HV237X}}{Water usually treated by: other}
+#'     \item{\code{HV237Z}}{Water usually treated by: don't know}
+#'     \item{\code{HV238}}{Number of households sharing toilet}
+#'     \item{\code{HV238A}}{Location of toilet facility}
+#'     \item{\code{HV239}}{NA - Food cooked on stove or open fire}
+#'     \item{\code{HV240}}{NA - Household has a chimney, hood or neither}
+#'     \item{\code{HV241}}{Food cooked in the house/ separate building/ outdoors}
+#'     \item{\code{HV242}}{Household has separate room used as kitchen}
+#'     \item{\code{HV243A}}{Has mobile telephone}
+#'     \item{\code{HV243B}}{Has watch}
+#'     \item{\code{HV243C}}{Has animal-drawn cart}
+#'     \item{\code{HV243D}}{Has boat with a motor}
+#'     \item{\code{HV243E}}{Has a computer}
+#'     \item{\code{HV244}}{Owns land usable for agriculture}
+#'     \item{\code{HV245}}{Hectares of agricultural land (1 decimal)}
+#'     \item{\code{HV246}}{Owns livestock, herds or farm animals}
+#'     \item{\code{HV246A}}{Owns cattle}
+#'     \item{\code{HV246B}}{Owns cows/ bulls}
+#'     \item{\code{HV246C}}{Owns horses/ donkeys/ mules}
+#'     \item{\code{HV246D}}{Owns goats}
+#'     \item{\code{HV246E}}{Owns sheep}
+#'     \item{\code{HV246F}}{Owns chickens/poultry}
+#'     \item{\code{HV246G}}{Owns Camels}
+#'     \item{\code{HV246H}}{NA - Owns CS}
+#'     \item{\code{HV246I}}{NA - Owns CS}
+#'     \item{\code{HV246J}}{NA - Owns CS}
+#'     \item{\code{HV246K}}{NA - Owns CS}
+#'     \item{\code{HV247}}{Has bank account}
+#'     \item{\code{HV252}}{Frequency household members smoke inside the house}
+#'     \item{\code{HV253}}{Has dwelling been sprayed against mosquitoes in last 12 months}
+#'     \item{\code{HV253A}}{Dwelling sprayed by: government worker/program}
+#'     \item{\code{HV253B}}{Dwelling sprayed by: private company}
+#'     \item{\code{HV253C}}{Dwelling sprayed by: NGO}
+#'     \item{\code{HV253D}}{NA - Dwelling sprayed by: CS}
+#'     \item{\code{HV253E}}{NA - Dwelling sprayed by: CS}
+#'     \item{\code{HV253F}}{NA - Dwelling sprayed by: CS}
+#'     \item{\code{HV253G}}{NA - Dwelling sprayed by: CS}
+#'     \item{\code{HV253H}}{NA - Dwelling sprayed by: CS}
+#'     \item{\code{HV253X}}{Dwelling sprayed by: other}
+#'     \item{\code{HV253Z}}{Dwelling sprayed by: don't know}
+#'     \item{\code{HV270}}{Wealth index combined}
+#'     \item{\code{HV271}}{Wealth index factor score combined (5 decimals)}
+#'     \item{\code{HV270A}}{Wealth index for urban/rural}
+#'     \item{\code{HV271A}}{Wealth index factor score for urban/rural (5 decimals)}
+#'     \item{\code{HML1}}{Number of mosquito bed nets}
+#'     \item{\code{HML1A}}{Number of mosquito bed nets with specific information}
+#'     \item{\code{HML2}}{Number of children under mosquito bed net previous night}
+#'     \item{\code{SHDIST}}{District}
+#'     \item{\code{SH35}}{Any member of the household who lived here in past 10 years and moved away}
+#'     \item{\code{SH42}}{Total number of migrants}
+#'     \item{\code{SH120}}{Area for agricultural land (Acres and Kanal, 1 decimal)}
+#'     \item{\code{SH121F}}{Almirah/Cabinet}
+#'     \item{\code{SH121G}}{Chair}
+#'     \item{\code{SH121H}}{Room cooler}
+#'     \item{\code{SH121I}}{Air conditioner}
+#'     \item{\code{SH121J}}{Washing machine}
+#'     \item{\code{SH121K}}{Water pump}
+#'     \item{\code{SH121L}}{Bed}
+#'     \item{\code{SH121M}}{Clock}
+#'     \item{\code{SH121N}}{Sofa}
+#'     \item{\code{SH121O}}{Camera}
+#'     \item{\code{SH121P}}{Sewing machine}
+#'     \item{\code{SH121R}}{Internet connection}
+#'     \item{\code{SH122G}}{Tractor}
+#'     \item{\code{SH122I}}{Boat without motor}
+#'     \item{\code{SH122J}}{Rickshaw/chingchi}
+#'     \item{\code{SHV005}}{Household sample weight (AJK/GB, 6 decimals)}
+#'     \item{\code{SHV028}}{Household weight for male subsample (AJK/GB, 6 decimals)}
+#'     \item{\code{HVIDX.01}}{Line number}
+#'     \item{\code{HVIDX.02}}{Line number}
+#'     \item{\code{HVIDX.03}}{Line number}
+#'     \item{\code{HVIDX.04}}{Line number}
+#'     \item{\code{HVIDX.05}}{Line number}
+#'     \item{\code{HVIDX.06}}{Line number}
+#'     \item{\code{HVIDX.07}}{Line number}
+#'     \item{\code{HVIDX.08}}{Line number}
+#'     \item{\code{HVIDX.09}}{Line number}
+#'     \item{\code{HVIDX.10}}{Line number}
+#'     \item{\code{HVIDX.11}}{Line number}
+#'     \item{\code{HVIDX.12}}{Line number}
+#'     \item{\code{HVIDX.13}}{Line number}
+#'     \item{\code{HVIDX.14}}{Line number}
+#'     \item{\code{HVIDX.15}}{Line number}
+#'     \item{\code{HVIDX.16}}{Line number}
+#'     \item{\code{HVIDX.17}}{Line number}
+#'     \item{\code{HVIDX.18}}{Line number}
+#'     \item{\code{HVIDX.19}}{Line number}
+#'     \item{\code{HVIDX.20}}{Line number}
+#'     \item{\code{HVIDX.21}}{Line number}
+#'     \item{\code{HVIDX.22}}{Line number}
+#'     \item{\code{HVIDX.23}}{Line number}
+#'     \item{\code{HVIDX.24}}{Line number}
+#'     \item{\code{HVIDX.25}}{Line number}
+#'     \item{\code{HVIDX.26}}{Line number}
+#'     \item{\code{HVIDX.27}}{Line number}
+#'     \item{\code{HVIDX.28}}{Line number}
+#'     \item{\code{HVIDX.29}}{Line number}
+#'     \item{\code{HVIDX.30}}{Line number}
+#'     \item{\code{HVIDX.31}}{Line number}
+#'     \item{\code{HVIDX.32}}{Line number}
+#'     \item{\code{HVIDX.33}}{Line number}
+#'     \item{\code{HVIDX.34}}{Line number}
+#'     \item{\code{HVIDX.35}}{Line number}
+#'     \item{\code{HVIDX.36}}{Line number}
+#'     \item{\code{HVIDX.37}}{Line number}
+#'     \item{\code{HVIDX.38}}{Line number}
+#'     \item{\code{HVIDX.39}}{Line number}
+#'     \item{\code{HVIDX.40}}{Line number}
+#'     \item{\code{HVIDX.41}}{Line number}
+#'     \item{\code{HVIDX.42}}{Line number}
+#'     \item{\code{HVIDX.43}}{Line number}
+#'     \item{\code{HVIDX.44}}{Line number}
+#'     \item{\code{HV101.01}}{Relationship to head}
+#'     \item{\code{HV101.02}}{Relationship to head}
+#'     \item{\code{HV101.03}}{Relationship to head}
+#'     \item{\code{HV101.04}}{Relationship to head}
+#'     \item{\code{HV101.05}}{Relationship to head}
+#'     \item{\code{HV101.06}}{Relationship to head}
+#'     \item{\code{HV101.07}}{Relationship to head}
+#'     \item{\code{HV101.08}}{Relationship to head}
+#'     \item{\code{HV101.09}}{Relationship to head}
+#'     \item{\code{HV101.10}}{Relationship to head}
+#'     \item{\code{HV101.11}}{Relationship to head}
+#'     \item{\code{HV101.12}}{Relationship to head}
+#'     \item{\code{HV101.13}}{Relationship to head}
+#'     \item{\code{HV101.14}}{Relationship to head}
+#'     \item{\code{HV101.15}}{Relationship to head}
+#'     \item{\code{HV101.16}}{Relationship to head}
+#'     \item{\code{HV101.17}}{Relationship to head}
+#'     \item{\code{HV101.18}}{Relationship to head}
+#'     \item{\code{HV101.19}}{Relationship to head}
+#'     \item{\code{HV101.20}}{Relationship to head}
+#'     \item{\code{HV101.21}}{Relationship to head}
+#'     \item{\code{HV101.22}}{Relationship to head}
+#'     \item{\code{HV101.23}}{Relationship to head}
+#'     \item{\code{HV101.24}}{Relationship to head}
+#'     \item{\code{HV101.25}}{Relationship to head}
+#'     \item{\code{HV101.26}}{Relationship to head}
+#'     \item{\code{HV101.27}}{Relationship to head}
+#'     \item{\code{HV101.28}}{Relationship to head}
+#'     \item{\code{HV101.29}}{Relationship to head}
+#'     \item{\code{HV101.30}}{Relationship to head}
+#'     \item{\code{HV101.31}}{Relationship to head}
+#'     \item{\code{HV101.32}}{Relationship to head}
+#'     \item{\code{HV101.33}}{Relationship to head}
+#'     \item{\code{HV101.34}}{Relationship to head}
+#'     \item{\code{HV101.35}}{Relationship to head}
+#'     \item{\code{HV101.36}}{Relationship to head}
+#'     \item{\code{HV101.37}}{Relationship to head}
+#'     \item{\code{HV101.38}}{Relationship to head}
+#'     \item{\code{HV101.39}}{Relationship to head}
+#'     \item{\code{HV101.40}}{Relationship to head}
+#'     \item{\code{HV101.41}}{Relationship to head}
+#'     \item{\code{HV101.42}}{Relationship to head}
+#'     \item{\code{HV101.43}}{Relationship to head}
+#'     \item{\code{HV101.44}}{Relationship to head}
+#'     \item{\code{HV102.01}}{Usual resident}
+#'     \item{\code{HV102.02}}{Usual resident}
+#'     \item{\code{HV102.03}}{Usual resident}
+#'     \item{\code{HV102.04}}{Usual resident}
+#'     \item{\code{HV102.05}}{Usual resident}
+#'     \item{\code{HV102.06}}{Usual resident}
+#'     \item{\code{HV102.07}}{Usual resident}
+#'     \item{\code{HV102.08}}{Usual resident}
+#'     \item{\code{HV102.09}}{Usual resident}
+#'     \item{\code{HV102.10}}{Usual resident}
+#'     \item{\code{HV102.11}}{Usual resident}
+#'     \item{\code{HV102.12}}{Usual resident}
+#'     \item{\code{HV102.13}}{Usual resident}
+#'     \item{\code{HV102.14}}{Usual resident}
+#'     \item{\code{HV102.15}}{Usual resident}
+#'     \item{\code{HV102.16}}{Usual resident}
+#'     \item{\code{HV102.17}}{Usual resident}
+#'     \item{\code{HV102.18}}{Usual resident}
+#'     \item{\code{HV102.19}}{Usual resident}
+#'     \item{\code{HV102.20}}{Usual resident}
+#'     \item{\code{HV102.21}}{Usual resident}
+#'     \item{\code{HV102.22}}{Usual resident}
+#'     \item{\code{HV102.23}}{Usual resident}
+#'     \item{\code{HV102.24}}{Usual resident}
+#'     \item{\code{HV102.25}}{Usual resident}
+#'     \item{\code{HV102.26}}{Usual resident}
+#'     \item{\code{HV102.27}}{Usual resident}
+#'     \item{\code{HV102.28}}{Usual resident}
+#'     \item{\code{HV102.29}}{Usual resident}
+#'     \item{\code{HV102.30}}{Usual resident}
+#'     \item{\code{HV102.31}}{Usual resident}
+#'     \item{\code{HV102.32}}{Usual resident}
+#'     \item{\code{HV102.33}}{Usual resident}
+#'     \item{\code{HV102.34}}{Usual resident}
+#'     \item{\code{HV102.35}}{Usual resident}
+#'     \item{\code{HV102.36}}{Usual resident}
+#'     \item{\code{HV102.37}}{Usual resident}
+#'     \item{\code{HV102.38}}{Usual resident}
+#'     \item{\code{HV102.39}}{Usual resident}
+#'     \item{\code{HV102.40}}{Usual resident}
+#'     \item{\code{HV102.41}}{Usual resident}
+#'     \item{\code{HV102.42}}{Usual resident}
+#'     \item{\code{HV102.43}}{Usual resident}
+#'     \item{\code{HV102.44}}{Usual resident}
+#'     \item{\code{HV103.01}}{Slept last night}
+#'     \item{\code{HV103.02}}{Slept last night}
+#'     \item{\code{HV103.03}}{Slept last night}
+#'     \item{\code{HV103.04}}{Slept last night}
+#'     \item{\code{HV103.05}}{Slept last night}
+#'     \item{\code{HV103.06}}{Slept last night}
+#'     \item{\code{HV103.07}}{Slept last night}
+#'     \item{\code{HV103.08}}{Slept last night}
+#'     \item{\code{HV103.09}}{Slept last night}
+#'     \item{\code{HV103.10}}{Slept last night}
+#'     \item{\code{HV103.11}}{Slept last night}
+#'     \item{\code{HV103.12}}{Slept last night}
+#'     \item{\code{HV103.13}}{Slept last night}
+#'     \item{\code{HV103.14}}{Slept last night}
+#'     \item{\code{HV103.15}}{Slept last night}
+#'     \item{\code{HV103.16}}{Slept last night}
+#'     \item{\code{HV103.17}}{Slept last night}
+#'     \item{\code{HV103.18}}{Slept last night}
+#'     \item{\code{HV103.19}}{Slept last night}
+#'     \item{\code{HV103.20}}{Slept last night}
+#'     \item{\code{HV103.21}}{Slept last night}
+#'     \item{\code{HV103.22}}{Slept last night}
+#'     \item{\code{HV103.23}}{Slept last night}
+#'     \item{\code{HV103.24}}{Slept last night}
+#'     \item{\code{HV103.25}}{Slept last night}
+#'     \item{\code{HV103.26}}{Slept last night}
+#'     \item{\code{HV103.27}}{Slept last night}
+#'     \item{\code{HV103.28}}{Slept last night}
+#'     \item{\code{HV103.29}}{Slept last night}
+#'     \item{\code{HV103.30}}{Slept last night}
+#'     \item{\code{HV103.31}}{Slept last night}
+#'     \item{\code{HV103.32}}{Slept last night}
+#'     \item{\code{HV103.33}}{Slept last night}
+#'     \item{\code{HV103.34}}{Slept last night}
+#'     \item{\code{HV103.35}}{Slept last night}
+#'     \item{\code{HV103.36}}{Slept last night}
+#'     \item{\code{HV103.37}}{Slept last night}
+#'     \item{\code{HV103.38}}{Slept last night}
+#'     \item{\code{HV103.39}}{Slept last night}
+#'     \item{\code{HV103.40}}{Slept last night}
+#'     \item{\code{HV103.41}}{Slept last night}
+#'     \item{\code{HV103.42}}{Slept last night}
+#'     \item{\code{HV103.43}}{Slept last night}
+#'     \item{\code{HV103.44}}{Slept last night}
+#'     \item{\code{HV104.01}}{Sex of household member}
+#'     \item{\code{HV104.02}}{Sex of household member}
+#'     \item{\code{HV104.03}}{Sex of household member}
+#'     \item{\code{HV104.04}}{Sex of household member}
+#'     \item{\code{HV104.05}}{Sex of household member}
+#'     \item{\code{HV104.06}}{Sex of household member}
+#'     \item{\code{HV104.07}}{Sex of household member}
+#'     \item{\code{HV104.08}}{Sex of household member}
+#'     \item{\code{HV104.09}}{Sex of household member}
+#'     \item{\code{HV104.10}}{Sex of household member}
+#'     \item{\code{HV104.11}}{Sex of household member}
+#'     \item{\code{HV104.12}}{Sex of household member}
+#'     \item{\code{HV104.13}}{Sex of household member}
+#'     \item{\code{HV104.14}}{Sex of household member}
+#'     \item{\code{HV104.15}}{Sex of household member}
+#'     \item{\code{HV104.16}}{Sex of household member}
+#'     \item{\code{HV104.17}}{Sex of household member}
+#'     \item{\code{HV104.18}}{Sex of household member}
+#'     \item{\code{HV104.19}}{Sex of household member}
+#'     \item{\code{HV104.20}}{Sex of household member}
+#'     \item{\code{HV104.21}}{Sex of household member}
+#'     \item{\code{HV104.22}}{Sex of household member}
+#'     \item{\code{HV104.23}}{Sex of household member}
+#'     \item{\code{HV104.24}}{Sex of household member}
+#'     \item{\code{HV104.25}}{Sex of household member}
+#'     \item{\code{HV104.26}}{Sex of household member}
+#'     \item{\code{HV104.27}}{Sex of household member}
+#'     \item{\code{HV104.28}}{Sex of household member}
+#'     \item{\code{HV104.29}}{Sex of household member}
+#'     \item{\code{HV104.30}}{Sex of household member}
+#'     \item{\code{HV104.31}}{Sex of household member}
+#'     \item{\code{HV104.32}}{Sex of household member}
+#'     \item{\code{HV104.33}}{Sex of household member}
+#'     \item{\code{HV104.34}}{Sex of household member}
+#'     \item{\code{HV104.35}}{Sex of household member}
+#'     \item{\code{HV104.36}}{Sex of household member}
+#'     \item{\code{HV104.37}}{Sex of household member}
+#'     \item{\code{HV104.38}}{Sex of household member}
+#'     \item{\code{HV104.39}}{Sex of household member}
+#'     \item{\code{HV104.40}}{Sex of household member}
+#'     \item{\code{HV104.41}}{Sex of household member}
+#'     \item{\code{HV104.42}}{Sex of household member}
+#'     \item{\code{HV104.43}}{Sex of household member}
+#'     \item{\code{HV104.44}}{Sex of household member}
+#'     \item{\code{HV105.01}}{Age of household members}
+#'     \item{\code{HV105.02}}{Age of household members}
+#'     \item{\code{HV105.03}}{Age of household members}
+#'     \item{\code{HV105.04}}{Age of household members}
+#'     \item{\code{HV105.05}}{Age of household members}
+#'     \item{\code{HV105.06}}{Age of household members}
+#'     \item{\code{HV105.07}}{Age of household members}
+#'     \item{\code{HV105.08}}{Age of household members}
+#'     \item{\code{HV105.09}}{Age of household members}
+#'     \item{\code{HV105.10}}{Age of household members}
+#'     \item{\code{HV105.11}}{Age of household members}
+#'     \item{\code{HV105.12}}{Age of household members}
+#'     \item{\code{HV105.13}}{Age of household members}
+#'     \item{\code{HV105.14}}{Age of household members}
+#'     \item{\code{HV105.15}}{Age of household members}
+#'     \item{\code{HV105.16}}{Age of household members}
+#'     \item{\code{HV105.17}}{Age of household members}
+#'     \item{\code{HV105.18}}{Age of household members}
+#'     \item{\code{HV105.19}}{Age of household members}
+#'     \item{\code{HV105.20}}{Age of household members}
+#'     \item{\code{HV105.21}}{Age of household members}
+#'     \item{\code{HV105.22}}{Age of household members}
+#'     \item{\code{HV105.23}}{Age of household members}
+#'     \item{\code{HV105.24}}{Age of household members}
+#'     \item{\code{HV105.25}}{Age of household members}
+#'     \item{\code{HV105.26}}{Age of household members}
+#'     \item{\code{HV105.27}}{Age of household members}
+#'     \item{\code{HV105.28}}{Age of household members}
+#'     \item{\code{HV105.29}}{Age of household members}
+#'     \item{\code{HV105.30}}{Age of household members}
+#'     \item{\code{HV105.31}}{Age of household members}
+#'     \item{\code{HV105.32}}{Age of household members}
+#'     \item{\code{HV105.33}}{Age of household members}
+#'     \item{\code{HV105.34}}{Age of household members}
+#'     \item{\code{HV105.35}}{Age of household members}
+#'     \item{\code{HV105.36}}{Age of household members}
+#'     \item{\code{HV105.37}}{Age of household members}
+#'     \item{\code{HV105.38}}{Age of household members}
+#'     \item{\code{HV105.39}}{Age of household members}
+#'     \item{\code{HV105.40}}{Age of household members}
+#'     \item{\code{HV105.41}}{Age of household members}
+#'     \item{\code{HV105.42}}{Age of household members}
+#'     \item{\code{HV105.43}}{Age of household members}
+#'     \item{\code{HV105.44}}{Age of household members}
+#'     \item{\code{HV106.01}}{Highest educational level attained}
+#'     \item{\code{HV106.02}}{Highest educational level attained}
+#'     \item{\code{HV106.03}}{Highest educational level attained}
+#'     \item{\code{HV106.04}}{Highest educational level attained}
+#'     \item{\code{HV106.05}}{Highest educational level attained}
+#'     \item{\code{HV106.06}}{Highest educational level attained}
+#'     \item{\code{HV106.07}}{Highest educational level attained}
+#'     \item{\code{HV106.08}}{Highest educational level attained}
+#'     \item{\code{HV106.09}}{Highest educational level attained}
+#'     \item{\code{HV106.10}}{Highest educational level attained}
+#'     \item{\code{HV106.11}}{Highest educational level attained}
+#'     \item{\code{HV106.12}}{Highest educational level attained}
+#'     \item{\code{HV106.13}}{Highest educational level attained}
+#'     \item{\code{HV106.14}}{Highest educational level attained}
+#'     \item{\code{HV106.15}}{Highest educational level attained}
+#'     \item{\code{HV106.16}}{Highest educational level attained}
+#'     \item{\code{HV106.17}}{Highest educational level attained}
+#'     \item{\code{HV106.18}}{Highest educational level attained}
+#'     \item{\code{HV106.19}}{Highest educational level attained}
+#'     \item{\code{HV106.20}}{Highest educational level attained}
+#'     \item{\code{HV106.21}}{Highest educational level attained}
+#'     \item{\code{HV106.22}}{Highest educational level attained}
+#'     \item{\code{HV106.23}}{Highest educational level attained}
+#'     \item{\code{HV106.24}}{Highest educational level attained}
+#'     \item{\code{HV106.25}}{Highest educational level attained}
+#'     \item{\code{HV106.26}}{Highest educational level attained}
+#'     \item{\code{HV106.27}}{Highest educational level attained}
+#'     \item{\code{HV106.28}}{Highest educational level attained}
+#'     \item{\code{HV106.29}}{Highest educational level attained}
+#'     \item{\code{HV106.30}}{Highest educational level attained}
+#'     \item{\code{HV106.31}}{Highest educational level attained}
+#'     \item{\code{HV106.32}}{Highest educational level attained}
+#'     \item{\code{HV106.33}}{Highest educational level attained}
+#'     \item{\code{HV106.34}}{Highest educational level attained}
+#'     \item{\code{HV106.35}}{Highest educational level attained}
+#'     \item{\code{HV106.36}}{Highest educational level attained}
+#'     \item{\code{HV106.37}}{Highest educational level attained}
+#'     \item{\code{HV106.38}}{Highest educational level attained}
+#'     \item{\code{HV106.39}}{Highest educational level attained}
+#'     \item{\code{HV106.40}}{Highest educational level attained}
+#'     \item{\code{HV106.41}}{Highest educational level attained}
+#'     \item{\code{HV106.42}}{Highest educational level attained}
+#'     \item{\code{HV106.43}}{Highest educational level attained}
+#'     \item{\code{HV106.44}}{Highest educational level attained}
+#'     \item{\code{HV107.01}}{Highest year of education completed}
+#'     \item{\code{HV107.02}}{Highest year of education completed}
+#'     \item{\code{HV107.03}}{Highest year of education completed}
+#'     \item{\code{HV107.04}}{Highest year of education completed}
+#'     \item{\code{HV107.05}}{Highest year of education completed}
+#'     \item{\code{HV107.06}}{Highest year of education completed}
+#'     \item{\code{HV107.07}}{Highest year of education completed}
+#'     \item{\code{HV107.08}}{Highest year of education completed}
+#'     \item{\code{HV107.09}}{Highest year of education completed}
+#'     \item{\code{HV107.10}}{Highest year of education completed}
+#'     \item{\code{HV107.11}}{Highest year of education completed}
+#'     \item{\code{HV107.12}}{Highest year of education completed}
+#'     \item{\code{HV107.13}}{Highest year of education completed}
+#'     \item{\code{HV107.14}}{Highest year of education completed}
+#'     \item{\code{HV107.15}}{Highest year of education completed}
+#'     \item{\code{HV107.16}}{Highest year of education completed}
+#'     \item{\code{HV107.17}}{Highest year of education completed}
+#'     \item{\code{HV107.18}}{Highest year of education completed}
+#'     \item{\code{HV107.19}}{Highest year of education completed}
+#'     \item{\code{HV107.20}}{Highest year of education completed}
+#'     \item{\code{HV107.21}}{Highest year of education completed}
+#'     \item{\code{HV107.22}}{Highest year of education completed}
+#'     \item{\code{HV107.23}}{Highest year of education completed}
+#'     \item{\code{HV107.24}}{Highest year of education completed}
+#'     \item{\code{HV107.25}}{Highest year of education completed}
+#'     \item{\code{HV107.26}}{Highest year of education completed}
+#'     \item{\code{HV107.27}}{Highest year of education completed}
+#'     \item{\code{HV107.28}}{Highest year of education completed}
+#'     \item{\code{HV107.29}}{Highest year of education completed}
+#'     \item{\code{HV107.30}}{Highest year of education completed}
+#'     \item{\code{HV107.31}}{Highest year of education completed}
+#'     \item{\code{HV107.32}}{Highest year of education completed}
+#'     \item{\code{HV107.33}}{Highest year of education completed}
+#'     \item{\code{HV107.34}}{Highest year of education completed}
+#'     \item{\code{HV107.35}}{Highest year of education completed}
+#'     \item{\code{HV107.36}}{Highest year of education completed}
+#'     \item{\code{HV107.37}}{Highest year of education completed}
+#'     \item{\code{HV107.38}}{Highest year of education completed}
+#'     \item{\code{HV107.39}}{Highest year of education completed}
+#'     \item{\code{HV107.40}}{Highest year of education completed}
+#'     \item{\code{HV107.41}}{Highest year of education completed}
+#'     \item{\code{HV107.42}}{Highest year of education completed}
+#'     \item{\code{HV107.43}}{Highest year of education completed}
+#'     \item{\code{HV107.44}}{Highest year of education completed}
+#'     \item{\code{HV108.01}}{Education completed in single years}
+#'     \item{\code{HV108.02}}{Education completed in single years}
+#'     \item{\code{HV108.03}}{Education completed in single years}
+#'     \item{\code{HV108.04}}{Education completed in single years}
+#'     \item{\code{HV108.05}}{Education completed in single years}
+#'     \item{\code{HV108.06}}{Education completed in single years}
+#'     \item{\code{HV108.07}}{Education completed in single years}
+#'     \item{\code{HV108.08}}{Education completed in single years}
+#'     \item{\code{HV108.09}}{Education completed in single years}
+#'     \item{\code{HV108.10}}{Education completed in single years}
+#'     \item{\code{HV108.11}}{Education completed in single years}
+#'     \item{\code{HV108.12}}{Education completed in single years}
+#'     \item{\code{HV108.13}}{Education completed in single years}
+#'     \item{\code{HV108.14}}{Education completed in single years}
+#'     \item{\code{HV108.15}}{Education completed in single years}
+#'     \item{\code{HV108.16}}{Education completed in single years}
+#'     \item{\code{HV108.17}}{Education completed in single years}
+#'     \item{\code{HV108.18}}{Education completed in single years}
+#'     \item{\code{HV108.19}}{Education completed in single years}
+#'     \item{\code{HV108.20}}{Education completed in single years}
+#'     \item{\code{HV108.21}}{Education completed in single years}
+#'     \item{\code{HV108.22}}{Education completed in single years}
+#'     \item{\code{HV108.23}}{Education completed in single years}
+#'     \item{\code{HV108.24}}{Education completed in single years}
+#'     \item{\code{HV108.25}}{Education completed in single years}
+#'     \item{\code{HV108.26}}{Education completed in single years}
+#'     \item{\code{HV108.27}}{Education completed in single years}
+#'     \item{\code{HV108.28}}{Education completed in single years}
+#'     \item{\code{HV108.29}}{Education completed in single years}
+#'     \item{\code{HV108.30}}{Education completed in single years}
+#'     \item{\code{HV108.31}}{Education completed in single years}
+#'     \item{\code{HV108.32}}{Education completed in single years}
+#'     \item{\code{HV108.33}}{Education completed in single years}
+#'     \item{\code{HV108.34}}{Education completed in single years}
+#'     \item{\code{HV108.35}}{Education completed in single years}
+#'     \item{\code{HV108.36}}{Education completed in single years}
+#'     \item{\code{HV108.37}}{Education completed in single years}
+#'     \item{\code{HV108.38}}{Education completed in single years}
+#'     \item{\code{HV108.39}}{Education completed in single years}
+#'     \item{\code{HV108.40}}{Education completed in single years}
+#'     \item{\code{HV108.41}}{Education completed in single years}
+#'     \item{\code{HV108.42}}{Education completed in single years}
+#'     \item{\code{HV108.43}}{Education completed in single years}
+#'     \item{\code{HV108.44}}{Education completed in single years}
+#'     \item{\code{HV109.01}}{Educational attainment}
+#'     \item{\code{HV109.02}}{Educational attainment}
+#'     \item{\code{HV109.03}}{Educational attainment}
+#'     \item{\code{HV109.04}}{Educational attainment}
+#'     \item{\code{HV109.05}}{Educational attainment}
+#'     \item{\code{HV109.06}}{Educational attainment}
+#'     \item{\code{HV109.07}}{Educational attainment}
+#'     \item{\code{HV109.08}}{Educational attainment}
+#'     \item{\code{HV109.09}}{Educational attainment}
+#'     \item{\code{HV109.10}}{Educational attainment}
+#'     \item{\code{HV109.11}}{Educational attainment}
+#'     \item{\code{HV109.12}}{Educational attainment}
+#'     \item{\code{HV109.13}}{Educational attainment}
+#'     \item{\code{HV109.14}}{Educational attainment}
+#'     \item{\code{HV109.15}}{Educational attainment}
+#'     \item{\code{HV109.16}}{Educational attainment}
+#'     \item{\code{HV109.17}}{Educational attainment}
+#'     \item{\code{HV109.18}}{Educational attainment}
+#'     \item{\code{HV109.19}}{Educational attainment}
+#'     \item{\code{HV109.20}}{Educational attainment}
+#'     \item{\code{HV109.21}}{Educational attainment}
+#'     \item{\code{HV109.22}}{Educational attainment}
+#'     \item{\code{HV109.23}}{Educational attainment}
+#'     \item{\code{HV109.24}}{Educational attainment}
+#'     \item{\code{HV109.25}}{Educational attainment}
+#'     \item{\code{HV109.26}}{Educational attainment}
+#'     \item{\code{HV109.27}}{Educational attainment}
+#'     \item{\code{HV109.28}}{Educational attainment}
+#'     \item{\code{HV109.29}}{Educational attainment}
+#'     \item{\code{HV109.30}}{Educational attainment}
+#'     \item{\code{HV109.31}}{Educational attainment}
+#'     \item{\code{HV109.32}}{Educational attainment}
+#'     \item{\code{HV109.33}}{Educational attainment}
+#'     \item{\code{HV109.34}}{Educational attainment}
+#'     \item{\code{HV109.35}}{Educational attainment}
+#'     \item{\code{HV109.36}}{Educational attainment}
+#'     \item{\code{HV109.37}}{Educational attainment}
+#'     \item{\code{HV109.38}}{Educational attainment}
+#'     \item{\code{HV109.39}}{Educational attainment}
+#'     \item{\code{HV109.40}}{Educational attainment}
+#'     \item{\code{HV109.41}}{Educational attainment}
+#'     \item{\code{HV109.42}}{Educational attainment}
+#'     \item{\code{HV109.43}}{Educational attainment}
+#'     \item{\code{HV109.44}}{Educational attainment}
+#'     \item{\code{HV110.01}}{NA - Member still in school}
+#'     \item{\code{HV110.02}}{NA - Member still in school}
+#'     \item{\code{HV110.03}}{NA - Member still in school}
+#'     \item{\code{HV110.04}}{NA - Member still in school}
+#'     \item{\code{HV110.05}}{NA - Member still in school}
+#'     \item{\code{HV110.06}}{NA - Member still in school}
+#'     \item{\code{HV110.07}}{NA - Member still in school}
+#'     \item{\code{HV110.08}}{NA - Member still in school}
+#'     \item{\code{HV110.09}}{NA - Member still in school}
+#'     \item{\code{HV110.10}}{NA - Member still in school}
+#'     \item{\code{HV110.11}}{NA - Member still in school}
+#'     \item{\code{HV110.12}}{NA - Member still in school}
+#'     \item{\code{HV110.13}}{NA - Member still in school}
+#'     \item{\code{HV110.14}}{NA - Member still in school}
+#'     \item{\code{HV110.15}}{NA - Member still in school}
+#'     \item{\code{HV110.16}}{NA - Member still in school}
+#'     \item{\code{HV110.17}}{NA - Member still in school}
+#'     \item{\code{HV110.18}}{NA - Member still in school}
+#'     \item{\code{HV110.19}}{NA - Member still in school}
+#'     \item{\code{HV110.20}}{NA - Member still in school}
+#'     \item{\code{HV110.21}}{NA - Member still in school}
+#'     \item{\code{HV110.22}}{NA - Member still in school}
+#'     \item{\code{HV110.23}}{NA - Member still in school}
+#'     \item{\code{HV110.24}}{NA - Member still in school}
+#'     \item{\code{HV110.25}}{NA - Member still in school}
+#'     \item{\code{HV110.26}}{NA - Member still in school}
+#'     \item{\code{HV110.27}}{NA - Member still in school}
+#'     \item{\code{HV110.28}}{NA - Member still in school}
+#'     \item{\code{HV110.29}}{NA - Member still in school}
+#'     \item{\code{HV110.30}}{NA - Member still in school}
+#'     \item{\code{HV110.31}}{NA - Member still in school}
+#'     \item{\code{HV110.32}}{NA - Member still in school}
+#'     \item{\code{HV110.33}}{NA - Member still in school}
+#'     \item{\code{HV110.34}}{NA - Member still in school}
+#'     \item{\code{HV110.35}}{NA - Member still in school}
+#'     \item{\code{HV110.36}}{NA - Member still in school}
+#'     \item{\code{HV110.37}}{NA - Member still in school}
+#'     \item{\code{HV110.38}}{NA - Member still in school}
+#'     \item{\code{HV110.39}}{NA - Member still in school}
+#'     \item{\code{HV110.40}}{NA - Member still in school}
+#'     \item{\code{HV110.41}}{NA - Member still in school}
+#'     \item{\code{HV110.42}}{NA - Member still in school}
+#'     \item{\code{HV110.43}}{NA - Member still in school}
+#'     \item{\code{HV110.44}}{NA - Member still in school}
+#'     \item{\code{HV111.01}}{Mother alive}
+#'     \item{\code{HV111.02}}{Mother alive}
+#'     \item{\code{HV111.03}}{Mother alive}
+#'     \item{\code{HV111.04}}{Mother alive}
+#'     \item{\code{HV111.05}}{Mother alive}
+#'     \item{\code{HV111.06}}{Mother alive}
+#'     \item{\code{HV111.07}}{Mother alive}
+#'     \item{\code{HV111.08}}{Mother alive}
+#'     \item{\code{HV111.09}}{Mother alive}
+#'     \item{\code{HV111.10}}{Mother alive}
+#'     \item{\code{HV111.11}}{Mother alive}
+#'     \item{\code{HV111.12}}{Mother alive}
+#'     \item{\code{HV111.13}}{Mother alive}
+#'     \item{\code{HV111.14}}{Mother alive}
+#'     \item{\code{HV111.15}}{Mother alive}
+#'     \item{\code{HV111.16}}{Mother alive}
+#'     \item{\code{HV111.17}}{Mother alive}
+#'     \item{\code{HV111.18}}{Mother alive}
+#'     \item{\code{HV111.19}}{Mother alive}
+#'     \item{\code{HV111.20}}{Mother alive}
+#'     \item{\code{HV111.21}}{Mother alive}
+#'     \item{\code{HV111.22}}{Mother alive}
+#'     \item{\code{HV111.23}}{Mother alive}
+#'     \item{\code{HV111.24}}{Mother alive}
+#'     \item{\code{HV111.25}}{Mother alive}
+#'     \item{\code{HV111.26}}{Mother alive}
+#'     \item{\code{HV111.27}}{Mother alive}
+#'     \item{\code{HV111.28}}{Mother alive}
+#'     \item{\code{HV111.29}}{Mother alive}
+#'     \item{\code{HV111.30}}{Mother alive}
+#'     \item{\code{HV111.31}}{Mother alive}
+#'     \item{\code{HV111.32}}{Mother alive}
+#'     \item{\code{HV111.33}}{Mother alive}
+#'     \item{\code{HV111.34}}{Mother alive}
+#'     \item{\code{HV111.35}}{Mother alive}
+#'     \item{\code{HV111.36}}{Mother alive}
+#'     \item{\code{HV111.37}}{Mother alive}
+#'     \item{\code{HV111.38}}{Mother alive}
+#'     \item{\code{HV111.39}}{Mother alive}
+#'     \item{\code{HV111.40}}{Mother alive}
+#'     \item{\code{HV111.41}}{Mother alive}
+#'     \item{\code{HV111.42}}{Mother alive}
+#'     \item{\code{HV111.43}}{Mother alive}
+#'     \item{\code{HV111.44}}{Mother alive}
+#'     \item{\code{HV112.01}}{Mother's line number}
+#'     \item{\code{HV112.02}}{Mother's line number}
+#'     \item{\code{HV112.03}}{Mother's line number}
+#'     \item{\code{HV112.04}}{Mother's line number}
+#'     \item{\code{HV112.05}}{Mother's line number}
+#'     \item{\code{HV112.06}}{Mother's line number}
+#'     \item{\code{HV112.07}}{Mother's line number}
+#'     \item{\code{HV112.08}}{Mother's line number}
+#'     \item{\code{HV112.09}}{Mother's line number}
+#'     \item{\code{HV112.10}}{Mother's line number}
+#'     \item{\code{HV112.11}}{Mother's line number}
+#'     \item{\code{HV112.12}}{Mother's line number}
+#'     \item{\code{HV112.13}}{Mother's line number}
+#'     \item{\code{HV112.14}}{Mother's line number}
+#'     \item{\code{HV112.15}}{Mother's line number}
+#'     \item{\code{HV112.16}}{Mother's line number}
+#'     \item{\code{HV112.17}}{Mother's line number}
+#'     \item{\code{HV112.18}}{Mother's line number}
+#'     \item{\code{HV112.19}}{Mother's line number}
+#'     \item{\code{HV112.20}}{Mother's line number}
+#'     \item{\code{HV112.21}}{Mother's line number}
+#'     \item{\code{HV112.22}}{Mother's line number}
+#'     \item{\code{HV112.23}}{Mother's line number}
+#'     \item{\code{HV112.24}}{Mother's line number}
+#'     \item{\code{HV112.25}}{Mother's line number}
+#'     \item{\code{HV112.26}}{Mother's line number}
+#'     \item{\code{HV112.27}}{Mother's line number}
+#'     \item{\code{HV112.28}}{Mother's line number}
+#'     \item{\code{HV112.29}}{Mother's line number}
+#'     \item{\code{HV112.30}}{Mother's line number}
+#'     \item{\code{HV112.31}}{Mother's line number}
+#'     \item{\code{HV112.32}}{Mother's line number}
+#'     \item{\code{HV112.33}}{Mother's line number}
+#'     \item{\code{HV112.34}}{Mother's line number}
+#'     \item{\code{HV112.35}}{Mother's line number}
+#'     \item{\code{HV112.36}}{Mother's line number}
+#'     \item{\code{HV112.37}}{Mother's line number}
+#'     \item{\code{HV112.38}}{Mother's line number}
+#'     \item{\code{HV112.39}}{Mother's line number}
+#'     \item{\code{HV112.40}}{Mother's line number}
+#'     \item{\code{HV112.41}}{Mother's line number}
+#'     \item{\code{HV112.42}}{Mother's line number}
+#'     \item{\code{HV112.43}}{Mother's line number}
+#'     \item{\code{HV112.44}}{Mother's line number}
+#'     \item{\code{HV113.01}}{Father alive}
+#'     \item{\code{HV113.02}}{Father alive}
+#'     \item{\code{HV113.03}}{Father alive}
+#'     \item{\code{HV113.04}}{Father alive}
+#'     \item{\code{HV113.05}}{Father alive}
+#'     \item{\code{HV113.06}}{Father alive}
+#'     \item{\code{HV113.07}}{Father alive}
+#'     \item{\code{HV113.08}}{Father alive}
+#'     \item{\code{HV113.09}}{Father alive}
+#'     \item{\code{HV113.10}}{Father alive}
+#'     \item{\code{HV113.11}}{Father alive}
+#'     \item{\code{HV113.12}}{Father alive}
+#'     \item{\code{HV113.13}}{Father alive}
+#'     \item{\code{HV113.14}}{Father alive}
+#'     \item{\code{HV113.15}}{Father alive}
+#'     \item{\code{HV113.16}}{Father alive}
+#'     \item{\code{HV113.17}}{Father alive}
+#'     \item{\code{HV113.18}}{Father alive}
+#'     \item{\code{HV113.19}}{Father alive}
+#'     \item{\code{HV113.20}}{Father alive}
+#'     \item{\code{HV113.21}}{Father alive}
+#'     \item{\code{HV113.22}}{Father alive}
+#'     \item{\code{HV113.23}}{Father alive}
+#'     \item{\code{HV113.24}}{Father alive}
+#'     \item{\code{HV113.25}}{Father alive}
+#'     \item{\code{HV113.26}}{Father alive}
+#'     \item{\code{HV113.27}}{Father alive}
+#'     \item{\code{HV113.28}}{Father alive}
+#'     \item{\code{HV113.29}}{Father alive}
+#'     \item{\code{HV113.30}}{Father alive}
+#'     \item{\code{HV113.31}}{Father alive}
+#'     \item{\code{HV113.32}}{Father alive}
+#'     \item{\code{HV113.33}}{Father alive}
+#'     \item{\code{HV113.34}}{Father alive}
+#'     \item{\code{HV113.35}}{Father alive}
+#'     \item{\code{HV113.36}}{Father alive}
+#'     \item{\code{HV113.37}}{Father alive}
+#'     \item{\code{HV113.38}}{Father alive}
+#'     \item{\code{HV113.39}}{Father alive}
+#'     \item{\code{HV113.40}}{Father alive}
+#'     \item{\code{HV113.41}}{Father alive}
+#'     \item{\code{HV113.42}}{Father alive}
+#'     \item{\code{HV113.43}}{Father alive}
+#'     \item{\code{HV113.44}}{Father alive}
+#'     \item{\code{HV114.01}}{Father's line number}
+#'     \item{\code{HV114.02}}{Father's line number}
+#'     \item{\code{HV114.03}}{Father's line number}
+#'     \item{\code{HV114.04}}{Father's line number}
+#'     \item{\code{HV114.05}}{Father's line number}
+#'     \item{\code{HV114.06}}{Father's line number}
+#'     \item{\code{HV114.07}}{Father's line number}
+#'     \item{\code{HV114.08}}{Father's line number}
+#'     \item{\code{HV114.09}}{Father's line number}
+#'     \item{\code{HV114.10}}{Father's line number}
+#'     \item{\code{HV114.11}}{Father's line number}
+#'     \item{\code{HV114.12}}{Father's line number}
+#'     \item{\code{HV114.13}}{Father's line number}
+#'     \item{\code{HV114.14}}{Father's line number}
+#'     \item{\code{HV114.15}}{Father's line number}
+#'     \item{\code{HV114.16}}{Father's line number}
+#'     \item{\code{HV114.17}}{Father's line number}
+#'     \item{\code{HV114.18}}{Father's line number}
+#'     \item{\code{HV114.19}}{Father's line number}
+#'     \item{\code{HV114.20}}{Father's line number}
+#'     \item{\code{HV114.21}}{Father's line number}
+#'     \item{\code{HV114.22}}{Father's line number}
+#'     \item{\code{HV114.23}}{Father's line number}
+#'     \item{\code{HV114.24}}{Father's line number}
+#'     \item{\code{HV114.25}}{Father's line number}
+#'     \item{\code{HV114.26}}{Father's line number}
+#'     \item{\code{HV114.27}}{Father's line number}
+#'     \item{\code{HV114.28}}{Father's line number}
+#'     \item{\code{HV114.29}}{Father's line number}
+#'     \item{\code{HV114.30}}{Father's line number}
+#'     \item{\code{HV114.31}}{Father's line number}
+#'     \item{\code{HV114.32}}{Father's line number}
+#'     \item{\code{HV114.33}}{Father's line number}
+#'     \item{\code{HV114.34}}{Father's line number}
+#'     \item{\code{HV114.35}}{Father's line number}
+#'     \item{\code{HV114.36}}{Father's line number}
+#'     \item{\code{HV114.37}}{Father's line number}
+#'     \item{\code{HV114.38}}{Father's line number}
+#'     \item{\code{HV114.39}}{Father's line number}
+#'     \item{\code{HV114.40}}{Father's line number}
+#'     \item{\code{HV114.41}}{Father's line number}
+#'     \item{\code{HV114.42}}{Father's line number}
+#'     \item{\code{HV114.43}}{Father's line number}
+#'     \item{\code{HV114.44}}{Father's line number}
+#'     \item{\code{HV115.01}}{Current marital status}
+#'     \item{\code{HV115.02}}{Current marital status}
+#'     \item{\code{HV115.03}}{Current marital status}
+#'     \item{\code{HV115.04}}{Current marital status}
+#'     \item{\code{HV115.05}}{Current marital status}
+#'     \item{\code{HV115.06}}{Current marital status}
+#'     \item{\code{HV115.07}}{Current marital status}
+#'     \item{\code{HV115.08}}{Current marital status}
+#'     \item{\code{HV115.09}}{Current marital status}
+#'     \item{\code{HV115.10}}{Current marital status}
+#'     \item{\code{HV115.11}}{Current marital status}
+#'     \item{\code{HV115.12}}{Current marital status}
+#'     \item{\code{HV115.13}}{Current marital status}
+#'     \item{\code{HV115.14}}{Current marital status}
+#'     \item{\code{HV115.15}}{Current marital status}
+#'     \item{\code{HV115.16}}{Current marital status}
+#'     \item{\code{HV115.17}}{Current marital status}
+#'     \item{\code{HV115.18}}{Current marital status}
+#'     \item{\code{HV115.19}}{Current marital status}
+#'     \item{\code{HV115.20}}{Current marital status}
+#'     \item{\code{HV115.21}}{Current marital status}
+#'     \item{\code{HV115.22}}{Current marital status}
+#'     \item{\code{HV115.23}}{Current marital status}
+#'     \item{\code{HV115.24}}{Current marital status}
+#'     \item{\code{HV115.25}}{Current marital status}
+#'     \item{\code{HV115.26}}{Current marital status}
+#'     \item{\code{HV115.27}}{Current marital status}
+#'     \item{\code{HV115.28}}{Current marital status}
+#'     \item{\code{HV115.29}}{Current marital status}
+#'     \item{\code{HV115.30}}{Current marital status}
+#'     \item{\code{HV115.31}}{Current marital status}
+#'     \item{\code{HV115.32}}{Current marital status}
+#'     \item{\code{HV115.33}}{Current marital status}
+#'     \item{\code{HV115.34}}{Current marital status}
+#'     \item{\code{HV115.35}}{Current marital status}
+#'     \item{\code{HV115.36}}{Current marital status}
+#'     \item{\code{HV115.37}}{Current marital status}
+#'     \item{\code{HV115.38}}{Current marital status}
+#'     \item{\code{HV115.39}}{Current marital status}
+#'     \item{\code{HV115.40}}{Current marital status}
+#'     \item{\code{HV115.41}}{Current marital status}
+#'     \item{\code{HV115.42}}{Current marital status}
+#'     \item{\code{HV115.43}}{Current marital status}
+#'     \item{\code{HV115.44}}{Current marital status}
+#'     \item{\code{HV116.01}}{Currently, formerly, never married}
+#'     \item{\code{HV116.02}}{Currently, formerly, never married}
+#'     \item{\code{HV116.03}}{Currently, formerly, never married}
+#'     \item{\code{HV116.04}}{Currently, formerly, never married}
+#'     \item{\code{HV116.05}}{Currently, formerly, never married}
+#'     \item{\code{HV116.06}}{Currently, formerly, never married}
+#'     \item{\code{HV116.07}}{Currently, formerly, never married}
+#'     \item{\code{HV116.08}}{Currently, formerly, never married}
+#'     \item{\code{HV116.09}}{Currently, formerly, never married}
+#'     \item{\code{HV116.10}}{Currently, formerly, never married}
+#'     \item{\code{HV116.11}}{Currently, formerly, never married}
+#'     \item{\code{HV116.12}}{Currently, formerly, never married}
+#'     \item{\code{HV116.13}}{Currently, formerly, never married}
+#'     \item{\code{HV116.14}}{Currently, formerly, never married}
+#'     \item{\code{HV116.15}}{Currently, formerly, never married}
+#'     \item{\code{HV116.16}}{Currently, formerly, never married}
+#'     \item{\code{HV116.17}}{Currently, formerly, never married}
+#'     \item{\code{HV116.18}}{Currently, formerly, never married}
+#'     \item{\code{HV116.19}}{Currently, formerly, never married}
+#'     \item{\code{HV116.20}}{Currently, formerly, never married}
+#'     \item{\code{HV116.21}}{Currently, formerly, never married}
+#'     \item{\code{HV116.22}}{Currently, formerly, never married}
+#'     \item{\code{HV116.23}}{Currently, formerly, never married}
+#'     \item{\code{HV116.24}}{Currently, formerly, never married}
+#'     \item{\code{HV116.25}}{Currently, formerly, never married}
+#'     \item{\code{HV116.26}}{Currently, formerly, never married}
+#'     \item{\code{HV116.27}}{Currently, formerly, never married}
+#'     \item{\code{HV116.28}}{Currently, formerly, never married}
+#'     \item{\code{HV116.29}}{Currently, formerly, never married}
+#'     \item{\code{HV116.30}}{Currently, formerly, never married}
+#'     \item{\code{HV116.31}}{Currently, formerly, never married}
+#'     \item{\code{HV116.32}}{Currently, formerly, never married}
+#'     \item{\code{HV116.33}}{Currently, formerly, never married}
+#'     \item{\code{HV116.34}}{Currently, formerly, never married}
+#'     \item{\code{HV116.35}}{Currently, formerly, never married}
+#'     \item{\code{HV116.36}}{Currently, formerly, never married}
+#'     \item{\code{HV116.37}}{Currently, formerly, never married}
+#'     \item{\code{HV116.38}}{Currently, formerly, never married}
+#'     \item{\code{HV116.39}}{Currently, formerly, never married}
+#'     \item{\code{HV116.40}}{Currently, formerly, never married}
+#'     \item{\code{HV116.41}}{Currently, formerly, never married}
+#'     \item{\code{HV116.42}}{Currently, formerly, never married}
+#'     \item{\code{HV116.43}}{Currently, formerly, never married}
+#'     \item{\code{HV116.44}}{Currently, formerly, never married}
+#'     \item{\code{HV117.01}}{Eligibility for female interview}
+#'     \item{\code{HV117.02}}{Eligibility for female interview}
+#'     \item{\code{HV117.03}}{Eligibility for female interview}
+#'     \item{\code{HV117.04}}{Eligibility for female interview}
+#'     \item{\code{HV117.05}}{Eligibility for female interview}
+#'     \item{\code{HV117.06}}{Eligibility for female interview}
+#'     \item{\code{HV117.07}}{Eligibility for female interview}
+#'     \item{\code{HV117.08}}{Eligibility for female interview}
+#'     \item{\code{HV117.09}}{Eligibility for female interview}
+#'     \item{\code{HV117.10}}{Eligibility for female interview}
+#'     \item{\code{HV117.11}}{Eligibility for female interview}
+#'     \item{\code{HV117.12}}{Eligibility for female interview}
+#'     \item{\code{HV117.13}}{Eligibility for female interview}
+#'     \item{\code{HV117.14}}{Eligibility for female interview}
+#'     \item{\code{HV117.15}}{Eligibility for female interview}
+#'     \item{\code{HV117.16}}{Eligibility for female interview}
+#'     \item{\code{HV117.17}}{Eligibility for female interview}
+#'     \item{\code{HV117.18}}{Eligibility for female interview}
+#'     \item{\code{HV117.19}}{Eligibility for female interview}
+#'     \item{\code{HV117.20}}{Eligibility for female interview}
+#'     \item{\code{HV117.21}}{Eligibility for female interview}
+#'     \item{\code{HV117.22}}{Eligibility for female interview}
+#'     \item{\code{HV117.23}}{Eligibility for female interview}
+#'     \item{\code{HV117.24}}{Eligibility for female interview}
+#'     \item{\code{HV117.25}}{Eligibility for female interview}
+#'     \item{\code{HV117.26}}{Eligibility for female interview}
+#'     \item{\code{HV117.27}}{Eligibility for female interview}
+#'     \item{\code{HV117.28}}{Eligibility for female interview}
+#'     \item{\code{HV117.29}}{Eligibility for female interview}
+#'     \item{\code{HV117.30}}{Eligibility for female interview}
+#'     \item{\code{HV117.31}}{Eligibility for female interview}
+#'     \item{\code{HV117.32}}{Eligibility for female interview}
+#'     \item{\code{HV117.33}}{Eligibility for female interview}
+#'     \item{\code{HV117.34}}{Eligibility for female interview}
+#'     \item{\code{HV117.35}}{Eligibility for female interview}
+#'     \item{\code{HV117.36}}{Eligibility for female interview}
+#'     \item{\code{HV117.37}}{Eligibility for female interview}
+#'     \item{\code{HV117.38}}{Eligibility for female interview}
+#'     \item{\code{HV117.39}}{Eligibility for female interview}
+#'     \item{\code{HV117.40}}{Eligibility for female interview}
+#'     \item{\code{HV117.41}}{Eligibility for female interview}
+#'     \item{\code{HV117.42}}{Eligibility for female interview}
+#'     \item{\code{HV117.43}}{Eligibility for female interview}
+#'     \item{\code{HV117.44}}{Eligibility for female interview}
+#'     \item{\code{HV118.01}}{Eligibility for male interview}
+#'     \item{\code{HV118.02}}{Eligibility for male interview}
+#'     \item{\code{HV118.03}}{Eligibility for male interview}
+#'     \item{\code{HV118.04}}{Eligibility for male interview}
+#'     \item{\code{HV118.05}}{Eligibility for male interview}
+#'     \item{\code{HV118.06}}{Eligibility for male interview}
+#'     \item{\code{HV118.07}}{Eligibility for male interview}
+#'     \item{\code{HV118.08}}{Eligibility for male interview}
+#'     \item{\code{HV118.09}}{Eligibility for male interview}
+#'     \item{\code{HV118.10}}{Eligibility for male interview}
+#'     \item{\code{HV118.11}}{Eligibility for male interview}
+#'     \item{\code{HV118.12}}{Eligibility for male interview}
+#'     \item{\code{HV118.13}}{Eligibility for male interview}
+#'     \item{\code{HV118.14}}{Eligibility for male interview}
+#'     \item{\code{HV118.15}}{Eligibility for male interview}
+#'     \item{\code{HV118.16}}{Eligibility for male interview}
+#'     \item{\code{HV118.17}}{Eligibility for male interview}
+#'     \item{\code{HV118.18}}{Eligibility for male interview}
+#'     \item{\code{HV118.19}}{Eligibility for male interview}
+#'     \item{\code{HV118.20}}{Eligibility for male interview}
+#'     \item{\code{HV118.21}}{Eligibility for male interview}
+#'     \item{\code{HV118.22}}{Eligibility for male interview}
+#'     \item{\code{HV118.23}}{Eligibility for male interview}
+#'     \item{\code{HV118.24}}{Eligibility for male interview}
+#'     \item{\code{HV118.25}}{Eligibility for male interview}
+#'     \item{\code{HV118.26}}{Eligibility for male interview}
+#'     \item{\code{HV118.27}}{Eligibility for male interview}
+#'     \item{\code{HV118.28}}{Eligibility for male interview}
+#'     \item{\code{HV118.29}}{Eligibility for male interview}
+#'     \item{\code{HV118.30}}{Eligibility for male interview}
+#'     \item{\code{HV118.31}}{Eligibility for male interview}
+#'     \item{\code{HV118.32}}{Eligibility for male interview}
+#'     \item{\code{HV118.33}}{Eligibility for male interview}
+#'     \item{\code{HV118.34}}{Eligibility for male interview}
+#'     \item{\code{HV118.35}}{Eligibility for male interview}
+#'     \item{\code{HV118.36}}{Eligibility for male interview}
+#'     \item{\code{HV118.37}}{Eligibility for male interview}
+#'     \item{\code{HV118.38}}{Eligibility for male interview}
+#'     \item{\code{HV118.39}}{Eligibility for male interview}
+#'     \item{\code{HV118.40}}{Eligibility for male interview}
+#'     \item{\code{HV118.41}}{Eligibility for male interview}
+#'     \item{\code{HV118.42}}{Eligibility for male interview}
+#'     \item{\code{HV118.43}}{Eligibility for male interview}
+#'     \item{\code{HV118.44}}{Eligibility for male interview}
+#'     \item{\code{HV120.01}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.02}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.03}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.04}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.05}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.06}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.07}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.08}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.09}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.10}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.11}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.12}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.13}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.14}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.15}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.16}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.17}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.18}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.19}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.20}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.21}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.22}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.23}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.24}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.25}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.26}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.27}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.28}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.29}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.30}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.31}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.32}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.33}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.34}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.35}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.36}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.37}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.38}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.39}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.40}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.41}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.42}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.43}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV120.44}}{Children eligibility for height/weight and hemoglobin}
+#'     \item{\code{HV121.01}}{Member attended school during current school year}
+#'     \item{\code{HV121.02}}{Member attended school during current school year}
+#'     \item{\code{HV121.03}}{Member attended school during current school year}
+#'     \item{\code{HV121.04}}{Member attended school during current school year}
+#'     \item{\code{HV121.05}}{Member attended school during current school year}
+#'     \item{\code{HV121.06}}{Member attended school during current school year}
+#'     \item{\code{HV121.07}}{Member attended school during current school year}
+#'     \item{\code{HV121.08}}{Member attended school during current school year}
+#'     \item{\code{HV121.09}}{Member attended school during current school year}
+#'     \item{\code{HV121.10}}{Member attended school during current school year}
+#'     \item{\code{HV121.11}}{Member attended school during current school year}
+#'     \item{\code{HV121.12}}{Member attended school during current school year}
+#'     \item{\code{HV121.13}}{Member attended school during current school year}
+#'     \item{\code{HV121.14}}{Member attended school during current school year}
+#'     \item{\code{HV121.15}}{Member attended school during current school year}
+#'     \item{\code{HV121.16}}{Member attended school during current school year}
+#'     \item{\code{HV121.17}}{Member attended school during current school year}
+#'     \item{\code{HV121.18}}{Member attended school during current school year}
+#'     \item{\code{HV121.19}}{Member attended school during current school year}
+#'     \item{\code{HV121.20}}{Member attended school during current school year}
+#'     \item{\code{HV121.21}}{Member attended school during current school year}
+#'     \item{\code{HV121.22}}{Member attended school during current school year}
+#'     \item{\code{HV121.23}}{Member attended school during current school year}
+#'     \item{\code{HV121.24}}{Member attended school during current school year}
+#'     \item{\code{HV121.25}}{Member attended school during current school year}
+#'     \item{\code{HV121.26}}{Member attended school during current school year}
+#'     \item{\code{HV121.27}}{Member attended school during current school year}
+#'     \item{\code{HV121.28}}{Member attended school during current school year}
+#'     \item{\code{HV121.29}}{Member attended school during current school year}
+#'     \item{\code{HV121.30}}{Member attended school during current school year}
+#'     \item{\code{HV121.31}}{Member attended school during current school year}
+#'     \item{\code{HV121.32}}{Member attended school during current school year}
+#'     \item{\code{HV121.33}}{Member attended school during current school year}
+#'     \item{\code{HV121.34}}{Member attended school during current school year}
+#'     \item{\code{HV121.35}}{Member attended school during current school year}
+#'     \item{\code{HV121.36}}{Member attended school during current school year}
+#'     \item{\code{HV121.37}}{Member attended school during current school year}
+#'     \item{\code{HV121.38}}{Member attended school during current school year}
+#'     \item{\code{HV121.39}}{Member attended school during current school year}
+#'     \item{\code{HV121.40}}{Member attended school during current school year}
+#'     \item{\code{HV121.41}}{Member attended school during current school year}
+#'     \item{\code{HV121.42}}{Member attended school during current school year}
+#'     \item{\code{HV121.43}}{Member attended school during current school year}
+#'     \item{\code{HV121.44}}{Member attended school during current school year}
+#'     \item{\code{HV122.01}}{Educational level during current school year}
+#'     \item{\code{HV122.02}}{Educational level during current school year}
+#'     \item{\code{HV122.03}}{Educational level during current school year}
+#'     \item{\code{HV122.04}}{Educational level during current school year}
+#'     \item{\code{HV122.05}}{Educational level during current school year}
+#'     \item{\code{HV122.06}}{Educational level during current school year}
+#'     \item{\code{HV122.07}}{Educational level during current school year}
+#'     \item{\code{HV122.08}}{Educational level during current school year}
+#'     \item{\code{HV122.09}}{Educational level during current school year}
+#'     \item{\code{HV122.10}}{Educational level during current school year}
+#'     \item{\code{HV122.11}}{Educational level during current school year}
+#'     \item{\code{HV122.12}}{Educational level during current school year}
+#'     \item{\code{HV122.13}}{Educational level during current school year}
+#'     \item{\code{HV122.14}}{Educational level during current school year}
+#'     \item{\code{HV122.15}}{Educational level during current school year}
+#'     \item{\code{HV122.16}}{Educational level during current school year}
+#'     \item{\code{HV122.17}}{Educational level during current school year}
+#'     \item{\code{HV122.18}}{Educational level during current school year}
+#'     \item{\code{HV122.19}}{Educational level during current school year}
+#'     \item{\code{HV122.20}}{Educational level during current school year}
+#'     \item{\code{HV122.21}}{Educational level during current school year}
+#'     \item{\code{HV122.22}}{Educational level during current school year}
+#'     \item{\code{HV122.23}}{Educational level during current school year}
+#'     \item{\code{HV122.24}}{Educational level during current school year}
+#'     \item{\code{HV122.25}}{Educational level during current school year}
+#'     \item{\code{HV122.26}}{Educational level during current school year}
+#'     \item{\code{HV122.27}}{Educational level during current school year}
+#'     \item{\code{HV122.28}}{Educational level during current school year}
+#'     \item{\code{HV122.29}}{Educational level during current school year}
+#'     \item{\code{HV122.30}}{Educational level during current school year}
+#'     \item{\code{HV122.31}}{Educational level during current school year}
+#'     \item{\code{HV122.32}}{Educational level during current school year}
+#'     \item{\code{HV122.33}}{Educational level during current school year}
+#'     \item{\code{HV122.34}}{Educational level during current school year}
+#'     \item{\code{HV122.35}}{Educational level during current school year}
+#'     \item{\code{HV122.36}}{Educational level during current school year}
+#'     \item{\code{HV122.37}}{Educational level during current school year}
+#'     \item{\code{HV122.38}}{Educational level during current school year}
+#'     \item{\code{HV122.39}}{Educational level during current school year}
+#'     \item{\code{HV122.40}}{Educational level during current school year}
+#'     \item{\code{HV122.41}}{Educational level during current school year}
+#'     \item{\code{HV122.42}}{Educational level during current school year}
+#'     \item{\code{HV122.43}}{Educational level during current school year}
+#'     \item{\code{HV122.44}}{Educational level during current school year}
+#'     \item{\code{HV123.01}}{Grade of education during current school year}
+#'     \item{\code{HV123.02}}{Grade of education during current school year}
+#'     \item{\code{HV123.03}}{Grade of education during current school year}
+#'     \item{\code{HV123.04}}{Grade of education during current school year}
+#'     \item{\code{HV123.05}}{Grade of education during current school year}
+#'     \item{\code{HV123.06}}{Grade of education during current school year}
+#'     \item{\code{HV123.07}}{Grade of education during current school year}
+#'     \item{\code{HV123.08}}{Grade of education during current school year}
+#'     \item{\code{HV123.09}}{Grade of education during current school year}
+#'     \item{\code{HV123.10}}{Grade of education during current school year}
+#'     \item{\code{HV123.11}}{Grade of education during current school year}
+#'     \item{\code{HV123.12}}{Grade of education during current school year}
+#'     \item{\code{HV123.13}}{Grade of education during current school year}
+#'     \item{\code{HV123.14}}{Grade of education during current school year}
+#'     \item{\code{HV123.15}}{Grade of education during current school year}
+#'     \item{\code{HV123.16}}{Grade of education during current school year}
+#'     \item{\code{HV123.17}}{Grade of education during current school year}
+#'     \item{\code{HV123.18}}{Grade of education during current school year}
+#'     \item{\code{HV123.19}}{Grade of education during current school year}
+#'     \item{\code{HV123.20}}{Grade of education during current school year}
+#'     \item{\code{HV123.21}}{Grade of education during current school year}
+#'     \item{\code{HV123.22}}{Grade of education during current school year}
+#'     \item{\code{HV123.23}}{Grade of education during current school year}
+#'     \item{\code{HV123.24}}{Grade of education during current school year}
+#'     \item{\code{HV123.25}}{Grade of education during current school year}
+#'     \item{\code{HV123.26}}{Grade of education during current school year}
+#'     \item{\code{HV123.27}}{Grade of education during current school year}
+#'     \item{\code{HV123.28}}{Grade of education during current school year}
+#'     \item{\code{HV123.29}}{Grade of education during current school year}
+#'     \item{\code{HV123.30}}{Grade of education during current school year}
+#'     \item{\code{HV123.31}}{Grade of education during current school year}
+#'     \item{\code{HV123.32}}{Grade of education during current school year}
+#'     \item{\code{HV123.33}}{Grade of education during current school year}
+#'     \item{\code{HV123.34}}{Grade of education during current school year}
+#'     \item{\code{HV123.35}}{Grade of education during current school year}
+#'     \item{\code{HV123.36}}{Grade of education during current school year}
+#'     \item{\code{HV123.37}}{Grade of education during current school year}
+#'     \item{\code{HV123.38}}{Grade of education during current school year}
+#'     \item{\code{HV123.39}}{Grade of education during current school year}
+#'     \item{\code{HV123.40}}{Grade of education during current school year}
+#'     \item{\code{HV123.41}}{Grade of education during current school year}
+#'     \item{\code{HV123.42}}{Grade of education during current school year}
+#'     \item{\code{HV123.43}}{Grade of education during current school year}
+#'     \item{\code{HV123.44}}{Grade of education during current school year}
+#'     \item{\code{HV124.01}}{Education in single years - current school year}
+#'     \item{\code{HV124.02}}{Education in single years - current school year}
+#'     \item{\code{HV124.03}}{Education in single years - current school year}
+#'     \item{\code{HV124.04}}{Education in single years - current school year}
+#'     \item{\code{HV124.05}}{Education in single years - current school year}
+#'     \item{\code{HV124.06}}{Education in single years - current school year}
+#'     \item{\code{HV124.07}}{Education in single years - current school year}
+#'     \item{\code{HV124.08}}{Education in single years - current school year}
+#'     \item{\code{HV124.09}}{Education in single years - current school year}
+#'     \item{\code{HV124.10}}{Education in single years - current school year}
+#'     \item{\code{HV124.11}}{Education in single years - current school year}
+#'     \item{\code{HV124.12}}{Education in single years - current school year}
+#'     \item{\code{HV124.13}}{Education in single years - current school year}
+#'     \item{\code{HV124.14}}{Education in single years - current school year}
+#'     \item{\code{HV124.15}}{Education in single years - current school year}
+#'     \item{\code{HV124.16}}{Education in single years - current school year}
+#'     \item{\code{HV124.17}}{Education in single years - current school year}
+#'     \item{\code{HV124.18}}{Education in single years - current school year}
+#'     \item{\code{HV124.19}}{Education in single years - current school year}
+#'     \item{\code{HV124.20}}{Education in single years - current school year}
+#'     \item{\code{HV124.21}}{Education in single years - current school year}
+#'     \item{\code{HV124.22}}{Education in single years - current school year}
+#'     \item{\code{HV124.23}}{Education in single years - current school year}
+#'     \item{\code{HV124.24}}{Education in single years - current school year}
+#'     \item{\code{HV124.25}}{Education in single years - current school year}
+#'     \item{\code{HV124.26}}{Education in single years - current school year}
+#'     \item{\code{HV124.27}}{Education in single years - current school year}
+#'     \item{\code{HV124.28}}{Education in single years - current school year}
+#'     \item{\code{HV124.29}}{Education in single years - current school year}
+#'     \item{\code{HV124.30}}{Education in single years - current school year}
+#'     \item{\code{HV124.31}}{Education in single years - current school year}
+#'     \item{\code{HV124.32}}{Education in single years - current school year}
+#'     \item{\code{HV124.33}}{Education in single years - current school year}
+#'     \item{\code{HV124.34}}{Education in single years - current school year}
+#'     \item{\code{HV124.35}}{Education in single years - current school year}
+#'     \item{\code{HV124.36}}{Education in single years - current school year}
+#'     \item{\code{HV124.37}}{Education in single years - current school year}
+#'     \item{\code{HV124.38}}{Education in single years - current school year}
+#'     \item{\code{HV124.39}}{Education in single years - current school year}
+#'     \item{\code{HV124.40}}{Education in single years - current school year}
+#'     \item{\code{HV124.41}}{Education in single years - current school year}
+#'     \item{\code{HV124.42}}{Education in single years - current school year}
+#'     \item{\code{HV124.43}}{Education in single years - current school year}
+#'     \item{\code{HV124.44}}{Education in single years - current school year}
+#'     \item{\code{HV125.01}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.02}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.03}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.04}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.05}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.06}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.07}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.08}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.09}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.10}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.11}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.12}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.13}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.14}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.15}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.16}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.17}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.18}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.19}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.20}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.21}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.22}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.23}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.24}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.25}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.26}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.27}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.28}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.29}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.30}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.31}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.32}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.33}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.34}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.35}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.36}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.37}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.38}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.39}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.40}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.41}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.42}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.43}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV125.44}}{NA - Member attended school during previous school year}
+#'     \item{\code{HV126.01}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.02}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.03}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.04}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.05}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.06}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.07}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.08}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.09}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.10}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.11}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.12}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.13}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.14}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.15}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.16}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.17}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.18}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.19}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.20}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.21}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.22}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.23}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.24}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.25}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.26}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.27}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.28}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.29}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.30}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.31}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.32}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.33}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.34}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.35}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.36}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.37}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.38}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.39}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.40}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.41}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.42}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.43}}{NA - Educational level during previous school year}
+#'     \item{\code{HV126.44}}{NA - Educational level during previous school year}
+#'     \item{\code{HV127.01}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.02}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.03}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.04}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.05}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.06}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.07}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.08}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.09}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.10}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.11}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.12}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.13}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.14}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.15}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.16}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.17}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.18}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.19}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.20}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.21}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.22}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.23}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.24}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.25}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.26}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.27}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.28}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.29}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.30}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.31}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.32}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.33}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.34}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.35}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.36}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.37}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.38}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.39}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.40}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.41}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.42}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.43}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV127.44}}{NA - Grade of education during previous school year}
+#'     \item{\code{HV128.01}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.02}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.03}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.04}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.05}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.06}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.07}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.08}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.09}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.10}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.11}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.12}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.13}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.14}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.15}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.16}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.17}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.18}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.19}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.20}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.21}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.22}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.23}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.24}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.25}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.26}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.27}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.28}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.29}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.30}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.31}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.32}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.33}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.34}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.35}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.36}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.37}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.38}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.39}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.40}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.41}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.42}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.43}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV128.44}}{NA - Education in single years - previous school year}
+#'     \item{\code{HV129.01}}{NA - School attendance status}
+#'     \item{\code{HV129.02}}{NA - School attendance status}
+#'     \item{\code{HV129.03}}{NA - School attendance status}
+#'     \item{\code{HV129.04}}{NA - School attendance status}
+#'     \item{\code{HV129.05}}{NA - School attendance status}
+#'     \item{\code{HV129.06}}{NA - School attendance status}
+#'     \item{\code{HV129.07}}{NA - School attendance status}
+#'     \item{\code{HV129.08}}{NA - School attendance status}
+#'     \item{\code{HV129.09}}{NA - School attendance status}
+#'     \item{\code{HV129.10}}{NA - School attendance status}
+#'     \item{\code{HV129.11}}{NA - School attendance status}
+#'     \item{\code{HV129.12}}{NA - School attendance status}
+#'     \item{\code{HV129.13}}{NA - School attendance status}
+#'     \item{\code{HV129.14}}{NA - School attendance status}
+#'     \item{\code{HV129.15}}{NA - School attendance status}
+#'     \item{\code{HV129.16}}{NA - School attendance status}
+#'     \item{\code{HV129.17}}{NA - School attendance status}
+#'     \item{\code{HV129.18}}{NA - School attendance status}
+#'     \item{\code{HV129.19}}{NA - School attendance status}
+#'     \item{\code{HV129.20}}{NA - School attendance status}
+#'     \item{\code{HV129.21}}{NA - School attendance status}
+#'     \item{\code{HV129.22}}{NA - School attendance status}
+#'     \item{\code{HV129.23}}{NA - School attendance status}
+#'     \item{\code{HV129.24}}{NA - School attendance status}
+#'     \item{\code{HV129.25}}{NA - School attendance status}
+#'     \item{\code{HV129.26}}{NA - School attendance status}
+#'     \item{\code{HV129.27}}{NA - School attendance status}
+#'     \item{\code{HV129.28}}{NA - School attendance status}
+#'     \item{\code{HV129.29}}{NA - School attendance status}
+#'     \item{\code{HV129.30}}{NA - School attendance status}
+#'     \item{\code{HV129.31}}{NA - School attendance status}
+#'     \item{\code{HV129.32}}{NA - School attendance status}
+#'     \item{\code{HV129.33}}{NA - School attendance status}
+#'     \item{\code{HV129.34}}{NA - School attendance status}
+#'     \item{\code{HV129.35}}{NA - School attendance status}
+#'     \item{\code{HV129.36}}{NA - School attendance status}
+#'     \item{\code{HV129.37}}{NA - School attendance status}
+#'     \item{\code{HV129.38}}{NA - School attendance status}
+#'     \item{\code{HV129.39}}{NA - School attendance status}
+#'     \item{\code{HV129.40}}{NA - School attendance status}
+#'     \item{\code{HV129.41}}{NA - School attendance status}
+#'     \item{\code{HV129.42}}{NA - School attendance status}
+#'     \item{\code{HV129.43}}{NA - School attendance status}
+#'     \item{\code{HV129.44}}{NA - School attendance status}
+#'     \item{\code{HV140.01}}{Member has a birth certificate}
+#'     \item{\code{HV140.02}}{Member has a birth certificate}
+#'     \item{\code{HV140.03}}{Member has a birth certificate}
+#'     \item{\code{HV140.04}}{Member has a birth certificate}
+#'     \item{\code{HV140.05}}{Member has a birth certificate}
+#'     \item{\code{HV140.06}}{Member has a birth certificate}
+#'     \item{\code{HV140.07}}{Member has a birth certificate}
+#'     \item{\code{HV140.08}}{Member has a birth certificate}
+#'     \item{\code{HV140.09}}{Member has a birth certificate}
+#'     \item{\code{HV140.10}}{Member has a birth certificate}
+#'     \item{\code{HV140.11}}{Member has a birth certificate}
+#'     \item{\code{HV140.12}}{Member has a birth certificate}
+#'     \item{\code{HV140.13}}{Member has a birth certificate}
+#'     \item{\code{HV140.14}}{Member has a birth certificate}
+#'     \item{\code{HV140.15}}{Member has a birth certificate}
+#'     \item{\code{HV140.16}}{Member has a birth certificate}
+#'     \item{\code{HV140.17}}{Member has a birth certificate}
+#'     \item{\code{HV140.18}}{Member has a birth certificate}
+#'     \item{\code{HV140.19}}{Member has a birth certificate}
+#'     \item{\code{HV140.20}}{Member has a birth certificate}
+#'     \item{\code{HV140.21}}{Member has a birth certificate}
+#'     \item{\code{HV140.22}}{Member has a birth certificate}
+#'     \item{\code{HV140.23}}{Member has a birth certificate}
+#'     \item{\code{HV140.24}}{Member has a birth certificate}
+#'     \item{\code{HV140.25}}{Member has a birth certificate}
+#'     \item{\code{HV140.26}}{Member has a birth certificate}
+#'     \item{\code{HV140.27}}{Member has a birth certificate}
+#'     \item{\code{HV140.28}}{Member has a birth certificate}
+#'     \item{\code{HV140.29}}{Member has a birth certificate}
+#'     \item{\code{HV140.30}}{Member has a birth certificate}
+#'     \item{\code{HV140.31}}{Member has a birth certificate}
+#'     \item{\code{HV140.32}}{Member has a birth certificate}
+#'     \item{\code{HV140.33}}{Member has a birth certificate}
+#'     \item{\code{HV140.34}}{Member has a birth certificate}
+#'     \item{\code{HV140.35}}{Member has a birth certificate}
+#'     \item{\code{HV140.36}}{Member has a birth certificate}
+#'     \item{\code{HV140.37}}{Member has a birth certificate}
+#'     \item{\code{HV140.38}}{Member has a birth certificate}
+#'     \item{\code{HV140.39}}{Member has a birth certificate}
+#'     \item{\code{HV140.40}}{Member has a birth certificate}
+#'     \item{\code{HV140.41}}{Member has a birth certificate}
+#'     \item{\code{HV140.42}}{Member has a birth certificate}
+#'     \item{\code{HV140.43}}{Member has a birth certificate}
+#'     \item{\code{HV140.44}}{Member has a birth certificate}
+#'     \item{\code{IDXH4.01}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.02}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.03}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.04}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.05}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.06}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.07}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.08}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.09}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.10}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.11}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.12}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.13}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.14}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.15}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.16}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.17}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.18}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.19}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.20}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.21}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.22}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.23}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.24}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.25}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.26}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.27}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.28}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.29}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.30}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.31}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.32}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.33}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.34}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.35}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.36}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.37}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.38}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.39}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.40}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.41}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.42}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.43}}{Index to Household Schedule}
+#'     \item{\code{IDXH4.44}}{Index to Household Schedule}
+#'     \item{\code{SHEDUC.01}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.02}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.03}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.04}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.05}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.06}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.07}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.08}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.09}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.10}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.11}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.12}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.13}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.14}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.15}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.16}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.17}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.18}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.19}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.20}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.21}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.22}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.23}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.24}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.25}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.26}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.27}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.28}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.29}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.30}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.31}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.32}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.33}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.34}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.35}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.36}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.37}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.38}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.39}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.40}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.41}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.42}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.43}}{Person's educational level for report}
+#'     \item{\code{SHEDUC.44}}{Person's educational level for report}
+#'     \item{\code{SH17.01}}{Highest grade completed}
+#'     \item{\code{SH17.02}}{Highest grade completed}
+#'     \item{\code{SH17.03}}{Highest grade completed}
+#'     \item{\code{SH17.04}}{Highest grade completed}
+#'     \item{\code{SH17.05}}{Highest grade completed}
+#'     \item{\code{SH17.06}}{Highest grade completed}
+#'     \item{\code{SH17.07}}{Highest grade completed}
+#'     \item{\code{SH17.08}}{Highest grade completed}
+#'     \item{\code{SH17.09}}{Highest grade completed}
+#'     \item{\code{SH17.10}}{Highest grade completed}
+#'     \item{\code{SH17.11}}{Highest grade completed}
+#'     \item{\code{SH17.12}}{Highest grade completed}
+#'     \item{\code{SH17.13}}{Highest grade completed}
+#'     \item{\code{SH17.14}}{Highest grade completed}
+#'     \item{\code{SH17.15}}{Highest grade completed}
+#'     \item{\code{SH17.16}}{Highest grade completed}
+#'     \item{\code{SH17.17}}{Highest grade completed}
+#'     \item{\code{SH17.18}}{Highest grade completed}
+#'     \item{\code{SH17.19}}{Highest grade completed}
+#'     \item{\code{SH17.20}}{Highest grade completed}
+#'     \item{\code{SH17.21}}{Highest grade completed}
+#'     \item{\code{SH17.22}}{Highest grade completed}
+#'     \item{\code{SH17.23}}{Highest grade completed}
+#'     \item{\code{SH17.24}}{Highest grade completed}
+#'     \item{\code{SH17.25}}{Highest grade completed}
+#'     \item{\code{SH17.26}}{Highest grade completed}
+#'     \item{\code{SH17.27}}{Highest grade completed}
+#'     \item{\code{SH17.28}}{Highest grade completed}
+#'     \item{\code{SH17.29}}{Highest grade completed}
+#'     \item{\code{SH17.30}}{Highest grade completed}
+#'     \item{\code{SH17.31}}{Highest grade completed}
+#'     \item{\code{SH17.32}}{Highest grade completed}
+#'     \item{\code{SH17.33}}{Highest grade completed}
+#'     \item{\code{SH17.34}}{Highest grade completed}
+#'     \item{\code{SH17.35}}{Highest grade completed}
+#'     \item{\code{SH17.36}}{Highest grade completed}
+#'     \item{\code{SH17.37}}{Highest grade completed}
+#'     \item{\code{SH17.38}}{Highest grade completed}
+#'     \item{\code{SH17.39}}{Highest grade completed}
+#'     \item{\code{SH17.40}}{Highest grade completed}
+#'     \item{\code{SH17.41}}{Highest grade completed}
+#'     \item{\code{SH17.42}}{Highest grade completed}
+#'     \item{\code{SH17.43}}{Highest grade completed}
+#'     \item{\code{SH17.44}}{Highest grade completed}
+#'     \item{\code{SH19.01}}{Grade attending this year}
+#'     \item{\code{SH19.02}}{Grade attending this year}
+#'     \item{\code{SH19.03}}{Grade attending this year}
+#'     \item{\code{SH19.04}}{Grade attending this year}
+#'     \item{\code{SH19.05}}{Grade attending this year}
+#'     \item{\code{SH19.06}}{Grade attending this year}
+#'     \item{\code{SH19.07}}{Grade attending this year}
+#'     \item{\code{SH19.08}}{Grade attending this year}
+#'     \item{\code{SH19.09}}{Grade attending this year}
+#'     \item{\code{SH19.10}}{Grade attending this year}
+#'     \item{\code{SH19.11}}{Grade attending this year}
+#'     \item{\code{SH19.12}}{Grade attending this year}
+#'     \item{\code{SH19.13}}{Grade attending this year}
+#'     \item{\code{SH19.14}}{Grade attending this year}
+#'     \item{\code{SH19.15}}{Grade attending this year}
+#'     \item{\code{SH19.16}}{Grade attending this year}
+#'     \item{\code{SH19.17}}{Grade attending this year}
+#'     \item{\code{SH19.18}}{Grade attending this year}
+#'     \item{\code{SH19.19}}{Grade attending this year}
+#'     \item{\code{SH19.20}}{Grade attending this year}
+#'     \item{\code{SH19.21}}{Grade attending this year}
+#'     \item{\code{SH19.22}}{Grade attending this year}
+#'     \item{\code{SH19.23}}{Grade attending this year}
+#'     \item{\code{SH19.24}}{Grade attending this year}
+#'     \item{\code{SH19.25}}{Grade attending this year}
+#'     \item{\code{SH19.26}}{Grade attending this year}
+#'     \item{\code{SH19.27}}{Grade attending this year}
+#'     \item{\code{SH19.28}}{Grade attending this year}
+#'     \item{\code{SH19.29}}{Grade attending this year}
+#'     \item{\code{SH19.30}}{Grade attending this year}
+#'     \item{\code{SH19.31}}{Grade attending this year}
+#'     \item{\code{SH19.32}}{Grade attending this year}
+#'     \item{\code{SH19.33}}{Grade attending this year}
+#'     \item{\code{SH19.34}}{Grade attending this year}
+#'     \item{\code{SH19.35}}{Grade attending this year}
+#'     \item{\code{SH19.36}}{Grade attending this year}
+#'     \item{\code{SH19.37}}{Grade attending this year}
+#'     \item{\code{SH19.38}}{Grade attending this year}
+#'     \item{\code{SH19.39}}{Grade attending this year}
+#'     \item{\code{SH19.40}}{Grade attending this year}
+#'     \item{\code{SH19.41}}{Grade attending this year}
+#'     \item{\code{SH19.42}}{Grade attending this year}
+#'     \item{\code{SH19.43}}{Grade attending this year}
+#'     \item{\code{SH19.44}}{Grade attending this year}
+#'     \item{\code{SH19A.01}}{Reasons for not attending school}
+#'     \item{\code{SH19A.02}}{Reasons for not attending school}
+#'     \item{\code{SH19A.03}}{Reasons for not attending school}
+#'     \item{\code{SH19A.04}}{Reasons for not attending school}
+#'     \item{\code{SH19A.05}}{Reasons for not attending school}
+#'     \item{\code{SH19A.06}}{Reasons for not attending school}
+#'     \item{\code{SH19A.07}}{Reasons for not attending school}
+#'     \item{\code{SH19A.08}}{Reasons for not attending school}
+#'     \item{\code{SH19A.09}}{Reasons for not attending school}
+#'     \item{\code{SH19A.10}}{Reasons for not attending school}
+#'     \item{\code{SH19A.11}}{Reasons for not attending school}
+#'     \item{\code{SH19A.12}}{Reasons for not attending school}
+#'     \item{\code{SH19A.13}}{Reasons for not attending school}
+#'     \item{\code{SH19A.14}}{Reasons for not attending school}
+#'     \item{\code{SH19A.15}}{Reasons for not attending school}
+#'     \item{\code{SH19A.16}}{Reasons for not attending school}
+#'     \item{\code{SH19A.17}}{Reasons for not attending school}
+#'     \item{\code{SH19A.18}}{Reasons for not attending school}
+#'     \item{\code{SH19A.19}}{Reasons for not attending school}
+#'     \item{\code{SH19A.20}}{Reasons for not attending school}
+#'     \item{\code{SH19A.21}}{Reasons for not attending school}
+#'     \item{\code{SH19A.22}}{Reasons for not attending school}
+#'     \item{\code{SH19A.23}}{Reasons for not attending school}
+#'     \item{\code{SH19A.24}}{Reasons for not attending school}
+#'     \item{\code{SH19A.25}}{Reasons for not attending school}
+#'     \item{\code{SH19A.26}}{Reasons for not attending school}
+#'     \item{\code{SH19A.27}}{Reasons for not attending school}
+#'     \item{\code{SH19A.28}}{Reasons for not attending school}
+#'     \item{\code{SH19A.29}}{Reasons for not attending school}
+#'     \item{\code{SH19A.30}}{Reasons for not attending school}
+#'     \item{\code{SH19A.31}}{Reasons for not attending school}
+#'     \item{\code{SH19A.32}}{Reasons for not attending school}
+#'     \item{\code{SH19A.33}}{Reasons for not attending school}
+#'     \item{\code{SH19A.34}}{Reasons for not attending school}
+#'     \item{\code{SH19A.35}}{Reasons for not attending school}
+#'     \item{\code{SH19A.36}}{Reasons for not attending school}
+#'     \item{\code{SH19A.37}}{Reasons for not attending school}
+#'     \item{\code{SH19A.38}}{Reasons for not attending school}
+#'     \item{\code{SH19A.39}}{Reasons for not attending school}
+#'     \item{\code{SH19A.40}}{Reasons for not attending school}
+#'     \item{\code{SH19A.41}}{Reasons for not attending school}
+#'     \item{\code{SH19A.42}}{Reasons for not attending school}
+#'     \item{\code{SH19A.43}}{Reasons for not attending school}
+#'     \item{\code{SH19A.44}}{Reasons for not attending school}
+#'     \item{\code{SH20.01}}{Birth certificate}
+#'     \item{\code{SH20.02}}{Birth certificate}
+#'     \item{\code{SH20.03}}{Birth certificate}
+#'     \item{\code{SH20.04}}{Birth certificate}
+#'     \item{\code{SH20.05}}{Birth certificate}
+#'     \item{\code{SH20.06}}{Birth certificate}
+#'     \item{\code{SH20.07}}{Birth certificate}
+#'     \item{\code{SH20.08}}{Birth certificate}
+#'     \item{\code{SH20.09}}{Birth certificate}
+#'     \item{\code{SH20.10}}{Birth certificate}
+#'     \item{\code{SH20.11}}{Birth certificate}
+#'     \item{\code{SH20.12}}{Birth certificate}
+#'     \item{\code{SH20.13}}{Birth certificate}
+#'     \item{\code{SH20.14}}{Birth certificate}
+#'     \item{\code{SH20.15}}{Birth certificate}
+#'     \item{\code{SH20.16}}{Birth certificate}
+#'     \item{\code{SH20.17}}{Birth certificate}
+#'     \item{\code{SH20.18}}{Birth certificate}
+#'     \item{\code{SH20.19}}{Birth certificate}
+#'     \item{\code{SH20.20}}{Birth certificate}
+#'     \item{\code{SH20.21}}{Birth certificate}
+#'     \item{\code{SH20.22}}{Birth certificate}
+#'     \item{\code{SH20.23}}{Birth certificate}
+#'     \item{\code{SH20.24}}{Birth certificate}
+#'     \item{\code{SH20.25}}{Birth certificate}
+#'     \item{\code{SH20.26}}{Birth certificate}
+#'     \item{\code{SH20.27}}{Birth certificate}
+#'     \item{\code{SH20.28}}{Birth certificate}
+#'     \item{\code{SH20.29}}{Birth certificate}
+#'     \item{\code{SH20.30}}{Birth certificate}
+#'     \item{\code{SH20.31}}{Birth certificate}
+#'     \item{\code{SH20.32}}{Birth certificate}
+#'     \item{\code{SH20.33}}{Birth certificate}
+#'     \item{\code{SH20.34}}{Birth certificate}
+#'     \item{\code{SH20.35}}{Birth certificate}
+#'     \item{\code{SH20.36}}{Birth certificate}
+#'     \item{\code{SH20.37}}{Birth certificate}
+#'     \item{\code{SH20.38}}{Birth certificate}
+#'     \item{\code{SH20.39}}{Birth certificate}
+#'     \item{\code{SH20.40}}{Birth certificate}
+#'     \item{\code{SH20.41}}{Birth certificate}
+#'     \item{\code{SH20.42}}{Birth certificate}
+#'     \item{\code{SH20.43}}{Birth certificate}
+#'     \item{\code{SH20.44}}{Birth certificate}
+#'     \item{\code{SH20A.01}}{Have NIC card}
+#'     \item{\code{SH20A.02}}{Have NIC card}
+#'     \item{\code{SH20A.03}}{Have NIC card}
+#'     \item{\code{SH20A.04}}{Have NIC card}
+#'     \item{\code{SH20A.05}}{Have NIC card}
+#'     \item{\code{SH20A.06}}{Have NIC card}
+#'     \item{\code{SH20A.07}}{Have NIC card}
+#'     \item{\code{SH20A.08}}{Have NIC card}
+#'     \item{\code{SH20A.09}}{Have NIC card}
+#'     \item{\code{SH20A.10}}{Have NIC card}
+#'     \item{\code{SH20A.11}}{Have NIC card}
+#'     \item{\code{SH20A.12}}{Have NIC card}
+#'     \item{\code{SH20A.13}}{Have NIC card}
+#'     \item{\code{SH20A.14}}{Have NIC card}
+#'     \item{\code{SH20A.15}}{Have NIC card}
+#'     \item{\code{SH20A.16}}{Have NIC card}
+#'     \item{\code{SH20A.17}}{Have NIC card}
+#'     \item{\code{SH20A.18}}{Have NIC card}
+#'     \item{\code{SH20A.19}}{Have NIC card}
+#'     \item{\code{SH20A.20}}{Have NIC card}
+#'     \item{\code{SH20A.21}}{Have NIC card}
+#'     \item{\code{SH20A.22}}{Have NIC card}
+#'     \item{\code{SH20A.23}}{Have NIC card}
+#'     \item{\code{SH20A.24}}{Have NIC card}
+#'     \item{\code{SH20A.25}}{Have NIC card}
+#'     \item{\code{SH20A.26}}{Have NIC card}
+#'     \item{\code{SH20A.27}}{Have NIC card}
+#'     \item{\code{SH20A.28}}{Have NIC card}
+#'     \item{\code{SH20A.29}}{Have NIC card}
+#'     \item{\code{SH20A.30}}{Have NIC card}
+#'     \item{\code{SH20A.31}}{Have NIC card}
+#'     \item{\code{SH20A.32}}{Have NIC card}
+#'     \item{\code{SH20A.33}}{Have NIC card}
+#'     \item{\code{SH20A.34}}{Have NIC card}
+#'     \item{\code{SH20A.35}}{Have NIC card}
+#'     \item{\code{SH20A.36}}{Have NIC card}
+#'     \item{\code{SH20A.37}}{Have NIC card}
+#'     \item{\code{SH20A.38}}{Have NIC card}
+#'     \item{\code{SH20A.39}}{Have NIC card}
+#'     \item{\code{SH20A.40}}{Have NIC card}
+#'     \item{\code{SH20A.41}}{Have NIC card}
+#'     \item{\code{SH20A.42}}{Have NIC card}
+#'     \item{\code{SH20A.43}}{Have NIC card}
+#'     \item{\code{SH20A.44}}{Have NIC card}
+#'     \item{\code{SH21.01}}{Born in this village/city}
+#'     \item{\code{SH21.02}}{Born in this village/city}
+#'     \item{\code{SH21.03}}{Born in this village/city}
+#'     \item{\code{SH21.04}}{Born in this village/city}
+#'     \item{\code{SH21.05}}{Born in this village/city}
+#'     \item{\code{SH21.06}}{Born in this village/city}
+#'     \item{\code{SH21.07}}{Born in this village/city}
+#'     \item{\code{SH21.08}}{Born in this village/city}
+#'     \item{\code{SH21.09}}{Born in this village/city}
+#'     \item{\code{SH21.10}}{Born in this village/city}
+#'     \item{\code{SH21.11}}{Born in this village/city}
+#'     \item{\code{SH21.12}}{Born in this village/city}
+#'     \item{\code{SH21.13}}{Born in this village/city}
+#'     \item{\code{SH21.14}}{Born in this village/city}
+#'     \item{\code{SH21.15}}{Born in this village/city}
+#'     \item{\code{SH21.16}}{Born in this village/city}
+#'     \item{\code{SH21.17}}{Born in this village/city}
+#'     \item{\code{SH21.18}}{Born in this village/city}
+#'     \item{\code{SH21.19}}{Born in this village/city}
+#'     \item{\code{SH21.20}}{Born in this village/city}
+#'     \item{\code{SH21.21}}{Born in this village/city}
+#'     \item{\code{SH21.22}}{Born in this village/city}
+#'     \item{\code{SH21.23}}{Born in this village/city}
+#'     \item{\code{SH21.24}}{Born in this village/city}
+#'     \item{\code{SH21.25}}{Born in this village/city}
+#'     \item{\code{SH21.26}}{Born in this village/city}
+#'     \item{\code{SH21.27}}{Born in this village/city}
+#'     \item{\code{SH21.28}}{Born in this village/city}
+#'     \item{\code{SH21.29}}{Born in this village/city}
+#'     \item{\code{SH21.30}}{Born in this village/city}
+#'     \item{\code{SH21.31}}{Born in this village/city}
+#'     \item{\code{SH21.32}}{Born in this village/city}
+#'     \item{\code{SH21.33}}{Born in this village/city}
+#'     \item{\code{SH21.34}}{Born in this village/city}
+#'     \item{\code{SH21.35}}{Born in this village/city}
+#'     \item{\code{SH21.36}}{Born in this village/city}
+#'     \item{\code{SH21.37}}{Born in this village/city}
+#'     \item{\code{SH21.38}}{Born in this village/city}
+#'     \item{\code{SH21.39}}{Born in this village/city}
+#'     \item{\code{SH21.40}}{Born in this village/city}
+#'     \item{\code{SH21.41}}{Born in this village/city}
+#'     \item{\code{SH21.42}}{Born in this village/city}
+#'     \item{\code{SH21.43}}{Born in this village/city}
+#'     \item{\code{SH21.44}}{Born in this village/city}
+#'     \item{\code{SH21AU.01}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.02}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.03}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.04}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.05}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.06}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.07}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.08}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.09}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.10}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.11}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.12}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.13}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.14}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.15}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.16}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.17}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.18}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.19}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.20}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.21}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.22}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.23}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.24}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.25}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.26}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.27}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.28}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.29}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.30}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.31}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.32}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.33}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.34}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.35}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.36}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.37}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.38}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.39}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.40}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.41}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.42}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.43}}{Village/city was born: Unit}
+#'     \item{\code{SH21AU.44}}{Village/city was born: Unit}
+#'     \item{\code{SH21AN.01}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.02}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.03}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.04}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.05}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.06}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.07}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.08}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.09}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.10}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.11}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.12}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.13}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.14}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.15}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.16}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.17}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.18}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.19}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.20}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.21}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.22}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.23}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.24}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.25}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.26}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.27}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.28}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.29}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.30}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.31}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.32}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.33}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.34}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.35}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.36}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.37}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.38}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.39}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.40}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.41}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.42}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.43}}{Village/city/country was born: Code}
+#'     \item{\code{SH21AN.44}}{Village/city/country was born: Code}
+#'     \item{\code{SH22U.01}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.02}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.03}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.04}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.05}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.06}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.07}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.08}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.09}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.10}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.11}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.12}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.13}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.14}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.15}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.16}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.17}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.18}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.19}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.20}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.21}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.22}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.23}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.24}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.25}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.26}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.27}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.28}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.29}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.30}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.31}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.32}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.33}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.34}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.35}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.36}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.37}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.38}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.39}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.40}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.41}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.42}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.43}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22U.44}}{Place from where move to this village/city/country: Unit}
+#'     \item{\code{SH22N.01}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.02}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.03}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.04}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.05}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.06}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.07}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.08}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.09}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.10}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.11}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.12}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.13}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.14}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.15}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.16}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.17}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.18}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.19}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.20}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.21}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.22}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.23}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.24}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.25}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.26}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.27}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.28}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.29}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.30}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.31}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.32}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.33}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.34}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.35}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.36}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.37}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.38}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.39}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.40}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.41}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.42}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.43}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH22N.44}}{Place from where move to this village/city/country: Code}
+#'     \item{\code{SH23.01}}{Year when first move to this village/city}
+#'     \item{\code{SH23.02}}{Year when first move to this village/city}
+#'     \item{\code{SH23.03}}{Year when first move to this village/city}
+#'     \item{\code{SH23.04}}{Year when first move to this village/city}
+#'     \item{\code{SH23.05}}{Year when first move to this village/city}
+#'     \item{\code{SH23.06}}{Year when first move to this village/city}
+#'     \item{\code{SH23.07}}{Year when first move to this village/city}
+#'     \item{\code{SH23.08}}{Year when first move to this village/city}
+#'     \item{\code{SH23.09}}{Year when first move to this village/city}
+#'     \item{\code{SH23.10}}{Year when first move to this village/city}
+#'     \item{\code{SH23.11}}{Year when first move to this village/city}
+#'     \item{\code{SH23.12}}{Year when first move to this village/city}
+#'     \item{\code{SH23.13}}{Year when first move to this village/city}
+#'     \item{\code{SH23.14}}{Year when first move to this village/city}
+#'     \item{\code{SH23.15}}{Year when first move to this village/city}
+#'     \item{\code{SH23.16}}{Year when first move to this village/city}
+#'     \item{\code{SH23.17}}{Year when first move to this village/city}
+#'     \item{\code{SH23.18}}{Year when first move to this village/city}
+#'     \item{\code{SH23.19}}{Year when first move to this village/city}
+#'     \item{\code{SH23.20}}{Year when first move to this village/city}
+#'     \item{\code{SH23.21}}{Year when first move to this village/city}
+#'     \item{\code{SH23.22}}{Year when first move to this village/city}
+#'     \item{\code{SH23.23}}{Year when first move to this village/city}
+#'     \item{\code{SH23.24}}{Year when first move to this village/city}
+#'     \item{\code{SH23.25}}{Year when first move to this village/city}
+#'     \item{\code{SH23.26}}{Year when first move to this village/city}
+#'     \item{\code{SH23.27}}{Year when first move to this village/city}
+#'     \item{\code{SH23.28}}{Year when first move to this village/city}
+#'     \item{\code{SH23.29}}{Year when first move to this village/city}
+#'     \item{\code{SH23.30}}{Year when first move to this village/city}
+#'     \item{\code{SH23.31}}{Year when first move to this village/city}
+#'     \item{\code{SH23.32}}{Year when first move to this village/city}
+#'     \item{\code{SH23.33}}{Year when first move to this village/city}
+#'     \item{\code{SH23.34}}{Year when first move to this village/city}
+#'     \item{\code{SH23.35}}{Year when first move to this village/city}
+#'     \item{\code{SH23.36}}{Year when first move to this village/city}
+#'     \item{\code{SH23.37}}{Year when first move to this village/city}
+#'     \item{\code{SH23.38}}{Year when first move to this village/city}
+#'     \item{\code{SH23.39}}{Year when first move to this village/city}
+#'     \item{\code{SH23.40}}{Year when first move to this village/city}
+#'     \item{\code{SH23.41}}{Year when first move to this village/city}
+#'     \item{\code{SH23.42}}{Year when first move to this village/city}
+#'     \item{\code{SH23.43}}{Year when first move to this village/city}
+#'     \item{\code{SH23.44}}{Year when first move to this village/city}
+#'     \item{\code{SH24.01}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.02}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.03}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.04}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.05}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.06}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.07}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.08}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.09}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.10}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.11}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.12}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.13}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.14}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.15}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.16}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.17}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.18}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.19}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.20}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.21}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.22}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.23}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.24}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.25}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.26}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.27}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.28}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.29}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.30}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.31}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.32}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.33}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.34}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.35}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.36}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.37}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.38}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.39}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.40}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.41}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.42}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.43}}{Primary reason to move to this village/city}
+#'     \item{\code{SH24.44}}{Primary reason to move to this village/city}
+#'     \item{\code{HA0.1}}{Index to Household Schedule}
+#'     \item{\code{HA0.2}}{Index to Household Schedule}
+#'     \item{\code{HA0.3}}{Index to Household Schedule}
+#'     \item{\code{HA0.4}}{Index to Household Schedule}
+#'     \item{\code{HA0.5}}{Index to Household Schedule}
+#'     \item{\code{HA0.6}}{Index to Household Schedule}
+#'     \item{\code{HA0.7}}{Index to Household Schedule}
+#'     \item{\code{HA1.1}}{Woman's age in years}
+#'     \item{\code{HA1.2}}{Woman's age in years}
+#'     \item{\code{HA1.3}}{Woman's age in years}
+#'     \item{\code{HA1.4}}{Woman's age in years}
+#'     \item{\code{HA1.5}}{Woman's age in years}
+#'     \item{\code{HA1.6}}{Woman's age in years}
+#'     \item{\code{HA1.7}}{Woman's age in years}
+#'     \item{\code{HA2.1}}{Woman's weight in kilograms (1 decimal)}
+#'     \item{\code{HA2.2}}{Woman's weight in kilograms (1 decimal)}
+#'     \item{\code{HA2.3}}{Woman's weight in kilograms (1 decimal)}
+#'     \item{\code{HA2.4}}{Woman's weight in kilograms (1 decimal)}
+#'     \item{\code{HA2.5}}{Woman's weight in kilograms (1 decimal)}
+#'     \item{\code{HA2.6}}{Woman's weight in kilograms (1 decimal)}
+#'     \item{\code{HA2.7}}{Woman's weight in kilograms (1 decimal)}
+#'     \item{\code{HA3.1}}{Woman's height in centimeters (1 decimal)}
+#'     \item{\code{HA3.2}}{Woman's height in centimeters (1 decimal)}
+#'     \item{\code{HA3.3}}{Woman's height in centimeters (1 decimal)}
+#'     \item{\code{HA3.4}}{Woman's height in centimeters (1 decimal)}
+#'     \item{\code{HA3.5}}{Woman's height in centimeters (1 decimal)}
+#'     \item{\code{HA3.6}}{Woman's height in centimeters (1 decimal)}
+#'     \item{\code{HA3.7}}{Woman's height in centimeters (1 decimal)}
+#'     \item{\code{HA4.1}}{Height/Age percentile}
+#'     \item{\code{HA4.2}}{Height/Age percentile}
+#'     \item{\code{HA4.3}}{Height/Age percentile}
+#'     \item{\code{HA4.4}}{Height/Age percentile}
+#'     \item{\code{HA4.5}}{Height/Age percentile}
+#'     \item{\code{HA4.6}}{Height/Age percentile}
+#'     \item{\code{HA4.7}}{Height/Age percentile}
+#'     \item{\code{HA5.1}}{Height/Age standard deviation}
+#'     \item{\code{HA5.2}}{Height/Age standard deviation}
+#'     \item{\code{HA5.3}}{Height/Age standard deviation}
+#'     \item{\code{HA5.4}}{Height/Age standard deviation}
+#'     \item{\code{HA5.5}}{Height/Age standard deviation}
+#'     \item{\code{HA5.6}}{Height/Age standard deviation}
+#'     \item{\code{HA5.7}}{Height/Age standard deviation}
+#'     \item{\code{HA6.1}}{Height/Age percent ref. median}
+#'     \item{\code{HA6.2}}{Height/Age percent ref. median}
+#'     \item{\code{HA6.3}}{Height/Age percent ref. median}
+#'     \item{\code{HA6.4}}{Height/Age percent ref. median}
+#'     \item{\code{HA6.5}}{Height/Age percent ref. median}
+#'     \item{\code{HA6.6}}{Height/Age percent ref. median}
+#'     \item{\code{HA6.7}}{Height/Age percent ref. median}
+#'     \item{\code{HA11.1}}{Weight/Height standard deviation (DHS)}
+#'     \item{\code{HA11.2}}{Weight/Height standard deviation (DHS)}
+#'     \item{\code{HA11.3}}{Weight/Height standard deviation (DHS)}
+#'     \item{\code{HA11.4}}{Weight/Height standard deviation (DHS)}
+#'     \item{\code{HA11.5}}{Weight/Height standard deviation (DHS)}
+#'     \item{\code{HA11.6}}{Weight/Height standard deviation (DHS)}
+#'     \item{\code{HA11.7}}{Weight/Height standard deviation (DHS)}
+#'     \item{\code{HA12.1}}{Weight/Height percent ref. median (DHS)}
+#'     \item{\code{HA12.2}}{Weight/Height percent ref. median (DHS)}
+#'     \item{\code{HA12.3}}{Weight/Height percent ref. median (DHS)}
+#'     \item{\code{HA12.4}}{Weight/Height percent ref. median (DHS)}
+#'     \item{\code{HA12.5}}{Weight/Height percent ref. median (DHS)}
+#'     \item{\code{HA12.6}}{Weight/Height percent ref. median (DHS)}
+#'     \item{\code{HA12.7}}{Weight/Height percent ref. median (DHS)}
+#'     \item{\code{HA12A.1}}{Weight/Height percent ref. median (Fog)}
+#'     \item{\code{HA12A.2}}{Weight/Height percent ref. median (Fog)}
+#'     \item{\code{HA12A.3}}{Weight/Height percent ref. median (Fog)}
+#'     \item{\code{HA12A.4}}{Weight/Height percent ref. median (Fog)}
+#'     \item{\code{HA12A.5}}{Weight/Height percent ref. median (Fog)}
+#'     \item{\code{HA12A.6}}{Weight/Height percent ref. median (Fog)}
+#'     \item{\code{HA12A.7}}{Weight/Height percent ref. median (Fog)}
+#'     \item{\code{HA12B.1}}{Weight/Height percent ref. median (WHO)}
+#'     \item{\code{HA12B.2}}{Weight/Height percent ref. median (WHO)}
+#'     \item{\code{HA12B.3}}{Weight/Height percent ref. median (WHO)}
+#'     \item{\code{HA12B.4}}{Weight/Height percent ref. median (WHO)}
+#'     \item{\code{HA12B.5}}{Weight/Height percent ref. median (WHO)}
+#'     \item{\code{HA12B.6}}{Weight/Height percent ref. median (WHO)}
+#'     \item{\code{HA12B.7}}{Weight/Height percent ref. median (WHO)}
+#'     \item{\code{HA13.1}}{Result of measurement - height/weight}
+#'     \item{\code{HA13.2}}{Result of measurement - height/weight}
+#'     \item{\code{HA13.3}}{Result of measurement - height/weight}
+#'     \item{\code{HA13.4}}{Result of measurement - height/weight}
+#'     \item{\code{HA13.5}}{Result of measurement - height/weight}
+#'     \item{\code{HA13.6}}{Result of measurement - height/weight}
+#'     \item{\code{HA13.7}}{Result of measurement - height/weight}
+#'     \item{\code{HA21.1}}{Fieldworker measurer code}
+#'     \item{\code{HA21.2}}{Fieldworker measurer code}
+#'     \item{\code{HA21.3}}{Fieldworker measurer code}
+#'     \item{\code{HA21.4}}{Fieldworker measurer code}
+#'     \item{\code{HA21.5}}{Fieldworker measurer code}
+#'     \item{\code{HA21.6}}{Fieldworker measurer code}
+#'     \item{\code{HA21.7}}{Fieldworker measurer code}
+#'     \item{\code{HA32.1}}{Date of birth (CMC)}
+#'     \item{\code{HA32.2}}{Date of birth (CMC)}
+#'     \item{\code{HA32.3}}{Date of birth (CMC)}
+#'     \item{\code{HA32.4}}{Date of birth (CMC)}
+#'     \item{\code{HA32.5}}{Date of birth (CMC)}
+#'     \item{\code{HA32.6}}{Date of birth (CMC)}
+#'     \item{\code{HA32.7}}{Date of birth (CMC)}
+#'     \item{\code{HA33.1}}{Completeness of HA32 information}
+#'     \item{\code{HA33.2}}{Completeness of HA32 information}
+#'     \item{\code{HA33.3}}{Completeness of HA32 information}
+#'     \item{\code{HA33.4}}{Completeness of HA32 information}
+#'     \item{\code{HA33.5}}{Completeness of HA32 information}
+#'     \item{\code{HA33.6}}{Completeness of HA32 information}
+#'     \item{\code{HA33.7}}{Completeness of HA32 information}
+#'     \item{\code{HA35.1}}{Smoking (cigarettes in last 24 hours)}
+#'     \item{\code{HA35.2}}{Smoking (cigarettes in last 24 hours)}
+#'     \item{\code{HA35.3}}{Smoking (cigarettes in last 24 hours)}
+#'     \item{\code{HA35.4}}{Smoking (cigarettes in last 24 hours)}
+#'     \item{\code{HA35.5}}{Smoking (cigarettes in last 24 hours)}
+#'     \item{\code{HA35.6}}{Smoking (cigarettes in last 24 hours)}
+#'     \item{\code{HA35.7}}{Smoking (cigarettes in last 24 hours)}
+#'     \item{\code{HA40.1}}{Body Mass Index}
+#'     \item{\code{HA40.2}}{Body Mass Index}
+#'     \item{\code{HA40.3}}{Body Mass Index}
+#'     \item{\code{HA40.4}}{Body Mass Index}
+#'     \item{\code{HA40.5}}{Body Mass Index}
+#'     \item{\code{HA40.6}}{Body Mass Index}
+#'     \item{\code{HA40.7}}{Body Mass Index}
+#'     \item{\code{HA41.1}}{Rohrer's index}
+#'     \item{\code{HA41.2}}{Rohrer's index}
+#'     \item{\code{HA41.3}}{Rohrer's index}
+#'     \item{\code{HA41.4}}{Rohrer's index}
+#'     \item{\code{HA41.5}}{Rohrer's index}
+#'     \item{\code{HA41.6}}{Rohrer's index}
+#'     \item{\code{HA41.7}}{Rohrer's index}
+#'     \item{\code{HA50.1}}{NA - Under age 18}
+#'     \item{\code{HA50.2}}{NA - Under age 18}
+#'     \item{\code{HA50.3}}{NA - Under age 18}
+#'     \item{\code{HA50.4}}{NA - Under age 18}
+#'     \item{\code{HA50.5}}{NA - Under age 18}
+#'     \item{\code{HA50.6}}{NA - Under age 18}
+#'     \item{\code{HA50.7}}{NA - Under age 18}
+#'     \item{\code{HA51.1}}{NA - Line number of parent/caretaker}
+#'     \item{\code{HA51.2}}{NA - Line number of parent/caretaker}
+#'     \item{\code{HA51.3}}{NA - Line number of parent/caretaker}
+#'     \item{\code{HA51.4}}{NA - Line number of parent/caretaker}
+#'     \item{\code{HA51.5}}{NA - Line number of parent/caretaker}
+#'     \item{\code{HA51.6}}{NA - Line number of parent/caretaker}
+#'     \item{\code{HA51.7}}{NA - Line number of parent/caretaker}
+#'     \item{\code{HA52.1}}{NA - Read consent statement - hemoglobin}
+#'     \item{\code{HA52.2}}{NA - Read consent statement - hemoglobin}
+#'     \item{\code{HA52.3}}{NA - Read consent statement - hemoglobin}
+#'     \item{\code{HA52.4}}{NA - Read consent statement - hemoglobin}
+#'     \item{\code{HA52.5}}{NA - Read consent statement - hemoglobin}
+#'     \item{\code{HA52.6}}{NA - Read consent statement - hemoglobin}
+#'     \item{\code{HA52.7}}{NA - Read consent statement - hemoglobin}
+#'     \item{\code{HA53.1}}{NA - Hemoglobin level (g/dl - 1 decimal)}
+#'     \item{\code{HA53.2}}{NA - Hemoglobin level (g/dl - 1 decimal)}
+#'     \item{\code{HA53.3}}{NA - Hemoglobin level (g/dl - 1 decimal)}
+#'     \item{\code{HA53.4}}{NA - Hemoglobin level (g/dl - 1 decimal)}
+#'     \item{\code{HA53.5}}{NA - Hemoglobin level (g/dl - 1 decimal)}
+#'     \item{\code{HA53.6}}{NA - Hemoglobin level (g/dl - 1 decimal)}
+#'     \item{\code{HA53.7}}{NA - Hemoglobin level (g/dl - 1 decimal)}
+#'     \item{\code{HA54.1}}{Currently pregnant}
+#'     \item{\code{HA54.2}}{Currently pregnant}
+#'     \item{\code{HA54.3}}{Currently pregnant}
+#'     \item{\code{HA54.4}}{Currently pregnant}
+#'     \item{\code{HA54.5}}{Currently pregnant}
+#'     \item{\code{HA54.6}}{Currently pregnant}
+#'     \item{\code{HA54.7}}{Currently pregnant}
+#'     \item{\code{HA55.1}}{NA - Result of measurement - hemoglobin}
+#'     \item{\code{HA55.2}}{NA - Result of measurement - hemoglobin}
+#'     \item{\code{HA55.3}}{NA - Result of measurement - hemoglobin}
+#'     \item{\code{HA55.4}}{NA - Result of measurement - hemoglobin}
+#'     \item{\code{HA55.5}}{NA - Result of measurement - hemoglobin}
+#'     \item{\code{HA55.6}}{NA - Result of measurement - hemoglobin}
+#'     \item{\code{HA55.7}}{NA - Result of measurement - hemoglobin}
+#'     \item{\code{HA56.1}}{NA - Hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal)}
+#'     \item{\code{HA56.2}}{NA - Hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal)}
+#'     \item{\code{HA56.3}}{NA - Hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal)}
+#'     \item{\code{HA56.4}}{NA - Hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal)}
+#'     \item{\code{HA56.5}}{NA - Hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal)}
+#'     \item{\code{HA56.6}}{NA - Hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal)}
+#'     \item{\code{HA56.7}}{NA - Hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal)}
+#'     \item{\code{HA57.1}}{NA - Anemia level}
+#'     \item{\code{HA57.2}}{NA - Anemia level}
+#'     \item{\code{HA57.3}}{NA - Anemia level}
+#'     \item{\code{HA57.4}}{NA - Anemia level}
+#'     \item{\code{HA57.5}}{NA - Anemia level}
+#'     \item{\code{HA57.6}}{NA - Anemia level}
+#'     \item{\code{HA57.7}}{NA - Anemia level}
+#'     \item{\code{HA58.1}}{NA - Agrees to referral - anemia}
+#'     \item{\code{HA58.2}}{NA - Agrees to referral - anemia}
+#'     \item{\code{HA58.3}}{NA - Agrees to referral - anemia}
+#'     \item{\code{HA58.4}}{NA - Agrees to referral - anemia}
+#'     \item{\code{HA58.5}}{NA - Agrees to referral - anemia}
+#'     \item{\code{HA58.6}}{NA - Agrees to referral - anemia}
+#'     \item{\code{HA58.7}}{NA - Agrees to referral - anemia}
+#'     \item{\code{HA60.1}}{NA - Marital status}
+#'     \item{\code{HA60.2}}{NA - Marital status}
+#'     \item{\code{HA60.3}}{NA - Marital status}
+#'     \item{\code{HA60.4}}{NA - Marital status}
+#'     \item{\code{HA60.5}}{NA - Marital status}
+#'     \item{\code{HA60.6}}{NA - Marital status}
+#'     \item{\code{HA60.7}}{NA - Marital status}
+#'     \item{\code{HA61.1}}{NA - Read consent statement - HIV}
+#'     \item{\code{HA61.2}}{NA - Read consent statement - HIV}
+#'     \item{\code{HA61.3}}{NA - Read consent statement - HIV}
+#'     \item{\code{HA61.4}}{NA - Read consent statement - HIV}
+#'     \item{\code{HA61.5}}{NA - Read consent statement - HIV}
+#'     \item{\code{HA61.6}}{NA - Read consent statement - HIV}
+#'     \item{\code{HA61.7}}{NA - Read consent statement - HIV}
+#'     \item{\code{HA62.1}}{Bar code for HIV blood sample}
+#'     \item{\code{HA62.2}}{Bar code for HIV blood sample}
+#'     \item{\code{HA62.3}}{Bar code for HIV blood sample}
+#'     \item{\code{HA62.4}}{Bar code for HIV blood sample}
+#'     \item{\code{HA62.5}}{Bar code for HIV blood sample}
+#'     \item{\code{HA62.6}}{Bar code for HIV blood sample}
+#'     \item{\code{HA62.7}}{Bar code for HIV blood sample}
+#'     \item{\code{HA63.1}}{NA - Result of measurement - HIV}
+#'     \item{\code{HA63.2}}{NA - Result of measurement - HIV}
+#'     \item{\code{HA63.3}}{NA - Result of measurement - HIV}
+#'     \item{\code{HA63.4}}{NA - Result of measurement - HIV}
+#'     \item{\code{HA63.5}}{NA - Result of measurement - HIV}
+#'     \item{\code{HA63.6}}{NA - Result of measurement - HIV}
+#'     \item{\code{HA63.7}}{NA - Result of measurement - HIV}
+#'     \item{\code{HA64.1}}{NA - Consent for additional tests}
+#'     \item{\code{HA64.2}}{NA - Consent for additional tests}
+#'     \item{\code{HA64.3}}{NA - Consent for additional tests}
+#'     \item{\code{HA64.4}}{NA - Consent for additional tests}
+#'     \item{\code{HA64.5}}{NA - Consent for additional tests}
+#'     \item{\code{HA64.6}}{NA - Consent for additional tests}
+#'     \item{\code{HA64.7}}{NA - Consent for additional tests}
+#'     \item{\code{HA65.1}}{Result of woman's individual interview}
+#'     \item{\code{HA65.2}}{Result of woman's individual interview}
+#'     \item{\code{HA65.3}}{Result of woman's individual interview}
+#'     \item{\code{HA65.4}}{Result of woman's individual interview}
+#'     \item{\code{HA65.5}}{Result of woman's individual interview}
+#'     \item{\code{HA65.6}}{Result of woman's individual interview}
+#'     \item{\code{HA65.7}}{Result of woman's individual interview}
+#'     \item{\code{HA66.1}}{Woman's highest educational level}
+#'     \item{\code{HA66.2}}{Woman's highest educational level}
+#'     \item{\code{HA66.3}}{Woman's highest educational level}
+#'     \item{\code{HA66.4}}{Woman's highest educational level}
+#'     \item{\code{HA66.5}}{Woman's highest educational level}
+#'     \item{\code{HA66.6}}{Woman's highest educational level}
+#'     \item{\code{HA66.7}}{Woman's highest educational level}
+#'     \item{\code{HA67.1}}{Woman's highest year of education}
+#'     \item{\code{HA67.2}}{Woman's highest year of education}
+#'     \item{\code{HA67.3}}{Woman's highest year of education}
+#'     \item{\code{HA67.4}}{Woman's highest year of education}
+#'     \item{\code{HA67.5}}{Woman's highest year of education}
+#'     \item{\code{HA67.6}}{Woman's highest year of education}
+#'     \item{\code{HA67.7}}{Woman's highest year of education}
+#'     \item{\code{HA68.1}}{Woman's highest educational level (for preliminary and final report)}
+#'     \item{\code{HA68.2}}{Woman's highest educational level (for preliminary and final report)}
+#'     \item{\code{HA68.3}}{Woman's highest educational level (for preliminary and final report)}
+#'     \item{\code{HA68.4}}{Woman's highest educational level (for preliminary and final report)}
+#'     \item{\code{HA68.5}}{Woman's highest educational level (for preliminary and final report)}
+#'     \item{\code{HA68.6}}{Woman's highest educational level (for preliminary and final report)}
+#'     \item{\code{HA68.7}}{Woman's highest educational level (for preliminary and final report)}
+#'     \item{\code{HA69.1}}{NA - HIV weight (6 decimals)}
+#'     \item{\code{HA69.2}}{NA - HIV weight (6 decimals)}
+#'     \item{\code{HA69.3}}{NA - HIV weight (6 decimals)}
+#'     \item{\code{HA69.4}}{NA - HIV weight (6 decimals)}
+#'     \item{\code{HA69.5}}{NA - HIV weight (6 decimals)}
+#'     \item{\code{HA69.6}}{NA - HIV weight (6 decimals)}
+#'     \item{\code{HA69.7}}{NA - HIV weight (6 decimals)}
+#'     \item{\code{HA70.1}}{NA - Interviewer that took blood for HIV testing}
+#'     \item{\code{HA70.2}}{NA - Interviewer that took blood for HIV testing}
+#'     \item{\code{HA70.3}}{NA - Interviewer that took blood for HIV testing}
+#'     \item{\code{HA70.4}}{NA - Interviewer that took blood for HIV testing}
+#'     \item{\code{HA70.5}}{NA - Interviewer that took blood for HIV testing}
+#'     \item{\code{HA70.6}}{NA - Interviewer that took blood for HIV testing}
+#'     \item{\code{HA70.7}}{NA - Interviewer that took blood for HIV testing}
+#'     \item{\code{HC0.1}}{Index to Household Schedule}
+#'     \item{\code{HC0.2}}{Index to Household Schedule}
+#'     \item{\code{HC0.3}}{Index to Household Schedule}
+#'     \item{\code{HC0.4}}{Index to Household Schedule}
+#'     \item{\code{HC0.5}}{Index to Household Schedule}
+#'     \item{\code{HC0.6}}{Index to Household Schedule}
+#'     \item{\code{HC0.7}}{Index to Household Schedule}
+#'     \item{\code{HC0.8}}{Index to Household Schedule}
+#'     \item{\code{HC0.9}}{Index to Household Schedule}
+#'     \item{\code{HC1.1}}{Child's age in months}
+#'     \item{\code{HC1.2}}{Child's age in months}
+#'     \item{\code{HC1.3}}{Child's age in months}
+#'     \item{\code{HC1.4}}{Child's age in months}
+#'     \item{\code{HC1.5}}{Child's age in months}
+#'     \item{\code{HC1.6}}{Child's age in months}
+#'     \item{\code{HC1.7}}{Child's age in months}
+#'     \item{\code{HC1.8}}{Child's age in months}
+#'     \item{\code{HC1.9}}{Child's age in months}
+#'     \item{\code{HC1A.1}}{Child's age in days}
+#'     \item{\code{HC1A.2}}{Child's age in days}
+#'     \item{\code{HC1A.3}}{Child's age in days}
+#'     \item{\code{HC1A.4}}{Child's age in days}
+#'     \item{\code{HC1A.5}}{Child's age in days}
+#'     \item{\code{HC1A.6}}{Child's age in days}
+#'     \item{\code{HC1A.7}}{Child's age in days}
+#'     \item{\code{HC1A.8}}{Child's age in days}
+#'     \item{\code{HC1A.9}}{Child's age in days}
+#'     \item{\code{HC2.1}}{Child's weight in kilograms (1 decimal)}
+#'     \item{\code{HC2.2}}{Child's weight in kilograms (1 decimal)}
+#'     \item{\code{HC2.3}}{Child's weight in kilograms (1 decimal)}
+#'     \item{\code{HC2.4}}{Child's weight in kilograms (1 decimal)}
+#'     \item{\code{HC2.5}}{Child's weight in kilograms (1 decimal)}
+#'     \item{\code{HC2.6}}{Child's weight in kilograms (1 decimal)}
+#'     \item{\code{HC2.7}}{Child's weight in kilograms (1 decimal)}
+#'     \item{\code{HC2.8}}{Child's weight in kilograms (1 decimal)}
+#'     \item{\code{HC2.9}}{Child's weight in kilograms (1 decimal)}
+#'     \item{\code{HC3.1}}{Child's height in centimeters (1 decimal)}
+#'     \item{\code{HC3.2}}{Child's height in centimeters (1 decimal)}
+#'     \item{\code{HC3.3}}{Child's height in centimeters (1 decimal)}
+#'     \item{\code{HC3.4}}{Child's height in centimeters (1 decimal)}
+#'     \item{\code{HC3.5}}{Child's height in centimeters (1 decimal)}
+#'     \item{\code{HC3.6}}{Child's height in centimeters (1 decimal)}
+#'     \item{\code{HC3.7}}{Child's height in centimeters (1 decimal)}
+#'     \item{\code{HC3.8}}{Child's height in centimeters (1 decimal)}
+#'     \item{\code{HC3.9}}{Child's height in centimeters (1 decimal)}
+#'     \item{\code{HC4.1}}{Height/Age percentile}
+#'     \item{\code{HC4.2}}{Height/Age percentile}
+#'     \item{\code{HC4.3}}{Height/Age percentile}
+#'     \item{\code{HC4.4}}{Height/Age percentile}
+#'     \item{\code{HC4.5}}{Height/Age percentile}
+#'     \item{\code{HC4.6}}{Height/Age percentile}
+#'     \item{\code{HC4.7}}{Height/Age percentile}
+#'     \item{\code{HC4.8}}{Height/Age percentile}
+#'     \item{\code{HC4.9}}{Height/Age percentile}
+#'     \item{\code{HC5.1}}{Height/Age standard deviation}
+#'     \item{\code{HC5.2}}{Height/Age standard deviation}
+#'     \item{\code{HC5.3}}{Height/Age standard deviation}
+#'     \item{\code{HC5.4}}{Height/Age standard deviation}
+#'     \item{\code{HC5.5}}{Height/Age standard deviation}
+#'     \item{\code{HC5.6}}{Height/Age standard deviation}
+#'     \item{\code{HC5.7}}{Height/Age standard deviation}
+#'     \item{\code{HC5.8}}{Height/Age standard deviation}
+#'     \item{\code{HC5.9}}{Height/Age standard deviation}
+#'     \item{\code{HC6.1}}{Height/Age percent of ref. median}
+#'     \item{\code{HC6.2}}{Height/Age percent of ref. median}
+#'     \item{\code{HC6.3}}{Height/Age percent of ref. median}
+#'     \item{\code{HC6.4}}{Height/Age percent of ref. median}
+#'     \item{\code{HC6.5}}{Height/Age percent of ref. median}
+#'     \item{\code{HC6.6}}{Height/Age percent of ref. median}
+#'     \item{\code{HC6.7}}{Height/Age percent of ref. median}
+#'     \item{\code{HC6.8}}{Height/Age percent of ref. median}
+#'     \item{\code{HC6.9}}{Height/Age percent of ref. median}
+#'     \item{\code{HC7.1}}{Weight/Age percentile}
+#'     \item{\code{HC7.2}}{Weight/Age percentile}
+#'     \item{\code{HC7.3}}{Weight/Age percentile}
+#'     \item{\code{HC7.4}}{Weight/Age percentile}
+#'     \item{\code{HC7.5}}{Weight/Age percentile}
+#'     \item{\code{HC7.6}}{Weight/Age percentile}
+#'     \item{\code{HC7.7}}{Weight/Age percentile}
+#'     \item{\code{HC7.8}}{Weight/Age percentile}
+#'     \item{\code{HC7.9}}{Weight/Age percentile}
+#'     \item{\code{HC8.1}}{Weight/Age standard deviation}
+#'     \item{\code{HC8.2}}{Weight/Age standard deviation}
+#'     \item{\code{HC8.3}}{Weight/Age standard deviation}
+#'     \item{\code{HC8.4}}{Weight/Age standard deviation}
+#'     \item{\code{HC8.5}}{Weight/Age standard deviation}
+#'     \item{\code{HC8.6}}{Weight/Age standard deviation}
+#'     \item{\code{HC8.7}}{Weight/Age standard deviation}
+#'     \item{\code{HC8.8}}{Weight/Age standard deviation}
+#'     \item{\code{HC8.9}}{Weight/Age standard deviation}
+#'     \item{\code{HC9.1}}{Weight/Age percent of ref. median}
+#'     \item{\code{HC9.2}}{Weight/Age percent of ref. median}
+#'     \item{\code{HC9.3}}{Weight/Age percent of ref. median}
+#'     \item{\code{HC9.4}}{Weight/Age percent of ref. median}
+#'     \item{\code{HC9.5}}{Weight/Age percent of ref. median}
+#'     \item{\code{HC9.6}}{Weight/Age percent of ref. median}
+#'     \item{\code{HC9.7}}{Weight/Age percent of ref. median}
+#'     \item{\code{HC9.8}}{Weight/Age percent of ref. median}
+#'     \item{\code{HC9.9}}{Weight/Age percent of ref. median}
+#'     \item{\code{HC10.1}}{Weight/Height percentile}
+#'     \item{\code{HC10.2}}{Weight/Height percentile}
+#'     \item{\code{HC10.3}}{Weight/Height percentile}
+#'     \item{\code{HC10.4}}{Weight/Height percentile}
+#'     \item{\code{HC10.5}}{Weight/Height percentile}
+#'     \item{\code{HC10.6}}{Weight/Height percentile}
+#'     \item{\code{HC10.7}}{Weight/Height percentile}
+#'     \item{\code{HC10.8}}{Weight/Height percentile}
+#'     \item{\code{HC10.9}}{Weight/Height percentile}
+#'     \item{\code{HC11.1}}{Weight/Height standard deviation}
+#'     \item{\code{HC11.2}}{Weight/Height standard deviation}
+#'     \item{\code{HC11.3}}{Weight/Height standard deviation}
+#'     \item{\code{HC11.4}}{Weight/Height standard deviation}
+#'     \item{\code{HC11.5}}{Weight/Height standard deviation}
+#'     \item{\code{HC11.6}}{Weight/Height standard deviation}
+#'     \item{\code{HC11.7}}{Weight/Height standard deviation}
+#'     \item{\code{HC11.8}}{Weight/Height standard deviation}
+#'     \item{\code{HC11.9}}{Weight/Height standard deviation}
+#'     \item{\code{HC12.1}}{Weight/Height percent of ref. median}
+#'     \item{\code{HC12.2}}{Weight/Height percent of ref. median}
+#'     \item{\code{HC12.3}}{Weight/Height percent of ref. median}
+#'     \item{\code{HC12.4}}{Weight/Height percent of ref. median}
+#'     \item{\code{HC12.5}}{Weight/Height percent of ref. median}
+#'     \item{\code{HC12.6}}{Weight/Height percent of ref. median}
+#'     \item{\code{HC12.7}}{Weight/Height percent of ref. median}
+#'     \item{\code{HC12.8}}{Weight/Height percent of ref. median}
+#'     \item{\code{HC12.9}}{Weight/Height percent of ref. median}
+#'     \item{\code{HC13.1}}{Result of measurement - height/weight}
+#'     \item{\code{HC13.2}}{Result of measurement - height/weight}
+#'     \item{\code{HC13.3}}{Result of measurement - height/weight}
+#'     \item{\code{HC13.4}}{Result of measurement - height/weight}
+#'     \item{\code{HC13.5}}{Result of measurement - height/weight}
+#'     \item{\code{HC13.6}}{Result of measurement - height/weight}
+#'     \item{\code{HC13.7}}{Result of measurement - height/weight}
+#'     \item{\code{HC13.8}}{Result of measurement - height/weight}
+#'     \item{\code{HC13.9}}{Result of measurement - height/weight}
+#'     \item{\code{HC15.1}}{Height: lying or standing}
+#'     \item{\code{HC15.2}}{Height: lying or standing}
+#'     \item{\code{HC15.3}}{Height: lying or standing}
+#'     \item{\code{HC15.4}}{Height: lying or standing}
+#'     \item{\code{HC15.5}}{Height: lying or standing}
+#'     \item{\code{HC15.6}}{Height: lying or standing}
+#'     \item{\code{HC15.7}}{Height: lying or standing}
+#'     \item{\code{HC15.8}}{Height: lying or standing}
+#'     \item{\code{HC15.9}}{Height: lying or standing}
+#'     \item{\code{HC16.1}}{Day of birth}
+#'     \item{\code{HC16.2}}{Day of birth}
+#'     \item{\code{HC16.3}}{Day of birth}
+#'     \item{\code{HC16.4}}{Day of birth}
+#'     \item{\code{HC16.5}}{Day of birth}
+#'     \item{\code{HC16.6}}{Day of birth}
+#'     \item{\code{HC16.7}}{Day of birth}
+#'     \item{\code{HC16.8}}{Day of birth}
+#'     \item{\code{HC16.9}}{Day of birth}
+#'     \item{\code{HC17.1}}{Date measured (day)}
+#'     \item{\code{HC17.2}}{Date measured (day)}
+#'     \item{\code{HC17.3}}{Date measured (day)}
+#'     \item{\code{HC17.4}}{Date measured (day)}
+#'     \item{\code{HC17.5}}{Date measured (day)}
+#'     \item{\code{HC17.6}}{Date measured (day)}
+#'     \item{\code{HC17.7}}{Date measured (day)}
+#'     \item{\code{HC17.8}}{Date measured (day)}
+#'     \item{\code{HC17.9}}{Date measured (day)}
+#'     \item{\code{HC18.1}}{Date measured (month)}
+#'     \item{\code{HC18.2}}{Date measured (month)}
+#'     \item{\code{HC18.3}}{Date measured (month)}
+#'     \item{\code{HC18.4}}{Date measured (month)}
+#'     \item{\code{HC18.5}}{Date measured (month)}
+#'     \item{\code{HC18.6}}{Date measured (month)}
+#'     \item{\code{HC18.7}}{Date measured (month)}
+#'     \item{\code{HC18.8}}{Date measured (month)}
+#'     \item{\code{HC18.9}}{Date measured (month)}
+#'     \item{\code{HC19.1}}{Date measured (year)}
+#'     \item{\code{HC19.2}}{Date measured (year)}
+#'     \item{\code{HC19.3}}{Date measured (year)}
+#'     \item{\code{HC19.4}}{Date measured (year)}
+#'     \item{\code{HC19.5}}{Date measured (year)}
+#'     \item{\code{HC19.6}}{Date measured (year)}
+#'     \item{\code{HC19.7}}{Date measured (year)}
+#'     \item{\code{HC19.8}}{Date measured (year)}
+#'     \item{\code{HC19.9}}{Date measured (year)}
+#'     \item{\code{HC20.1}}{Century Day Code (CDC) of measurement}
+#'     \item{\code{HC20.2}}{Century Day Code (CDC) of measurement}
+#'     \item{\code{HC20.3}}{Century Day Code (CDC) of measurement}
+#'     \item{\code{HC20.4}}{Century Day Code (CDC) of measurement}
+#'     \item{\code{HC20.5}}{Century Day Code (CDC) of measurement}
+#'     \item{\code{HC20.6}}{Century Day Code (CDC) of measurement}
+#'     \item{\code{HC20.7}}{Century Day Code (CDC) of measurement}
+#'     \item{\code{HC20.8}}{Century Day Code (CDC) of measurement}
+#'     \item{\code{HC20.9}}{Century Day Code (CDC) of measurement}
+#'     \item{\code{HC21.1}}{Fieldworker measurer code}
+#'     \item{\code{HC21.2}}{Fieldworker measurer code}
+#'     \item{\code{HC21.3}}{Fieldworker measurer code}
+#'     \item{\code{HC21.4}}{Fieldworker measurer code}
+#'     \item{\code{HC21.5}}{Fieldworker measurer code}
+#'     \item{\code{HC21.6}}{Fieldworker measurer code}
+#'     \item{\code{HC21.7}}{Fieldworker measurer code}
+#'     \item{\code{HC21.8}}{Fieldworker measurer code}
+#'     \item{\code{HC21.9}}{Fieldworker measurer code}
+#'     \item{\code{HC27.1}}{Sex}
+#'     \item{\code{HC27.2}}{Sex}
+#'     \item{\code{HC27.3}}{Sex}
+#'     \item{\code{HC27.4}}{Sex}
+#'     \item{\code{HC27.5}}{Sex}
+#'     \item{\code{HC27.6}}{Sex}
+#'     \item{\code{HC27.7}}{Sex}
+#'     \item{\code{HC27.8}}{Sex}
+#'     \item{\code{HC27.9}}{Sex}
+#'     \item{\code{HC30.1}}{Month of birth}
+#'     \item{\code{HC30.2}}{Month of birth}
+#'     \item{\code{HC30.3}}{Month of birth}
+#'     \item{\code{HC30.4}}{Month of birth}
+#'     \item{\code{HC30.5}}{Month of birth}
+#'     \item{\code{HC30.6}}{Month of birth}
+#'     \item{\code{HC30.7}}{Month of birth}
+#'     \item{\code{HC30.8}}{Month of birth}
+#'     \item{\code{HC30.9}}{Month of birth}
+#'     \item{\code{HC31.1}}{Year of birth}
+#'     \item{\code{HC31.2}}{Year of birth}
+#'     \item{\code{HC31.3}}{Year of birth}
+#'     \item{\code{HC31.4}}{Year of birth}
+#'     \item{\code{HC31.5}}{Year of birth}
+#'     \item{\code{HC31.6}}{Year of birth}
+#'     \item{\code{HC31.7}}{Year of birth}
+#'     \item{\code{HC31.8}}{Year of birth}
+#'     \item{\code{HC31.9}}{Year of birth}
+#'     \item{\code{HC32.1}}{Date of birth (CMC)}
+#'     \item{\code{HC32.2}}{Date of birth (CMC)}
+#'     \item{\code{HC32.3}}{Date of birth (CMC)}
+#'     \item{\code{HC32.4}}{Date of birth (CMC)}
+#'     \item{\code{HC32.5}}{Date of birth (CMC)}
+#'     \item{\code{HC32.6}}{Date of birth (CMC)}
+#'     \item{\code{HC32.7}}{Date of birth (CMC)}
+#'     \item{\code{HC32.8}}{Date of birth (CMC)}
+#'     \item{\code{HC32.9}}{Date of birth (CMC)}
+#'     \item{\code{HC32A.1}}{Century Day Code (CDC) of birth}
+#'     \item{\code{HC32A.2}}{Century Day Code (CDC) of birth}
+#'     \item{\code{HC32A.3}}{Century Day Code (CDC) of birth}
+#'     \item{\code{HC32A.4}}{Century Day Code (CDC) of birth}
+#'     \item{\code{HC32A.5}}{Century Day Code (CDC) of birth}
+#'     \item{\code{HC32A.6}}{Century Day Code (CDC) of birth}
+#'     \item{\code{HC32A.7}}{Century Day Code (CDC) of birth}
+#'     \item{\code{HC32A.8}}{Century Day Code (CDC) of birth}
+#'     \item{\code{HC32A.9}}{Century Day Code (CDC) of birth}
+#'     \item{\code{HC33.1}}{Completeness of HC32 information}
+#'     \item{\code{HC33.2}}{Completeness of HC32 information}
+#'     \item{\code{HC33.3}}{Completeness of HC32 information}
+#'     \item{\code{HC33.4}}{Completeness of HC32 information}
+#'     \item{\code{HC33.5}}{Completeness of HC32 information}
+#'     \item{\code{HC33.6}}{Completeness of HC32 information}
+#'     \item{\code{HC33.7}}{Completeness of HC32 information}
+#'     \item{\code{HC33.8}}{Completeness of HC32 information}
+#'     \item{\code{HC33.9}}{Completeness of HC32 information}
+#'     \item{\code{HC51.1}}{NA - Line number of parent/caretaker}
+#'     \item{\code{HC51.2}}{NA - Line number of parent/caretaker}
+#'     \item{\code{HC51.3}}{NA - Line number of parent/caretaker}
+#'     \item{\code{HC51.4}}{NA - Line number of parent/caretaker}
+#'     \item{\code{HC51.5}}{NA - Line number of parent/caretaker}
+#'     \item{\code{HC51.6}}{NA - Line number of parent/caretaker}
+#'     \item{\code{HC51.7}}{NA - Line number of parent/caretaker}
+#'     \item{\code{HC51.8}}{NA - Line number of parent/caretaker}
+#'     \item{\code{HC51.9}}{NA - Line number of parent/caretaker}
+#'     \item{\code{HC52.1}}{NA - Read consent statement - hemoglobin}
+#'     \item{\code{HC52.2}}{NA - Read consent statement - hemoglobin}
+#'     \item{\code{HC52.3}}{NA - Read consent statement - hemoglobin}
+#'     \item{\code{HC52.4}}{NA - Read consent statement - hemoglobin}
+#'     \item{\code{HC52.5}}{NA - Read consent statement - hemoglobin}
+#'     \item{\code{HC52.6}}{NA - Read consent statement - hemoglobin}
+#'     \item{\code{HC52.7}}{NA - Read consent statement - hemoglobin}
+#'     \item{\code{HC52.8}}{NA - Read consent statement - hemoglobin}
+#'     \item{\code{HC52.9}}{NA - Read consent statement - hemoglobin}
+#'     \item{\code{HC53.1}}{NA - Hemoglobin level (g/dl - 1 decimal)}
+#'     \item{\code{HC53.2}}{NA - Hemoglobin level (g/dl - 1 decimal)}
+#'     \item{\code{HC53.3}}{NA - Hemoglobin level (g/dl - 1 decimal)}
+#'     \item{\code{HC53.4}}{NA - Hemoglobin level (g/dl - 1 decimal)}
+#'     \item{\code{HC53.5}}{NA - Hemoglobin level (g/dl - 1 decimal)}
+#'     \item{\code{HC53.6}}{NA - Hemoglobin level (g/dl - 1 decimal)}
+#'     \item{\code{HC53.7}}{NA - Hemoglobin level (g/dl - 1 decimal)}
+#'     \item{\code{HC53.8}}{NA - Hemoglobin level (g/dl - 1 decimal)}
+#'     \item{\code{HC53.9}}{NA - Hemoglobin level (g/dl - 1 decimal)}
+#'     \item{\code{HC55.1}}{NA - Result of measurement - hemoglobin}
+#'     \item{\code{HC55.2}}{NA - Result of measurement - hemoglobin}
+#'     \item{\code{HC55.3}}{NA - Result of measurement - hemoglobin}
+#'     \item{\code{HC55.4}}{NA - Result of measurement - hemoglobin}
+#'     \item{\code{HC55.5}}{NA - Result of measurement - hemoglobin}
+#'     \item{\code{HC55.6}}{NA - Result of measurement - hemoglobin}
+#'     \item{\code{HC55.7}}{NA - Result of measurement - hemoglobin}
+#'     \item{\code{HC55.8}}{NA - Result of measurement - hemoglobin}
+#'     \item{\code{HC55.9}}{NA - Result of measurement - hemoglobin}
+#'     \item{\code{HC56.1}}{NA - Hemoglobin level adjusted for altitude (g/dl - 1 decimal)}
+#'     \item{\code{HC56.2}}{NA - Hemoglobin level adjusted for altitude (g/dl - 1 decimal)}
+#'     \item{\code{HC56.3}}{NA - Hemoglobin level adjusted for altitude (g/dl - 1 decimal)}
+#'     \item{\code{HC56.4}}{NA - Hemoglobin level adjusted for altitude (g/dl - 1 decimal)}
+#'     \item{\code{HC56.5}}{NA - Hemoglobin level adjusted for altitude (g/dl - 1 decimal)}
+#'     \item{\code{HC56.6}}{NA - Hemoglobin level adjusted for altitude (g/dl - 1 decimal)}
+#'     \item{\code{HC56.7}}{NA - Hemoglobin level adjusted for altitude (g/dl - 1 decimal)}
+#'     \item{\code{HC56.8}}{NA - Hemoglobin level adjusted for altitude (g/dl - 1 decimal)}
+#'     \item{\code{HC56.9}}{NA - Hemoglobin level adjusted for altitude (g/dl - 1 decimal)}
+#'     \item{\code{HC57.1}}{NA - Anemia level}
+#'     \item{\code{HC57.2}}{NA - Anemia level}
+#'     \item{\code{HC57.3}}{NA - Anemia level}
+#'     \item{\code{HC57.4}}{NA - Anemia level}
+#'     \item{\code{HC57.5}}{NA - Anemia level}
+#'     \item{\code{HC57.6}}{NA - Anemia level}
+#'     \item{\code{HC57.7}}{NA - Anemia level}
+#'     \item{\code{HC57.8}}{NA - Anemia level}
+#'     \item{\code{HC57.9}}{NA - Anemia level}
+#'     \item{\code{HC58.1}}{NA - Agrees to referral - anemia}
+#'     \item{\code{HC58.2}}{NA - Agrees to referral - anemia}
+#'     \item{\code{HC58.3}}{NA - Agrees to referral - anemia}
+#'     \item{\code{HC58.4}}{NA - Agrees to referral - anemia}
+#'     \item{\code{HC58.5}}{NA - Agrees to referral - anemia}
+#'     \item{\code{HC58.6}}{NA - Agrees to referral - anemia}
+#'     \item{\code{HC58.7}}{NA - Agrees to referral - anemia}
+#'     \item{\code{HC58.8}}{NA - Agrees to referral - anemia}
+#'     \item{\code{HC58.9}}{NA - Agrees to referral - anemia}
+#'     \item{\code{HC60.1}}{Mother's line number (woman's questionnaire)}
+#'     \item{\code{HC60.2}}{Mother's line number (woman's questionnaire)}
+#'     \item{\code{HC60.3}}{Mother's line number (woman's questionnaire)}
+#'     \item{\code{HC60.4}}{Mother's line number (woman's questionnaire)}
+#'     \item{\code{HC60.5}}{Mother's line number (woman's questionnaire)}
+#'     \item{\code{HC60.6}}{Mother's line number (woman's questionnaire)}
+#'     \item{\code{HC60.7}}{Mother's line number (woman's questionnaire)}
+#'     \item{\code{HC60.8}}{Mother's line number (woman's questionnaire)}
+#'     \item{\code{HC60.9}}{Mother's line number (woman's questionnaire)}
+#'     \item{\code{HC61.1}}{Mother's highest educational level}
+#'     \item{\code{HC61.2}}{Mother's highest educational level}
+#'     \item{\code{HC61.3}}{Mother's highest educational level}
+#'     \item{\code{HC61.4}}{Mother's highest educational level}
+#'     \item{\code{HC61.5}}{Mother's highest educational level}
+#'     \item{\code{HC61.6}}{Mother's highest educational level}
+#'     \item{\code{HC61.7}}{Mother's highest educational level}
+#'     \item{\code{HC61.8}}{Mother's highest educational level}
+#'     \item{\code{HC61.9}}{Mother's highest educational level}
+#'     \item{\code{HC62.1}}{Mother's highest year of education}
+#'     \item{\code{HC62.2}}{Mother's highest year of education}
+#'     \item{\code{HC62.3}}{Mother's highest year of education}
+#'     \item{\code{HC62.4}}{Mother's highest year of education}
+#'     \item{\code{HC62.5}}{Mother's highest year of education}
+#'     \item{\code{HC62.6}}{Mother's highest year of education}
+#'     \item{\code{HC62.7}}{Mother's highest year of education}
+#'     \item{\code{HC62.8}}{Mother's highest year of education}
+#'     \item{\code{HC62.9}}{Mother's highest year of education}
+#'     \item{\code{HC63.1}}{Preceding birth interval (months)}
+#'     \item{\code{HC63.2}}{Preceding birth interval (months)}
+#'     \item{\code{HC63.3}}{Preceding birth interval (months)}
+#'     \item{\code{HC63.4}}{Preceding birth interval (months)}
+#'     \item{\code{HC63.5}}{Preceding birth interval (months)}
+#'     \item{\code{HC63.6}}{Preceding birth interval (months)}
+#'     \item{\code{HC63.7}}{Preceding birth interval (months)}
+#'     \item{\code{HC63.8}}{Preceding birth interval (months)}
+#'     \item{\code{HC63.9}}{Preceding birth interval (months)}
+#'     \item{\code{HC64.1}}{Birth order number}
+#'     \item{\code{HC64.2}}{Birth order number}
+#'     \item{\code{HC64.3}}{Birth order number}
+#'     \item{\code{HC64.4}}{Birth order number}
+#'     \item{\code{HC64.5}}{Birth order number}
+#'     \item{\code{HC64.6}}{Birth order number}
+#'     \item{\code{HC64.7}}{Birth order number}
+#'     \item{\code{HC64.8}}{Birth order number}
+#'     \item{\code{HC64.9}}{Birth order number}
+#'     \item{\code{HC68.1}}{Mother's highest educational level (for preliminary and final report)}
+#'     \item{\code{HC68.2}}{Mother's highest educational level (for preliminary and final report)}
+#'     \item{\code{HC68.3}}{Mother's highest educational level (for preliminary and final report)}
+#'     \item{\code{HC68.4}}{Mother's highest educational level (for preliminary and final report)}
+#'     \item{\code{HC68.5}}{Mother's highest educational level (for preliminary and final report)}
+#'     \item{\code{HC68.6}}{Mother's highest educational level (for preliminary and final report)}
+#'     \item{\code{HC68.7}}{Mother's highest educational level (for preliminary and final report)}
+#'     \item{\code{HC68.8}}{Mother's highest educational level (for preliminary and final report)}
+#'     \item{\code{HC68.9}}{Mother's highest educational level (for preliminary and final report)}
+#'     \item{\code{HC70.1}}{Height/Age standard deviation (new WHO)}
+#'     \item{\code{HC70.2}}{Height/Age standard deviation (new WHO)}
+#'     \item{\code{HC70.3}}{Height/Age standard deviation (new WHO)}
+#'     \item{\code{HC70.4}}{Height/Age standard deviation (new WHO)}
+#'     \item{\code{HC70.5}}{Height/Age standard deviation (new WHO)}
+#'     \item{\code{HC70.6}}{Height/Age standard deviation (new WHO)}
+#'     \item{\code{HC70.7}}{Height/Age standard deviation (new WHO)}
+#'     \item{\code{HC70.8}}{Height/Age standard deviation (new WHO)}
+#'     \item{\code{HC70.9}}{Height/Age standard deviation (new WHO)}
+#'     \item{\code{HC71.1}}{Weight/Age standard deviation (new WHO)}
+#'     \item{\code{HC71.2}}{Weight/Age standard deviation (new WHO)}
+#'     \item{\code{HC71.3}}{Weight/Age standard deviation (new WHO)}
+#'     \item{\code{HC71.4}}{Weight/Age standard deviation (new WHO)}
+#'     \item{\code{HC71.5}}{Weight/Age standard deviation (new WHO)}
+#'     \item{\code{HC71.6}}{Weight/Age standard deviation (new WHO)}
+#'     \item{\code{HC71.7}}{Weight/Age standard deviation (new WHO)}
+#'     \item{\code{HC71.8}}{Weight/Age standard deviation (new WHO)}
+#'     \item{\code{HC71.9}}{Weight/Age standard deviation (new WHO)}
+#'     \item{\code{HC72.1}}{Weight/Height standard deviation (new WHO)}
+#'     \item{\code{HC72.2}}{Weight/Height standard deviation (new WHO)}
+#'     \item{\code{HC72.3}}{Weight/Height standard deviation (new WHO)}
+#'     \item{\code{HC72.4}}{Weight/Height standard deviation (new WHO)}
+#'     \item{\code{HC72.5}}{Weight/Height standard deviation (new WHO)}
+#'     \item{\code{HC72.6}}{Weight/Height standard deviation (new WHO)}
+#'     \item{\code{HC72.7}}{Weight/Height standard deviation (new WHO)}
+#'     \item{\code{HC72.8}}{Weight/Height standard deviation (new WHO)}
+#'     \item{\code{HC72.9}}{Weight/Height standard deviation (new WHO)}
+#'     \item{\code{HC73.1}}{BMI standard deviation (new WHO)}
+#'     \item{\code{HC73.2}}{BMI standard deviation (new WHO)}
+#'     \item{\code{HC73.3}}{BMI standard deviation (new WHO)}
+#'     \item{\code{HC73.4}}{BMI standard deviation (new WHO)}
+#'     \item{\code{HC73.5}}{BMI standard deviation (new WHO)}
+#'     \item{\code{HC73.6}}{BMI standard deviation (new WHO)}
+#'     \item{\code{HC73.7}}{BMI standard deviation (new WHO)}
+#'     \item{\code{HC73.8}}{BMI standard deviation (new WHO)}
+#'     \item{\code{HC73.9}}{BMI standard deviation (new WHO)}
+#'     \item{\code{HMLIDX.1}}{Mosquito Bed Net Designation Number}
+#'     \item{\code{HMLIDX.2}}{Mosquito Bed Net Designation Number}
+#'     \item{\code{HMLIDX.3}}{Mosquito Bed Net Designation Number}
+#'     \item{\code{HMLIDX.4}}{Mosquito Bed Net Designation Number}
+#'     \item{\code{HMLIDX.5}}{Mosquito Bed Net Designation Number}
+#'     \item{\code{HMLIDX.6}}{Mosquito Bed Net Designation Number}
+#'     \item{\code{HMLIDX.7}}{Mosquito Bed Net Designation Number}
+#'     \item{\code{HML3.1}}{Net observed by interviewer}
+#'     \item{\code{HML3.2}}{Net observed by interviewer}
+#'     \item{\code{HML3.3}}{Net observed by interviewer}
+#'     \item{\code{HML3.4}}{Net observed by interviewer}
+#'     \item{\code{HML3.5}}{Net observed by interviewer}
+#'     \item{\code{HML3.6}}{Net observed by interviewer}
+#'     \item{\code{HML3.7}}{Net observed by interviewer}
+#'     \item{\code{HML4.1}}{Months ago net obtained}
+#'     \item{\code{HML4.2}}{Months ago net obtained}
+#'     \item{\code{HML4.3}}{Months ago net obtained}
+#'     \item{\code{HML4.4}}{Months ago net obtained}
+#'     \item{\code{HML4.5}}{Months ago net obtained}
+#'     \item{\code{HML4.6}}{Months ago net obtained}
+#'     \item{\code{HML4.7}}{Months ago net obtained}
+#'     \item{\code{HML5.1}}{NA - Net treated with insecticide when bought}
+#'     \item{\code{HML5.2}}{NA - Net treated with insecticide when bought}
+#'     \item{\code{HML5.3}}{NA - Net treated with insecticide when bought}
+#'     \item{\code{HML5.4}}{NA - Net treated with insecticide when bought}
+#'     \item{\code{HML5.5}}{NA - Net treated with insecticide when bought}
+#'     \item{\code{HML5.6}}{NA - Net treated with insecticide when bought}
+#'     \item{\code{HML5.7}}{NA - Net treated with insecticide when bought}
+#'     \item{\code{HML6.1}}{NA - Net treatment status}
+#'     \item{\code{HML6.2}}{NA - Net treatment status}
+#'     \item{\code{HML6.3}}{NA - Net treatment status}
+#'     \item{\code{HML6.4}}{NA - Net treatment status}
+#'     \item{\code{HML6.5}}{NA - Net treatment status}
+#'     \item{\code{HML6.6}}{NA - Net treatment status}
+#'     \item{\code{HML6.7}}{NA - Net treatment status}
+#'     \item{\code{HML7.1}}{Brand of net}
+#'     \item{\code{HML7.2}}{Brand of net}
+#'     \item{\code{HML7.3}}{Brand of net}
+#'     \item{\code{HML7.4}}{Brand of net}
+#'     \item{\code{HML7.5}}{Brand of net}
+#'     \item{\code{HML7.6}}{Brand of net}
+#'     \item{\code{HML7.7}}{Brand of net}
+#'     \item{\code{HML8.1}}{Net treated since received}
+#'     \item{\code{HML8.2}}{Net treated since received}
+#'     \item{\code{HML8.3}}{Net treated since received}
+#'     \item{\code{HML8.4}}{Net treated since received}
+#'     \item{\code{HML8.5}}{Net treated since received}
+#'     \item{\code{HML8.6}}{Net treated since received}
+#'     \item{\code{HML8.7}}{Net treated since received}
+#'     \item{\code{HML9.1}}{NA - Time since last re-treatment (months)}
+#'     \item{\code{HML9.2}}{NA - Time since last re-treatment (months)}
+#'     \item{\code{HML9.3}}{NA - Time since last re-treatment (months)}
+#'     \item{\code{HML9.4}}{NA - Time since last re-treatment (months)}
+#'     \item{\code{HML9.5}}{NA - Time since last re-treatment (months)}
+#'     \item{\code{HML9.6}}{NA - Time since last re-treatment (months)}
+#'     \item{\code{HML9.7}}{NA - Time since last re-treatment (months)}
+#'     \item{\code{HML10.1}}{Insecticide-Treated Net (ITN)}
+#'     \item{\code{HML10.2}}{Insecticide-Treated Net (ITN)}
+#'     \item{\code{HML10.3}}{Insecticide-Treated Net (ITN)}
+#'     \item{\code{HML10.4}}{Insecticide-Treated Net (ITN)}
+#'     \item{\code{HML10.5}}{Insecticide-Treated Net (ITN)}
+#'     \item{\code{HML10.6}}{Insecticide-Treated Net (ITN)}
+#'     \item{\code{HML10.7}}{Insecticide-Treated Net (ITN)}
+#'     \item{\code{HML11.1}}{Number of persons who slept under this net}
+#'     \item{\code{HML11.2}}{Number of persons who slept under this net}
+#'     \item{\code{HML11.3}}{Number of persons who slept under this net}
+#'     \item{\code{HML11.4}}{Number of persons who slept under this net}
+#'     \item{\code{HML11.5}}{Number of persons who slept under this net}
+#'     \item{\code{HML11.6}}{Number of persons who slept under this net}
+#'     \item{\code{HML11.7}}{Number of persons who slept under this net}
+#'     \item{\code{HML21.1}}{Someone slept under this net last night}
+#'     \item{\code{HML21.2}}{Someone slept under this net last night}
+#'     \item{\code{HML21.3}}{Someone slept under this net last night}
+#'     \item{\code{HML21.4}}{Someone slept under this net last night}
+#'     \item{\code{HML21.5}}{Someone slept under this net last night}
+#'     \item{\code{HML21.6}}{Someone slept under this net last night}
+#'     \item{\code{HML21.7}}{Someone slept under this net last night}
+#'     \item{\code{HMLA.1}}{Line number of person who slept in this net}
+#'     \item{\code{HMLA.2}}{Line number of person who slept in this net}
+#'     \item{\code{HMLA.3}}{Line number of person who slept in this net}
+#'     \item{\code{HMLA.4}}{Line number of person who slept in this net}
+#'     \item{\code{HMLA.5}}{Line number of person who slept in this net}
+#'     \item{\code{HMLA.6}}{Line number of person who slept in this net}
+#'     \item{\code{HMLA.7}}{Line number of person who slept in this net}
+#'     \item{\code{HMLB.1}}{Line number of person who slept in this net}
+#'     \item{\code{HMLB.2}}{Line number of person who slept in this net}
+#'     \item{\code{HMLB.3}}{Line number of person who slept in this net}
+#'     \item{\code{HMLB.4}}{Line number of person who slept in this net}
+#'     \item{\code{HMLB.5}}{Line number of person who slept in this net}
+#'     \item{\code{HMLB.6}}{Line number of person who slept in this net}
+#'     \item{\code{HMLB.7}}{Line number of person who slept in this net}
+#'     \item{\code{HMLC.1}}{Line number of person who slept in this net}
+#'     \item{\code{HMLC.2}}{Line number of person who slept in this net}
+#'     \item{\code{HMLC.3}}{Line number of person who slept in this net}
+#'     \item{\code{HMLC.4}}{Line number of person who slept in this net}
+#'     \item{\code{HMLC.5}}{Line number of person who slept in this net}
+#'     \item{\code{HMLC.6}}{Line number of person who slept in this net}
+#'     \item{\code{HMLC.7}}{Line number of person who slept in this net}
+#'     \item{\code{HMLD.1}}{Line number of person who slept in this net}
+#'     \item{\code{HMLD.2}}{Line number of person who slept in this net}
+#'     \item{\code{HMLD.3}}{Line number of person who slept in this net}
+#'     \item{\code{HMLD.4}}{Line number of person who slept in this net}
+#'     \item{\code{HMLD.5}}{Line number of person who slept in this net}
+#'     \item{\code{HMLD.6}}{Line number of person who slept in this net}
+#'     \item{\code{HMLD.7}}{Line number of person who slept in this net}
+#'     \item{\code{HMLE.1}}{NA - Line number of person who slept in this net}
+#'     \item{\code{HMLE.2}}{NA - Line number of person who slept in this net}
+#'     \item{\code{HMLE.3}}{NA - Line number of person who slept in this net}
+#'     \item{\code{HMLE.4}}{NA - Line number of person who slept in this net}
+#'     \item{\code{HMLE.5}}{NA - Line number of person who slept in this net}
+#'     \item{\code{HMLE.6}}{NA - Line number of person who slept in this net}
+#'     \item{\code{HMLE.7}}{NA - Line number of person who slept in this net}
+#'     \item{\code{HML22.1}}{Obtained net from campaign, antenatal or immunization visit}
+#'     \item{\code{HML22.2}}{Obtained net from campaign, antenatal or immunization visit}
+#'     \item{\code{HML22.3}}{Obtained net from campaign, antenatal or immunization visit}
+#'     \item{\code{HML22.4}}{Obtained net from campaign, antenatal or immunization visit}
+#'     \item{\code{HML22.5}}{Obtained net from campaign, antenatal or immunization visit}
+#'     \item{\code{HML22.6}}{Obtained net from campaign, antenatal or immunization visit}
+#'     \item{\code{HML22.7}}{Obtained net from campaign, antenatal or immunization visit}
+#'     \item{\code{HML23.1}}{Place where net was obtained}
+#'     \item{\code{HML23.2}}{Place where net was obtained}
+#'     \item{\code{HML23.3}}{Place where net was obtained}
+#'     \item{\code{HML23.4}}{Place where net was obtained}
+#'     \item{\code{HML23.5}}{Place where net was obtained}
+#'     \item{\code{HML23.6}}{Place where net was obtained}
+#'     \item{\code{HML23.7}}{Place where net was obtained}
+#'     \item{\code{HMHIDX.01}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.02}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.03}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.04}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.05}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.06}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.07}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.08}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.09}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.10}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.11}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.12}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.13}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.14}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.15}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.16}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.17}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.18}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.19}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.20}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.21}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.22}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.23}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.24}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.25}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.26}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.27}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.28}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.29}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.30}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.31}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.32}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.33}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.34}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.35}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.36}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.37}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.38}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.39}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.40}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.41}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.42}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.43}}{Index to Household Schedule}
+#'     \item{\code{HMHIDX.44}}{Index to Household Schedule}
+#'     \item{\code{HML12.01}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.02}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.03}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.04}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.05}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.06}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.07}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.08}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.09}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.10}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.11}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.12}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.13}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.14}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.15}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.16}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.17}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.18}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.19}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.20}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.21}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.22}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.23}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.24}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.25}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.26}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.27}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.28}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.29}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.30}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.31}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.32}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.33}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.34}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.35}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.36}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.37}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.38}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.39}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.40}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.41}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.42}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.43}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML12.44}}{Type of Mosquito Bed Net(s) person slept under last night}
+#'     \item{\code{HML13.01}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.02}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.03}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.04}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.05}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.06}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.07}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.08}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.09}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.10}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.11}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.12}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.13}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.14}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.15}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.16}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.17}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.18}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.19}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.20}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.21}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.22}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.23}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.24}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.25}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.26}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.27}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.28}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.29}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.30}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.31}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.32}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.33}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.34}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.35}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.36}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.37}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.38}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.39}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.40}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.41}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.42}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.43}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML13.44}}{Net Designation Number (HMLIDX) for 1st net person slept under last night}
+#'     \item{\code{HML14.01}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.02}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.03}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.04}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.05}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.06}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.07}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.08}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.09}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.10}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.11}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.12}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.13}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.14}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.15}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.16}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.17}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.18}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.19}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.20}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.21}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.22}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.23}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.24}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.25}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.26}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.27}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.28}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.29}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.30}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.31}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.32}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.33}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.34}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.35}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.36}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.37}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.38}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.39}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.40}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.41}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.42}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.43}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML14.44}}{Net Designation Number (HMLIDX) for 2nd net person slept under last night}
+#'     \item{\code{HML15.01}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.02}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.03}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.04}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.05}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.06}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.07}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.08}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.09}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.10}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.11}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.12}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.13}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.14}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.15}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.16}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.17}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.18}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.19}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.20}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.21}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.22}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.23}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.24}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.25}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.26}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.27}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.28}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.29}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.30}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.31}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.32}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.33}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.34}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.35}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.36}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.37}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.38}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.39}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.40}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.41}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.42}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.43}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML15.44}}{NA - Net Designation Number (HMLIDX) for 3rd net person slept under last night}
+#'     \item{\code{HML16.01}}{Corrected age from Individual file}
+#'     \item{\code{HML16.02}}{Corrected age from Individual file}
+#'     \item{\code{HML16.03}}{Corrected age from Individual file}
+#'     \item{\code{HML16.04}}{Corrected age from Individual file}
+#'     \item{\code{HML16.05}}{Corrected age from Individual file}
+#'     \item{\code{HML16.06}}{Corrected age from Individual file}
+#'     \item{\code{HML16.07}}{Corrected age from Individual file}
+#'     \item{\code{HML16.08}}{Corrected age from Individual file}
+#'     \item{\code{HML16.09}}{Corrected age from Individual file}
+#'     \item{\code{HML16.10}}{Corrected age from Individual file}
+#'     \item{\code{HML16.11}}{Corrected age from Individual file}
+#'     \item{\code{HML16.12}}{Corrected age from Individual file}
+#'     \item{\code{HML16.13}}{Corrected age from Individual file}
+#'     \item{\code{HML16.14}}{Corrected age from Individual file}
+#'     \item{\code{HML16.15}}{Corrected age from Individual file}
+#'     \item{\code{HML16.16}}{Corrected age from Individual file}
+#'     \item{\code{HML16.17}}{Corrected age from Individual file}
+#'     \item{\code{HML16.18}}{Corrected age from Individual file}
+#'     \item{\code{HML16.19}}{Corrected age from Individual file}
+#'     \item{\code{HML16.20}}{Corrected age from Individual file}
+#'     \item{\code{HML16.21}}{Corrected age from Individual file}
+#'     \item{\code{HML16.22}}{Corrected age from Individual file}
+#'     \item{\code{HML16.23}}{Corrected age from Individual file}
+#'     \item{\code{HML16.24}}{Corrected age from Individual file}
+#'     \item{\code{HML16.25}}{Corrected age from Individual file}
+#'     \item{\code{HML16.26}}{Corrected age from Individual file}
+#'     \item{\code{HML16.27}}{Corrected age from Individual file}
+#'     \item{\code{HML16.28}}{Corrected age from Individual file}
+#'     \item{\code{HML16.29}}{Corrected age from Individual file}
+#'     \item{\code{HML16.30}}{Corrected age from Individual file}
+#'     \item{\code{HML16.31}}{Corrected age from Individual file}
+#'     \item{\code{HML16.32}}{Corrected age from Individual file}
+#'     \item{\code{HML16.33}}{Corrected age from Individual file}
+#'     \item{\code{HML16.34}}{Corrected age from Individual file}
+#'     \item{\code{HML16.35}}{Corrected age from Individual file}
+#'     \item{\code{HML16.36}}{Corrected age from Individual file}
+#'     \item{\code{HML16.37}}{Corrected age from Individual file}
+#'     \item{\code{HML16.38}}{Corrected age from Individual file}
+#'     \item{\code{HML16.39}}{Corrected age from Individual file}
+#'     \item{\code{HML16.40}}{Corrected age from Individual file}
+#'     \item{\code{HML16.41}}{Corrected age from Individual file}
+#'     \item{\code{HML16.42}}{Corrected age from Individual file}
+#'     \item{\code{HML16.43}}{Corrected age from Individual file}
+#'     \item{\code{HML16.44}}{Corrected age from Individual file}
+#'     \item{\code{HML16A.01}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.02}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.03}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.04}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.05}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.06}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.07}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.08}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.09}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.10}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.11}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.12}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.13}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.14}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.15}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.16}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.17}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.18}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.19}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.20}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.21}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.22}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.23}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.24}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.25}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.26}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.27}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.28}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.29}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.30}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.31}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.32}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.33}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.34}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.35}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.36}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.37}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.38}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.39}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.40}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.41}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.42}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.43}}{NA - Age in months (for children)}
+#'     \item{\code{HML16A.44}}{NA - Age in months (for children)}
+#'     \item{\code{HML17.01}}{Flag for age from Individual file}
+#'     \item{\code{HML17.02}}{Flag for age from Individual file}
+#'     \item{\code{HML17.03}}{Flag for age from Individual file}
+#'     \item{\code{HML17.04}}{Flag for age from Individual file}
+#'     \item{\code{HML17.05}}{Flag for age from Individual file}
+#'     \item{\code{HML17.06}}{Flag for age from Individual file}
+#'     \item{\code{HML17.07}}{Flag for age from Individual file}
+#'     \item{\code{HML17.08}}{Flag for age from Individual file}
+#'     \item{\code{HML17.09}}{Flag for age from Individual file}
+#'     \item{\code{HML17.10}}{Flag for age from Individual file}
+#'     \item{\code{HML17.11}}{Flag for age from Individual file}
+#'     \item{\code{HML17.12}}{Flag for age from Individual file}
+#'     \item{\code{HML17.13}}{Flag for age from Individual file}
+#'     \item{\code{HML17.14}}{Flag for age from Individual file}
+#'     \item{\code{HML17.15}}{Flag for age from Individual file}
+#'     \item{\code{HML17.16}}{Flag for age from Individual file}
+#'     \item{\code{HML17.17}}{Flag for age from Individual file}
+#'     \item{\code{HML17.18}}{Flag for age from Individual file}
+#'     \item{\code{HML17.19}}{Flag for age from Individual file}
+#'     \item{\code{HML17.20}}{Flag for age from Individual file}
+#'     \item{\code{HML17.21}}{Flag for age from Individual file}
+#'     \item{\code{HML17.22}}{Flag for age from Individual file}
+#'     \item{\code{HML17.23}}{Flag for age from Individual file}
+#'     \item{\code{HML17.24}}{Flag for age from Individual file}
+#'     \item{\code{HML17.25}}{Flag for age from Individual file}
+#'     \item{\code{HML17.26}}{Flag for age from Individual file}
+#'     \item{\code{HML17.27}}{Flag for age from Individual file}
+#'     \item{\code{HML17.28}}{Flag for age from Individual file}
+#'     \item{\code{HML17.29}}{Flag for age from Individual file}
+#'     \item{\code{HML17.30}}{Flag for age from Individual file}
+#'     \item{\code{HML17.31}}{Flag for age from Individual file}
+#'     \item{\code{HML17.32}}{Flag for age from Individual file}
+#'     \item{\code{HML17.33}}{Flag for age from Individual file}
+#'     \item{\code{HML17.34}}{Flag for age from Individual file}
+#'     \item{\code{HML17.35}}{Flag for age from Individual file}
+#'     \item{\code{HML17.36}}{Flag for age from Individual file}
+#'     \item{\code{HML17.37}}{Flag for age from Individual file}
+#'     \item{\code{HML17.38}}{Flag for age from Individual file}
+#'     \item{\code{HML17.39}}{Flag for age from Individual file}
+#'     \item{\code{HML17.40}}{Flag for age from Individual file}
+#'     \item{\code{HML17.41}}{Flag for age from Individual file}
+#'     \item{\code{HML17.42}}{Flag for age from Individual file}
+#'     \item{\code{HML17.43}}{Flag for age from Individual file}
+#'     \item{\code{HML17.44}}{Flag for age from Individual file}
+#'     \item{\code{HML18.01}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.02}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.03}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.04}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.05}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.06}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.07}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.08}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.09}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.10}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.11}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.12}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.13}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.14}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.15}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.16}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.17}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.18}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.19}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.20}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.21}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.22}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.23}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.24}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.25}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.26}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.27}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.28}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.29}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.30}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.31}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.32}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.33}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.34}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.35}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.36}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.37}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.38}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.39}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.40}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.41}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.42}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.43}}{Pregnancy status from Individual file}
+#'     \item{\code{HML18.44}}{Pregnancy status from Individual file}
+#'     \item{\code{HML19.01}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.02}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.03}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.04}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.05}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.06}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.07}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.08}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.09}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.10}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.11}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.12}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.13}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.14}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.15}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.16}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.17}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.18}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.19}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.20}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.21}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.22}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.23}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.24}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.25}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.26}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.27}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.28}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.29}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.30}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.31}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.32}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.33}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.34}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.35}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.36}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.37}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.38}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.39}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.40}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.41}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.42}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.43}}{Person slept under an ever-treated net}
+#'     \item{\code{HML19.44}}{Person slept under an ever-treated net}
+#'     \item{\code{HML20.01}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.02}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.03}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.04}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.05}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.06}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.07}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.08}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.09}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.10}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.11}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.12}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.13}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.14}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.15}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.16}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.17}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.18}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.19}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.20}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.21}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.22}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.23}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.24}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.25}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.26}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.27}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.28}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.29}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.30}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.31}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.32}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.33}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.34}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.35}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.36}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.37}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.38}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.39}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.40}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.41}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.42}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.43}}{Person slept under an LLIN net}
+#'     \item{\code{HML20.44}}{Person slept under an LLIN net}
+#'     \item{\code{HML30.01}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.02}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.03}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.04}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.05}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.06}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.07}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.08}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.09}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.10}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.11}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.12}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.13}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.14}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.15}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.16}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.17}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.18}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.19}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.20}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.21}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.22}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.23}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.24}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.25}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.26}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.27}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.28}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.29}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.30}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.31}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.32}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.33}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.34}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.35}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.36}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.37}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.38}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.39}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.40}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.41}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.42}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.43}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML30.44}}{NA - Line number of parent/caretaker (for malaria testing)}
+#'     \item{\code{HML31.01}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.02}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.03}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.04}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.05}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.06}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.07}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.08}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.09}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.10}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.11}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.12}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.13}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.14}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.15}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.16}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.17}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.18}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.19}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.20}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.21}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.22}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.23}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.24}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.25}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.26}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.27}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.28}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.29}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.30}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.31}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.32}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.33}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.34}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.35}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.36}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.37}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.38}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.39}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.40}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.41}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.42}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.43}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML31.44}}{NA - Read consent statement for malaria}
+#'     \item{\code{HML32.01}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.02}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.03}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.04}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.05}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.06}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.07}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.08}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.09}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.10}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.11}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.12}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.13}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.14}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.15}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.16}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.17}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.18}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.19}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.20}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.21}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.22}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.23}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.24}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.25}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.26}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.27}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.28}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.29}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.30}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.31}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.32}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.33}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.34}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.35}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.36}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.37}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.38}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.39}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.40}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.41}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.42}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.43}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32.44}}{NA - Final result of malaria from blood smear test}
+#'     \item{\code{HML32A.01}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.02}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.03}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.04}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.05}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.06}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.07}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.08}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.09}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.10}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.11}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.12}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.13}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.14}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.15}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.16}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.17}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.18}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.19}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.20}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.21}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.22}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.23}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.24}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.25}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.26}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.27}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.28}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.29}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.30}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.31}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.32}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.33}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.34}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.35}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.36}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.37}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.38}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.39}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.40}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.41}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.42}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.43}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32A.44}}{NA - Presence of species: falciparum (Pf)}
+#'     \item{\code{HML32B.01}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.02}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.03}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.04}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.05}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.06}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.07}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.08}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.09}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.10}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.11}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.12}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.13}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.14}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.15}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.16}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.17}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.18}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.19}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.20}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.21}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.22}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.23}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.24}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.25}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.26}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.27}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.28}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.29}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.30}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.31}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.32}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.33}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.34}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.35}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.36}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.37}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.38}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.39}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.40}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.41}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.42}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.43}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32B.44}}{NA - Presence of species: malariae (Pm)}
+#'     \item{\code{HML32C.01}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.02}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.03}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.04}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.05}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.06}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.07}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.08}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.09}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.10}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.11}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.12}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.13}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.14}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.15}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.16}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.17}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.18}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.19}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.20}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.21}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.22}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.23}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.24}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.25}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.26}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.27}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.28}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.29}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.30}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.31}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.32}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.33}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.34}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.35}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.36}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.37}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.38}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.39}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.40}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.41}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.42}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.43}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32C.44}}{NA - Presence of species: ovale (Po)}
+#'     \item{\code{HML32D.01}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.02}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.03}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.04}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.05}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.06}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.07}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.08}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.09}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.10}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.11}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.12}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.13}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.14}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.15}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.16}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.17}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.18}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.19}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.20}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.21}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.22}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.23}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.24}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.25}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.26}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.27}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.28}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.29}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.30}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.31}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.32}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.33}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.34}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.35}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.36}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.37}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.38}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.39}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.40}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.41}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.42}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.43}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32D.44}}{NA - Presence of species: vivax (Pv)}
+#'     \item{\code{HML32E.01}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.02}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.03}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.04}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.05}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.06}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.07}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.08}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.09}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.10}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.11}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.12}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.13}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.14}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.15}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.16}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.17}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.18}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.19}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.20}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.21}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.22}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.23}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.24}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.25}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.26}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.27}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.28}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.29}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.30}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.31}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.32}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.33}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.34}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.35}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.36}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.37}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.38}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.39}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.40}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.41}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.42}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.43}}{NA - Presence of species: CS}
+#'     \item{\code{HML32E.44}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.01}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.02}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.03}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.04}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.05}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.06}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.07}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.08}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.09}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.10}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.11}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.12}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.13}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.14}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.15}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.16}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.17}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.18}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.19}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.20}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.21}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.22}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.23}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.24}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.25}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.26}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.27}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.28}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.29}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.30}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.31}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.32}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.33}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.34}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.35}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.36}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.37}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.38}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.39}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.40}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.41}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.42}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.43}}{NA - Presence of species: CS}
+#'     \item{\code{HML32F.44}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.01}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.02}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.03}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.04}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.05}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.06}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.07}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.08}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.09}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.10}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.11}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.12}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.13}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.14}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.15}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.16}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.17}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.18}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.19}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.20}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.21}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.22}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.23}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.24}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.25}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.26}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.27}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.28}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.29}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.30}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.31}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.32}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.33}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.34}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.35}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.36}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.37}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.38}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.39}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.40}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.41}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.42}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.43}}{NA - Presence of species: CS}
+#'     \item{\code{HML32G.44}}{NA - Presence of species: CS}
+#'     \item{\code{HML33.01}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.02}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.03}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.04}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.05}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.06}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.07}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.08}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.09}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.10}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.11}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.12}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.13}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.14}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.15}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.16}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.17}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.18}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.19}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.20}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.21}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.22}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.23}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.24}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.25}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.26}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.27}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.28}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.29}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.30}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.31}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.32}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.33}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.34}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.35}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.36}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.37}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.38}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.39}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.40}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.41}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.42}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.43}}{NA - Result of malaria measurement}
+#'     \item{\code{HML33.44}}{NA - Result of malaria measurement}
+#'     \item{\code{HML34.01}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.02}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.03}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.04}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.05}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.06}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.07}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.08}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.09}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.10}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.11}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.12}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.13}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.14}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.15}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.16}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.17}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.18}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.19}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.20}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.21}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.22}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.23}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.24}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.25}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.26}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.27}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.28}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.29}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.30}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.31}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.32}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.33}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.34}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.35}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.36}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.37}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.38}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.39}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.40}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.41}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.42}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.43}}{Bar code for blood smear sample}
+#'     \item{\code{HML34.44}}{Bar code for blood smear sample}
+#'     \item{\code{HML35.01}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.02}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.03}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.04}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.05}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.06}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.07}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.08}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.09}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.10}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.11}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.12}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.13}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.14}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.15}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.16}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.17}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.18}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.19}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.20}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.21}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.22}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.23}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.24}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.25}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.26}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.27}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.28}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.29}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.30}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.31}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.32}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.33}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.34}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.35}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.36}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.37}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.38}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.39}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.40}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.41}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.42}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.43}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML35.44}}{NA - Result of malaria rapid test}
+#'     \item{\code{HML36.01}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.02}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.03}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.04}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.05}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.06}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.07}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.08}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.09}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.10}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.11}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.12}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.13}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.14}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.15}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.16}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.17}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.18}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.19}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.20}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.21}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.22}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.23}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.24}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.25}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.26}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.27}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.28}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.29}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.30}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.31}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.32}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.33}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.34}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.35}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.36}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.37}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.38}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.39}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.40}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.41}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.42}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.43}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{HML36.44}}{NA - Fieldworker measurer code for malaria}
+#'     \item{\code{IDXDIS.01}}{Index to household schedule}
+#'     \item{\code{IDXDIS.02}}{Index to household schedule}
+#'     \item{\code{IDXDIS.03}}{Index to household schedule}
+#'     \item{\code{IDXDIS.04}}{Index to household schedule}
+#'     \item{\code{IDXDIS.05}}{Index to household schedule}
+#'     \item{\code{IDXDIS.06}}{Index to household schedule}
+#'     \item{\code{IDXDIS.07}}{Index to household schedule}
+#'     \item{\code{IDXDIS.08}}{Index to household schedule}
+#'     \item{\code{IDXDIS.09}}{Index to household schedule}
+#'     \item{\code{IDXDIS.10}}{Index to household schedule}
+#'     \item{\code{IDXDIS.11}}{Index to household schedule}
+#'     \item{\code{IDXDIS.12}}{Index to household schedule}
+#'     \item{\code{IDXDIS.13}}{Index to household schedule}
+#'     \item{\code{IDXDIS.14}}{Index to household schedule}
+#'     \item{\code{IDXDIS.15}}{Index to household schedule}
+#'     \item{\code{IDXDIS.16}}{Index to household schedule}
+#'     \item{\code{IDXDIS.17}}{Index to household schedule}
+#'     \item{\code{IDXDIS.18}}{Index to household schedule}
+#'     \item{\code{IDXDIS.19}}{Index to household schedule}
+#'     \item{\code{IDXDIS.20}}{Index to household schedule}
+#'     \item{\code{IDXDIS.21}}{Index to household schedule}
+#'     \item{\code{IDXDIS.22}}{Index to household schedule}
+#'     \item{\code{IDXDIS.23}}{Index to household schedule}
+#'     \item{\code{IDXDIS.24}}{Index to household schedule}
+#'     \item{\code{IDXDIS.25}}{Index to household schedule}
+#'     \item{\code{IDXDIS.26}}{Index to household schedule}
+#'     \item{\code{IDXDIS.27}}{Index to household schedule}
+#'     \item{\code{IDXDIS.28}}{Index to household schedule}
+#'     \item{\code{IDXDIS.29}}{Index to household schedule}
+#'     \item{\code{IDXDIS.30}}{Index to household schedule}
+#'     \item{\code{IDXDIS.31}}{Index to household schedule}
+#'     \item{\code{IDXDIS.32}}{Index to household schedule}
+#'     \item{\code{IDXDIS.33}}{Index to household schedule}
+#'     \item{\code{IDXDIS.34}}{Index to household schedule}
+#'     \item{\code{IDXDIS.35}}{Index to household schedule}
+#'     \item{\code{IDXDIS.36}}{Index to household schedule}
+#'     \item{\code{IDXDIS.37}}{Index to household schedule}
+#'     \item{\code{IDXDIS.38}}{Index to household schedule}
+#'     \item{\code{IDXDIS.39}}{Index to household schedule}
+#'     \item{\code{IDXDIS.40}}{Index to household schedule}
+#'     \item{\code{IDXDIS.41}}{Index to household schedule}
+#'     \item{\code{IDXDIS.42}}{Index to household schedule}
+#'     \item{\code{IDXDIS.43}}{Index to household schedule}
+#'     \item{\code{IDXDIS.44}}{Index to household schedule}
+#'     \item{\code{HDIS1.01}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.02}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.03}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.04}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.05}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.06}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.07}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.08}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.09}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.10}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.11}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.12}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.13}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.14}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.15}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.16}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.17}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.18}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.19}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.20}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.21}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.22}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.23}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.24}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.25}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.26}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.27}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.28}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.29}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.30}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.31}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.32}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.33}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.34}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.35}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.36}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.37}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.38}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.39}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.40}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.41}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.42}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.43}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS1.44}}{Wear glasses or contact lenses}
+#'     \item{\code{HDIS2.01}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.02}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.03}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.04}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.05}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.06}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.07}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.08}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.09}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.10}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.11}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.12}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.13}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.14}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.15}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.16}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.17}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.18}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.19}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.20}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.21}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.22}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.23}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.24}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.25}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.26}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.27}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.28}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.29}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.30}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.31}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.32}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.33}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.34}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.35}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.36}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.37}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.38}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.39}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.40}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.41}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.42}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.43}}{Have difficulty seeing}
+#'     \item{\code{HDIS2.44}}{Have difficulty seeing}
+#'     \item{\code{HDIS3.01}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.02}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.03}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.04}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.05}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.06}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.07}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.08}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.09}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.10}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.11}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.12}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.13}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.14}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.15}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.16}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.17}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.18}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.19}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.20}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.21}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.22}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.23}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.24}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.25}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.26}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.27}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.28}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.29}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.30}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.31}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.32}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.33}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.34}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.35}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.36}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.37}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.38}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.39}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.40}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.41}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.42}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.43}}{Wear a hearing aid}
+#'     \item{\code{HDIS3.44}}{Wear a hearing aid}
+#'     \item{\code{HDIS4.01}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.02}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.03}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.04}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.05}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.06}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.07}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.08}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.09}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.10}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.11}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.12}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.13}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.14}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.15}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.16}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.17}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.18}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.19}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.20}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.21}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.22}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.23}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.24}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.25}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.26}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.27}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.28}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.29}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.30}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.31}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.32}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.33}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.34}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.35}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.36}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.37}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.38}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.39}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.40}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.41}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.42}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.43}}{Have difficulty hearing}
+#'     \item{\code{HDIS4.44}}{Have difficulty hearing}
+#'     \item{\code{HDIS5.01}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.02}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.03}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.04}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.05}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.06}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.07}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.08}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.09}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.10}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.11}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.12}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.13}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.14}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.15}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.16}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.17}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.18}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.19}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.20}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.21}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.22}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.23}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.24}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.25}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.26}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.27}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.28}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.29}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.30}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.31}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.32}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.33}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.34}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.35}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.36}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.37}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.38}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.39}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.40}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.41}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.42}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.43}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS5.44}}{Have difficulty communicating using usual language}
+#'     \item{\code{HDIS6.01}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.02}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.03}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.04}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.05}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.06}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.07}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.08}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.09}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.10}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.11}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.12}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.13}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.14}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.15}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.16}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.17}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.18}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.19}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.20}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.21}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.22}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.23}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.24}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.25}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.26}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.27}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.28}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.29}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.30}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.31}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.32}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.33}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.34}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.35}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.36}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.37}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.38}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.39}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.40}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.41}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.42}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.43}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS6.44}}{Have difficulty remembering or concentrating}
+#'     \item{\code{HDIS7.01}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.02}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.03}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.04}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.05}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.06}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.07}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.08}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.09}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.10}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.11}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.12}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.13}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.14}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.15}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.16}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.17}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.18}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.19}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.20}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.21}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.22}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.23}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.24}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.25}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.26}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.27}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.28}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.29}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.30}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.31}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.32}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.33}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.34}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.35}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.36}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.37}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.38}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.39}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.40}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.41}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.42}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.43}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS7.44}}{Have difficulty walking or climbing steps}
+#'     \item{\code{HDIS8.01}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.02}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.03}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.04}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.05}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.06}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.07}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.08}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.09}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.10}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.11}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.12}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.13}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.14}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.15}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.16}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.17}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.18}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.19}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.20}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.21}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.22}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.23}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.24}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.25}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.26}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.27}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.28}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.29}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.30}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.31}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.32}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.33}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.34}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.35}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.36}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.37}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.38}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.39}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.40}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.41}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.42}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.43}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS8.44}}{Have difficulty washing all over or dressing}
+#'     \item{\code{HDIS9.01}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.02}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.03}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.04}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.05}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.06}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.07}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.08}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.09}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.10}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.11}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.12}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.13}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.14}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.15}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.16}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.17}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.18}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.19}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.20}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.21}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.22}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.23}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.24}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.25}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.26}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.27}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.28}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.29}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.30}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.31}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.32}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.33}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.34}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.35}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.36}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.37}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.38}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.39}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.40}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.41}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.42}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.43}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{HDIS9.44}}{Highest degree of difficulty for any of the impairments}
+#'     \item{\code{SH35A.01}}{Line number of out-migrant}
+#'     \item{\code{SH35A.02}}{Line number of out-migrant}
+#'     \item{\code{SH35A.03}}{Line number of out-migrant}
+#'     \item{\code{SH35A.04}}{Line number of out-migrant}
+#'     \item{\code{SH35A.05}}{Line number of out-migrant}
+#'     \item{\code{SH35A.06}}{Line number of out-migrant}
+#'     \item{\code{SH35A.07}}{Line number of out-migrant}
+#'     \item{\code{SH35A.08}}{Line number of out-migrant}
+#'     \item{\code{SH35A.09}}{Line number of out-migrant}
+#'     \item{\code{SH35A.10}}{Line number of out-migrant}
+#'     \item{\code{SH36A.01}}{Relationship to head}
+#'     \item{\code{SH36A.02}}{Relationship to head}
+#'     \item{\code{SH36A.03}}{Relationship to head}
+#'     \item{\code{SH36A.04}}{Relationship to head}
+#'     \item{\code{SH36A.05}}{Relationship to head}
+#'     \item{\code{SH36A.06}}{Relationship to head}
+#'     \item{\code{SH36A.07}}{Relationship to head}
+#'     \item{\code{SH36A.08}}{Relationship to head}
+#'     \item{\code{SH36A.09}}{Relationship to head}
+#'     \item{\code{SH36A.10}}{Relationship to head}
+#'     \item{\code{SH37.01}}{Sex of migrant}
+#'     \item{\code{SH37.02}}{Sex of migrant}
+#'     \item{\code{SH37.03}}{Sex of migrant}
+#'     \item{\code{SH37.04}}{Sex of migrant}
+#'     \item{\code{SH37.05}}{Sex of migrant}
+#'     \item{\code{SH37.06}}{Sex of migrant}
+#'     \item{\code{SH37.07}}{Sex of migrant}
+#'     \item{\code{SH37.08}}{Sex of migrant}
+#'     \item{\code{SH37.09}}{Sex of migrant}
+#'     \item{\code{SH37.10}}{Sex of migrant}
+#'     \item{\code{SH38M.01}}{Month and year move away: Month}
+#'     \item{\code{SH38M.02}}{Month and year move away: Month}
+#'     \item{\code{SH38M.03}}{Month and year move away: Month}
+#'     \item{\code{SH38M.04}}{Month and year move away: Month}
+#'     \item{\code{SH38M.05}}{Month and year move away: Month}
+#'     \item{\code{SH38M.06}}{Month and year move away: Month}
+#'     \item{\code{SH38M.07}}{Month and year move away: Month}
+#'     \item{\code{SH38M.08}}{Month and year move away: Month}
+#'     \item{\code{SH38M.09}}{Month and year move away: Month}
+#'     \item{\code{SH38M.10}}{Month and year move away: Month}
+#'     \item{\code{SH38Y.01}}{Month and year move away: Year}
+#'     \item{\code{SH38Y.02}}{Month and year move away: Year}
+#'     \item{\code{SH38Y.03}}{Month and year move away: Year}
+#'     \item{\code{SH38Y.04}}{Month and year move away: Year}
+#'     \item{\code{SH38Y.05}}{Month and year move away: Year}
+#'     \item{\code{SH38Y.06}}{Month and year move away: Year}
+#'     \item{\code{SH38Y.07}}{Month and year move away: Year}
+#'     \item{\code{SH38Y.08}}{Month and year move away: Year}
+#'     \item{\code{SH38Y.09}}{Month and year move away: Year}
+#'     \item{\code{SH38Y.10}}{Month and year move away: Year}
+#'     \item{\code{SH39.01}}{Age when he/she moved away}
+#'     \item{\code{SH39.02}}{Age when he/she moved away}
+#'     \item{\code{SH39.03}}{Age when he/she moved away}
+#'     \item{\code{SH39.04}}{Age when he/she moved away}
+#'     \item{\code{SH39.05}}{Age when he/she moved away}
+#'     \item{\code{SH39.06}}{Age when he/she moved away}
+#'     \item{\code{SH39.07}}{Age when he/she moved away}
+#'     \item{\code{SH39.08}}{Age when he/she moved away}
+#'     \item{\code{SH39.09}}{Age when he/she moved away}
+#'     \item{\code{SH39.10}}{Age when he/she moved away}
+#'     \item{\code{SH39A.01}}{Highest class completed when he/she moved away}
+#'     \item{\code{SH39A.02}}{Highest class completed when he/she moved away}
+#'     \item{\code{SH39A.03}}{Highest class completed when he/she moved away}
+#'     \item{\code{SH39A.04}}{Highest class completed when he/she moved away}
+#'     \item{\code{SH39A.05}}{Highest class completed when he/she moved away}
+#'     \item{\code{SH39A.06}}{Highest class completed when he/she moved away}
+#'     \item{\code{SH39A.07}}{Highest class completed when he/she moved away}
+#'     \item{\code{SH39A.08}}{Highest class completed when he/she moved away}
+#'     \item{\code{SH39A.09}}{Highest class completed when he/she moved away}
+#'     \item{\code{SH39A.10}}{Highest class completed when he/she moved away}
+#'     \item{\code{SH40.01}}{Main reason of out-migration}
+#'     \item{\code{SH40.02}}{Main reason of out-migration}
+#'     \item{\code{SH40.03}}{Main reason of out-migration}
+#'     \item{\code{SH40.04}}{Main reason of out-migration}
+#'     \item{\code{SH40.05}}{Main reason of out-migration}
+#'     \item{\code{SH40.06}}{Main reason of out-migration}
+#'     \item{\code{SH40.07}}{Main reason of out-migration}
+#'     \item{\code{SH40.08}}{Main reason of out-migration}
+#'     \item{\code{SH40.09}}{Main reason of out-migration}
+#'     \item{\code{SH40.10}}{Main reason of out-migration}
+#'     \item{\code{SH41U.01}}{Travelled to - Unit}
+#'     \item{\code{SH41U.02}}{Travelled to - Unit}
+#'     \item{\code{SH41U.03}}{Travelled to - Unit}
+#'     \item{\code{SH41U.04}}{Travelled to - Unit}
+#'     \item{\code{SH41U.05}}{Travelled to - Unit}
+#'     \item{\code{SH41U.06}}{Travelled to - Unit}
+#'     \item{\code{SH41U.07}}{Travelled to - Unit}
+#'     \item{\code{SH41U.08}}{Travelled to - Unit}
+#'     \item{\code{SH41U.09}}{Travelled to - Unit}
+#'     \item{\code{SH41U.10}}{Travelled to - Unit}
+#'     \item{\code{SH41N.01}}{Travelled to - Number}
+#'     \item{\code{SH41N.02}}{Travelled to - Number}
+#'     \item{\code{SH41N.03}}{Travelled to - Number}
+#'     \item{\code{SH41N.04}}{Travelled to - Number}
+#'     \item{\code{SH41N.05}}{Travelled to - Number}
+#'     \item{\code{SH41N.06}}{Travelled to - Number}
+#'     \item{\code{SH41N.07}}{Travelled to - Number}
+#'     \item{\code{SH41N.08}}{Travelled to - Number}
+#'     \item{\code{SH41N.09}}{Travelled to - Number}
+#'     \item{\code{SH41N.10}}{Travelled to - Number}
+#'     \item{\code{SH41A.01}}{Money sent or received last year}
+#'     \item{\code{SH41A.02}}{Money sent or received last year}
+#'     \item{\code{SH41A.03}}{Money sent or received last year}
+#'     \item{\code{SH41A.04}}{Money sent or received last year}
+#'     \item{\code{SH41A.05}}{Money sent or received last year}
+#'     \item{\code{SH41A.06}}{Money sent or received last year}
+#'     \item{\code{SH41A.07}}{Money sent or received last year}
+#'     \item{\code{SH41A.08}}{Money sent or received last year}
+#'     \item{\code{SH41A.09}}{Money sent or received last year}
+#'     \item{\code{SH41A.10}}{Money sent or received last year}
+#'
+#'
+#'   }
+#'
+#' @author
+#'  \enumerate{
+#'   \item{Muhammad Yaseen } {(\email{myaseen208@@gmail.com})}
+#'   }
+#'
+#' @references
+#' \enumerate{
+#'   \item National Institute of Population Studies (NIPS), Pakistan (\url{http://nips.org.pk/Home.htm}).
+#'  }
+#'
+#' @import tibble
+#'
+#' @examples
+#' load("PKHR71")
+#' PKHR71
+NULL

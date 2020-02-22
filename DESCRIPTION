@@ -1,0 +1,23 @@
+Package: PDHSData
+Type: Package
+Title: Pakistan Demographic and Health Survey Data
+Version: 0.1.0
+Authors@R: c(person(c("Muhammad", "Yaseen"),  email = "myaseen208@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-5923-1714")))
+Maintainer: Muhammad Yaseen <myaseen208@gmail.com>
+Description: Provides data set for exploration of Pakistan Demographic and Health Survey (PDHS) data (<http://nips.org.pk/Home.htm>). The 2017-18 Pakistan Demographic and Health Survey (PDHS) is designed to provide data for monitoring the health situation in Pakistan. The 2017-18 PDHS is the 4th DHS survey conducted in Pakistan since 1990-91. It provides reliable estimates at the national level, for urban and rural areas, and for 4 regions and 4 provinces. The national total for indicators excludes Azad Jammu and Kashmir and Gilgit Baltistan.
+Depends: R (>= 3.5.0)
+Copyright: 2019-2020, UAF
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: R.rsp
+NeedsCompilation: no
+RoxygenNote: 7.0.2
+URL: https://github.com/myaseen208/PDHSData
+     https://myaseen208.github.io/PDHSData/
+BugReports: https://github.com/myaseen208/PDHSData/issues
+Note: Department of Mathematics and Statistics, University of Agriculture Faisalabad, Faisalabad-Pakistan.
+Imports: tibble
+Suggests: 
+    testthat,
+    R.rsp

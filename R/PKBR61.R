@@ -1,0 +1,1023 @@
+#' @title Pakistan Demographic and Health Survey 2012-13 Births Recode Data
+#' @name  PKBR61
+#' @description \code{PKBR61} data of Births Recode from Pakistan Demographic and Health Survey 2012-13.
+#' \describe{
+#'     \item{\code{caseid}}{Case Identification}
+#'     \item{\code{bidx}}{Birth column number}
+#'     \item{\code{v000}}{Country code and phase}
+#'     \item{\code{v001}}{Cluster number}
+#'     \item{\code{v002}}{Household number}
+#'     \item{\code{v003}}{Respondent's line number}
+#'     \item{\code{v004}}{Ultimate area unit}
+#'     \item{\code{v005}}{Women's individual sample weight (6 decimals)}
+#'     \item{\code{v006}}{Month of interview}
+#'     \item{\code{v007}}{Year of interview}
+#'     \item{\code{v008}}{Date of interview (CMC)}
+#'     \item{\code{v009}}{Respondent's month of birth}
+#'     \item{\code{v010}}{Respondent's year of birth}
+#'     \item{\code{v011}}{Date of birth (CMC)}
+#'     \item{\code{v012}}{Respondent's current age}
+#'     \item{\code{v013}}{Age in 5-year groups}
+#'     \item{\code{v014}}{Completeness of age information}
+#'     \item{\code{v015}}{Result of individual interview}
+#'     \item{\code{v016}}{Day of interview}
+#'     \item{\code{v017}}{CMC start of calendar}
+#'     \item{\code{v018}}{Row of month of interview}
+#'     \item{\code{v019}}{Length of calendar}
+#'     \item{\code{v019a}}{Number of calendar columns}
+#'     \item{\code{v020}}{Ever-married sample}
+#'     \item{\code{v021}}{Primary sampling unit}
+#'     \item{\code{v022}}{Sample strata for sampling errors}
+#'     \item{\code{v023}}{Stratification used in sample design}
+#'     \item{\code{v024}}{Region}
+#'     \item{\code{v025}}{Type of place of residence}
+#'     \item{\code{v026}}{De facto place of residence}
+#'     \item{\code{v027}}{Number of visits}
+#'     \item{\code{v028}}{Interviewer identification}
+#'     \item{\code{v029}}{Keyer identification}
+#'     \item{\code{v030}}{Field supervisor}
+#'     \item{\code{v031}}{Field editor}
+#'     \item{\code{v032}}{NA - Office editor}
+#'     \item{\code{v034}}{Line number of husband}
+#'     \item{\code{v040}}{NA - Cluster altitude in meters}
+#'     \item{\code{v042}}{NA - Household selected for hemoglobin}
+#'     \item{\code{v044}}{Selected for Domestic Violence module}
+#'     \item{\code{v101}}{Region}
+#'     \item{\code{v102}}{Type of place of residence}
+#'     \item{\code{v103}}{NA - Childhood place of residence}
+#'     \item{\code{v104}}{NA - Years lived in place of residence}
+#'     \item{\code{v105}}{NA - Type of place of previous residence}
+#'     \item{\code{v106}}{Highest educational level}
+#'     \item{\code{v107}}{Highest year of education}
+#'     \item{\code{v113}}{Source of drinking water}
+#'     \item{\code{v115}}{Time to get to water source}
+#'     \item{\code{v116}}{Type of toilet facility}
+#'     \item{\code{v119}}{Household has: electricity}
+#'     \item{\code{v120}}{Household has: radio}
+#'     \item{\code{v121}}{Household has: television}
+#'     \item{\code{v122}}{Household has: refrigerator}
+#'     \item{\code{v123}}{Household has: bicycle}
+#'     \item{\code{v124}}{Household has: motorcycle/scooter}
+#'     \item{\code{v125}}{Household has: car/truck}
+#'     \item{\code{v127}}{Main floor material}
+#'     \item{\code{v128}}{Main wall material}
+#'     \item{\code{v129}}{Main roof material}
+#'     \item{\code{v130}}{NA - Religion}
+#'     \item{\code{v131}}{Ethnicity}
+#'     \item{\code{v133}}{Education in single years}
+#'     \item{\code{v134}}{De facto place of residence}
+#'     \item{\code{v135}}{Usual resident or visitor}
+#'     \item{\code{v136}}{Number of household members (listed)}
+#'     \item{\code{v137}}{Number of children 5 and under in household (de jure)}
+#'     \item{\code{v138}}{Number of eligible women in household (de facto)}
+#'     \item{\code{v139}}{De jure region of residence}
+#'     \item{\code{v140}}{De jure type of place of residence}
+#'     \item{\code{v141}}{De jure place of residence}
+#'     \item{\code{v149}}{Educational attainment}
+#'     \item{\code{v150}}{Relationship to household head}
+#'     \item{\code{v151}}{Sex of household head}
+#'     \item{\code{v152}}{Age of household head}
+#'     \item{\code{v153}}{Household has: telephone (land-line)}
+#'     \item{\code{awfactt}}{All woman factor - total}
+#'     \item{\code{awfactu}}{All woman factor - urban/rural}
+#'     \item{\code{awfactr}}{All woman factor - regional}
+#'     \item{\code{awfacte}}{All woman factor - educational}
+#'     \item{\code{awfactw}}{All woman factor - wealth index}
+#'     \item{\code{v155}}{Literacy}
+#'     \item{\code{v156}}{NA - Ever participated in a literacy program outside of primary}
+#'     \item{\code{v157}}{Frequency of reading newspaper or magazine}
+#'     \item{\code{v158}}{Frequency of listening to radio}
+#'     \item{\code{v159}}{Frequency of watching television}
+#'     \item{\code{v160}}{Toilet facilities shared with other households}
+#'     \item{\code{v161}}{Type of cooking fuel}
+#'     \item{\code{v166}}{NA - Result of salt test for iodine}
+#'     \item{\code{v167}}{NA - Number of trips in last 12 months}
+#'     \item{\code{v168}}{NA - Away for more than one month in last 12 months}
+#'     \item{\code{v190}}{Wealth index}
+#'     \item{\code{v191}}{Wealth index factor score (5 decimals)}
+#'     \item{\code{ml101}}{NA - Type of mosquito bed net(s) slept under last night}
+#'     \item{\code{v201}}{Total children ever born}
+#'     \item{\code{v202}}{Sons at home}
+#'     \item{\code{v203}}{Daughters at home}
+#'     \item{\code{v204}}{Sons elsewhere}
+#'     \item{\code{v205}}{Daughters elsewhere}
+#'     \item{\code{v206}}{Sons who have died}
+#'     \item{\code{v207}}{Daughters who have died}
+#'     \item{\code{v208}}{Births in last five years}
+#'     \item{\code{v209}}{Births in past year}
+#'     \item{\code{v210}}{Births in month of interview}
+#'     \item{\code{v211}}{Date of first birth (CMC)}
+#'     \item{\code{v212}}{Age of respondent at 1st birth}
+#'     \item{\code{v213}}{Currently pregnant}
+#'     \item{\code{v214}}{Duration of current pregnancy}
+#'     \item{\code{v215}}{Time since last menstrual period}
+#'     \item{\code{v216}}{Menstruated in last six weeks}
+#'     \item{\code{v217}}{Knowledge of ovulatory cycle}
+#'     \item{\code{v218}}{Number of living children}
+#'     \item{\code{v219}}{Living children + current pregnancy}
+#'     \item{\code{v220}}{Living children + current pregnancy (grouped)}
+#'     \item{\code{v221}}{Marriage to first birth interval (months)}
+#'     \item{\code{v222}}{Last birth to interview (months)}
+#'     \item{\code{v223}}{Completeness of current pregnancy information}
+#'     \item{\code{v224}}{Entries in birth history}
+#'     \item{\code{v225}}{Current pregnancy wanted}
+#'     \item{\code{v226}}{Time since last period (comp) (months)}
+#'     \item{\code{v227}}{Flag for last period}
+#'     \item{\code{v228}}{Ever had a terminated pregnancy}
+#'     \item{\code{v229}}{Month pregnancy ended}
+#'     \item{\code{v230}}{Year pregnancy ended}
+#'     \item{\code{v231}}{CMC pregnancy ended}
+#'     \item{\code{v232}}{Completeness of last termination information}
+#'     \item{\code{v233}}{Months when pregnancy ended}
+#'     \item{\code{v234}}{Other such pregnancies}
+#'     \item{\code{v235}}{Index last child prior to maternity-health (calendar)}
+#'     \item{\code{v237}}{Birth between last and interview}
+#'     \item{\code{v238}}{Births in last three years}
+#'     \item{\code{v239}}{Pregnancies terminated before calendar beginning}
+#'     \item{\code{v240}}{Month of last termination prior to calendar}
+#'     \item{\code{v241}}{Year of last termination prior to calendar}
+#'     \item{\code{v242}}{CMC termination ended prior to calendar}
+#'     \item{\code{v243}}{Completeness of last termination date prior to calendar}
+#'     \item{\code{v310}}{NA - Living children at first use}
+#'     \item{\code{v311}}{NA - Children at first use (grouped)}
+#'     \item{\code{v312}}{Current contraceptive method}
+#'     \item{\code{v313}}{Current use by method type}
+#'     \item{\code{v315}}{Month of start of use of method}
+#'     \item{\code{v316}}{Year of start of use of method}
+#'     \item{\code{v317}}{Date of start of use of method (CMC)}
+#'     \item{\code{v318}}{Completeness of information}
+#'     \item{\code{v319}}{Years since sterilization}
+#'     \item{\code{v320}}{Age at sterilization}
+#'     \item{\code{v321}}{Marital duration at sterilization}
+#'     \item{\code{v322}}{Parity at sterilization}
+#'     \item{\code{v323}}{Brand of pill used}
+#'     \item{\code{v323a}}{Brand of condom used}
+#'     \item{\code{v325a}}{NA - Cost of current method (in CURRENCY)}
+#'     \item{\code{v326}}{Last source for current users}
+#'     \item{\code{v327}}{Last source for users by type}
+#'     \item{\code{v337}}{Months of use of current method}
+#'     \item{\code{v359}}{Last method discontinued in last 5 years}
+#'     \item{\code{v360}}{Reason of last discontinuation}
+#'     \item{\code{v361}}{Pattern of use}
+#'     \item{\code{v362}}{Intention to use}
+#'     \item{\code{v363}}{NA - Preferred future method}
+#'     \item{\code{v364}}{Contraceptive use and intention}
+#'     \item{\code{v367}}{Wanted last child}
+#'     \item{\code{v372}}{NA - Shown pill package}
+#'     \item{\code{v372a}}{NA - Shown condom package}
+#'     \item{\code{v375a}}{NA - Main reason not using a method}
+#'     \item{\code{v376}}{NA - Main reason not to use a method}
+#'     \item{\code{v376a}}{NA - Would ever use method if married}
+#'     \item{\code{v379}}{NA - Source known for any method}
+#'     \item{\code{v380}}{NA - Source known for any method}
+#'     \item{\code{v384a}}{Heard family planning on radio last few months}
+#'     \item{\code{v384b}}{Heard family planning on TV last few months}
+#'     \item{\code{v384c}}{Heard family planning in newspaper/magazine last few months}
+#'     \item{\code{v393}}{Visited by family planning worker last 12 months}
+#'     \item{\code{v394}}{Visited health facility last 12 months}
+#'     \item{\code{v395}}{At health facility, told of family planning}
+#'     \item{\code{v3a00a}}{Source of family planning for non-users: government hospital}
+#'     \item{\code{v3a00b}}{Source of family planning for non-users: rural health centre(RHC)}
+#'     \item{\code{v3a00c}}{Source of family planning for non-users: family welfare centre}
+#'     \item{\code{v3a00d}}{Source of family planning for non-users: Mother child health centre(MCH)}
+#'     \item{\code{v3a00e}}{Source of family planning for non-users: mobile service camp}
+#'     \item{\code{v3a00f}}{Source of family planning for non-users: lady health worker}
+#'     \item{\code{v3a00g}}{Source of family planning for non-users: Lady health visitor}
+#'     \item{\code{v3a00h}}{Source of family planning for non-users: basic health unit}
+#'     \item{\code{v3a00i}}{Source of family planning for non-users: other public}
+#'     \item{\code{v3a00j}}{Source of family planning for non-users: private hospital/clinic}
+#'     \item{\code{v3a00k}}{Source of family planning for non-users: pharmacy}
+#'     \item{\code{v3a00l}}{Source of family planning for non-users: private doctor}
+#'     \item{\code{v3a00m}}{Source of family planning for non-users: homeopath}
+#'     \item{\code{v3a00n}}{Source of family planning for non-users: dispenser/compounder}
+#'     \item{\code{v3a00o}}{Source of family planning for non-users: other private sector}
+#'     \item{\code{v3a00p}}{NA - Source of family planning for non-users: CS private sector}
+#'     \item{\code{v3a00q}}{NA - Source of family planning for non-users: CS private sector}
+#'     \item{\code{v3a00r}}{NA - Source of family planning for non-users: CS private sector}
+#'     \item{\code{v3a00s}}{Source of family planning for non-users: shop}
+#'     \item{\code{v3a00t}}{Source of family planning for non-users: firend/relative}
+#'     \item{\code{v3a00u}}{Source of family planning for non-users: hakim}
+#'     \item{\code{v3a00v}}{Source of family planning for non-users: DAI trad birth attendant}
+#'     \item{\code{v3a00w}}{NA - Source of family planning for non-users: CS other}
+#'     \item{\code{v3a00x}}{Source of family planning for non-users: other}
+#'     \item{\code{v3a00y}}{Source of family planning for non-users: no source}
+#'     \item{\code{v3a00z}}{Source of family planning for non-users: any source}
+#'     \item{\code{v3a01}}{NA - Told sterilization would mean no more children}
+#'     \item{\code{v3a02}}{Told about side effects}
+#'     \item{\code{v3a03}}{Told about side effects by health or family planning worker}
+#'     \item{\code{v3a04}}{Told how to deal with side effects}
+#'     \item{\code{v3a05}}{Told about other family planning methods}
+#'     \item{\code{v3a06}}{Told about other family planning methods by health or family planning worker}
+#'     \item{\code{v3a07}}{First source for current method}
+#'     \item{\code{v3a08a}}{NA - Reason not using: not married}
+#'     \item{\code{v3a08b}}{Reason not using: not having sex}
+#'     \item{\code{v3a08c}}{Reason not using: infrequent sex}
+#'     \item{\code{v3a08d}}{Reason not using: menopausal/hysterectomy}
+#'     \item{\code{v3a08e}}{Reason not using: subfecund/infecund}
+#'     \item{\code{v3a08f}}{Reason not using: postpartum amenorrheic}
+#'     \item{\code{v3a08g}}{Reason not using: breastfeeding}
+#'     \item{\code{v3a08h}}{Reason not using: fatalistic}
+#'     \item{\code{v3a08i}}{Reason not using: respondent opposed}
+#'     \item{\code{v3a08j}}{Reason not using: husband/partner opposed}
+#'     \item{\code{v3a08k}}{Reason not using: others opposed}
+#'     \item{\code{v3a08l}}{Reason not using: religious prohibition}
+#'     \item{\code{v3a08m}}{Reason not using: knows no method}
+#'     \item{\code{v3a08n}}{Reason not using: knows no source}
+#'     \item{\code{v3a08o}}{NA - Reason not using: health concerns}
+#'     \item{\code{v3a08p}}{Reason not using: fear of side effects/health concerns}
+#'     \item{\code{v3a08q}}{Reason not using: lack of access/too far}
+#'     \item{\code{v3a08r}}{Reason not using: costs too much}
+#'     \item{\code{v3a08s}}{Reason not using: inconvenient to use}
+#'     \item{\code{v3a08t}}{Reason not using: interferes with body?s processes}
+#'     \item{\code{v3a08u}}{Reason not using: preferred method not available}
+#'     \item{\code{v3a08v}}{Reason not using: no method available}
+#'     \item{\code{v3a08w}}{NA - Reason not using: CS}
+#'     \item{\code{v3a08aa}}{NA - Reason not using: CS}
+#'     \item{\code{v3a08ab}}{NA - Reason not using: CS}
+#'     \item{\code{v3a08ac}}{NA - Reason not using: CS}
+#'     \item{\code{v3a08ad}}{NA - Reason not using: CS}
+#'     \item{\code{v3a08x}}{Reason not using: other}
+#'     \item{\code{v3a08z}}{Reason not using: don't know}
+#'     \item{\code{v3a09a}}{NA - How many pill cycles did get last time}
+#'     \item{\code{v3a09b}}{NA - How many condoms did get last time}
+#'     \item{\code{v401}}{Last birth a caesarean section}
+#'     \item{\code{v404}}{Currently breastfeeding}
+#'     \item{\code{v405}}{Currently amenorrheic}
+#'     \item{\code{v406}}{Currently abstaining}
+#'     \item{\code{v407}}{NA - Number of times breastfed during night}
+#'     \item{\code{v408}}{NA - Number of times breastfed during day}
+#'     \item{\code{v409}}{Gave child plain water}
+#'     \item{\code{v409a}}{NA - Gave child sugar water}
+#'     \item{\code{v410}}{Gave child juice}
+#'     \item{\code{v410a}}{NA - Gave child tea or coffee}
+#'     \item{\code{v411}}{Gave child tinned, powdered or fresh milk}
+#'     \item{\code{v411a}}{Gave child baby formula}
+#'     \item{\code{v412}}{NA - Gave child fresh milk}
+#'     \item{\code{v412a}}{Gave child fortified baby food (cerelac, etc)}
+#'     \item{\code{v412b}}{NA - Gave child other porridge/gruel}
+#'     \item{\code{v412c}}{Gave child soup/clear broth}
+#'     \item{\code{v413}}{Gave child other liquid}
+#'     \item{\code{v413a}}{NA - Gave child CS liquid}
+#'     \item{\code{v413b}}{NA - Gave child CS liquid}
+#'     \item{\code{v413c}}{NA - Gave child CS liquid}
+#'     \item{\code{v413d}}{NA - Gave child CS liquid}
+#'     \item{\code{v414a}}{NA - Gave child CS foods}
+#'     \item{\code{v414b}}{NA - Gave child CS foods}
+#'     \item{\code{v414c}}{NA - Gave child CS foods}
+#'     \item{\code{v414d}}{NA - Gave child CS foods}
+#'     \item{\code{v414e}}{Gave child bread, noodles, other made from grains}
+#'     \item{\code{v414f}}{Gave child potatoes, cassava, or other tubers}
+#'     \item{\code{v414g}}{Gave child eggs}
+#'     \item{\code{v414h}}{Gave child meat (beef, pork, lamb, chicken, etc)}
+#'     \item{\code{v414i}}{Gave child pumpkin, carrots, squash (yellow or orange inside)}
+#'     \item{\code{v414j}}{Gave child any dark green leafy vegetables}
+#'     \item{\code{v414k}}{Gave child mangoes, papayas, other vitamin A fruits}
+#'     \item{\code{v414l}}{Gave child any other fruits}
+#'     \item{\code{v414m}}{Gave child liver, heart, other organs}
+#'     \item{\code{v414n}}{Gave child fish or shellfish}
+#'     \item{\code{v414o}}{Gave child food made from beans, peas, lentils, nuts}
+#'     \item{\code{v414p}}{Gave child cheese, yogurt, other milk products}
+#'     \item{\code{v414q}}{NA - Gave child oil, fats, butter, products made of them}
+#'     \item{\code{v414r}}{NA - Gave child chocolates, sweets, candies, pastries, etc}
+#'     \item{\code{v414s}}{Gave child other solid-semisolid food}
+#'     \item{\code{v414t}}{NA - Gave child CS foods}
+#'     \item{\code{v414u}}{NA - Gave child CS foods}
+#'     \item{\code{v414v}}{Gave child yogurt}
+#'     \item{\code{v414w}}{NA - Gave child CS foods}
+#'     \item{\code{v415}}{Drank from bottle with nipple yesterday/last night}
+#'     \item{\code{v416}}{NA - Heard of oral dehydration}
+#'     \item{\code{v417}}{Entries in maternity table}
+#'     \item{\code{v418}}{Entries in health table}
+#'     \item{\code{v419}}{Entries in height/weight table}
+#'     \item{\code{v420}}{NA - Measurer's code}
+#'     \item{\code{v421}}{NA - Assistant measurer's code}
+#'     \item{\code{v426}}{When child put to breast}
+#'     \item{\code{v437}}{Respondent's weight in kilograms (1 decimal)}
+#'     \item{\code{v438}}{Respondent's height in centimeters (1 decimal)}
+#'     \item{\code{v439}}{Height/Age percentile}
+#'     \item{\code{v440}}{Height/Age standard deviation}
+#'     \item{\code{v441}}{Height/Age percent ref. median}
+#'     \item{\code{v442}}{Weight/Height percent ref. median (DHS)}
+#'     \item{\code{v443}}{Weight/Height percent ref. median (Fog)}
+#'     \item{\code{v444}}{Weight/Height percent ref. median (WHO)}
+#'     \item{\code{v444a}}{Weight/Height standard deviation (DHS)}
+#'     \item{\code{v445}}{Body Mass Index}
+#'     \item{\code{v446}}{Rohrer's index}
+#'     \item{\code{v447}}{Result of measurement - height/weight}
+#'     \item{\code{v447a}}{Women's age in years (from household questionnaire)}
+#'     \item{\code{v452a}}{NA - Under age 18 (from household questionnaire)}
+#'     \item{\code{v452b}}{NA - Line number of parent/caretaker}
+#'     \item{\code{v452c}}{NA - Read consent statement - hemoglobin}
+#'     \item{\code{v453}}{NA - Hemoglobin level (g/dl - 1 decimal)}
+#'     \item{\code{v454}}{NA - Currently pregnant (from household questionnaire)}
+#'     \item{\code{v455}}{NA - Result of measurement - hemoglobin}
+#'     \item{\code{v456}}{NA - Hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal)}
+#'     \item{\code{v457}}{NA - Anemia level}
+#'     \item{\code{v458}}{NA - Agrees to referral - anemia}
+#'     \item{\code{v459}}{Have mosquito bed net for sleeping (from household questionnaire)}
+#'     \item{\code{v460}}{NA - Children under 5 slept under mosquito bed net last night (household questio}
+#'     \item{\code{v461}}{NA - Respondent slept under mosquito bed net}
+#'     \item{\code{v462}}{NA - Washed hands before preparing last meal}
+#'     \item{\code{v463a}}{Smokes cigarettes}
+#'     \item{\code{v463b}}{Smokes pipe}
+#'     \item{\code{v463c}}{Uses chewing tobacco}
+#'     \item{\code{v463d}}{Uses snuff}
+#'     \item{\code{v463e}}{Smokes huka/sheesha}
+#'     \item{\code{v463f}}{NA - Smokes country specific}
+#'     \item{\code{v463g}}{NA - Smokes country specific}
+#'     \item{\code{v463x}}{Smokes other}
+#'     \item{\code{v463z}}{Does not use tobacco}
+#'     \item{\code{v464}}{Number of cigarettes in last 24 hours}
+#'     \item{\code{v465}}{NA - Disposal of youngest child's stools when not using toilet}
+#'     \item{\code{v466}}{NA - When child is seriously ill, can decide whether medical treatment sought}
+#'     \item{\code{v467a}}{NA - Getting medical help for self: know where to go}
+#'     \item{\code{v467b}}{Getting medical help for self: getting permission to go}
+#'     \item{\code{v467c}}{Getting medical help for self: getting money needed for treatment}
+#'     \item{\code{v467d}}{Getting medical help for self: distance to health facility}
+#'     \item{\code{v467e}}{Getting medical help for self: having to take transport}
+#'     \item{\code{v467f}}{Getting medical help for self: not wanting to go alone}
+#'     \item{\code{v467g}}{NA - Getting medical help for self: concern no female health provider}
+#'     \item{\code{v467h}}{NA - Getting medical help for self: concern no provider}
+#'     \item{\code{v467i}}{NA - Getting medical help for self: concern no drugs available}
+#'     \item{\code{v467j}}{NA - Getting medical help for self: CS}
+#'     \item{\code{v467k}}{NA - Getting medical help for self: CS}
+#'     \item{\code{v467l}}{NA - Getting medical help for self: CS}
+#'     \item{\code{v467m}}{NA - Getting medical help for self: CS}
+#'     \item{\code{v468}}{Record for Last Birth}
+#'     \item{\code{v469e}}{Times gave child powdered/tinned/fresh milk}
+#'     \item{\code{v469f}}{Times gave child infant formula}
+#'     \item{\code{v469x}}{Times gave child yogurt}
+#'     \item{\code{v471a}}{NA - Mother had tinned, powdered or fresh milk}
+#'     \item{\code{v471b}}{NA - Mother had tea or coffee}
+#'     \item{\code{v471c}}{NA - Mother had any other liquid}
+#'     \item{\code{v471d}}{NA - Mother had CS liquid}
+#'     \item{\code{v471e}}{NA - Mother had CS liquid}
+#'     \item{\code{v471f}}{NA - Mother had CS liquid}
+#'     \item{\code{v471g}}{NA - Mother had CS liquid}
+#'     \item{\code{v472a}}{NA - Mother had CS foods}
+#'     \item{\code{v472b}}{NA - Mother had CS foods}
+#'     \item{\code{v472c}}{NA - Mother had CS foods}
+#'     \item{\code{v472d}}{NA - Mother had CS foods}
+#'     \item{\code{v472e}}{NA - Mother had bread, noodles, other made from grains}
+#'     \item{\code{v472f}}{NA - Mother had potatoes, cassava, or other tubers}
+#'     \item{\code{v472g}}{NA - Mother had eggs}
+#'     \item{\code{v472h}}{NA - Mother had meat (beef, pork, lamb, chicken, etc)}
+#'     \item{\code{v472i}}{NA - Mother had pumpkin, carrots, squash (yellow or orange inside)}
+#'     \item{\code{v472j}}{NA - Mother had any dark green leafy vegetables}
+#'     \item{\code{v472k}}{NA - Mother had mangoes, papayas, other vitamin A fruits}
+#'     \item{\code{v472l}}{NA - Mother had any other fruits}
+#'     \item{\code{v472m}}{NA - Mother had liver, heart, other organs}
+#'     \item{\code{v472n}}{NA - Mother had fish or shellfish}
+#'     \item{\code{v472o}}{NA - Mother had food made from beans, peas, lentils, nuts}
+#'     \item{\code{v472p}}{NA - Mother had cheese, yogurt, other milk products}
+#'     \item{\code{v472q}}{NA - Mother had oil, fats, butter, products made of them}
+#'     \item{\code{v472r}}{NA - Mother had chocolates, sweets, candies, pastries, etc}
+#'     \item{\code{v472s}}{NA - Mother had other solid-semisolid food}
+#'     \item{\code{v472t}}{NA - Mother had CS foods}
+#'     \item{\code{v472u}}{NA - Mother had CS foods}
+#'     \item{\code{v473a}}{NA - Read consent statement - HIV}
+#'     \item{\code{v473b}}{NA - Result of measurement - HIV}
+#'     \item{\code{v474}}{Heard of tuberculosis or TB}
+#'     \item{\code{v474a}}{Tuberculosis spread by: air when coughing or sneezing}
+#'     \item{\code{v474b}}{Tuberculosis spread by: sharing utensils}
+#'     \item{\code{v474c}}{Tuberculosis spread by: touching a person with TB}
+#'     \item{\code{v474d}}{Tuberculosis spread by: food}
+#'     \item{\code{v474e}}{Tuberculosis spread by: sexual contact}
+#'     \item{\code{v474f}}{Tuberculosis spread by: mosquito bites}
+#'     \item{\code{v474g}}{NA - Tuberculosis spread by: CS}
+#'     \item{\code{v474h}}{NA - Tuberculosis spread by: CS}
+#'     \item{\code{v474i}}{NA - Tuberculosis spread by: CS}
+#'     \item{\code{v474j}}{NA - Tuberculosis spread by: CS}
+#'     \item{\code{v474x}}{Tuberculosis spread by: other}
+#'     \item{\code{v474z}}{Tuberculosis spread by: don't know}
+#'     \item{\code{v475}}{Tuberculosis can be cured}
+#'     \item{\code{v476}}{NA - Keep secret when family member gets TB}
+#'     \item{\code{v477}}{Number of injections in last 12 months}
+#'     \item{\code{v478}}{Number of injections administered by a health worker}
+#'     \item{\code{v479}}{NA - Place of injection by health worker}
+#'     \item{\code{v480}}{Syringe and needle from new, unopened package}
+#'     \item{\code{v481}}{NA - Covered by health insurance}
+#'     \item{\code{v481a}}{NA - Health insurance type: mutual/community organization}
+#'     \item{\code{v481b}}{NA - Health insurance type: provided by employer}
+#'     \item{\code{v481c}}{NA - Health insurance type: social security}
+#'     \item{\code{v481d}}{NA - Health insurance type: private/commercially purchased}
+#'     \item{\code{v481e}}{NA - Health insurance type: CS}
+#'     \item{\code{v481f}}{NA - Health insurance type: CS}
+#'     \item{\code{v481g}}{NA - Health insurance type: CS}
+#'     \item{\code{v481h}}{NA - Health insurance type: CS}
+#'     \item{\code{v481x}}{NA - Health insurance type: other}
+#'     \item{\code{v482a}}{NA - Arrange care of biological children under age 18}
+#'     \item{\code{v482b}}{NA - Primary caregiver of children under age 18}
+#'     \item{\code{v482c}}{NA - Arrange care of non-biological children < 18}
+#'     \item{\code{v501}}{Current marital status}
+#'     \item{\code{v502}}{Currently/formerly/never in union}
+#'     \item{\code{v503}}{Number of unions}
+#'     \item{\code{v504}}{Currently residing with husband/partner}
+#'     \item{\code{v505}}{Number of other wives}
+#'     \item{\code{v506}}{Respondent's rank among wives}
+#'     \item{\code{v507}}{Month of first cohabitation}
+#'     \item{\code{v508}}{Year of first cohabitation}
+#'     \item{\code{v509}}{Date of first cohabitation (CMC)}
+#'     \item{\code{v510}}{Completeness of date information in V509}
+#'     \item{\code{v511}}{Age at first cohabitation}
+#'     \item{\code{v512}}{Years since first cohabitation}
+#'     \item{\code{v513}}{Cohabitation duration (grouped)}
+#'     \item{\code{v525}}{NA - Age at first sex}
+#'     \item{\code{v527}}{Time since last sex}
+#'     \item{\code{v528}}{Time since last sex (in days)}
+#'     \item{\code{v529}}{Time since last sex (in months)}
+#'     \item{\code{v530}}{Flag for V529}
+#'     \item{\code{v531}}{NA - Age at first sex (imputed)}
+#'     \item{\code{v532}}{NA - Flag for V531}
+#'     \item{\code{v535}}{NA - Ever been married or in union}
+#'     \item{\code{v536}}{Recent sexual activity}
+#'     \item{\code{v537}}{Months of abstinence}
+#'     \item{\code{v538}}{NA - How previous marriage or union ended}
+#'     \item{\code{v539}}{NA - Person who received most of late husband's property}
+#'     \item{\code{v540}}{NA - Respondent received any of late husband's assets or valuables}
+#'     \item{\code{v541}}{NA - Intends to wait until marriage to have sex}
+#'     \item{\code{v602}}{Fertility preference}
+#'     \item{\code{v603}}{Preferred waiting time for birth of a/another child}
+#'     \item{\code{v604}}{Preferred waiting time for birth of a/another child (grouped)}
+#'     \item{\code{v605}}{Desire for more children}
+#'     \item{\code{v613}}{Ideal number of children}
+#'     \item{\code{v614}}{Ideal number of children (grouped)}
+#'     \item{\code{v616}}{Time for future birth}
+#'     \item{\code{v621}}{Husband's desire for children}
+#'     \item{\code{v623}}{Exposure}
+#'     \item{\code{v624}}{Unmet need}
+#'     \item{\code{v625}}{Exposure (definition 2)}
+#'     \item{\code{v626}}{Unmet need (definition 2)}
+#'     \item{\code{v625a}}{Exposure to need for contraception (definition 3)}
+#'     \item{\code{v626a}}{Unmet need for contraception (definition 3)}
+#'     \item{\code{v627}}{Ideal number of boys}
+#'     \item{\code{v628}}{Ideal number of girls}
+#'     \item{\code{v629}}{Ideal number of either sex}
+#'     \item{\code{v631}}{NA - Problem if became pregnant}
+#'     \item{\code{v632}}{Decision maker for using contraception}
+#'     \item{\code{v633a}}{NA - Reason for not having sex: husband has STI}
+#'     \item{\code{v633b}}{NA - Reason for not having sex: husband has other women}
+#'     \item{\code{v633c}}{NA - Reason for not having sex: recent birth}
+#'     \item{\code{v633d}}{NA - Reason for not having sex: tired, not in mood}
+#'     \item{\code{v633e}}{NA - Reason for not having sex: CS}
+#'     \item{\code{v633f}}{NA - Reason for not having sex: CS}
+#'     \item{\code{v633g}}{NA - Reason for not having sex: CS}
+#'     \item{\code{v634}}{NA - Husband knows that respondent is using contraception}
+#'     \item{\code{v701}}{Husband/partner's education level}
+#'     \item{\code{v702}}{Husband/partner's highest year of education (at level in V701)}
+#'     \item{\code{v704}}{Husband/partner's occupation}
+#'     \item{\code{v705}}{Husband/partner's occupation (grouped)}
+#'     \item{\code{v714}}{Respondent currently working}
+#'     \item{\code{v714a}}{Respondent has a job, but currently absent}
+#'     \item{\code{v715}}{Husband/partner's total number of years of education}
+#'     \item{\code{v716}}{Respondent's occupation}
+#'     \item{\code{v717}}{Respondent's occupation (grouped)}
+#'     \item{\code{v719}}{Respondent works for family, others, self}
+#'     \item{\code{v721}}{Respondent works at home or away}
+#'     \item{\code{v729}}{Husband/partner's educational attainment}
+#'     \item{\code{v730}}{Husband/partner's age}
+#'     \item{\code{v731}}{Respondent worked in last 12 months}
+#'     \item{\code{v732}}{Respondent employed all year/seasonal}
+#'     \item{\code{v739}}{Person who usually decides how to spend respondent's earnings}
+#'     \item{\code{v740}}{NA - Type of land where respondent works}
+#'     \item{\code{v741}}{Type of earnings from respondent's work}
+#'     \item{\code{v743a}}{Person who usually decides on respondent's health care}
+#'     \item{\code{v743b}}{Person who usually decides on large household purchases}
+#'     \item{\code{v743c}}{NA - Person who usually decides on household purchases for daily needs}
+#'     \item{\code{v743d}}{Person who usually decides on visits to family or relatives}
+#'     \item{\code{v743e}}{NA - Person who usually decides on food to be cooked each day}
+#'     \item{\code{v743f}}{Person who usually decides what to do with money husband earns}
+#'     \item{\code{v744a}}{Beating justified if wife goes out without telling husband}
+#'     \item{\code{v744b}}{Beating justified if wife neglects the children}
+#'     \item{\code{v744c}}{Beating justified if wife argues with husband}
+#'     \item{\code{v744d}}{Beating justified if wife refuses to have sex with husband}
+#'     \item{\code{v744e}}{Beating justified if wife burns the food}
+#'     \item{\code{v745a}}{Owns a house alone or jointly}
+#'     \item{\code{v745b}}{Owns land alone or jointly}
+#'     \item{\code{v746}}{Respondent earns more than husband/partner}
+#'     \item{\code{bord}}{Birth order number}
+#'     \item{\code{b0}}{Child is twin}
+#'     \item{\code{b1}}{Month of birth}
+#'     \item{\code{b2}}{Year of birth}
+#'     \item{\code{b3}}{Date of birth (CMC)}
+#'     \item{\code{b4}}{Sex of child}
+#'     \item{\code{b5}}{Child is alive}
+#'     \item{\code{b6}}{Age at death}
+#'     \item{\code{b7}}{Age at death (months, imputed)}
+#'     \item{\code{b8}}{Current age of child}
+#'     \item{\code{b9}}{Child lives with whom}
+#'     \item{\code{b10}}{Completeness of information}
+#'     \item{\code{b11}}{Preceding birth interval (months)}
+#'     \item{\code{b12}}{Succeeding birth interval (months)}
+#'     \item{\code{b13}}{Flag for age at death}
+#'     \item{\code{b15}}{Live birth between births}
+#'     \item{\code{b16}}{Child's line number in household}
+#'     \item{\code{midx}}{Index to Birth History}
+#'     \item{\code{m1}}{Number of tetanus injections before birth}
+#'     \item{\code{m1a}}{Number of tetanus injections before pregnancy}
+#'     \item{\code{m1b}}{NA - Month of last tetanus injection before pregnancy}
+#'     \item{\code{m1c}}{NA - Year of last tetanus injection before pregnancy}
+#'     \item{\code{m1d}}{Years ago received last tetanus injection before pregnancy}
+#'     \item{\code{m1e}}{NA - Last tetanus injection before pregnancy (CMC)}
+#'     \item{\code{m2a}}{Prenatal: doctor}
+#'     \item{\code{m2b}}{Prenatal: Nurse/midwife/LHV}
+#'     \item{\code{m2c}}{NA - Prenatal: CS health professional}
+#'     \item{\code{m2d}}{NA - Prenatal: CS health professional}
+#'     \item{\code{m2e}}{NA - Prenatal: CS health professional}
+#'     \item{\code{m2f}}{NA - Prenatal: CS health professional}
+#'     \item{\code{m2g}}{Prenatal: DAI-TBA}
+#'     \item{\code{m2h}}{Prenatal: lady health worker}
+#'     \item{\code{m2i}}{Prenatal: homeopath}
+#'     \item{\code{m2j}}{Prenatal: hakim}
+#'     \item{\code{m2k}}{Prenatal: other}
+#'     \item{\code{m2l}}{Prenatal: dispenser/compounder}
+#'     \item{\code{m2m}}{NA - Prenatal: CS other}
+#'     \item{\code{m2n}}{Prenatal: no one}
+#'     \item{\code{m3a}}{Assistance: doctor}
+#'     \item{\code{m3b}}{Assistance: nurse/midwife/LHV}
+#'     \item{\code{m3c}}{NA - Assistance: CS health professional}
+#'     \item{\code{m3d}}{NA - Assistance: CS health professional}
+#'     \item{\code{m3e}}{NA - Assistance: CS health professional}
+#'     \item{\code{m3f}}{NA - Assistance: CS health professional}
+#'     \item{\code{m3g}}{Assistance: DAI-traditional birth attendant}
+#'     \item{\code{m3h}}{Assistance: Family welfare center (FWW)}
+#'     \item{\code{m3i}}{Assistance: lady health worker}
+#'     \item{\code{m3j}}{Assistance: homeopath}
+#'     \item{\code{m3k}}{Assistance: other}
+#'     \item{\code{m3l}}{Assistance: hakim}
+#'     \item{\code{m3m}}{Assistance: relative friend}
+#'     \item{\code{m3n}}{Assistance: no one}
+#'     \item{\code{m4}}{Duration of breastfeeding}
+#'     \item{\code{m5}}{Months of breastfeeding}
+#'     \item{\code{m6}}{Duration of amenorrhea}
+#'     \item{\code{m7}}{Months of amenorrhea}
+#'     \item{\code{m8}}{Duration of abstinence}
+#'     \item{\code{m9}}{Months of abstinence}
+#'     \item{\code{m10}}{Wanted pregnancy when became pregnant}
+#'     \item{\code{m11}}{Desired time would have waited}
+#'     \item{\code{m13}}{Timing of 1st antenatal check (months)}
+#'     \item{\code{m14}}{Number of antenatal visits during pregnancy}
+#'     \item{\code{m15}}{Place of delivery}
+#'     \item{\code{m17}}{Delivery by caesarean section}
+#'     \item{\code{m18}}{Size of child at birth}
+#'     \item{\code{m19}}{Birth weight in kilograms (3 decimals)}
+#'     \item{\code{m19a}}{Weight at birth/recall}
+#'     \item{\code{m27}}{NA - Flag for breastfeeding}
+#'     \item{\code{m28}}{Flag for amenorrhea}
+#'     \item{\code{m29}}{Flag for abstinence}
+#'     \item{\code{m34}}{When child put to breast}
+#'     \item{\code{m35}}{NA - Number of times breastfed during previous night}
+#'     \item{\code{m36}}{NA - Number of times breastfed during previous day}
+#'     \item{\code{m38}}{Drank from bottle with nipple yesterday/last night}
+#'     \item{\code{m39a}}{Did eat any solid, semi-solid or soft foods yesterday}
+#'     \item{\code{m39}}{Number of times ate solid, semi-solid or soft food yesterday}
+#'     \item{\code{m42a}}{During pregnancy: weighed}
+#'     \item{\code{m42b}}{NA - During pregnancy: height measured}
+#'     \item{\code{m42c}}{During pregnancy: blood pressure taken}
+#'     \item{\code{m42d}}{During pregnancy: urine sample taken}
+#'     \item{\code{m42e}}{During pregnancy: blood sample taken}
+#'     \item{\code{m43}}{Told about pregnancy complications}
+#'     \item{\code{m44}}{NA - Told where to go for pregnancy complications}
+#'     \item{\code{m45}}{During pregnancy, given or bought iron tablets/syrup}
+#'     \item{\code{m46}}{Days tablets or syrup taken}
+#'     \item{\code{m47}}{NA - During pregnancy, had difficulty with daylight vision}
+#'     \item{\code{m48}}{NA - During pregnancy, had difficulty with night blindness}
+#'     \item{\code{m49a}}{NA - During pregnancy took: SP/fansidar for malaria}
+#'     \item{\code{m49b}}{NA - During pregnancy took: chloroquine for malaria}
+#'     \item{\code{m49c}}{NA - During pregnancy took: CS drug for malaria}
+#'     \item{\code{m49d}}{NA - During pregnancy took: CS drug for malaria}
+#'     \item{\code{m49e}}{NA - During pregnancy took: CS drug for malaria}
+#'     \item{\code{m49f}}{NA - During pregnancy took: CS drug for malaria}
+#'     \item{\code{m49g}}{NA - During pregnancy took: CS drug for malaria}
+#'     \item{\code{m49x}}{NA - During pregnancy took: other drug for malaria}
+#'     \item{\code{m49z}}{NA - During pregnancy took: don't know}
+#'     \item{\code{m49y}}{NA - During pregnancy took: no drug for malaria}
+#'     \item{\code{m50}}{Respondent's check up after delivery}
+#'     \item{\code{m51}}{Respondent's checkup after deliver timing}
+#'     \item{\code{m52}}{Respondent's health professional checked up after delivery}
+#'     \item{\code{m54}}{Received Vitamin A dose in first 2 months after delivery}
+#'     \item{\code{m55a}}{First 3 days, given milk (other than breast milk)}
+#'     \item{\code{m55b}}{First 3 days, given plain water}
+#'     \item{\code{m55c}}{First 3 days, given honey/sugar water}
+#'     \item{\code{m55d}}{First 3 days, given gripe water}
+#'     \item{\code{m55e}}{NA - First 3 days, given sugar/salt solution}
+#'     \item{\code{m55f}}{First 3 days, given fruit juice}
+#'     \item{\code{m55g}}{First 3 days, given infant formula}
+#'     \item{\code{m55h}}{First 3 days, given green tea}
+#'     \item{\code{m55i}}{NA - First 3 days, given honey}
+#'     \item{\code{m55j}}{NA - First 3 days, given coffee}
+#'     \item{\code{m55k}}{First 3 days, ghee butter}
+#'     \item{\code{m55l}}{First 3 days, ghutee}
+#'     \item{\code{m55m}}{First 3 days, given rose water}
+#'     \item{\code{m55n}}{NA - First 3 days, given country specific}
+#'     \item{\code{m55o}}{NA - First 3 days, given country specific}
+#'     \item{\code{m55x}}{First 3 days, given other}
+#'     \item{\code{m55z}}{First 3 days, given nothing}
+#'     \item{\code{m57a}}{Antenatal care: respondent's home}
+#'     \item{\code{m57b}}{Antenatal care: other home}
+#'     \item{\code{m57c}}{NA - Antenatal care: CS home}
+#'     \item{\code{m57d}}{NA - Antenatal care: CS home}
+#'     \item{\code{m57e}}{Antenatal care: government hospital}
+#'     \item{\code{m57f}}{Antenatal care: Rural health centre(RHC)/Mother child health centre(MCH)}
+#'     \item{\code{m57g}}{Antenatal care: BHU/FWC}
+#'     \item{\code{m57h}}{Antenatal care: other public health}
+#'     \item{\code{m57i}}{NA - Antenatal care: CS public health}
+#'     \item{\code{m57j}}{NA - Antenatal care: CS public health}
+#'     \item{\code{m57k}}{NA - Antenatal care: CS public health}
+#'     \item{\code{m57l}}{NA - Antenatal care: CS public health}
+#'     \item{\code{m57m}}{Antenatal care: private hospital/clinic}
+#'     \item{\code{m57n}}{Antenatal care: private doctor}
+#'     \item{\code{m57o}}{Antenatal care: homeopath}
+#'     \item{\code{m57p}}{Antenatal care: dispenser/compounder}
+#'     \item{\code{m57q}}{Antenatal care: other private}
+#'     \item{\code{m57r}}{NA - Antenatal care: CS private medical}
+#'     \item{\code{m57s}}{Antenatal care: hakim}
+#'     \item{\code{m57t}}{NA - Antenatal care: CS other}
+#'     \item{\code{m57u}}{NA - Antenatal care: CS other}
+#'     \item{\code{m57v}}{NA - Antenatal care: CS other}
+#'     \item{\code{m57x}}{Antenatal care: other}
+#'     \item{\code{m60}}{Drugs for intestinal parasites during pregnancy}
+#'     \item{\code{m61}}{Time spent at place of delivery}
+#'     \item{\code{m62}}{Respondent's health checked before discharge}
+#'     \item{\code{m65a}}{NA - Reason didn't deliver at health facility: cost too much}
+#'     \item{\code{m65b}}{NA - Reason didn't deliver at health facility: facility not open}
+#'     \item{\code{m65c}}{NA - Reason didn't deliver at health facility: too far/no transport}
+#'     \item{\code{m65d}}{NA - Reason didn't deliver at health facility: don't trust facility/poor service}
+#'     \item{\code{m65e}}{NA - Reason didn't deliver at health facility: no female provider}
+#'     \item{\code{m65f}}{NA - Reason didn't deliver at health facility: husband/family didn't allow}
+#'     \item{\code{m65g}}{NA - Reason didn't deliver at health facility: not necessary}
+#'     \item{\code{m65h}}{NA - Reason didn't deliver at health facility: not customary}
+#'     \item{\code{m65i}}{NA - Reason didn't deliver at health facility: CS}
+#'     \item{\code{m65j}}{NA - Reason didn't deliver at health facility: CS}
+#'     \item{\code{m65k}}{NA - Reason didn't deliver at health facility: CS}
+#'     \item{\code{m65l}}{NA - Reason didn't deliver at health facility: CS}
+#'     \item{\code{m65x}}{NA - Reason didn't deliver at health facility: other}
+#'     \item{\code{m66}}{Respondent's health checked after discharge/delivery at home}
+#'     \item{\code{m70}}{Baby postnatal check within 2 months}
+#'     \item{\code{m71}}{Time after delivery postnatal check took place}
+#'     \item{\code{m72}}{Person who performed postnatal checkup}
+#'     \item{\code{m73}}{Place baby was first checked}
+#'     \item{\code{hidx}}{Index to birth history}
+#'     \item{\code{h1}}{Has health card}
+#'     \item{\code{h2}}{Received BCG}
+#'     \item{\code{h2d}}{BCG day}
+#'     \item{\code{h2m}}{BCG month}
+#'     \item{\code{h2y}}{BCG year}
+#'     \item{\code{h3}}{Received DPT 1}
+#'     \item{\code{h3d}}{DPT 1 day}
+#'     \item{\code{h3m}}{DPT 1 month}
+#'     \item{\code{h3y}}{DPT 1 year}
+#'     \item{\code{h4}}{Received POLIO 1}
+#'     \item{\code{h4d}}{POLIO 1 day}
+#'     \item{\code{h4m}}{POLIO 1 month}
+#'     \item{\code{h4y}}{POLIO 1 year}
+#'     \item{\code{h5}}{Received DPT 2}
+#'     \item{\code{h5d}}{DPT 2 day}
+#'     \item{\code{h5m}}{DPT 2 month}
+#'     \item{\code{h5y}}{DPT 2 year}
+#'     \item{\code{h6}}{Received POLIO 2}
+#'     \item{\code{h6d}}{POLIO 2 day}
+#'     \item{\code{h6m}}{POLIO 2 month}
+#'     \item{\code{h6y}}{POLIO 2 year}
+#'     \item{\code{h7}}{Received DPT 3}
+#'     \item{\code{h7d}}{DPT 3 day}
+#'     \item{\code{h7m}}{DPT 3 month}
+#'     \item{\code{h7y}}{DPT 3 year}
+#'     \item{\code{h8}}{Received POLIO 3}
+#'     \item{\code{h8d}}{POLIO 3 day}
+#'     \item{\code{h8m}}{POLIO 3 month}
+#'     \item{\code{h8y}}{POLIO 3 year}
+#'     \item{\code{h9}}{Received MEASLES}
+#'     \item{\code{h9d}}{MEASLES day}
+#'     \item{\code{h9m}}{MEASLES month}
+#'     \item{\code{h9y}}{MEASLES year}
+#'     \item{\code{h0}}{Received POLIO 0}
+#'     \item{\code{h0d}}{POLIO 0 day}
+#'     \item{\code{h0m}}{POLIO 0 month}
+#'     \item{\code{h0y}}{POLIO 0 year}
+#'     \item{\code{h10}}{Ever had vaccination}
+#'     \item{\code{h11}}{Had diarrhea recently}
+#'     \item{\code{h11b}}{Blood in the stools}
+#'     \item{\code{h12a}}{Diarrhea: government hospital}
+#'     \item{\code{h12b}}{Diarrhea: Rural health centre(RHC)/Mother child health centre(MCH)}
+#'     \item{\code{h12c}}{Diarrhea: BHU/FWC}
+#'     \item{\code{h12d}}{Diarrhea: lady health worker}
+#'     \item{\code{h12e}}{Diarrhea: other public sector}
+#'     \item{\code{h12f}}{NA - Diarrhea: CS public sector}
+#'     \item{\code{h12g}}{NA - Diarrhea: CS public sector}
+#'     \item{\code{h12h}}{NA - Diarrhea: CS public sector}
+#'     \item{\code{h12i}}{NA - Diarrhea: CS public sector}
+#'     \item{\code{h12j}}{Diarrhea: private hospital/clinic}
+#'     \item{\code{h12k}}{Diarrhea: private pharmacy}
+#'     \item{\code{h12l}}{Diarrhea: private doctor}
+#'     \item{\code{h12m}}{Diarrhea: homeopath}
+#'     \item{\code{h12n}}{Diarrhea: dispenser/compounder}
+#'     \item{\code{h12o}}{Diarrhea: Other private sector}
+#'     \item{\code{h12p}}{NA - Diarrhea: CS private medical}
+#'     \item{\code{h12q}}{NA - Diarrhea: CS private medical}
+#'     \item{\code{h12r}}{NA - Diarrhea: CS private medical}
+#'     \item{\code{h12s}}{Diarrhea: shop}
+#'     \item{\code{h12t}}{Diarrhea: hakim}
+#'     \item{\code{h12u}}{Diarrhea: DAI-TBA}
+#'     \item{\code{h12v}}{NA - Diarrhea: CS other sector}
+#'     \item{\code{h12w}}{NA - Diarrhea: CS other sector}
+#'     \item{\code{h12x}}{Diarrhea: Other}
+#'     \item{\code{h12y}}{Diarrhea: no treatment}
+#'     \item{\code{h12z}}{Diarrhea: medical treatment}
+#'     \item{\code{h13}}{Given oral dehydration}
+#'     \item{\code{h13b}}{NA - Given pre-packaged ORS liquid}
+#'     \item{\code{h14}}{Given recommended home solution}
+#'     \item{\code{h15}}{Given antibiotic pills or syrups}
+#'     \item{\code{h15a}}{Given antimotility}
+#'     \item{\code{h15b}}{Given antibiotic injection}
+#'     \item{\code{h15c}}{Given intravenous (IV)}
+#'     \item{\code{h15d}}{NA - Given home remedy, herbal medicine}
+#'     \item{\code{h15e}}{Given zinc}
+#'     \item{\code{h15f}}{Given other (not antibiotic, antimotility, zinc)}
+#'     \item{\code{h15g}}{Given unknown pill or syrup}
+#'     \item{\code{h15h}}{Given non-antibiotic injection}
+#'     \item{\code{h15i}}{Given unknown injection}
+#'     \item{\code{h15j}}{Given rice starch}
+#'     \item{\code{h15k}}{Given mint extract}
+#'     \item{\code{h15l}}{Given herbal remedy}
+#'     \item{\code{h15m}}{NA - Given CS}
+#'     \item{\code{h20}}{Given other treatment}
+#'     \item{\code{h21a}}{Given no treatment}
+#'     \item{\code{h21}}{Received any treatment}
+#'     \item{\code{h22}}{Had fever in last two weeks}
+#'     \item{\code{h31}}{Had cough in last two weeks}
+#'     \item{\code{h31b}}{Short, rapid breaths}
+#'     \item{\code{h31c}}{Problem in the chest or blocked or running nose}
+#'     \item{\code{h31d}}{Had fever/cough in last 2 weeks: amount offered to drink}
+#'     \item{\code{h31e}}{Had fever/cough in last 2 weeks: amount offered to eat}
+#'     \item{\code{h32a}}{Fever/cough: government hospital}
+#'     \item{\code{h32b}}{Fever/cough: Rural health centre(RHC)/Mother child health centre(MCH)}
+#'     \item{\code{h32c}}{Fever/cough: BHU/FWC}
+#'     \item{\code{h32d}}{Fever/cough: lady health worker}
+#'     \item{\code{h32e}}{Fever/cough: other public sector}
+#'     \item{\code{h32f}}{NA - Fever/cough: CS public sector}
+#'     \item{\code{h32g}}{NA - Fever/cough: CS public sector}
+#'     \item{\code{h32h}}{NA - Fever/cough: CS public sector}
+#'     \item{\code{h32i}}{NA - Fever/cough: CS public sector}
+#'     \item{\code{h32j}}{Fever/cough: private hospital/ clinic}
+#'     \item{\code{h32k}}{Fever/cough: private pharmacy}
+#'     \item{\code{h32l}}{Fever/cough: private doctor}
+#'     \item{\code{h32m}}{Fever/cough: homeopath}
+#'     \item{\code{h32n}}{Fever/cough: dispenser/compounder}
+#'     \item{\code{h32o}}{Fever/cough: other private medical}
+#'     \item{\code{h32p}}{NA - Fever/cough: CS private medical}
+#'     \item{\code{h32q}}{NA - Fever/cough: CS private medical}
+#'     \item{\code{h32r}}{NA - Fever/cough: CS private medical}
+#'     \item{\code{h32s}}{Fever/cough: shop}
+#'     \item{\code{h32t}}{Fever/cough: hakim}
+#'     \item{\code{h32u}}{Fever/cough: DAI - TBA}
+#'     \item{\code{h32v}}{NA - Fever/cough: CS other sector}
+#'     \item{\code{h32w}}{NA - Fever/cough: CS other sector}
+#'     \item{\code{h32x}}{Fever/cough: other}
+#'     \item{\code{h32y}}{Fever/cough: no treatment}
+#'     \item{\code{h32z}}{Fever/cough: medical treatment}
+#'     \item{\code{h33}}{Received Vitamin A1 (most recent)}
+#'     \item{\code{h33d}}{Vitamin A1 day}
+#'     \item{\code{h33m}}{Vitamin A1 month}
+#'     \item{\code{h33y}}{Vitamin A1 year}
+#'     \item{\code{h34}}{Vitamin A in last 6 months}
+#'     \item{\code{h35}}{NA - Any vaccinations in last 2 years part of campaign}
+#'     \item{\code{h36a}}{NA - Vaccinated during Campaign A}
+#'     \item{\code{h36b}}{NA - Vaccinated during Campaign B}
+#'     \item{\code{h36c}}{NA - Vaccinated during Campaign C}
+#'     \item{\code{h36d}}{NA - Vaccinated during Campaign D}
+#'     \item{\code{h36e}}{NA - Vaccinated during Campaign E}
+#'     \item{\code{h36f}}{NA - Vaccinated during Campaign F}
+#'     \item{\code{h37a}}{SP/Fansidar taken for fever/cough}
+#'     \item{\code{h37b}}{Chloroquine taken for fever/cough}
+#'     \item{\code{h37c}}{Amodiaquine taken for fever/cough}
+#'     \item{\code{h37d}}{Quinine taken for fever/cough}
+#'     \item{\code{h37e}}{Combination with artemisinin taken for fever/cough}
+#'     \item{\code{h37f}}{NA - CS antimalarial taken for fever/cough}
+#'     \item{\code{h37g}}{NA - CS antimalarial taken for fever/cough}
+#'     \item{\code{h37h}}{Other antimalarial taken for fever/cough}
+#'     \item{\code{h37i}}{Antibiotic pill/syrup taken for fever/cough}
+#'     \item{\code{h37j}}{Antibiotic injection taken for fever/cough}
+#'     \item{\code{h37k}}{NA - Aspirin taken for fever/cough}
+#'     \item{\code{h37l}}{Acetaminophen/paracetamol/panadol taken for fever/cough}
+#'     \item{\code{h37m}}{Ibuprofen taken for fever/cough}
+#'     \item{\code{h37n}}{Ponstan taken for fever/cough}
+#'     \item{\code{h37o}}{Cough syrup for fever/cough}
+#'     \item{\code{h37p}}{NA - CS other for fever/cough}
+#'     \item{\code{h37x}}{Other taken for fever/cough}
+#'     \item{\code{h37y}}{Nothing taken for fever/cough}
+#'     \item{\code{h37z}}{Don't know if or what was taken for fever/cough}
+#'     \item{\code{h38}}{Diarrhea in last 2 weeks: amount offered to drink}
+#'     \item{\code{h39}}{Diarrhea in last 2 weeks: amount offered to eat}
+#'     \item{\code{h40}}{NA - Received Vitamin A2 (2nd most recent)}
+#'     \item{\code{h40d}}{NA - Vitamin A2 day}
+#'     \item{\code{h40m}}{NA - Vitamin A2 month}
+#'     \item{\code{h40y}}{NA - Vitamin A2 year}
+#'     \item{\code{h41a}}{NA - Received vitamin A after most recent in card}
+#'     \item{\code{h41b}}{NA - Ever received Vitamin A dose}
+#'     \item{\code{h42}}{Taking iron pills, sprinkles or syrup}
+#'     \item{\code{h43}}{Drugs for intestinal parasites in last 6 months}
+#'     \item{\code{h44a}}{NA - Place first sought treatment for diarrhea}
+#'     \item{\code{h44b}}{NA - Days after diarrhea sought advice or treatment}
+#'     \item{\code{h44c}}{NA - Still has diarrhea}
+#'     \item{\code{h45}}{NA - Times zinc was given}
+#'     \item{\code{h46a}}{NA - Place first sought treatment for fever}
+#'     \item{\code{h46b}}{NA - Days after fever sought advice or treatment}
+#'     \item{\code{h47}}{Blood taken from child's finger/heel for testing}
+#'     \item{\code{hwidx}}{Index to Birth History}
+#'     \item{\code{hw1}}{Child's age in months}
+#'     \item{\code{hw2}}{Child's weight in kilograms (1 decimal)}
+#'     \item{\code{hw3}}{Child's height in centimeters (1 decimal)}
+#'     \item{\code{hw4}}{Height/Age percentile}
+#'     \item{\code{hw5}}{Height/Age standard deviation}
+#'     \item{\code{hw6}}{Height/Age percent of ref. median}
+#'     \item{\code{hw7}}{Weight/Age percentile}
+#'     \item{\code{hw8}}{Weight/Age standard deviation}
+#'     \item{\code{hw9}}{Weight/Age percent of ref. median}
+#'     \item{\code{hw10}}{Weight/Height percentile}
+#'     \item{\code{hw11}}{Weight/Height standard deviation}
+#'     \item{\code{hw12}}{Weight/Height percent of ref. median}
+#'     \item{\code{hw13}}{Result of measurement - height/weight}
+#'     \item{\code{hw15}}{Height: lying or standing}
+#'     \item{\code{hw16}}{Day of birth of child}
+#'     \item{\code{hw17}}{Date measured (day)}
+#'     \item{\code{hw18}}{Date measured (month)}
+#'     \item{\code{hw19}}{Date measured (year)}
+#'     \item{\code{hw51}}{NA - Line number of parent/caretaker}
+#'     \item{\code{hw52}}{NA - Read consent statement - hemoglobin}
+#'     \item{\code{hw53}}{NA - Hemoglobin level (g/dl - 1 decimal)}
+#'     \item{\code{hw55}}{NA - Result of measurement - hemoglobin}
+#'     \item{\code{hw56}}{NA - Hemoglobin level adjusted for altitude (g/dl - 1 decimal)}
+#'     \item{\code{hw57}}{NA - Anemia level}
+#'     \item{\code{hw58}}{NA - Agrees to referral - anemia}
+#'     \item{\code{hw70}}{Height/Age standard deviation (new WHO)}
+#'     \item{\code{hw71}}{Weight/Age standard deviation (new WHO)}
+#'     \item{\code{hw72}}{Weight/Height standard deviation (new WHO)}
+#'     \item{\code{hw73}}{BMI standard deviation (new WHO)}
+#'     \item{\code{sdist}}{District}
+#'     \item{\code{slangq}}{Language of questionnaire}
+#'     \item{\code{slangi}}{Language of interview}
+#'     \item{\code{slangr}}{Language respondent speaks a home}
+#'     \item{\code{seduc}}{Woman's educational level for report}
+#'     \item{\code{swfeduc1}}{All woman factor - education as will be used in the report}
+#'     \item{\code{swfregur}}{All woman factor - region combined with urban/rural}
+#'     \item{\code{s110}}{Blood relation with husband}
+#'     \item{\code{s111}}{Type of relationship}
+#'     \item{\code{s113}}{Woman have say in choosing husband}
+#'     \item{\code{s117}}{Highest class completed}
+#'     \item{\code{s209}}{Number of pregnancy losses}
+#'     \item{\code{s210}}{Total pregnancy outcomes}
+#'     \item{\code{s318}}{Source for current method when started}
+#'     \item{\code{s323}}{Ever experienced side effects with current FP method}
+#'     \item{\code{s324a}}{Side effects for current method: obesity/weight gain}
+#'     \item{\code{s324b}}{Side effects for current method: headache}
+#'     \item{\code{s324c}}{Side effects for current method: nausea/dizziness}
+#'     \item{\code{s324d}}{Side effects for current method: excessive bleeding}
+#'     \item{\code{s324e}}{Side effects for current method: spotting}
+#'     \item{\code{s324f}}{Side effects for current method: irregular/no menses}
+#'     \item{\code{s324g}}{Side effects for current method: depression}
+#'     \item{\code{s324x}}{Side effects for current method: other}
+#'     \item{\code{s325}}{Seek medical advice for side effects with current FP method}
+#'     \item{\code{s326a}}{Seek advice for side effects from: doctor}
+#'     \item{\code{s326b}}{Seek advice for side effects from: nurse/midwife}
+#'     \item{\code{s326c}}{Seek advice for side effects from: DAI-TBA}
+#'     \item{\code{s326d}}{Seek advice for side effects from: lady worker}
+#'     \item{\code{s326e}}{Seek advice for side effects from: homeopath}
+#'     \item{\code{s326f}}{Seek advice for side effects from: hakim}
+#'     \item{\code{s326g}}{Seek advice for side effects from: dispenser}
+#'     \item{\code{s326x}}{Seek advice for side effects from: other}
+#'     \item{\code{s326y}}{Seek advice for side effects from: no one}
+#'     \item{\code{s327a}}{Place where advice was sought: govt. hospital}
+#'     \item{\code{s327b}}{Place where advice was sought: rural health centre}
+#'     \item{\code{s327c}}{Place where advice was sought: family welfare centre}
+#'     \item{\code{s327d}}{Place where advice was sought: Mother child health centre(MCH)}
+#'     \item{\code{s327e}}{Place where advice was sought: dispenser}
+#'     \item{\code{s327f}}{Place where advice was sought: mobile service camp}
+#'     \item{\code{s327g}}{Place where advice was sought: lady health worker}
+#'     \item{\code{s327h}}{Place where advice was sought: Lady health visitor}
+#'     \item{\code{s327i}}{Place where advice was sought: basic health unit}
+#'     \item{\code{s327j}}{Place where advice was sought: male mobilizer}
+#'     \item{\code{s327k}}{Place where advice was sought: Family welfare assistant(FWA)}
+#'     \item{\code{s327l}}{Place where advice was sought: other public}
+#'     \item{\code{s327m}}{Place where advice was sought: private/NGO hospital/clinic}
+#'     \item{\code{s327n}}{Place where advice was sought: pharmacy}
+#'     \item{\code{s327o}}{Place where advice was sought: private doctor}
+#'     \item{\code{s327p}}{Place where advice was sought: homeopath}
+#'     \item{\code{s327q}}{Place where advice was sought: dispenser/compounder}
+#'     \item{\code{s327r}}{Place where advice was sought: other private medical}
+#'     \item{\code{s327s}}{Place where advice was sought: shop}
+#'     \item{\code{s327t}}{Place where advice was sought: friend/relative}
+#'     \item{\code{s327u}}{Place where advice was sought: hakim}
+#'     \item{\code{s327v}}{Place where advice was sought: DAI-TBA}
+#'     \item{\code{s327x}}{Place where advice was sought: other}
+#'     \item{\code{s327z}}{Place where advice was sought: Don't know}
+#'     \item{\code{s328a}}{Reason didn't seek advice: not necessary}
+#'     \item{\code{s328b}}{Reason didn't seek advice: cost too much}
+#'     \item{\code{s328c}}{Reason didn't seek advice: too far}
+#'     \item{\code{s328d}}{Reason didn't seek advice: no transport}
+#'     \item{\code{s328e}}{Reason didn't seek advice: no one to go with}
+#'     \item{\code{s328f}}{Reason didn't seek advice: service not good}
+#'     \item{\code{s328g}}{Reason didn't seek advice: no time to go}
+#'     \item{\code{s328h}}{Reason didn't seek advice: didn't know where to go}
+#'     \item{\code{s328i}}{Reason didn't seek advice: lady doctor wasn't available}
+#'     \item{\code{s328j}}{Reason didn't seek advice: long waiting time}
+#'     \item{\code{s328k}}{Reason didn't seek advice: not allowed to go}
+#'     \item{\code{s328x}}{Reason didn't seek advice: other}
+#'     \item{\code{s332}}{Last source of FP}
+#'     \item{\code{s335}}{Knows that lady health worker is present in the area}
+#'     \item{\code{s337}}{Received any care from lady health worker}
+#'     \item{\code{s338a}}{Help received on: info on mother and child health}
+#'     \item{\code{s338b}}{Help received on: contraceptive supplies}
+#'     \item{\code{s338c}}{Help received on: referred to health facility}
+#'     \item{\code{s338d}}{Help received on: treatment of side effects}
+#'     \item{\code{s338e}}{Help received on: vaccination}
+#'     \item{\code{s338f}}{Help received on: treatment of minor ailment}
+#'     \item{\code{s338g}}{Help received on: treatment for mother and child}
+#'     \item{\code{s338x}}{Help received on: other}
+#'     \item{\code{s341}}{Any service outlet that provide FP services}
+#'     \item{\code{s342}}{Ever visited any service outlet that provide FP services}
+#'     \item{\code{s343}}{Kind of service outlet visit}
+#'     \item{\code{s344a}}{Satisfied with: Provision of contraception}
+#'     \item{\code{s344b}}{Satisfied with: Follow-up care}
+#'     \item{\code{s344c}}{Satisfied with: Infection prevention}
+#'     \item{\code{s344d}}{Satisfied with: Counseling services}
+#'     \item{\code{s344e}}{Satisfied with: Timely treatment}
+#'     \item{\code{s344f}}{Satisfied with: Attitude of staff}
+#'     \item{\code{s344g}}{Satisfied with: Punctuality maintained}
+#'     \item{\code{s344h}}{Satisfied with: Timely referring}
+#'     \item{\code{s344i}}{Satisfied with: Cooperative}
+#'     \item{\code{s344j}}{Satisfied with: Handle complications promptly}
+#'     \item{\code{s344x}}{Satisfied with: Others}
+#'     \item{\code{s345a}}{Reason for not visiting FP services: services at door steps}
+#'     \item{\code{s345b}}{Reason for not visiting FP services: preferred other providers}
+#'     \item{\code{s345c}}{Reason for not visiting FP services: undesirable location}
+#'     \item{\code{s345d}}{Reason for not visiting FP services: not necessary to visit}
+#'     \item{\code{s345e}}{Reason for not visiting FP services: unaware about the service}
+#'     \item{\code{s345f}}{Reason for not visiting FP services: wanted more children}
+#'     \item{\code{s345x}}{Reason for not visiting FP services: other}
+#'     \item{\code{s617a}}{Family planning message conveyed: limiting the family}
+#'     \item{\code{s617b}}{Family planning message conveyed: higher age at marriage}
+#'     \item{\code{s617c}}{Family planning message conveyed: spacing of children}
+#'     \item{\code{s617d}}{Family planning message conveyed: use of contraceptives}
+#'     \item{\code{s617e}}{Family planning message conveyed: welfare of family}
+#'     \item{\code{s617f}}{Family planning message conveyed: maternal and child health}
+#'     \item{\code{s617g}}{Family planning message conveyed: less children, prosperous life}
+#'     \item{\code{s617h}}{Family planning message conveyed: more children, poverty and starvation}
+#'     \item{\code{s617i}}{Family planning message conveyed: importance of breastfeeding}
+#'     \item{\code{s617x}}{Family planning message conveyed: other}
+#'     \item{\code{s617z}}{Family planning message conveyed: DK/don't remember}
+#'     \item{\code{s618}}{Was family planning message effective}
+#'     \item{\code{s705a}}{Women work cash before got married}
+#'     \item{\code{s705b}}{Women work cash after got married}
+#'     \item{\code{s705c}}{Year when start working after marriage}
+#'     \item{\code{s724}}{Have the autonomy to sell the house own}
+#'     \item{\code{s726}}{Have the autonomy to sell the land own}
+#'     \item{\code{s728e}}{Justifies domestic violence: Neglected In-laws}
+#'     \item{\code{s904}}{Duration of treatment of TB nowadays}
+#'     \item{\code{s905}}{Ever been told by a doctor/nurse that had TB}
+#'     \item{\code{s906}}{Ever heard about Hepatitis}
+#'     \item{\code{s907}}{Person can avoid Hepatitis}
+#'     \item{\code{s908a}}{Avoid getting Hepatitis by: safe sex}
+#'     \item{\code{s908b}}{Avoid getting Hepatitis by: safe blood transfer}
+#'     \item{\code{s908c}}{Avoid getting Hepatitis by: disposable syringe}
+#'     \item{\code{s908d}}{Avoid getting Hepatitis by: avoid contaminated food/water}
+#'     \item{\code{s908e}}{Avoid getting Hepatitis by: avoid contact with infected person}
+#'     \item{\code{s908f}}{Avoid getting Hepatitis by: dentist instruments sterilized}
+#'     \item{\code{s908x}}{Avoid getting Hepatitis by: other}
+#'     \item{\code{s908y}}{Avoid getting Hepatitis by: no response}
+#'     \item{\code{s908z}}{Avoid getting Hepatitis by: don't know}
+#'     \item{\code{idx94}}{Index to Birth History}
+#'     \item{\code{s413e}}{During pregnancy: have ultrasound exam}
+#'     \item{\code{idx95}}{Index to Birth History}
+#'     \item{\code{s506}}{Type of vaccination administered Combo/Penta/DPT}
+#'     \item{\code{shb1}}{Received hepatitis B-1}
+#'     \item{\code{shb1d}}{Hepatitis B-1 day}
+#'     \item{\code{shb1m}}{Hepatitis B-1 month}
+#'     \item{\code{shb1y}}{Hepatitis B-1 year}
+#'     \item{\code{shb2}}{Received hepatitis B-2}
+#'     \item{\code{shb2d}}{Hepatitis B-2 day}
+#'     \item{\code{shb2m}}{Hepatitis B-2 month}
+#'     \item{\code{shb2y}}{Hepatitis B-2 year}
+#'     \item{\code{shb3}}{Received hepatitis B-3}
+#'     \item{\code{shb3d}}{Hepatitis B-3 day}
+#'     \item{\code{shb3m}}{Hepatitis B-3 month}
+#'     \item{\code{shb3y}}{Hepatitis B-3 year}
+#'
+#'   }
+#'
+#' @author
+#'  \enumerate{
+#'   \item{Muhammad Yaseen } {(\email{myaseen208@@gmail.com})}
+#'   }
+#'
+#' @references
+#' \enumerate{
+#'   \item National Institute of Population Studies (NIPS), Pakistan (\url{http://nips.org.pk/Home.htm}).
+#'  }
+#'
+#' @import tibble
+#'
+#' @examples
+#'  load("PKBR61")
+#'  PKBR61
+NULL

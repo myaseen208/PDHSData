@@ -1,0 +1,1121 @@
+#' @title Pakistan Demographic and Health Survey 2012-13 Men's Recode Data
+#' @name  PKMR61
+#' @description \code{PKMR61} data of Men's Recode from Pakistan Demographic and Health Survey 2012-13.
+#' \describe{
+#'     \item{\code{mcaseid}}{Case Identification}
+#'     \item{\code{mv000}}{Country code and phase}
+#'     \item{\code{mv001}}{Cluster number}
+#'     \item{\code{mv002}}{Household number}
+#'     \item{\code{mv003}}{Respondent's line number}
+#'     \item{\code{mv004}}{Ultimate area unit}
+#'     \item{\code{mv005}}{Men's sample weight (6 decimals)}
+#'     \item{\code{mv006}}{Month of interview}
+#'     \item{\code{mv007}}{Year of interview}
+#'     \item{\code{mv008}}{Date of interview (CMC)}
+#'     \item{\code{mv009}}{Month of birth}
+#'     \item{\code{mv010}}{Year of birth}
+#'     \item{\code{mv011}}{Date of birth (CMC)}
+#'     \item{\code{mv012}}{Current age}
+#'     \item{\code{mv013}}{Age in 5-year groups}
+#'     \item{\code{mv014}}{Completeness of age information}
+#'     \item{\code{mv015}}{Result of interview}
+#'     \item{\code{mv016}}{Day of interview}
+#'     \item{\code{mv021}}{Primary sampling unit}
+#'     \item{\code{mv022}}{Sample stratum number}
+#'     \item{\code{mv023}}{Sample domain}
+#'     \item{\code{mv024}}{Region}
+#'     \item{\code{mv025}}{Type of place of residence}
+#'     \item{\code{mv026}}{De facto place of residence}
+#'     \item{\code{mv027}}{Number of visits}
+#'     \item{\code{mv028}}{Interviewer identification}
+#'     \item{\code{mv029}}{Keyer identification}
+#'     \item{\code{mv030}}{Field supervisor}
+#'     \item{\code{mv031}}{Field editor}
+#'     \item{\code{mv032}}{NA - Office editor}
+#'     \item{\code{mv034.1}}{NA - Line number of wife/partner}
+#'     \item{\code{mv034.2}}{NA - Line number of wife/partner}
+#'     \item{\code{mv034.3}}{NA - Line number of wife/partner}
+#'     \item{\code{mv034.4}}{NA - Line number of wife/partner}
+#'     \item{\code{mv034.5}}{NA - Line number of wife/partner}
+#'     \item{\code{mv034.6}}{NA - Line number of wife/partner}
+#'     \item{\code{mv034.7}}{NA - Line number of wife/partner}
+#'     \item{\code{mv034.8}}{NA - Line number of wife/partner}
+#'     \item{\code{mv034a.1}}{NA - Wife or partner***}
+#'     \item{\code{mv034a.2}}{NA - Wife or partner***}
+#'     \item{\code{mv034a.3}}{NA - Wife or partner***}
+#'     \item{\code{mv034a.4}}{NA - Wife or partner***}
+#'     \item{\code{mv034a.5}}{NA - Wife or partner***}
+#'     \item{\code{mv034a.6}}{NA - Wife or partner***}
+#'     \item{\code{mv034a.7}}{NA - Wife or partner***}
+#'     \item{\code{mv034a.8}}{NA - Wife or partner***}
+#'     \item{\code{mv034b.1}}{NA - Age of wife/partner}
+#'     \item{\code{mv034b.2}}{NA - Age of wife/partner}
+#'     \item{\code{mv034b.3}}{NA - Age of wife/partner}
+#'     \item{\code{mv034b.4}}{NA - Age of wife/partner}
+#'     \item{\code{mv034b.5}}{NA - Age of wife/partner}
+#'     \item{\code{mv034b.6}}{NA - Age of wife/partner}
+#'     \item{\code{mv034b.7}}{NA - Age of wife/partner}
+#'     \item{\code{mv034b.8}}{NA - Age of wife/partner}
+#'     \item{\code{mv035}}{Number of wives/partners}
+#'     \item{\code{mv801}}{Time interview started (hhmm - 24 hour clock)}
+#'     \item{\code{mv802}}{Time interview ended (hhmm - 24 hour clock)}
+#'     \item{\code{mv803}}{Length of interview in minutes}
+#'     \item{\code{mv101}}{Region}
+#'     \item{\code{mv102}}{Type of place of residence}
+#'     \item{\code{mv103}}{NA - Childhood place of residence***}
+#'     \item{\code{mv104}}{NA - Years lived in place of residence}
+#'     \item{\code{mv105}}{NA - Type of place of previous residence}
+#'     \item{\code{mv106}}{Educational level}
+#'     \item{\code{mv107}}{Highest year of education (at level in MV106)}
+#'     \item{\code{mv130}}{NA - Religion}
+#'     \item{\code{mv131}}{Ethnicity}
+#'     \item{\code{mv133}}{Total number of years of education}
+#'     \item{\code{mv134}}{De facto place of residence}
+#'     \item{\code{mv135}}{Usual resident or visitor}
+#'     \item{\code{mv136}}{Number of household members (total listed)}
+#'     \item{\code{mv138}}{Number of eligible men in household (de facto)}
+#'     \item{\code{mv149}}{Educational attainment}
+#'     \item{\code{mv150}}{Relationship to household head}
+#'     \item{\code{mv151}}{Sex of household head}
+#'     \item{\code{mv152}}{Age of household head}
+#'     \item{\code{mv155}}{Literacy}
+#'     \item{\code{mv156}}{NA - Ever participated in a literacy program (excluding primary school)}
+#'     \item{\code{mv157}}{Frequency of reading newspaper or magazine}
+#'     \item{\code{mv158}}{Frequency of listening to radio}
+#'     \item{\code{mv159}}{Frequency of watching television}
+#'     \item{\code{mv167}}{NA - Times away from home in last 12 months}
+#'     \item{\code{mv168}}{NA - Away for more than one month in last 12 months}
+#'     \item{\code{mv190}}{Wealth index}
+#'     \item{\code{mv191}}{Wealth index factor score (5 decimals)}
+#'     \item{\code{mv201}}{Total children ever born}
+#'     \item{\code{mv202}}{Sons at home}
+#'     \item{\code{mv203}}{Daughters at home}
+#'     \item{\code{mv204}}{Sons elsewhere}
+#'     \item{\code{mv205}}{Daughters elsewhere}
+#'     \item{\code{mv206}}{Sons who have died}
+#'     \item{\code{mv207}}{Daughters who have died}
+#'     \item{\code{mv212}}{Age of respondent at 1st birth}
+#'     \item{\code{mv213}}{Partner currently pregnant}
+#'     \item{\code{mv217}}{Knowledge of ovulatory cycle}
+#'     \item{\code{mv218}}{Number of living children}
+#'     \item{\code{mv225}}{NA - Most recent pregnancy wanted}
+#'     \item{\code{mv245}}{Number of women fathered children with}
+#'     \item{\code{mv246}}{NA - Married to mother when first child was born}
+#'     \item{\code{mv247}}{Age of most recent child}
+#'     \item{\code{mv248}}{Antenatal check-ups for the mother of most recent child}
+#'     \item{\code{mv249}}{Respondent present during check-ups for most recent child}
+#'     \item{\code{mv250}}{Place of birth of most recent child}
+#'     \item{\code{mv251}}{NA - Reason for not delivering most recent child in health facility}
+#'     \item{\code{mv252}}{Amount a child should drink, when that child has diarrhea}
+#'     \item{\code{mv301}}{Knowledge of any contraceptive method}
+#'     \item{\code{mv302}}{NA - Ever use of any contraceptive method}
+#'     \item{\code{m304a.01}}{Type of contraceptive method}
+#'     \item{\code{m304a.02}}{Type of contraceptive method}
+#'     \item{\code{m304a.03}}{Type of contraceptive method}
+#'     \item{\code{m304a.04}}{Type of contraceptive method}
+#'     \item{\code{m304a.05}}{Type of contraceptive method}
+#'     \item{\code{m304a.06}}{Type of contraceptive method}
+#'     \item{\code{m304a.07}}{Type of contraceptive method}
+#'     \item{\code{m304a.08}}{Type of contraceptive method}
+#'     \item{\code{m304a.09}}{Type of contraceptive method}
+#'     \item{\code{m304a.10}}{Type of contraceptive method}
+#'     \item{\code{m304a.11}}{Type of contraceptive method}
+#'     \item{\code{m304a.12}}{Type of contraceptive method}
+#'     \item{\code{m304a.13}}{Type of contraceptive method}
+#'     \item{\code{m304a.14}}{Type of contraceptive method}
+#'     \item{\code{m304a.15}}{Type of contraceptive method}
+#'     \item{\code{m304a.16}}{Type of contraceptive method}
+#'     \item{\code{m304a.17}}{Type of contraceptive method}
+#'     \item{\code{m304a.18}}{Type of contraceptive method}
+#'     \item{\code{m304a.19}}{Type of contraceptive method}
+#'     \item{\code{m304a.20}}{Type of contraceptive method}
+#'     \item{\code{mv304.01}}{Knows contraceptive method}
+#'     \item{\code{mv304.02}}{Knows contraceptive method}
+#'     \item{\code{mv304.03}}{Knows contraceptive method}
+#'     \item{\code{mv304.04}}{Knows contraceptive method}
+#'     \item{\code{mv304.05}}{Knows contraceptive method}
+#'     \item{\code{mv304.06}}{Knows contraceptive method}
+#'     \item{\code{mv304.07}}{Knows contraceptive method}
+#'     \item{\code{mv304.08}}{Knows contraceptive method}
+#'     \item{\code{mv304.09}}{Knows contraceptive method}
+#'     \item{\code{mv304.10}}{Knows contraceptive method}
+#'     \item{\code{mv304.11}}{Knows contraceptive method}
+#'     \item{\code{mv304.12}}{Knows contraceptive method}
+#'     \item{\code{mv304.13}}{Knows contraceptive method}
+#'     \item{\code{mv304.14}}{Knows contraceptive method}
+#'     \item{\code{mv304.15}}{Knows contraceptive method}
+#'     \item{\code{mv304.16}}{Knows contraceptive method}
+#'     \item{\code{mv304.17}}{Knows contraceptive method}
+#'     \item{\code{mv304.18}}{Knows contraceptive method}
+#'     \item{\code{mv304.19}}{Knows contraceptive method}
+#'     \item{\code{mv304.20}}{Knows contraceptive method}
+#'     \item{\code{mv305.01}}{Ever used contraceptive method}
+#'     \item{\code{mv305.02}}{Ever used contraceptive method}
+#'     \item{\code{mv305.03}}{Ever used contraceptive method}
+#'     \item{\code{mv305.04}}{Ever used contraceptive method}
+#'     \item{\code{mv305.05}}{Ever used contraceptive method}
+#'     \item{\code{mv305.06}}{Ever used contraceptive method}
+#'     \item{\code{mv305.07}}{Ever used contraceptive method}
+#'     \item{\code{mv305.08}}{Ever used contraceptive method}
+#'     \item{\code{mv305.09}}{Ever used contraceptive method}
+#'     \item{\code{mv305.10}}{Ever used contraceptive method}
+#'     \item{\code{mv305.11}}{Ever used contraceptive method}
+#'     \item{\code{mv305.12}}{Ever used contraceptive method}
+#'     \item{\code{mv305.13}}{Ever used contraceptive method}
+#'     \item{\code{mv305.14}}{Ever used contraceptive method}
+#'     \item{\code{mv305.15}}{Ever used contraceptive method}
+#'     \item{\code{mv305.16}}{Ever used contraceptive method}
+#'     \item{\code{mv305.17}}{Ever used contraceptive method}
+#'     \item{\code{mv305.18}}{Ever used contraceptive method}
+#'     \item{\code{mv305.19}}{Ever used contraceptive method}
+#'     \item{\code{mv305.20}}{Ever used contraceptive method}
+#'     \item{\code{mv307.01}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.02}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.03}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.04}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.05}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.06}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.07}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.08}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.09}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.10}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.11}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.12}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.13}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.14}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.15}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.16}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.17}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.18}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.19}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.20}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv312}}{NA - Current contraceptive method}
+#'     \item{\code{mv313}}{NA - Current contraceptive by method type}
+#'     \item{\code{mv323a}}{NA - Brand of condom used}
+#'     \item{\code{mv325b}}{NA - Cost of condoms (in CURRENCY) last time obtained}
+#'     \item{\code{mv372a}}{NA - Interviewer shown condom package}
+#'     \item{\code{mv384a}}{On radio heard about Family Planning in the last few months}
+#'     \item{\code{mv384b}}{On TV saw about Family Planning in the last few months}
+#'     \item{\code{mv384c}}{In newspaper read about Family Planning in the last few months}
+#'     \item{\code{mv395}}{Discussed Family Planning with health worker in last few months}
+#'     \item{\code{mv396}}{NA - Possible for a breastfeeding woman to get pregnant}
+#'     \item{\code{mv3a09b}}{NA - Number of condoms did get last time}
+#'     \item{\code{mv3b17}}{NA - Source of condoms}
+#'     \item{\code{mv3b25a}}{Contraception is woman's business, man should not worry}
+#'     \item{\code{mv3b25b}}{Women who use contraception become promiscuous}
+#'     \item{\code{mv463a}}{Smokes cigarettes}
+#'     \item{\code{mv463b}}{Smokes pipe}
+#'     \item{\code{mv463c}}{Uses chewing tobacco}
+#'     \item{\code{mv463d}}{Uses snuff}
+#'     \item{\code{mv463e}}{Smokes hukaa/sheesha}
+#'     \item{\code{mv463f}}{NA - Smokes CS}
+#'     \item{\code{mv463g}}{NA - Smokes CS}
+#'     \item{\code{mv463x}}{Smokes other}
+#'     \item{\code{mv463z}}{Smokes nothing}
+#'     \item{\code{mv464}}{Number of cigarettes in last 24 hours}
+#'     \item{\code{mv474}}{Heard of tuberculosis or TB}
+#'     \item{\code{mv474a}}{Tuberculosis spread by: air through coughing or sneezing}
+#'     \item{\code{mv474b}}{Tuberculosis spread by: sharing utensils}
+#'     \item{\code{mv474c}}{Tuberculosis spread by: touching a person with TB}
+#'     \item{\code{mv474d}}{Tuberculosis spread by: food}
+#'     \item{\code{mv474e}}{Tuberculosis spread by: sexual contact}
+#'     \item{\code{mv474f}}{Tuberculosis spread by: mosquito bites}
+#'     \item{\code{mv474g}}{NA - Tuberculosis spread by: CS}
+#'     \item{\code{mv474h}}{NA - Tuberculosis spread by: CS}
+#'     \item{\code{mv474i}}{NA - Tuberculosis spread by: CS}
+#'     \item{\code{mv474j}}{NA - Tuberculosis spread by: CS}
+#'     \item{\code{mv474x}}{Tuberculosis spread by: other}
+#'     \item{\code{mv474z}}{Don't know how tuberculosis is spread}
+#'     \item{\code{mv475}}{Tuberculosis can be cured}
+#'     \item{\code{mv476}}{NA - Would want tuberculosis infection in family to remain secret}
+#'     \item{\code{mv477}}{Number of injections in last 12 months}
+#'     \item{\code{mv478}}{Number of injections administered by a health worker}
+#'     \item{\code{mv479}}{NA - Place where given injection by health worker}
+#'     \item{\code{mv480}}{Syringe and needle from new, unopened package}
+#'     \item{\code{mv481}}{NA - Covered by health insurance}
+#'     \item{\code{mv481a}}{NA - Health insurance type: mutual/community organization}
+#'     \item{\code{mv481b}}{NA - Health insurance type: provided by employer}
+#'     \item{\code{mv481c}}{NA - Health insurance type: social security}
+#'     \item{\code{mv481d}}{NA - Health insurance type: private/commercially purchased}
+#'     \item{\code{mv481e}}{NA - Health insurance type: CS}
+#'     \item{\code{mv481f}}{NA - Health insurance type: CS}
+#'     \item{\code{mv481g}}{NA - Health insurance type: CS}
+#'     \item{\code{mv481h}}{NA - Health insurance type: CS}
+#'     \item{\code{mv481x}}{NA - Health insurance type: other}
+#'     \item{\code{mv482a}}{NA - Arrange care of biological children under age 18***}
+#'     \item{\code{mv482b}}{NA - Primary caregiver of children under age 18***}
+#'     \item{\code{mv482c}}{NA - Arrange care of non-biological children < 18***}
+#'     \item{\code{mv483}}{NA - Respondent circumcised}
+#'     \item{\code{mv483a}}{NA - Age at circumcision}
+#'     \item{\code{mv483b}}{NA - Who performed the circumcision}
+#'     \item{\code{mv483c}}{NA - Place where circumcision was done}
+#'     \item{\code{mv501}}{Current marital status}
+#'     \item{\code{mv502}}{Currently/formerly/never in union}
+#'     \item{\code{mv503}}{NA - Number of unions}
+#'     \item{\code{mv504}}{Currently residing with wife/partner}
+#'     \item{\code{mv505}}{Number of wives/partners}
+#'     \item{\code{mv507}}{Month of first cohabitation}
+#'     \item{\code{mv508}}{Year of first cohabitation}
+#'     \item{\code{mv509}}{Date of first cohabitation (CMC)}
+#'     \item{\code{mv510}}{Completeness of date information in MV509}
+#'     \item{\code{mv511}}{Age at first cohabitation}
+#'     \item{\code{mv512}}{Years since first cohabitation}
+#'     \item{\code{mv513}}{Cohabitation duration (grouped)}
+#'     \item{\code{mv525}}{NA - Age at first sex}
+#'     \item{\code{mv527}}{NA - Time since last sex}
+#'     \item{\code{mv528}}{NA - Time since last sex (in days)}
+#'     \item{\code{mv529}}{NA - Time since last sex (in months)}
+#'     \item{\code{mv531}}{NA - Age at first sex (imputed)}
+#'     \item{\code{mv532}}{NA - Flag for MV531}
+#'     \item{\code{mv535}}{Ever been married or in union}
+#'     \item{\code{mv536}}{NA - Recent sexual activity}
+#'     \item{\code{mv541}}{NA - Intends to wait until marriage to have sex}
+#'     \item{\code{mv602}}{Fertility preference}
+#'     \item{\code{mv603}}{Preferred waiting time for birth of a/another child}
+#'     \item{\code{mv604}}{Preferred waiting time for birth of a/another child (grouped)}
+#'     \item{\code{mv605}}{Desire for more children}
+#'     \item{\code{mv613}}{Ideal number of children}
+#'     \item{\code{mv614}}{Ideal number of children (grouped)}
+#'     \item{\code{mv616}}{Desired time for future birth}
+#'     \item{\code{mv621}}{NA - Wife's desire for children***}
+#'     \item{\code{mv627}}{Ideal number of boys}
+#'     \item{\code{mv628}}{Ideal number of girls}
+#'     \item{\code{mv629}}{Ideal number of either sex}
+#'     \item{\code{mv631}}{NA - Problem if wife became pregnant***}
+#'     \item{\code{mv633a}}{NA - Wife justified refusing sex: husband has STI}
+#'     \item{\code{mv633b}}{NA - Wife justified refusing sex: husband has other women}
+#'     \item{\code{mv633c}}{NA - Wife justified refusing sex: recent birth}
+#'     \item{\code{mv633d}}{NA - Wife justified refusing sex: tired, not in mood}
+#'     \item{\code{mv633e}}{NA - Wife justified refusing sex: CS reason}
+#'     \item{\code{mv633f}}{NA - Wife justified refusing sex: CS reason}
+#'     \item{\code{mv633g}}{NA - Wife justified refusing sex: CS reason}
+#'     \item{\code{mv634a}}{NA - Wife refuses to have sex, husband has right to: get angry}
+#'     \item{\code{mv634b}}{NA - Wife refuses to have sex, husband has right to: refuse financial support}
+#'     \item{\code{mv634c}}{NA - Wife refuses to have sex, husband has right to: use force for sex}
+#'     \item{\code{mv634d}}{NA - Wife refuses to have sex, husband has right to: have sex with another women}
+#'     \item{\code{mv714}}{Currently working}
+#'     \item{\code{mv714a}}{Have a job, but currently absent}
+#'     \item{\code{mv716}}{Occupation}
+#'     \item{\code{mv717}}{Occupation (grouped)}
+#'     \item{\code{mv719}}{NA - Works for family, others, self}
+#'     \item{\code{mv721}}{NA - Works at home or away}
+#'     \item{\code{mv731}}{Worked in last 12 months}
+#'     \item{\code{mv732}}{Employment all year/seasonal}
+#'     \item{\code{mv739}}{Person who usually decides how to spend respondent's earnings}
+#'     \item{\code{mv740}}{NA - Type of land where respondent works}
+#'     \item{\code{mv741}}{Type of earnings from respondent's work}
+#'     \item{\code{mv743a}}{Person who should have greater say: respondent's health care}
+#'     \item{\code{mv743b}}{Person who should have greater say: large household purchases}
+#'     \item{\code{mv743c}}{NA - Person who should have greater say: daily household purchases}
+#'     \item{\code{mv743d}}{NA - Person who should have greater say: visits to family or relatives}
+#'     \item{\code{mv743e}}{NA - Person who should have greater say: food to be cooked each day}
+#'     \item{\code{mv743f}}{NA - Person who should have greater say: deciding what to do with money wife ear}
+#'     \item{\code{mv743g}}{NA - Person who should have greater say: deciding how many children to have}
+#'     \item{\code{mv744a}}{Beating justified: wife goes out without telling husband}
+#'     \item{\code{mv744b}}{Beating justified: wife neglects the children}
+#'     \item{\code{mv744c}}{Beating justified: wife argues with husband}
+#'     \item{\code{mv744d}}{Beating justified: wife refuses to have sex with husband}
+#'     \item{\code{mv744e}}{Beating justified: wife burns food}
+#'     \item{\code{mv745a}}{Owns a house alone or jointly}
+#'     \item{\code{mv745b}}{Owns land alone or jointly}
+#'     \item{\code{mv747a}}{NA - Childbearing is a woman's concern}
+#'     \item{\code{mv747b}}{NA - Important for mother/child health to get assistance at delivery}
+#'     \item{\code{mv750}}{Ever heard of a Sexually Transmitted Infection (STI)}
+#'     \item{\code{mv751}}{Ever heard of AIDS}
+#'     \item{\code{mv754bp}}{NA - Reduce risk of getting HIV: do not have sex at all}
+#'     \item{\code{mv754cp}}{Reduce risk of getting HIV: always use condoms during sex}
+#'     \item{\code{mv754dp}}{Reduce risk of getting HIV: have 1 sex partner only, who has no other partners}
+#'     \item{\code{mv754jp}}{Can get HIV from mosquito bites}
+#'     \item{\code{mv754wp}}{Can get HIV by sharing food with person who has AIDS}
+#'     \item{\code{mv756}}{A healthy looking person can have HIV}
+#'     \item{\code{mv761}}{NA - Condom used during last sex with most recent partner}
+#'     \item{\code{mv761b}}{NA - Condom used during last sex with 2nd to most recent partner}
+#'     \item{\code{mv761c}}{NA - Condom used during last sex with 3rd to most recent partner}
+#'     \item{\code{mv762aa}}{Source for condoms: government hospital}
+#'     \item{\code{mv762ab}}{Source for condoms: rural health center(RHC)}
+#'     \item{\code{mv762ac}}{Source for condoms: family welfare center}
+#'     \item{\code{mv762ad}}{Source for condoms: Mother child health centre(MCH)}
+#'     \item{\code{mv762ae}}{Source for condoms: dispenser}
+#'     \item{\code{mv762af}}{Source for condoms: lady health worker}
+#'     \item{\code{mv762ag}}{Source for condoms: Lady health visitor}
+#'     \item{\code{mv762ah}}{Source for condoms: male mobilizer}
+#'     \item{\code{mv762ai}}{Source for condoms: other public sector}
+#'     \item{\code{mv762aj}}{Source for condoms: private hospital/clinic}
+#'     \item{\code{mv762ak}}{Source for condoms: pharmacy}
+#'     \item{\code{mv762al}}{Source for condoms: private doctor}
+#'     \item{\code{mv762am}}{Source for condoms: homeopath}
+#'     \item{\code{mv762an}}{Source for condoms: dispenser/compounder}
+#'     \item{\code{mv762ao}}{Source for condoms: other private medical}
+#'     \item{\code{mv762ap}}{NA - Source for condoms: CS private}
+#'     \item{\code{mv762aq}}{NA - Source for condoms: CS private}
+#'     \item{\code{mv762ar}}{NA - Source for condoms: CS private}
+#'     \item{\code{mv762as}}{Source for condoms: shop}
+#'     \item{\code{mv762at}}{Source for condoms: friend/relative}
+#'     \item{\code{mv762au}}{Source for condoms: hakim}
+#'     \item{\code{mv762av}}{Source for condoms: DAI traditional birth attendant}
+#'     \item{\code{mv762aw}}{NA - Source for condoms: CS other}
+#'     \item{\code{mv762ax}}{Source for condoms: other}
+#'     \item{\code{mv762az}}{Don't know any source for condoms}
+#'     \item{\code{mv762ba}}{NA - Source for female condoms: government hospital}
+#'     \item{\code{mv762bb}}{NA - Source for female condoms: CS public}
+#'     \item{\code{mv762bc}}{NA - Source for female condoms: CS public}
+#'     \item{\code{mv762bd}}{NA - Source for female condoms: CS public}
+#'     \item{\code{mv762be}}{NA - Source for female condoms: CS public}
+#'     \item{\code{mv762bf}}{NA - Source for female condoms: CS public}
+#'     \item{\code{mv762bg}}{NA - Source for female condoms: CS public}
+#'     \item{\code{mv762bh}}{NA - Source for female condoms: CS public}
+#'     \item{\code{mv762bi}}{NA - Source for female condoms: CS public}
+#'     \item{\code{mv762bj}}{NA - Source for female condoms: private hospital/clinic}
+#'     \item{\code{mv762bk}}{NA - Source for female condoms: pharmacy}
+#'     \item{\code{mv762bl}}{NA - Source for female condoms: private doctor}
+#'     \item{\code{mv762bm}}{NA - Source for female condoms: CS private}
+#'     \item{\code{mv762bn}}{NA - Source for female condoms: CS private}
+#'     \item{\code{mv762bo}}{NA - Source for female condoms: CS private}
+#'     \item{\code{mv762bp}}{NA - Source for female condoms: CS private}
+#'     \item{\code{mv762bq}}{NA - Source for female condoms: CS private}
+#'     \item{\code{mv762br}}{NA - Source for female condoms: CS private}
+#'     \item{\code{mv762bs}}{NA - Source for female condoms: CS other}
+#'     \item{\code{mv762bt}}{NA - Source for female condoms: CS other}
+#'     \item{\code{mv762bu}}{NA - Source for female condoms: CS other}
+#'     \item{\code{mv762bv}}{NA - Source for female condoms: CS other}
+#'     \item{\code{mv762bw}}{NA - Source for female condoms: CS other}
+#'     \item{\code{mv762bx}}{NA - Source for female condoms: other}
+#'     \item{\code{mv762bz}}{NA - Don't know any source for female condoms}
+#'     \item{\code{mv763a}}{Had any STI in last 12 months}
+#'     \item{\code{mv763b}}{NA - Had genital sore/ulcer in last 12 months}
+#'     \item{\code{mv763c}}{NA - Had genital discharge in last 12 months}
+#'     \item{\code{mv763d}}{NA - Had CS STI in last 12 months}
+#'     \item{\code{mv763e}}{NA - Had CS STI in last 12 months}
+#'     \item{\code{mv763f}}{NA - Had CS STI in last 12 months}
+#'     \item{\code{mv763g}}{NA - Had CS STI in last 12 months}
+#'     \item{\code{mv766a}}{NA - Number of sex partners, excluding spouse, in last 12 months}
+#'     \item{\code{mv766b}}{NA - Number of sex partners, including spouse, in last 12 months}
+#'     \item{\code{mv767a}}{NA - Relationship with most recent sex partner}
+#'     \item{\code{mv767b}}{NA - Relationship with 2nd to most recent sex partner}
+#'     \item{\code{mv767c}}{NA - Relationship with 3rd to most recent sex partner}
+#'     \item{\code{mv768a}}{NA - Length of time had sex relations with most recent partner}
+#'     \item{\code{mv768b}}{NA - Length of time had sex relations with 2nd to most recent partner}
+#'     \item{\code{mv768c}}{NA - Length of time had sex relations with 3rd to most recent partner}
+#'     \item{\code{mv769}}{Can get a condom}
+#'     \item{\code{mv769a}}{NA - Can get a female condom}
+#'     \item{\code{mv770}}{Sought advice/treatment for last STI infection}
+#'     \item{\code{mv770a}}{Sought STI advice/treatment from: government hospital}
+#'     \item{\code{mv770b}}{Sought STI advice/treatment from: government health center}
+#'     \item{\code{mv770c}}{Sought STI advice/treatment from: stand-alone VCT center}
+#'     \item{\code{mv770d}}{Sought STI advice/treatment from: family planning clinic}
+#'     \item{\code{mv770e}}{Sought STI advice/treatment from: mobile clinic}
+#'     \item{\code{mv770f}}{Sought STI advice/treatment from: fieldworker}
+#'     \item{\code{mv770g}}{Sought STI advice/treatment from: other public sector}
+#'     \item{\code{mv770h}}{NA - Sought STI advice/treatment from: CS public}
+#'     \item{\code{mv770i}}{NA - Sought STI advice/treatment from: CS public}
+#'     \item{\code{mv770j}}{NA - Sought STI advice/treatment from: CS public}
+#'     \item{\code{mv770k}}{Sought STI advice/treatment from: private hospital/clinic/doctor}
+#'     \item{\code{mv770l}}{Sought STI advice/treatment from: stand-alone VCT center}
+#'     \item{\code{mv770m}}{Sought STI advice/treatment from: pharmacy}
+#'     \item{\code{mv770n}}{Sought STI advice/treatment from: mobile clinic}
+#'     \item{\code{mv770o}}{Sought STI advice/treatment from: fieldworker}
+#'     \item{\code{mv770p}}{Sought STI advice/treatment from: other private medical}
+#'     \item{\code{mv770q}}{NA - Sought STI advice/treatment from: CS private}
+#'     \item{\code{mv770r}}{NA - Sought STI advice/treatment from: CS private}
+#'     \item{\code{mv770s}}{NA - Sought STI advice/treatment from: CS private}
+#'     \item{\code{mv770t}}{Sought STI advice/treatment from: shop}
+#'     \item{\code{mv770u}}{NA - Sought STI advice/treatment from: CS other}
+#'     \item{\code{mv770v}}{NA - Sought STI advice/treatment from: CS other}
+#'     \item{\code{mv770w}}{NA - Sought STI advice/treatment from: CS other}
+#'     \item{\code{mv770x}}{Sought STI advice/treatment from: other}
+#'     \item{\code{mv774a}}{HIV transmitted during pregnancy}
+#'     \item{\code{mv774b}}{HIV transmitted during delivery}
+#'     \item{\code{mv774c}}{HIV transmitted by breastfeeding}
+#'     \item{\code{mv775}}{NA - Knows someone who has, or is suspected of having, HIV}
+#'     \item{\code{mv777}}{Would want HIV infection in family to remain secret}
+#'     \item{\code{mv778}}{Willing to care for relative with AIDS}
+#'     \item{\code{mv779}}{A female teacher infected with HIV, but is not sick, should be allowed to contin}
+#'     \item{\code{mv780}}{NA - Children should be taught about condoms to avoid AIDS}
+#'     \item{\code{mv781}}{NA - Ever been tested for HIV}
+#'     \item{\code{mv783}}{Know a place to get HIV test}
+#'     \item{\code{mv784a}}{Place for HIV test: government hospital}
+#'     \item{\code{mv784b}}{Place for HIV test: government health center}
+#'     \item{\code{mv784c}}{Place for HIV test: stand-alone VCT center}
+#'     \item{\code{mv784d}}{Place for HIV test: other public sector}
+#'     \item{\code{mv784e}}{NA - Place for HIV test: CS public}
+#'     \item{\code{mv784f}}{NA - Place for HIV test: CS public}
+#'     \item{\code{mv784g}}{NA - Place for HIV test: CS public}
+#'     \item{\code{mv784h}}{NA - Place for HIV test: CS public}
+#'     \item{\code{mv784i}}{NA - Place for HIV test: CS public}
+#'     \item{\code{mv784j}}{NA - Place for HIV test: CS public}
+#'     \item{\code{mv784k}}{Place for HIV test: private hospital/clinic/doctor}
+#'     \item{\code{mv784l}}{Place for HIV test: stand-alone VCT center}
+#'     \item{\code{mv784m}}{Place for HIV test: other private medical}
+#'     \item{\code{mv784n}}{NA - Place for HIV test: CS private}
+#'     \item{\code{mv784o}}{NA - Place for HIV test: CS private}
+#'     \item{\code{mv784p}}{NA - Place for HIV test: CS private}
+#'     \item{\code{mv784q}}{NA - Place for HIV test: CS private}
+#'     \item{\code{mv784r}}{NA - Place for HIV test: CS private}
+#'     \item{\code{mv784s}}{NA - Place for HIV test: CS other}
+#'     \item{\code{mv784t}}{NA - Place for HIV test: CS other}
+#'     \item{\code{mv784u}}{NA - Place for HIV test: CS other}
+#'     \item{\code{mv784v}}{NA - Place for HIV test: CS other}
+#'     \item{\code{mv784x}}{Place for HIV test: other}
+#'     \item{\code{mv785}}{Heard about other STIs}
+#'     \item{\code{mv791}}{NA - Have ever paid anyone in exchange for sex}
+#'     \item{\code{mv793}}{NA - Paid for sex in last 12 months}
+#'     \item{\code{mv793a}}{NA - Condom used last time paid for sex in last 12 months}
+#'     \item{\code{mv793b}}{NA - Condom used every time paid for sex in last 12 months}
+#'     \item{\code{mv820}}{NA - Condom used at first sex}
+#'     \item{\code{mv822}}{NA - Wife justified asking husband to use condom if he has STI}
+#'     \item{\code{mv823}}{Can get HIV by witchcraft or supernatural means}
+#'     \item{\code{mv824}}{Drugs to avoid HIV transmission to baby during pregnancy}
+#'     \item{\code{mv825}}{Would buy vegetables from vendor with HIV}
+#'     \item{\code{mv826}}{NA - Last time tested for HIV}
+#'     \item{\code{mv826a}}{NA - Months ago most recent HIV test}
+#'     \item{\code{mv827}}{NA - Last HIV test: on your own, offered or required}
+#'     \item{\code{mv828}}{NA - Received result from last HIV test}
+#'     \item{\code{mv829}}{NA - Place where last HIV test was taken}
+#'     \item{\code{mv832b}}{NA - Time since last sex with 2nd to most recent partner}
+#'     \item{\code{mv832c}}{NA - Time since last sex with 3rd to most recent partner}
+#'     \item{\code{mv833a}}{NA - Used condom every time had sex with most recent partner in last 12 months}
+#'     \item{\code{mv833b}}{NA - Used condom every time had sex with 2nd to most recent partner in last 12 m}
+#'     \item{\code{mv833c}}{NA - Used condom every time had sex with 3rd to most recent partner in last 12 m}
+#'     \item{\code{mv834a}}{NA - Age of most recent partner}
+#'     \item{\code{mv834b}}{NA - Age of 2nd to most recent partner}
+#'     \item{\code{mv834c}}{NA - Age of 3rd to most recent partner}
+#'     \item{\code{mv835a}}{NA - Alcohol consumption at last sex with most recent partner}
+#'     \item{\code{mv835b}}{NA - Alcohol consumption at last sex with 2nd to most recent partner}
+#'     \item{\code{mv835c}}{NA - Alcohol consumption at last sex with 3rd to most recent partner}
+#'     \item{\code{mv836}}{NA - Total lifetime number of sex partners}
+#'     \item{\code{mv837}}{NA - Heard of drugs to help HIV infected people live longer}
+#'     \item{\code{mv844}}{NA - Knows someone denied health services for having, or suspected of having, HI}
+#'     \item{\code{mv845}}{NA - Knows someone denied social event for having, or suspected of having, HIV; }
+#'     \item{\code{mv846}}{NA - Knows someone verbally abused for having, or suspected of having, HIV; in l}
+#'     \item{\code{mv847}}{NA - People with HIV should be ashamed of themselves}
+#'     \item{\code{mv848}}{NA - People with HIV should be blamed for bringing disease to community}
+#'     \item{\code{mv849}}{NA - Children 12-14 should be taught to wait for sex until marriage}
+#'     \item{\code{mv851a}}{NA - Young men should wait for sex until marriage}
+#'     \item{\code{mv851b}}{NA - Most young men wait for sex until marriage}
+#'     \item{\code{mv851c}}{NA - Unmarried sexually active men should have only one partner}
+#'     \item{\code{mv851d}}{NA - Most unmarried sexually active men have only one partner}
+#'     \item{\code{mv851e}}{NA - Married men should only have sex with their wives}
+#'     \item{\code{mv851f}}{NA - Most married men only have sex with their wives}
+#'     \item{\code{mv851g}}{NA - Young women should wait for sex until marriage}
+#'     \item{\code{mv851h}}{NA - Most young women wait for sex until marriage}
+#'     \item{\code{mv851i}}{NA - Unmarried sexually active women should have only one partner}
+#'     \item{\code{mv851j}}{NA - Most unmarried sexually active women have only one partner}
+#'     \item{\code{mv851k}}{NA - Married women should only have sex with their husbands}
+#'     \item{\code{mv851l}}{NA - Most married women only have sex with their husbands}
+#'     \item{\code{mv852a}}{NA - How long ago first had sex with most recent partner}
+#'     \item{\code{mv852b}}{NA - How long ago first had sex with 2nd most recent partner}
+#'     \item{\code{mv852c}}{NA - How long ago first had sex with 3rd most recent partner}
+#'     \item{\code{mv853a}}{NA - Times in last 12 months had sex with most recent partner}
+#'     \item{\code{mv853b}}{NA - Times in last 12 months had sex with 2nd most recent partner}
+#'     \item{\code{mv853c}}{NA - Times in last 12 months had sex with 3rd most recent partner}
+#'     \item{\code{mv854a}}{NA - Concurrent sexual partners}
+#'     \item{\code{mv854b}}{NA - Cumulative concurrent sexual partners}
+#'     \item{\code{smdist}}{District}
+#'     \item{\code{smlangq}}{Language of questionnaire}
+#'     \item{\code{smlangi}}{Language of interview}
+#'     \item{\code{smlangr}}{Language respondent speaks a home}
+#'     \item{\code{smeduc}}{Man's educational level for report}
+#'     \item{\code{smfactt}}{All men factor - total}
+#'     \item{\code{smfactu}}{All men factor - urban/rural}
+#'     \item{\code{smfactr}}{All men factor - regional}
+#'     \item{\code{smfacte}}{All men factor - educational}
+#'     \item{\code{smfactw}}{All men factor - wealth index}
+#'     \item{\code{smfeduc1}}{All men factor - education as will be used in the report}
+#'     \item{\code{smfregur}}{All woman factor - region combined with urban/rural}
+#'     \item{\code{sm111}}{Highest class completed}
+#'     \item{\code{sm216}}{Line number of youngest child}
+#'     \item{\code{sm304a}}{Family planning message conveyed: limiting the family}
+#'     \item{\code{sm304b}}{Family planning message conveyed: higher age at marriage}
+#'     \item{\code{sm304c}}{Family planning message conveyed: spacing of children}
+#'     \item{\code{sm304d}}{Family planning message conveyed: use of contraceptives}
+#'     \item{\code{sm304e}}{Family planning message conveyed: welfare of family}
+#'     \item{\code{sm304f}}{Family planning message conveyed: maternal and child health}
+#'     \item{\code{sm304g}}{Family planning message conveyed: less children, prosperous life}
+#'     \item{\code{sm304h}}{Family planning message conveyed: more children, poverty and starvation}
+#'     \item{\code{sm304i}}{Family planning message conveyed: importance of breastfeeding}
+#'     \item{\code{sm304x}}{Family planning message conveyed: other}
+#'     \item{\code{sm304z}}{Family planning message conveyed: DK/don't remember}
+#'     \item{\code{sm304b1}}{Was family planning message effective}
+#'     \item{\code{sm405}}{Desire for future child}
+#'     \item{\code{sm514e}}{Beating justified: wife neglects in-laws}
+#'     \item{\code{sm704}}{Duration of treatment of TB nowadays}
+#'     \item{\code{sm705}}{Ever been told by a doctor/nurse that had TB}
+#'     \item{\code{sm706}}{Ever heard about Hepatitis}
+#'     \item{\code{sm707}}{Person can avoid Hepatitis}
+#'     \item{\code{sm708a}}{Avoid getting Hepatitis by: safe sex}
+#'     \item{\code{sm708b}}{Avoid getting Hepatitis by: safe blood transfer}
+#'     \item{\code{sm708c}}{Avoid getting Hepatitis by: disposable syringe}
+#'     \item{\code{sm708d}}{Avoid getting Hepatitis by: avoid contaminated food/water}
+#'     \item{\code{sm708e}}{Avoid getting Hepatitis by: avoid contact with infected person}
+#'     \item{\code{sm708f}}{Avoid getting Hepatitis by: dentist instruments sterilized}
+#'     \item{\code{sm708x}}{Avoid getting Hepatitis by: other}
+#'     \item{\code{sm708y}}{Avoid getting Hepatitis by: no response}
+#'     \item{\code{sm708z}}{Avoid getting Hepatitis by: don't know}
+#'     \item{\code{mcaseid}}{Case Identification}
+#'     \item{\code{mv000}}{Country code and phase}
+#'     \item{\code{mv001}}{Cluster number}
+#'     \item{\code{mv002}}{Household number}
+#'     \item{\code{mv003}}{Respondent's line number}
+#'     \item{\code{mv004}}{Ultimate area unit}
+#'     \item{\code{mv005}}{Men's sample weight (6 decimals)}
+#'     \item{\code{mv006}}{Month of interview}
+#'     \item{\code{mv007}}{Year of interview}
+#'     \item{\code{mv008}}{Date of interview (CMC)}
+#'     \item{\code{mv009}}{Month of birth}
+#'     \item{\code{mv010}}{Year of birth}
+#'     \item{\code{mv011}}{Date of birth (CMC)}
+#'     \item{\code{mv012}}{Current age}
+#'     \item{\code{mv013}}{Age in 5-year groups}
+#'     \item{\code{mv014}}{Completeness of age information}
+#'     \item{\code{mv015}}{Result of interview}
+#'     \item{\code{mv016}}{Day of interview}
+#'     \item{\code{mv021}}{Primary sampling unit}
+#'     \item{\code{mv022}}{Sample stratum number}
+#'     \item{\code{mv023}}{Sample domain}
+#'     \item{\code{mv024}}{Region}
+#'     \item{\code{mv025}}{Type of place of residence}
+#'     \item{\code{mv026}}{De facto place of residence}
+#'     \item{\code{mv027}}{Number of visits}
+#'     \item{\code{mv028}}{Interviewer identification}
+#'     \item{\code{mv029}}{Keyer identification}
+#'     \item{\code{mv030}}{Field supervisor}
+#'     \item{\code{mv031}}{Field editor}
+#'     \item{\code{mv032}}{NA - Office editor}
+#'     \item{\code{mv034.1}}{NA - Line number of wife/partner}
+#'     \item{\code{mv034.2}}{NA - Line number of wife/partner}
+#'     \item{\code{mv034.3}}{NA - Line number of wife/partner}
+#'     \item{\code{mv034.4}}{NA - Line number of wife/partner}
+#'     \item{\code{mv034.5}}{NA - Line number of wife/partner}
+#'     \item{\code{mv034.6}}{NA - Line number of wife/partner}
+#'     \item{\code{mv034.7}}{NA - Line number of wife/partner}
+#'     \item{\code{mv034.8}}{NA - Line number of wife/partner}
+#'     \item{\code{mv034a.1}}{NA - Wife or partner***}
+#'     \item{\code{mv034a.2}}{NA - Wife or partner***}
+#'     \item{\code{mv034a.3}}{NA - Wife or partner***}
+#'     \item{\code{mv034a.4}}{NA - Wife or partner***}
+#'     \item{\code{mv034a.5}}{NA - Wife or partner***}
+#'     \item{\code{mv034a.6}}{NA - Wife or partner***}
+#'     \item{\code{mv034a.7}}{NA - Wife or partner***}
+#'     \item{\code{mv034a.8}}{NA - Wife or partner***}
+#'     \item{\code{mv034b.1}}{NA - Age of wife/partner}
+#'     \item{\code{mv034b.2}}{NA - Age of wife/partner}
+#'     \item{\code{mv034b.3}}{NA - Age of wife/partner}
+#'     \item{\code{mv034b.4}}{NA - Age of wife/partner}
+#'     \item{\code{mv034b.5}}{NA - Age of wife/partner}
+#'     \item{\code{mv034b.6}}{NA - Age of wife/partner}
+#'     \item{\code{mv034b.7}}{NA - Age of wife/partner}
+#'     \item{\code{mv034b.8}}{NA - Age of wife/partner}
+#'     \item{\code{mv035}}{Number of wives/partners}
+#'     \item{\code{mv801}}{Time interview started (hhmm - 24 hour clock)}
+#'     \item{\code{mv802}}{Time interview ended (hhmm - 24 hour clock)}
+#'     \item{\code{mv803}}{Length of interview in minutes}
+#'     \item{\code{mv101}}{Region}
+#'     \item{\code{mv102}}{Type of place of residence}
+#'     \item{\code{mv103}}{NA - Childhood place of residence***}
+#'     \item{\code{mv104}}{NA - Years lived in place of residence}
+#'     \item{\code{mv105}}{NA - Type of place of previous residence}
+#'     \item{\code{mv106}}{Educational level}
+#'     \item{\code{mv107}}{Highest year of education (at level in MV106)}
+#'     \item{\code{mv130}}{NA - Religion}
+#'     \item{\code{mv131}}{Ethnicity}
+#'     \item{\code{mv133}}{Total number of years of education}
+#'     \item{\code{mv134}}{De facto place of residence}
+#'     \item{\code{mv135}}{Usual resident or visitor}
+#'     \item{\code{mv136}}{Number of household members (total listed)}
+#'     \item{\code{mv138}}{Number of eligible men in household (de facto)}
+#'     \item{\code{mv149}}{Educational attainment}
+#'     \item{\code{mv150}}{Relationship to household head}
+#'     \item{\code{mv151}}{Sex of household head}
+#'     \item{\code{mv152}}{Age of household head}
+#'     \item{\code{mv155}}{Literacy}
+#'     \item{\code{mv156}}{NA - Ever participated in a literacy program (excluding primary school)}
+#'     \item{\code{mv157}}{Frequency of reading newspaper or magazine}
+#'     \item{\code{mv158}}{Frequency of listening to radio}
+#'     \item{\code{mv159}}{Frequency of watching television}
+#'     \item{\code{mv167}}{NA - Times away from home in last 12 months}
+#'     \item{\code{mv168}}{NA - Away for more than one month in last 12 months}
+#'     \item{\code{mv190}}{Wealth index}
+#'     \item{\code{mv191}}{Wealth index factor score (5 decimals)}
+#'     \item{\code{mv201}}{Total children ever born}
+#'     \item{\code{mv202}}{Sons at home}
+#'     \item{\code{mv203}}{Daughters at home}
+#'     \item{\code{mv204}}{Sons elsewhere}
+#'     \item{\code{mv205}}{Daughters elsewhere}
+#'     \item{\code{mv206}}{Sons who have died}
+#'     \item{\code{mv207}}{Daughters who have died}
+#'     \item{\code{mv212}}{Age of respondent at 1st birth}
+#'     \item{\code{mv213}}{Partner currently pregnant}
+#'     \item{\code{mv217}}{Knowledge of ovulatory cycle}
+#'     \item{\code{mv218}}{Number of living children}
+#'     \item{\code{mv225}}{NA - Most recent pregnancy wanted}
+#'     \item{\code{mv245}}{Number of women fathered children with}
+#'     \item{\code{mv246}}{NA - Married to mother when first child was born}
+#'     \item{\code{mv247}}{Age of most recent child}
+#'     \item{\code{mv248}}{Antenatal check-ups for the mother of most recent child}
+#'     \item{\code{mv249}}{Respondent present during check-ups for most recent child}
+#'     \item{\code{mv250}}{Place of birth of most recent child}
+#'     \item{\code{mv251}}{NA - Reason for not delivering most recent child in health facility}
+#'     \item{\code{mv252}}{Amount a child should drink, when that child has diarrhea}
+#'     \item{\code{mv301}}{Knowledge of any contraceptive method}
+#'     \item{\code{mv302}}{NA - Ever use of any contraceptive method}
+#'     \item{\code{m304a.01}}{Type of contraceptive method}
+#'     \item{\code{m304a.02}}{Type of contraceptive method}
+#'     \item{\code{m304a.03}}{Type of contraceptive method}
+#'     \item{\code{m304a.04}}{Type of contraceptive method}
+#'     \item{\code{m304a.05}}{Type of contraceptive method}
+#'     \item{\code{m304a.06}}{Type of contraceptive method}
+#'     \item{\code{m304a.07}}{Type of contraceptive method}
+#'     \item{\code{m304a.08}}{Type of contraceptive method}
+#'     \item{\code{m304a.09}}{Type of contraceptive method}
+#'     \item{\code{m304a.10}}{Type of contraceptive method}
+#'     \item{\code{m304a.11}}{Type of contraceptive method}
+#'     \item{\code{m304a.12}}{Type of contraceptive method}
+#'     \item{\code{m304a.13}}{Type of contraceptive method}
+#'     \item{\code{m304a.14}}{Type of contraceptive method}
+#'     \item{\code{m304a.15}}{Type of contraceptive method}
+#'     \item{\code{m304a.16}}{Type of contraceptive method}
+#'     \item{\code{m304a.17}}{Type of contraceptive method}
+#'     \item{\code{m304a.18}}{Type of contraceptive method}
+#'     \item{\code{m304a.19}}{Type of contraceptive method}
+#'     \item{\code{m304a.20}}{Type of contraceptive method}
+#'     \item{\code{mv304.01}}{Knows contraceptive method}
+#'     \item{\code{mv304.02}}{Knows contraceptive method}
+#'     \item{\code{mv304.03}}{Knows contraceptive method}
+#'     \item{\code{mv304.04}}{Knows contraceptive method}
+#'     \item{\code{mv304.05}}{Knows contraceptive method}
+#'     \item{\code{mv304.06}}{Knows contraceptive method}
+#'     \item{\code{mv304.07}}{Knows contraceptive method}
+#'     \item{\code{mv304.08}}{Knows contraceptive method}
+#'     \item{\code{mv304.09}}{Knows contraceptive method}
+#'     \item{\code{mv304.10}}{Knows contraceptive method}
+#'     \item{\code{mv304.11}}{Knows contraceptive method}
+#'     \item{\code{mv304.12}}{Knows contraceptive method}
+#'     \item{\code{mv304.13}}{Knows contraceptive method}
+#'     \item{\code{mv304.14}}{Knows contraceptive method}
+#'     \item{\code{mv304.15}}{Knows contraceptive method}
+#'     \item{\code{mv304.16}}{Knows contraceptive method}
+#'     \item{\code{mv304.17}}{Knows contraceptive method}
+#'     \item{\code{mv304.18}}{Knows contraceptive method}
+#'     \item{\code{mv304.19}}{Knows contraceptive method}
+#'     \item{\code{mv304.20}}{Knows contraceptive method}
+#'     \item{\code{mv305.01}}{Ever used contraceptive method}
+#'     \item{\code{mv305.02}}{Ever used contraceptive method}
+#'     \item{\code{mv305.03}}{Ever used contraceptive method}
+#'     \item{\code{mv305.04}}{Ever used contraceptive method}
+#'     \item{\code{mv305.05}}{Ever used contraceptive method}
+#'     \item{\code{mv305.06}}{Ever used contraceptive method}
+#'     \item{\code{mv305.07}}{Ever used contraceptive method}
+#'     \item{\code{mv305.08}}{Ever used contraceptive method}
+#'     \item{\code{mv305.09}}{Ever used contraceptive method}
+#'     \item{\code{mv305.10}}{Ever used contraceptive method}
+#'     \item{\code{mv305.11}}{Ever used contraceptive method}
+#'     \item{\code{mv305.12}}{Ever used contraceptive method}
+#'     \item{\code{mv305.13}}{Ever used contraceptive method}
+#'     \item{\code{mv305.14}}{Ever used contraceptive method}
+#'     \item{\code{mv305.15}}{Ever used contraceptive method}
+#'     \item{\code{mv305.16}}{Ever used contraceptive method}
+#'     \item{\code{mv305.17}}{Ever used contraceptive method}
+#'     \item{\code{mv305.18}}{Ever used contraceptive method}
+#'     \item{\code{mv305.19}}{Ever used contraceptive method}
+#'     \item{\code{mv305.20}}{Ever used contraceptive method}
+#'     \item{\code{mv307.01}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.02}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.03}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.04}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.05}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.06}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.07}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.08}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.09}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.10}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.11}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.12}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.13}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.14}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.15}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.16}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.17}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.18}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.19}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv307.20}}{NA - Contraceptive method currently used}
+#'     \item{\code{mv312}}{NA - Current contraceptive method}
+#'     \item{\code{mv313}}{NA - Current contraceptive by method type}
+#'     \item{\code{mv323a}}{NA - Brand of condom used}
+#'     \item{\code{mv325b}}{NA - Cost of condoms (in CURRENCY) last time obtained}
+#'     \item{\code{mv372a}}{NA - Interviewer shown condom package}
+#'     \item{\code{mv384a}}{On radio heard about Family Planning in the last few months}
+#'     \item{\code{mv384b}}{On TV saw about Family Planning in the last few months}
+#'     \item{\code{mv384c}}{In newspaper read about Family Planning in the last few months}
+#'     \item{\code{mv395}}{Discussed Family Planning with health worker in last few months}
+#'     \item{\code{mv396}}{NA - Possible for a breastfeeding woman to get pregnant}
+#'     \item{\code{mv3a09b}}{NA - Number of condoms did get last time}
+#'     \item{\code{mv3b17}}{NA - Source of condoms}
+#'     \item{\code{mv3b25a}}{Contraception is woman's business, man should not worry}
+#'     \item{\code{mv3b25b}}{Women who use contraception become promiscuous}
+#'     \item{\code{mv463a}}{Smokes cigarettes}
+#'     \item{\code{mv463b}}{Smokes pipe}
+#'     \item{\code{mv463c}}{Uses chewing tobacco}
+#'     \item{\code{mv463d}}{Uses snuff}
+#'     \item{\code{mv463e}}{Smokes hukaa/sheesha}
+#'     \item{\code{mv463f}}{NA - Smokes CS}
+#'     \item{\code{mv463g}}{NA - Smokes CS}
+#'     \item{\code{mv463x}}{Smokes other}
+#'     \item{\code{mv463z}}{Smokes nothing}
+#'     \item{\code{mv464}}{Number of cigarettes in last 24 hours}
+#'     \item{\code{mv474}}{Heard of tuberculosis or TB}
+#'     \item{\code{mv474a}}{Tuberculosis spread by: air through coughing or sneezing}
+#'     \item{\code{mv474b}}{Tuberculosis spread by: sharing utensils}
+#'     \item{\code{mv474c}}{Tuberculosis spread by: touching a person with TB}
+#'     \item{\code{mv474d}}{Tuberculosis spread by: food}
+#'     \item{\code{mv474e}}{Tuberculosis spread by: sexual contact}
+#'     \item{\code{mv474f}}{Tuberculosis spread by: mosquito bites}
+#'     \item{\code{mv474g}}{NA - Tuberculosis spread by: CS}
+#'     \item{\code{mv474h}}{NA - Tuberculosis spread by: CS}
+#'     \item{\code{mv474i}}{NA - Tuberculosis spread by: CS}
+#'     \item{\code{mv474j}}{NA - Tuberculosis spread by: CS}
+#'     \item{\code{mv474x}}{Tuberculosis spread by: other}
+#'     \item{\code{mv474z}}{Don't know how tuberculosis is spread}
+#'     \item{\code{mv475}}{Tuberculosis can be cured}
+#'     \item{\code{mv476}}{NA - Would want tuberculosis infection in family to remain secret}
+#'     \item{\code{mv477}}{Number of injections in last 12 months}
+#'     \item{\code{mv478}}{Number of injections administered by a health worker}
+#'     \item{\code{mv479}}{NA - Place where given injection by health worker}
+#'     \item{\code{mv480}}{Syringe and needle from new, unopened package}
+#'     \item{\code{mv481}}{NA - Covered by health insurance}
+#'     \item{\code{mv481a}}{NA - Health insurance type: mutual/community organization}
+#'     \item{\code{mv481b}}{NA - Health insurance type: provided by employer}
+#'     \item{\code{mv481c}}{NA - Health insurance type: social security}
+#'     \item{\code{mv481d}}{NA - Health insurance type: private/commercially purchased}
+#'     \item{\code{mv481e}}{NA - Health insurance type: CS}
+#'     \item{\code{mv481f}}{NA - Health insurance type: CS}
+#'     \item{\code{mv481g}}{NA - Health insurance type: CS}
+#'     \item{\code{mv481h}}{NA - Health insurance type: CS}
+#'     \item{\code{mv481x}}{NA - Health insurance type: other}
+#'     \item{\code{mv482a}}{NA - Arrange care of biological children under age 18***}
+#'     \item{\code{mv482b}}{NA - Primary caregiver of children under age 18***}
+#'     \item{\code{mv482c}}{NA - Arrange care of non-biological children < 18***}
+#'     \item{\code{mv483}}{NA - Respondent circumcised}
+#'     \item{\code{mv483a}}{NA - Age at circumcision}
+#'     \item{\code{mv483b}}{NA - Who performed the circumcision}
+#'     \item{\code{mv483c}}{NA - Place where circumcision was done}
+#'     \item{\code{mv501}}{Current marital status}
+#'     \item{\code{mv502}}{Currently/formerly/never in union}
+#'     \item{\code{mv503}}{NA - Number of unions}
+#'     \item{\code{mv504}}{Currently residing with wife/partner}
+#'     \item{\code{mv505}}{Number of wives/partners}
+#'     \item{\code{mv507}}{Month of first cohabitation}
+#'     \item{\code{mv508}}{Year of first cohabitation}
+#'     \item{\code{mv509}}{Date of first cohabitation (CMC)}
+#'     \item{\code{mv510}}{Completeness of date information in MV509}
+#'     \item{\code{mv511}}{Age at first cohabitation}
+#'     \item{\code{mv512}}{Years since first cohabitation}
+#'     \item{\code{mv513}}{Cohabitation duration (grouped)}
+#'     \item{\code{mv525}}{NA - Age at first sex}
+#'     \item{\code{mv527}}{NA - Time since last sex}
+#'     \item{\code{mv528}}{NA - Time since last sex (in days)}
+#'     \item{\code{mv529}}{NA - Time since last sex (in months)}
+#'     \item{\code{mv531}}{NA - Age at first sex (imputed)}
+#'     \item{\code{mv532}}{NA - Flag for MV531}
+#'     \item{\code{mv535}}{Ever been married or in union}
+#'     \item{\code{mv536}}{NA - Recent sexual activity}
+#'     \item{\code{mv541}}{NA - Intends to wait until marriage to have sex}
+#'     \item{\code{mv602}}{Fertility preference}
+#'     \item{\code{mv603}}{Preferred waiting time for birth of a/another child}
+#'     \item{\code{mv604}}{Preferred waiting time for birth of a/another child (grouped)}
+#'     \item{\code{mv605}}{Desire for more children}
+#'     \item{\code{mv613}}{Ideal number of children}
+#'     \item{\code{mv614}}{Ideal number of children (grouped)}
+#'     \item{\code{mv616}}{Desired time for future birth}
+#'     \item{\code{mv621}}{NA - Wife's desire for children***}
+#'     \item{\code{mv627}}{Ideal number of boys}
+#'     \item{\code{mv628}}{Ideal number of girls}
+#'     \item{\code{mv629}}{Ideal number of either sex}
+#'     \item{\code{mv631}}{NA - Problem if wife became pregnant***}
+#'     \item{\code{mv633a}}{NA - Wife justified refusing sex: husband has STI}
+#'     \item{\code{mv633b}}{NA - Wife justified refusing sex: husband has other women}
+#'     \item{\code{mv633c}}{NA - Wife justified refusing sex: recent birth}
+#'     \item{\code{mv633d}}{NA - Wife justified refusing sex: tired, not in mood}
+#'     \item{\code{mv633e}}{NA - Wife justified refusing sex: CS reason}
+#'     \item{\code{mv633f}}{NA - Wife justified refusing sex: CS reason}
+#'     \item{\code{mv633g}}{NA - Wife justified refusing sex: CS reason}
+#'     \item{\code{mv634a}}{NA - Wife refuses to have sex, husband has right to: get angry}
+#'     \item{\code{mv634b}}{NA - Wife refuses to have sex, husband has right to: refuse financial support}
+#'     \item{\code{mv634c}}{NA - Wife refuses to have sex, husband has right to: use force for sex}
+#'     \item{\code{mv634d}}{NA - Wife refuses to have sex, husband has right to: have sex with another women}
+#'     \item{\code{mv714}}{Currently working}
+#'     \item{\code{mv714a}}{Have a job, but currently absent}
+#'     \item{\code{mv716}}{Occupation}
+#'     \item{\code{mv717}}{Occupation (grouped)}
+#'     \item{\code{mv719}}{NA - Works for family, others, self}
+#'     \item{\code{mv721}}{NA - Works at home or away}
+#'     \item{\code{mv731}}{Worked in last 12 months}
+#'     \item{\code{mv732}}{Employment all year/seasonal}
+#'     \item{\code{mv739}}{Person who usually decides how to spend respondent's earnings}
+#'     \item{\code{mv740}}{NA - Type of land where respondent works}
+#'     \item{\code{mv741}}{Type of earnings from respondent's work}
+#'     \item{\code{mv743a}}{Person who should have greater say: respondent's health care}
+#'     \item{\code{mv743b}}{Person who should have greater say: large household purchases}
+#'     \item{\code{mv743c}}{NA - Person who should have greater say: daily household purchases}
+#'     \item{\code{mv743d}}{NA - Person who should have greater say: visits to family or relatives}
+#'     \item{\code{mv743e}}{NA - Person who should have greater say: food to be cooked each day}
+#'     \item{\code{mv743f}}{NA - Person who should have greater say: deciding what to do with money wife ear}
+#'     \item{\code{mv743g}}{NA - Person who should have greater say: deciding how many children to have}
+#'     \item{\code{mv744a}}{Beating justified: wife goes out without telling husband}
+#'     \item{\code{mv744b}}{Beating justified: wife neglects the children}
+#'     \item{\code{mv744c}}{Beating justified: wife argues with husband}
+#'     \item{\code{mv744d}}{Beating justified: wife refuses to have sex with husband}
+#'     \item{\code{mv744e}}{Beating justified: wife burns food}
+#'     \item{\code{mv745a}}{Owns a house alone or jointly}
+#'     \item{\code{mv745b}}{Owns land alone or jointly}
+#'     \item{\code{mv747a}}{NA - Childbearing is a woman's concern}
+#'     \item{\code{mv747b}}{NA - Important for mother/child health to get assistance at delivery}
+#'     \item{\code{mv750}}{Ever heard of a Sexually Transmitted Infection (STI)}
+#'     \item{\code{mv751}}{Ever heard of AIDS}
+#'     \item{\code{mv754bp}}{NA - Reduce risk of getting HIV: do not have sex at all}
+#'     \item{\code{mv754cp}}{Reduce risk of getting HIV: always use condoms during sex}
+#'     \item{\code{mv754dp}}{Reduce risk of getting HIV: have 1 sex partner only, who has no other partners}
+#'     \item{\code{mv754jp}}{Can get HIV from mosquito bites}
+#'     \item{\code{mv754wp}}{Can get HIV by sharing food with person who has AIDS}
+#'     \item{\code{mv756}}{A healthy looking person can have HIV}
+#'     \item{\code{mv761}}{NA - Condom used during last sex with most recent partner}
+#'     \item{\code{mv761b}}{NA - Condom used during last sex with 2nd to most recent partner}
+#'     \item{\code{mv761c}}{NA - Condom used during last sex with 3rd to most recent partner}
+#'     \item{\code{mv762aa}}{Source for condoms: government hospital}
+#'     \item{\code{mv762ab}}{Source for condoms: rural health center(RHC)}
+#'     \item{\code{mv762ac}}{Source for condoms: family welfare center}
+#'     \item{\code{mv762ad}}{Source for condoms: Mother child health centre(MCH)}
+#'     \item{\code{mv762ae}}{Source for condoms: dispenser}
+#'     \item{\code{mv762af}}{Source for condoms: lady health worker}
+#'     \item{\code{mv762ag}}{Source for condoms: Lady health visitor}
+#'     \item{\code{mv762ah}}{Source for condoms: male mobilizer}
+#'     \item{\code{mv762ai}}{Source for condoms: other public sector}
+#'     \item{\code{mv762aj}}{Source for condoms: private hospital/clinic}
+#'     \item{\code{mv762ak}}{Source for condoms: pharmacy}
+#'     \item{\code{mv762al}}{Source for condoms: private doctor}
+#'     \item{\code{mv762am}}{Source for condoms: homeopath}
+#'     \item{\code{mv762an}}{Source for condoms: dispenser/compounder}
+#'     \item{\code{mv762ao}}{Source for condoms: other private medical}
+#'     \item{\code{mv762ap}}{NA - Source for condoms: CS private}
+#'     \item{\code{mv762aq}}{NA - Source for condoms: CS private}
+#'     \item{\code{mv762ar}}{NA - Source for condoms: CS private}
+#'     \item{\code{mv762as}}{Source for condoms: shop}
+#'     \item{\code{mv762at}}{Source for condoms: friend/relative}
+#'     \item{\code{mv762au}}{Source for condoms: hakim}
+#'     \item{\code{mv762av}}{Source for condoms: DAI traditional birth attendant}
+#'     \item{\code{mv762aw}}{NA - Source for condoms: CS other}
+#'     \item{\code{mv762ax}}{Source for condoms: other}
+#'     \item{\code{mv762az}}{Don't know any source for condoms}
+#'     \item{\code{mv762ba}}{NA - Source for female condoms: government hospital}
+#'     \item{\code{mv762bb}}{NA - Source for female condoms: CS public}
+#'     \item{\code{mv762bc}}{NA - Source for female condoms: CS public}
+#'     \item{\code{mv762bd}}{NA - Source for female condoms: CS public}
+#'     \item{\code{mv762be}}{NA - Source for female condoms: CS public}
+#'     \item{\code{mv762bf}}{NA - Source for female condoms: CS public}
+#'     \item{\code{mv762bg}}{NA - Source for female condoms: CS public}
+#'     \item{\code{mv762bh}}{NA - Source for female condoms: CS public}
+#'     \item{\code{mv762bi}}{NA - Source for female condoms: CS public}
+#'     \item{\code{mv762bj}}{NA - Source for female condoms: private hospital/clinic}
+#'     \item{\code{mv762bk}}{NA - Source for female condoms: pharmacy}
+#'     \item{\code{mv762bl}}{NA - Source for female condoms: private doctor}
+#'     \item{\code{mv762bm}}{NA - Source for female condoms: CS private}
+#'     \item{\code{mv762bn}}{NA - Source for female condoms: CS private}
+#'     \item{\code{mv762bo}}{NA - Source for female condoms: CS private}
+#'     \item{\code{mv762bp}}{NA - Source for female condoms: CS private}
+#'     \item{\code{mv762bq}}{NA - Source for female condoms: CS private}
+#'     \item{\code{mv762br}}{NA - Source for female condoms: CS private}
+#'     \item{\code{mv762bs}}{NA - Source for female condoms: CS other}
+#'     \item{\code{mv762bt}}{NA - Source for female condoms: CS other}
+#'     \item{\code{mv762bu}}{NA - Source for female condoms: CS other}
+#'     \item{\code{mv762bv}}{NA - Source for female condoms: CS other}
+#'     \item{\code{mv762bw}}{NA - Source for female condoms: CS other}
+#'     \item{\code{mv762bx}}{NA - Source for female condoms: other}
+#'     \item{\code{mv762bz}}{NA - Don't know any source for female condoms}
+#'     \item{\code{mv763a}}{Had any STI in last 12 months}
+#'     \item{\code{mv763b}}{NA - Had genital sore/ulcer in last 12 months}
+#'     \item{\code{mv763c}}{NA - Had genital discharge in last 12 months}
+#'     \item{\code{mv763d}}{NA - Had CS STI in last 12 months}
+#'     \item{\code{mv763e}}{NA - Had CS STI in last 12 months}
+#'     \item{\code{mv763f}}{NA - Had CS STI in last 12 months}
+#'     \item{\code{mv763g}}{NA - Had CS STI in last 12 months}
+#'     \item{\code{mv766a}}{NA - Number of sex partners, excluding spouse, in last 12 months}
+#'     \item{\code{mv766b}}{NA - Number of sex partners, including spouse, in last 12 months}
+#'     \item{\code{mv767a}}{NA - Relationship with most recent sex partner}
+#'     \item{\code{mv767b}}{NA - Relationship with 2nd to most recent sex partner}
+#'     \item{\code{mv767c}}{NA - Relationship with 3rd to most recent sex partner}
+#'     \item{\code{mv768a}}{NA - Length of time had sex relations with most recent partner}
+#'     \item{\code{mv768b}}{NA - Length of time had sex relations with 2nd to most recent partner}
+#'     \item{\code{mv768c}}{NA - Length of time had sex relations with 3rd to most recent partner}
+#'     \item{\code{mv769}}{Can get a condom}
+#'     \item{\code{mv769a}}{NA - Can get a female condom}
+#'     \item{\code{mv770}}{Sought advice/treatment for last STI infection}
+#'     \item{\code{mv770a}}{Sought STI advice/treatment from: government hospital}
+#'     \item{\code{mv770b}}{Sought STI advice/treatment from: government health center}
+#'     \item{\code{mv770c}}{Sought STI advice/treatment from: stand-alone VCT center}
+#'     \item{\code{mv770d}}{Sought STI advice/treatment from: family planning clinic}
+#'     \item{\code{mv770e}}{Sought STI advice/treatment from: mobile clinic}
+#'     \item{\code{mv770f}}{Sought STI advice/treatment from: fieldworker}
+#'     \item{\code{mv770g}}{Sought STI advice/treatment from: other public sector}
+#'     \item{\code{mv770h}}{NA - Sought STI advice/treatment from: CS public}
+#'     \item{\code{mv770i}}{NA - Sought STI advice/treatment from: CS public}
+#'     \item{\code{mv770j}}{NA - Sought STI advice/treatment from: CS public}
+#'     \item{\code{mv770k}}{Sought STI advice/treatment from: private hospital/clinic/doctor}
+#'     \item{\code{mv770l}}{Sought STI advice/treatment from: stand-alone VCT center}
+#'     \item{\code{mv770m}}{Sought STI advice/treatment from: pharmacy}
+#'     \item{\code{mv770n}}{Sought STI advice/treatment from: mobile clinic}
+#'     \item{\code{mv770o}}{Sought STI advice/treatment from: fieldworker}
+#'     \item{\code{mv770p}}{Sought STI advice/treatment from: other private medical}
+#'     \item{\code{mv770q}}{NA - Sought STI advice/treatment from: CS private}
+#'     \item{\code{mv770r}}{NA - Sought STI advice/treatment from: CS private}
+#'     \item{\code{mv770s}}{NA - Sought STI advice/treatment from: CS private}
+#'     \item{\code{mv770t}}{Sought STI advice/treatment from: shop}
+#'     \item{\code{mv770u}}{NA - Sought STI advice/treatment from: CS other}
+#'     \item{\code{mv770v}}{NA - Sought STI advice/treatment from: CS other}
+#'     \item{\code{mv770w}}{NA - Sought STI advice/treatment from: CS other}
+#'     \item{\code{mv770x}}{Sought STI advice/treatment from: other}
+#'     \item{\code{mv774a}}{HIV transmitted during pregnancy}
+#'     \item{\code{mv774b}}{HIV transmitted during delivery}
+#'     \item{\code{mv774c}}{HIV transmitted by breastfeeding}
+#'     \item{\code{mv775}}{NA - Knows someone who has, or is suspected of having, HIV}
+#'     \item{\code{mv777}}{Would want HIV infection in family to remain secret}
+#'     \item{\code{mv778}}{Willing to care for relative with AIDS}
+#'     \item{\code{mv779}}{A female teacher infected with HIV, but is not sick, should be allowed to contin}
+#'     \item{\code{mv780}}{NA - Children should be taught about condoms to avoid AIDS}
+#'     \item{\code{mv781}}{NA - Ever been tested for HIV}
+#'     \item{\code{mv783}}{Know a place to get HIV test}
+#'     \item{\code{mv784a}}{Place for HIV test: government hospital}
+#'     \item{\code{mv784b}}{Place for HIV test: government health center}
+#'     \item{\code{mv784c}}{Place for HIV test: stand-alone VCT center}
+#'     \item{\code{mv784d}}{Place for HIV test: other public sector}
+#'     \item{\code{mv784e}}{NA - Place for HIV test: CS public}
+#'     \item{\code{mv784f}}{NA - Place for HIV test: CS public}
+#'     \item{\code{mv784g}}{NA - Place for HIV test: CS public}
+#'     \item{\code{mv784h}}{NA - Place for HIV test: CS public}
+#'     \item{\code{mv784i}}{NA - Place for HIV test: CS public}
+#'     \item{\code{mv784j}}{NA - Place for HIV test: CS public}
+#'     \item{\code{mv784k}}{Place for HIV test: private hospital/clinic/doctor}
+#'     \item{\code{mv784l}}{Place for HIV test: stand-alone VCT center}
+#'     \item{\code{mv784m}}{Place for HIV test: other private medical}
+#'     \item{\code{mv784n}}{NA - Place for HIV test: CS private}
+#'     \item{\code{mv784o}}{NA - Place for HIV test: CS private}
+#'     \item{\code{mv784p}}{NA - Place for HIV test: CS private}
+#'     \item{\code{mv784q}}{NA - Place for HIV test: CS private}
+#'     \item{\code{mv784r}}{NA - Place for HIV test: CS private}
+#'     \item{\code{mv784s}}{NA - Place for HIV test: CS other}
+#'     \item{\code{mv784t}}{NA - Place for HIV test: CS other}
+#'     \item{\code{mv784u}}{NA - Place for HIV test: CS other}
+#'     \item{\code{mv784v}}{NA - Place for HIV test: CS other}
+#'     \item{\code{mv784x}}{Place for HIV test: other}
+#'     \item{\code{mv785}}{Heard about other STIs}
+#'     \item{\code{mv791}}{NA - Have ever paid anyone in exchange for sex}
+#'     \item{\code{mv793}}{NA - Paid for sex in last 12 months}
+#'     \item{\code{mv793a}}{NA - Condom used last time paid for sex in last 12 months}
+#'     \item{\code{mv793b}}{NA - Condom used every time paid for sex in last 12 months}
+#'     \item{\code{mv820}}{NA - Condom used at first sex}
+#'     \item{\code{mv822}}{NA - Wife justified asking husband to use condom if he has STI}
+#'     \item{\code{mv823}}{Can get HIV by witchcraft or supernatural means}
+#'     \item{\code{mv824}}{Drugs to avoid HIV transmission to baby during pregnancy}
+#'     \item{\code{mv825}}{Would buy vegetables from vendor with HIV}
+#'     \item{\code{mv826}}{NA - Last time tested for HIV}
+#'     \item{\code{mv826a}}{NA - Months ago most recent HIV test}
+#'     \item{\code{mv827}}{NA - Last HIV test: on your own, offered or required}
+#'     \item{\code{mv828}}{NA - Received result from last HIV test}
+#'     \item{\code{mv829}}{NA - Place where last HIV test was taken}
+#'     \item{\code{mv832b}}{NA - Time since last sex with 2nd to most recent partner}
+#'     \item{\code{mv832c}}{NA - Time since last sex with 3rd to most recent partner}
+#'     \item{\code{mv833a}}{NA - Used condom every time had sex with most recent partner in last 12 months}
+#'     \item{\code{mv833b}}{NA - Used condom every time had sex with 2nd to most recent partner in last 12 m}
+#'     \item{\code{mv833c}}{NA - Used condom every time had sex with 3rd to most recent partner in last 12 m}
+#'     \item{\code{mv834a}}{NA - Age of most recent partner}
+#'     \item{\code{mv834b}}{NA - Age of 2nd to most recent partner}
+#'     \item{\code{mv834c}}{NA - Age of 3rd to most recent partner}
+#'     \item{\code{mv835a}}{NA - Alcohol consumption at last sex with most recent partner}
+#'     \item{\code{mv835b}}{NA - Alcohol consumption at last sex with 2nd to most recent partner}
+#'     \item{\code{mv835c}}{NA - Alcohol consumption at last sex with 3rd to most recent partner}
+#'     \item{\code{mv836}}{NA - Total lifetime number of sex partners}
+#'     \item{\code{mv837}}{NA - Heard of drugs to help HIV infected people live longer}
+#'     \item{\code{mv844}}{NA - Knows someone denied health services for having, or suspected of having, HI}
+#'     \item{\code{mv845}}{NA - Knows someone denied social event for having, or suspected of having, HIV; }
+#'     \item{\code{mv846}}{NA - Knows someone verbally abused for having, or suspected of having, HIV; in l}
+#'     \item{\code{mv847}}{NA - People with HIV should be ashamed of themselves}
+#'     \item{\code{mv848}}{NA - People with HIV should be blamed for bringing disease to community}
+#'     \item{\code{mv849}}{NA - Children 12-14 should be taught to wait for sex until marriage}
+#'     \item{\code{mv851a}}{NA - Young men should wait for sex until marriage}
+#'     \item{\code{mv851b}}{NA - Most young men wait for sex until marriage}
+#'     \item{\code{mv851c}}{NA - Unmarried sexually active men should have only one partner}
+#'     \item{\code{mv851d}}{NA - Most unmarried sexually active men have only one partner}
+#'     \item{\code{mv851e}}{NA - Married men should only have sex with their wives}
+#'     \item{\code{mv851f}}{NA - Most married men only have sex with their wives}
+#'     \item{\code{mv851g}}{NA - Young women should wait for sex until marriage}
+#'     \item{\code{mv851h}}{NA - Most young women wait for sex until marriage}
+#'     \item{\code{mv851i}}{NA - Unmarried sexually active women should have only one partner}
+#'     \item{\code{mv851j}}{NA - Most unmarried sexually active women have only one partner}
+#'     \item{\code{mv851k}}{NA - Married women should only have sex with their husbands}
+#'     \item{\code{mv851l}}{NA - Most married women only have sex with their husbands}
+#'     \item{\code{mv852a}}{NA - How long ago first had sex with most recent partner}
+#'     \item{\code{mv852b}}{NA - How long ago first had sex with 2nd most recent partner}
+#'     \item{\code{mv852c}}{NA - How long ago first had sex with 3rd most recent partner}
+#'     \item{\code{mv853a}}{NA - Times in last 12 months had sex with most recent partner}
+#'     \item{\code{mv853b}}{NA - Times in last 12 months had sex with 2nd most recent partner}
+#'     \item{\code{mv853c}}{NA - Times in last 12 months had sex with 3rd most recent partner}
+#'     \item{\code{mv854a}}{NA - Concurrent sexual partners}
+#'     \item{\code{mv854b}}{NA - Cumulative concurrent sexual partners}
+#'     \item{\code{smdist}}{District}
+#'     \item{\code{smlangq}}{Language of questionnaire}
+#'     \item{\code{smlangi}}{Language of interview}
+#'     \item{\code{smlangr}}{Language respondent speaks a home}
+#'     \item{\code{smeduc}}{Man's educational level for report}
+#'     \item{\code{smfactt}}{All men factor - total}
+#'     \item{\code{smfactu}}{All men factor - urban/rural}
+#'     \item{\code{smfactr}}{All men factor - regional}
+#'     \item{\code{smfacte}}{All men factor - educational}
+#'     \item{\code{smfactw}}{All men factor - wealth index}
+#'     \item{\code{smfeduc1}}{All men factor - education as will be used in the report}
+#'     \item{\code{smfregur}}{All woman factor - region combined with urban/rural}
+#'     \item{\code{sm111}}{Highest class completed}
+#'     \item{\code{sm216}}{Line number of youngest child}
+#'     \item{\code{sm304a}}{Family planning message conveyed: limiting the family}
+#'     \item{\code{sm304b}}{Family planning message conveyed: higher age at marriage}
+#'     \item{\code{sm304c}}{Family planning message conveyed: spacing of children}
+#'     \item{\code{sm304d}}{Family planning message conveyed: use of contraceptives}
+#'     \item{\code{sm304e}}{Family planning message conveyed: welfare of family}
+#'     \item{\code{sm304f}}{Family planning message conveyed: maternal and child health}
+#'     \item{\code{sm304g}}{Family planning message conveyed: less children, prosperous life}
+#'     \item{\code{sm304h}}{Family planning message conveyed: more children, poverty and starvation}
+#'     \item{\code{sm304i}}{Family planning message conveyed: importance of breastfeeding}
+#'     \item{\code{sm304x}}{Family planning message conveyed: other}
+#'     \item{\code{sm304z}}{Family planning message conveyed: DK/don't remember}
+#'     \item{\code{sm304b1}}{Was family planning message effective}
+#'     \item{\code{sm405}}{Desire for future child}
+#'     \item{\code{sm514e}}{Beating justified: wife neglects in-laws}
+#'     \item{\code{sm704}}{Duration of treatment of TB nowadays}
+#'     \item{\code{sm705}}{Ever been told by a doctor/nurse that had TB}
+#'     \item{\code{sm706}}{Ever heard about Hepatitis}
+#'     \item{\code{sm707}}{Person can avoid Hepatitis}
+#'     \item{\code{sm708a}}{Avoid getting Hepatitis by: safe sex}
+#'     \item{\code{sm708b}}{Avoid getting Hepatitis by: safe blood transfer}
+#'     \item{\code{sm708c}}{Avoid getting Hepatitis by: disposable syringe}
+#'     \item{\code{sm708d}}{Avoid getting Hepatitis by: avoid contaminated food/water}
+#'     \item{\code{sm708e}}{Avoid getting Hepatitis by: avoid contact with infected person}
+#'     \item{\code{sm708f}}{Avoid getting Hepatitis by: dentist instruments sterilized}
+#'     \item{\code{sm708x}}{Avoid getting Hepatitis by: other}
+#'     \item{\code{sm708y}}{Avoid getting Hepatitis by: no response}
+#'     \item{\code{sm708z}}{Avoid getting Hepatitis by: don't know}
+#'
+#'   }
+#'
+#' @author
+#'  \enumerate{
+#'   \item{Muhammad Yaseen } {(\email{myaseen208@@gmail.com})}
+#'   }
+#'
+#' @references
+#' \enumerate{
+#'   \item National Institute of Population Studies (NIPS), Pakistan (\url{http://nips.org.pk/Home.htm}).
+#'  }
+#'
+#' @import tibble
+#'
+#' @examples
+#' load("PKMR61")
+#' PKMR61
+NULL

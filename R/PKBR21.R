@@ -1,0 +1,703 @@
+#' @title Pakistan Demographic and Health Survey 1990-91 Births Recode Data
+#' @name  PKBR21
+#' @description \code{PKBR21} data of Births Recode from Pakistan Demographic and Health Survey 1990-91.
+#' \describe{
+#'     \item{\code{caseid}}{case identification}            
+#'     \item{\code{bidx}}{birth column number}              
+#'     \item{\code{v000}}{country code and phase}           
+#'     \item{\code{v001}}{cluster number}                   
+#'     \item{\code{v002}}{household number}                 
+#'     \item{\code{v003}}{respondent's line number}         
+#'     \item{\code{v004}}{ultimate area unit}               
+#'     \item{\code{v005}}{sample weight}                    
+#'     \item{\code{v006}}{month of interview}               
+#'     \item{\code{v007}}{year of interview}                
+#'     \item{\code{v008}}{date of interview (cmc)}          
+#'     \item{\code{v009}}{respondent's month of birth}      
+#'     \item{\code{v010}}{respondent's year of birth}       
+#'     \item{\code{v011}}{date of birth (cmc)}              
+#'     \item{\code{v012}}{current age - respondent}         
+#'     \item{\code{v013}}{age 5-year groups}                
+#'     \item{\code{v014}}{completeness of information}      
+#'     \item{\code{v015}}{result of individual interview}   
+#'     \item{\code{v016}}{day of interview}                 
+#'     \item{\code{v017}}{cmc start of calendar/health}     
+#'     \item{\code{v018}}{row of month of interview}        
+#'     \item{\code{v019}}{length of calendar}               
+#'     \item{\code{v020}}{ever-married sample}              
+#'     \item{\code{v021}}{primary sampling unit}            
+#'     \item{\code{v022}}{sample stratum number}            
+#'     \item{\code{v023}}{sample domain}                    
+#'     \item{\code{v024}}{region}                           
+#'     \item{\code{v025}}{type of place of residence}       
+#'     \item{\code{v026}}{de facto place of residence}      
+#'     \item{\code{v027}}{number of visits}                 
+#'     \item{\code{v028}}{interviewer identification}       
+#'     \item{\code{v029}}{keyer identification}             
+#'     \item{\code{v101}}{region}                           
+#'     \item{\code{v102}}{type of place of residence}       
+#'     \item{\code{v103}}{childhood place of residence}     
+#'     \item{\code{v104}}{years lived in place of res.}     
+#'     \item{\code{v105}}{type of place of previous res.}   
+#'     \item{\code{v106}}{highest educational level}        
+#'     \item{\code{v107}}{highest year of education}        
+#'     \item{\code{v108}}{literacy}                         
+#'     \item{\code{v109}}{reads newspaper once a week}      
+#'     \item{\code{v110}}{watches tv every week}            
+#'     \item{\code{v111}}{listens to radio every da - na}   
+#'     \item{\code{v112}}{listens to radio every week}      
+#'     \item{\code{v113}}{source of drinking water}         
+#'     \item{\code{v114}}{source of non-drinking water}     
+#'     \item{\code{v115}}{time to get to water source}      
+#'     \item{\code{v116}}{type of toilet facility}          
+#'     \item{\code{v119}}{has electricity}                  
+#'     \item{\code{v120}}{has radio}                        
+#'     \item{\code{v121}}{has television}                   
+#'     \item{\code{v122}}{has refrigerator}                 
+#'     \item{\code{v123}}{has bicycle}                      
+#'     \item{\code{v124}}{has motorcycle}                   
+#'     \item{\code{v125}}{has car                   - na}   
+#'     \item{\code{v127}}{main floor material       - na}   
+#'     \item{\code{v128}}{main wall material}               
+#'     \item{\code{v129}}{main roof material}               
+#'     \item{\code{v130}}{religion                  - na}   
+#'     \item{\code{v131}}{ethnicity                 - na}   
+#'     \item{\code{v133}}{education in single years}        
+#'     \item{\code{v134}}{de facto place of residence}      
+#'     \item{\code{v135}}{usual resident or visitor}        
+#'     \item{\code{v136}}{number of household members}      
+#'     \item{\code{v137}}{number of children 5 and under}   
+#'     \item{\code{v138}}{number of eligible women in hh}   
+#'     \item{\code{v139}}{de jure region of residence}      
+#'     \item{\code{v140}}{de jure type of place of res.}    
+#'     \item{\code{v141}}{de jure place of residence}       
+#'     \item{\code{v142}}{same source of water}             
+#'     \item{\code{v143}}{rooms for sleeping}               
+#'     \item{\code{v144}}{communities lived in >jan - na}   
+#'     \item{\code{v145}}{month moved to res. of ja - na}   
+#'     \item{\code{v146}}{year moved to res. of jan - na}   
+#'     \item{\code{v147}}{residence before jan.8?   - na}   
+#'     \item{\code{v148}}{respondent still in school}       
+#'     \item{\code{v149}}{educational attainment}           
+#'     \item{\code{v150}}{relationship to household head}   
+#'     \item{\code{v151}}{sex of household head}            
+#'     \item{\code{v152}}{age of household head}            
+#'     \item{\code{awfactt}}{all woman factor - total}      
+#'     \item{\code{awfactu}}{all woman factor - urban/rural}
+#'     \item{\code{awfactr}}{all woman factor - regional}   
+#'     \item{\code{awfacte}}{all woman factor - educati- na}
+#'     \item{\code{v201}}{total children ever born}         
+#'     \item{\code{v202}}{sons at home}                     
+#'     \item{\code{v203}}{daughters at home}                
+#'     \item{\code{v204}}{sons elsewhere}                   
+#'     \item{\code{v205}}{daughters elsewhere}              
+#'     \item{\code{v206}}{sons who have died}               
+#'     \item{\code{v207}}{daughters who have died}          
+#'     \item{\code{v208}}{births in last five years}        
+#'     \item{\code{v209}}{births in past year}              
+#'     \item{\code{v210}}{births in month of interview}     
+#'     \item{\code{v211}}{date of first birth (cmc)}        
+#'     \item{\code{v212}}{age of respondent at 1st birth}   
+#'     \item{\code{v213}}{currently pregnant}               
+#'     \item{\code{v214}}{duration of current pregnancy}    
+#'     \item{\code{v215}}{time since last menstrual perd}   
+#'     \item{\code{v216}}{menstruated in last six weeks}    
+#'     \item{\code{v217}}{knowledge of ovulatory cycle}     
+#'     \item{\code{v218}}{number of living children}        
+#'     \item{\code{v219}}{living children + current preg}   
+#'     \item{\code{v220}}{living children + curr preg 6+}   
+#'     \item{\code{v221}}{marriage to first birth int.}     
+#'     \item{\code{v222}}{last birth to interview}          
+#'     \item{\code{v223}}{completeness of curr preg. inf}   
+#'     \item{\code{v224}}{entries in birth history}         
+#'     \item{\code{v225}}{current pregnancy wanted}         
+#'     \item{\code{v226}}{time since last period (comp)}    
+#'     \item{\code{v227}}{flag for last period}             
+#'     \item{\code{v228}}{ever had a terminated pre - na}   
+#'     \item{\code{v229}}{month pregnancy ended     - na}   
+#'     \item{\code{v230}}{year pregnancy ended      - na}   
+#'     \item{\code{v231}}{cmc pregnancy ended       - na}   
+#'     \item{\code{v232}}{completeness of last term - na}   
+#'     \item{\code{v233}}{months when pregnancy end - na}   
+#'     \item{\code{v234}}{other such pregnancies    - na}   
+#'     \item{\code{v235}}{index last child prior to - na}   
+#'     \item{\code{v310}}{living children at first use}     
+#'     \item{\code{v311}}{children at first use (grpd)}     
+#'     \item{\code{v312}}{current contraceptive method}     
+#'     \item{\code{v313}}{current use by method type}       
+#'     \item{\code{v315}}{month of sterilization}           
+#'     \item{\code{v316}}{year of sterilization}            
+#'     \item{\code{v317}}{date of sterilization (cmc)}      
+#'     \item{\code{v318}}{completeness of information}      
+#'     \item{\code{v319}}{years since sterilization}        
+#'     \item{\code{v320}}{age at sterilization}             
+#'     \item{\code{v321}}{marital duration at steriliz.}    
+#'     \item{\code{v322}}{parity at sterilization}          
+#'     \item{\code{v323}}{brand of pill used}               
+#'     \item{\code{v325}}{cost of pills}                    
+#'     \item{\code{v326}}{last source for current users}    
+#'     \item{\code{v327}}{last source for users by type}    
+#'     \item{\code{v337}}{months of use of current meth}    
+#'     \item{\code{v338}}{problem with current meth - na}   
+#'     \item{\code{v339}}{problem with current metho- na}   
+#'     \item{\code{v359}}{last method disc. last 5 y- na}   
+#'     \item{\code{v360}}{reason of last discontinua- na}   
+#'     \item{\code{v361}}{pattern of use}                   
+#'     \item{\code{v362}}{intention to use}                 
+#'     \item{\code{v363}}{preferred future method}          
+#'     \item{\code{v364}}{contraceptive use & intention}    
+#'     \item{\code{v365}}{heard fp message on radio}        
+#'     \item{\code{v366}}{acceptability of media message}   
+#'     \item{\code{v367}}{wanted last child}                
+#'     \item{\code{v369}}{first method used}                
+#'     \item{\code{v370}}{source of first method    - na}   
+#'     \item{\code{v371}}{source of first method    - na}   
+#'     \item{\code{v372}}{shown pill package}               
+#'     \item{\code{v373}}{doctor/nurse for first pil- na}   
+#'     \item{\code{v374}}{doctor/nurse for last pills}      
+#'     \item{\code{v375}}{reason for current method - na}   
+#'     \item{\code{v376}}{main reason not to use a meth.}   
+#'     \item{\code{v377}}{source for future method}         
+#'     \item{\code{v378}}{source for future method}         
+#'     \item{\code{v379}}{source known for any method}      
+#'     \item{\code{v380}}{source known for any method}      
+#'     \item{\code{v381}}{time to get to source}            
+#'     \item{\code{v382}}{time to get to source(grouped)}   
+#'     \item{\code{v383}}{easy/difficult to get to place}   
+#'     \item{\code{v384}}{heard about fp on television}     
+#'     \item{\code{v385}}{contraceptive use before  - na}   
+#'     \item{\code{v386}}{month started method pre  - na}   
+#'     \item{\code{v387}}{year started method pre 8 - na}   
+#'     \item{\code{v388}}{date started method pre 8 - na}   
+#'     \item{\code{v389}}{months use prior to calen - na}   
+#'     \item{\code{v390}}{month stopped method pre  - na}   
+#'     \item{\code{v391}}{year stopped method pre 8 - na}   
+#'     \item{\code{v392}}{date stopped method pre 8 - na}   
+#'     \item{\code{v401}}{last birth ceasarean section}     
+#'     \item{\code{v404}}{currently breastfeeding}          
+#'     \item{\code{v405}}{currently amenorrheic}            
+#'     \item{\code{v406}}{currently abstaining}             
+#'     \item{\code{v407}}{times breastfed during night}     
+#'     \item{\code{v408}}{times breastfed during day}       
+#'     \item{\code{v409}}{gave child plain water}           
+#'     \item{\code{v409a}}{gave child sugar water}          
+#'     \item{\code{v410}}{gave child juice}                 
+#'     \item{\code{v410a}}{gave child herbal tea}           
+#'     \item{\code{v411}}{gave child powder/tinned milk}    
+#'     \item{\code{v411a}}{gave child baby formula}         
+#'     \item{\code{v412}}{gave child fresh milk}            
+#'     \item{\code{v413a}}{country specific: ghutti}        
+#'     \item{\code{v413b}}{country specific: gripe water}   
+#'     \item{\code{v413c}}{country specific other li - na}  
+#'     \item{\code{v413d}}{country specific other li - na}  
+#'     \item{\code{v413}}{gave child other liquid}          
+#'     \item{\code{v414a}}{country specific other fo - na}  
+#'     \item{\code{v414b}}{country specific other fo - na}  
+#'     \item{\code{v414c}}{country specific other fo - na}  
+#'     \item{\code{v414d}}{country specific other fo - na}  
+#'     \item{\code{v414}}{gave child solid or mushy food}   
+#'     \item{\code{v415}}{fed food in bottle with nipple}   
+#'     \item{\code{v416}}{heard of oral rehydration}        
+#'     \item{\code{v417}}{entries in maternity table}       
+#'     \item{\code{v418}}{entries in health table}          
+#'     \item{\code{v419}}{entries in height/weight table}   
+#'     \item{\code{v420}}{measurer's code          -  na}   
+#'     \item{\code{v421}}{assistant measurer's code - na}   
+#'     \item{\code{v422}}{ever prepared ors solution}       
+#'     \item{\code{v423}}{quantity of water for ors}        
+#'     \item{\code{v424a}}{ors source: government hosp.}    
+#'     \item{\code{v424b}}{ors source: govt health c - na}  
+#'     \item{\code{v424c}}{ors source: govt health p - na}  
+#'     \item{\code{v424d}}{ors source: mobile clinic - na}  
+#'     \item{\code{v424e}}{ors source: comm.health w - na}  
+#'     \item{\code{v424f}}{ors source:cs rhc/ govt clinin}  
+#'     \item{\code{v424g}}{ors source:cs fam welfare wrkr}  
+#'     \item{\code{v424h}}{ors source:cs lady health wrkr}  
+#'     \item{\code{v424i}}{ors source:cs pub. mobile team}  
+#'     \item{\code{v424j}}{ors source: private hosp/clin.}  
+#'     \item{\code{v424k}}{ors source: private pharmacy}    
+#'     \item{\code{v424l}}{ors source: private doctor}      
+#'     \item{\code{v424m}}{ors source: private mobil - na}  
+#'     \item{\code{v424n}}{ors source: comm.health w - na}  
+#'     \item{\code{v424o}}{ors source: cs med.priv s - na}  
+#'     \item{\code{v424p}}{ors source: cs med.priv s - na}  
+#'     \item{\code{v424q}}{ors source: cs med.priv s - na}  
+#'     \item{\code{v424r}}{ors source: cs med.priv s - na}  
+#'     \item{\code{v424s}}{ors source: shop}                
+#'     \item{\code{v424t}}{ors source: traditional pr- na}  
+#'     \item{\code{v424u}}{ors source:cs hakim}             
+#'     \item{\code{v424v}}{ors source: cs oth.priv s - na}  
+#'     \item{\code{v424w}}{ors source: cs oth.priv s - na}  
+#'     \item{\code{v424x}}{ors source: other}               
+#'     \item{\code{v424y}}{ors source: unknown}             
+#'     \item{\code{v425}}{home fluid preparation teacher}   
+#'     \item{\code{v426}}{when child put to breast}         
+#'     \item{\code{v427}}{duration breastfeeding pr - na}   
+#'     \item{\code{v428}}{months breastfeeding pre  - na}   
+#'     \item{\code{v429}}{flag for breastfeeding pr - na}   
+#'     \item{\code{v430}}{duration of amenorrhea pr - na}   
+#'     \item{\code{v431}}{months of amenorrhea pre  - na}   
+#'     \item{\code{v432}}{flag for amenorrhea pre 8 - na}   
+#'     \item{\code{v433}}{duration of abstinence pr - na}   
+#'     \item{\code{v434}}{months of abstinence pre  - na}   
+#'     \item{\code{v435}}{flag for abstinence pre 8 - na}   
+#'     \item{\code{v436}}{arm circumference (cms-1d - na}   
+#'     \item{\code{v437}}{respondent's weight (kilo - na}   
+#'     \item{\code{v438}}{respondent's height (cms- - na}   
+#'     \item{\code{v439}}{ht/a percentile (resp.)   - na}   
+#'     \item{\code{v440}}{ht/a standard deviations  - na}   
+#'     \item{\code{v441}}{ht/a percent ref. median  - na}   
+#'     \item{\code{v442}}{wt/ht percent ref. median - na}   
+#'     \item{\code{v443}}{wt/ht percent ref. median - na}   
+#'     \item{\code{v444}}{wt/ht percent ref. median - na}   
+#'     \item{\code{v445}}{body mass index for respo - na}   
+#'     \item{\code{v446}}{rohrer's index for respon - na}   
+#'     \item{\code{v447}}{result of measurement of  - na}   
+#'     \item{\code{v501}}{current marital status}           
+#'     \item{\code{v502}}{currently/formerly/never marr.}   
+#'     \item{\code{v503}}{number of unions}                 
+#'     \item{\code{v504}}{husband lives in house}           
+#'     \item{\code{v505}}{number of other wives}            
+#'     \item{\code{v506}}{wife rank number}                 
+#'     \item{\code{v507}}{month of first marriage}          
+#'     \item{\code{v508}}{year of first marriage}           
+#'     \item{\code{v509}}{date of first marriage (cmc)}     
+#'     \item{\code{v510}}{completeness of date inform.}     
+#'     \item{\code{v511}}{age at first marriage}            
+#'     \item{\code{v512}}{years since first marriage}       
+#'     \item{\code{v513}}{marital duration (grouped)}       
+#'     \item{\code{v525}}{age at first intercourse  - na}   
+#'     \item{\code{v526}}{frequency of intercourse  - na}   
+#'     \item{\code{v527}}{time since last intercour - na}   
+#'     \item{\code{v528}}{time since last intercour - na}   
+#'     \item{\code{v529}}{time since last intercour - na}   
+#'     \item{\code{v530}}{flag for v529             - na}   
+#'     \item{\code{v531}}{age at first intercourse  - na}   
+#'     \item{\code{v532}}{flag for v531             - na}   
+#'     \item{\code{v533}}{usual frequency of interc - na}   
+#'     \item{\code{v602}}{fertility preference}             
+#'     \item{\code{v603}}{preferred waiting time}           
+#'     \item{\code{v604}}{preferred waiting time (grpd)}    
+#'     \item{\code{v605}}{desire for more children}         
+#'     \item{\code{v608}}{ideal post-partum abst. period}   
+#'     \item{\code{v609}}{sex while breastfeeding}          
+#'     \item{\code{v610}}{husband approves fp}              
+#'     \item{\code{v611}}{discussed fp with partner}        
+#'     \item{\code{v612}}{respondent approves fp}           
+#'     \item{\code{v613}}{ideal number of children}         
+#'     \item{\code{v614}}{ideal number of children (grp)}   
+#'     \item{\code{v615}}{best birth interval       - na}   
+#'     \item{\code{v616}}{time for future birth}            
+#'     \item{\code{v617}}{age youngest at future birth}     
+#'     \item{\code{v618}}{reason regrets sterilization}     
+#'     \item{\code{v619}}{think would have sterilization}   
+#'     \item{\code{v620}}{discussed number of children}     
+#'     \item{\code{v621}}{husbands desire for children}     
+#'     \item{\code{v623}}{exposure}                         
+#'     \item{\code{v624}}{unmet need}                       
+#'     \item{\code{v625}}{exposure (definition 2)}          
+#'     \item{\code{v626}}{unmet need (definition 2)}        
+#'     \item{\code{v701}}{partner's education level}        
+#'     \item{\code{v702}}{highest year of education}        
+#'     \item{\code{v704}}{partner's occupation}             
+#'     \item{\code{v705}}{partner's occupation}             
+#'     \item{\code{v707}}{type of land where works}         
+#'     \item{\code{v714}}{respondent currently working}     
+#'     \item{\code{v715}}{husbands education-single yrs}    
+#'     \item{\code{v716}}{respondent's occupation}          
+#'     \item{\code{v717}}{respondent's occupation}          
+#'     \item{\code{v718}}{current type of employment}       
+#'     \item{\code{v719}}{work for family, others, self}    
+#'     \item{\code{v720}}{earns cash for work}              
+#'     \item{\code{v721}}{works at home or away}            
+#'     \item{\code{v722}}{child with resp. at work}         
+#'     \item{\code{v723}}{child minder}                     
+#'     \item{\code{v724}}{ever worked since jan. 19 - na}   
+#'     \item{\code{v725}}{month started work before - na}   
+#'     \item{\code{v726}}{year started work before  - na}   
+#'     \item{\code{v727}}{month job prior to 8? end - na}   
+#'     \item{\code{v728}}{year job prior to 8? ende - na}   
+#'     \item{\code{v729}}{partner's educational attainm.}   
+#'     \item{\code{bord}}{birth order number}               
+#'     \item{\code{b0}}{child is twin}                      
+#'     \item{\code{b1}}{month of birth}                     
+#'     \item{\code{b2}}{year of birth}                      
+#'     \item{\code{b3}}{date of birth (cmc)}                
+#'     \item{\code{b4}}{sex of child}                       
+#'     \item{\code{b5}}{child is alive}                     
+#'     \item{\code{b6}}{age at death}                       
+#'     \item{\code{b7}}{age at death (months-imputed)}      
+#'     \item{\code{b8}}{current age of child}               
+#'     \item{\code{b9}}{who child lives with}               
+#'     \item{\code{b10}}{completeness of information}       
+#'     \item{\code{b11}}{preceding birth interval}          
+#'     \item{\code{b12}}{succeeding birth interval}         
+#'     \item{\code{b13}}{flag for age at death}             
+#'     \item{\code{midx}}{index to birth history}           
+#'     \item{\code{m1}}{tetanus injections bef. birth}      
+#'     \item{\code{m2a}}{prenatal: doctor}                  
+#'     \item{\code{m2b}}{prenatal: nurse/midwife}           
+#'     \item{\code{m2c}}{prenatal: auxiliary midwi - na}    
+#'     \item{\code{m2d}}{prenatal:cs lady health visitr}    
+#'     \item{\code{m2e}}{prenatal:cs fam welfare worker}    
+#'     \item{\code{m2f}}{prenatal: trained birth att.}      
+#'     \item{\code{m2g}}{prenatal: trad.birth attendant}    
+#'     \item{\code{m2h}}{prenatal: relative        - na}    
+#'     \item{\code{m2i}}{prenatal: cs other person - na}    
+#'     \item{\code{m2j}}{prenatal: cs other person - na}    
+#'     \item{\code{m2k}}{prenatal: other resp (uncoded)}    
+#'     \item{\code{m2l}}{prenatal: cs other        - na}    
+#'     \item{\code{m2m}}{prenatal: cs other        - na}    
+#'     \item{\code{m2n}}{prenatal: no one}                  
+#'     \item{\code{m3a}}{assistance: doctor}                
+#'     \item{\code{m3b}}{assistance: nurse/midwife}         
+#'     \item{\code{m3c}}{assistance: auxiliary mid - na}    
+#'     \item{\code{m3d}}{assistance:cs lady health vist}    
+#'     \item{\code{m3e}}{assistance:cs family health wk}    
+#'     \item{\code{m3f}}{assistance: trained birth att.}    
+#'     \item{\code{m3g}}{assistance: trad.birth attend.}    
+#'     \item{\code{m3h}}{assistance: relative      - na}    
+#'     \item{\code{m3i}}{assistance:cs female relative}     
+#'     \item{\code{m3j}}{assistance: cs other pers - na}    
+#'     \item{\code{m3k}}{assistance: other resp (uncod)}    
+#'     \item{\code{m3l}}{assistance: cs other      - na}    
+#'     \item{\code{m3m}}{assistance: cs other      - na}    
+#'     \item{\code{m3n}}{assistance: no one}                
+#'     \item{\code{m4}}{duration of breastfeeding}          
+#'     \item{\code{m5}}{months of breastfeeding}            
+#'     \item{\code{m6}}{duration of amenorrhea}             
+#'     \item{\code{m7}}{months of amenorrhea}               
+#'     \item{\code{m8}}{duration of abstinence}             
+#'     \item{\code{m9}}{months of abstinence}               
+#'     \item{\code{m10}}{time wanted pregnancy}             
+#'     \item{\code{m11}}{time would have waited}            
+#'     \item{\code{m12}}{antenatal card for pregnancy}      
+#'     \item{\code{m13}}{timing of 1st antenatal check}     
+#'     \item{\code{m14}}{antenatal visits for pregnancy}    
+#'     \item{\code{m15}}{place of delivery}                 
+#'     \item{\code{m16}}{premature birth}                   
+#'     \item{\code{m17}}{delivery by caesarian section}     
+#'     \item{\code{m18}}{size of child at birth}            
+#'     \item{\code{m19}}{birth weight (kilos - 3 dec.)}     
+#'     \item{\code{m20}}{reason did not breastfeed}         
+#'     \item{\code{m21}}{reason stopped breastfeeding}      
+#'     \item{\code{m22}}{child given other food}            
+#'     \item{\code{m23}}{age for formula or other milk}     
+#'     \item{\code{m24}}{age for plain water}               
+#'     \item{\code{m25}}{age for other liquids}             
+#'     \item{\code{m26}}{age for solid or mushy food}       
+#'     \item{\code{m27}}{flag for breastfeeding}            
+#'     \item{\code{m28}}{flag for amenorrhea}               
+#'     \item{\code{m29}}{flag for abstinence}               
+#'     \item{\code{hidx}}{index to birth history}           
+#'     \item{\code{h1}}{has health card}                    
+#'     \item{\code{h2}}{received bcg}                       
+#'     \item{\code{h2d}}{bcg day}                           
+#'     \item{\code{h2m}}{bcg month}                         
+#'     \item{\code{h2y}}{bcg year}                          
+#'     \item{\code{h3}}{received dpt 1}                     
+#'     \item{\code{h3d}}{dpt 1 day}                         
+#'     \item{\code{h3m}}{dpt 1 month}                       
+#'     \item{\code{h3y}}{dpt 1 year}                        
+#'     \item{\code{h4}}{received polio 1}                   
+#'     \item{\code{h4d}}{polio 1 day}                       
+#'     \item{\code{h4m}}{polio 1 month}                     
+#'     \item{\code{h4y}}{polio 1 year}                      
+#'     \item{\code{h5}}{received dpt 2}                     
+#'     \item{\code{h5d}}{dpt 2 day}                         
+#'     \item{\code{h5m}}{dpt 2 month}                       
+#'     \item{\code{h5y}}{dpt 2 year}                        
+#'     \item{\code{h6}}{received polio 2}                   
+#'     \item{\code{h6d}}{polio 2 day}                       
+#'     \item{\code{h6m}}{polio 2 month}                     
+#'     \item{\code{h6y}}{polio 2 year}                      
+#'     \item{\code{h7}}{received dpt 3}                     
+#'     \item{\code{h7d}}{dpt 3 day}                         
+#'     \item{\code{h7m}}{dpt 3 month}                       
+#'     \item{\code{h7y}}{dpt 3 year}                        
+#'     \item{\code{h8}}{received polio 3}                   
+#'     \item{\code{h8d}}{polio 3 day}                       
+#'     \item{\code{h8m}}{polio 3 month}                     
+#'     \item{\code{h8y}}{polio 3 year}                      
+#'     \item{\code{h9}}{received measles}                   
+#'     \item{\code{h9d}}{measles day}                       
+#'     \item{\code{h9m}}{measles month}                     
+#'     \item{\code{h9y}}{measles year}                      
+#'     \item{\code{h10}}{ever had vaccination}              
+#'     \item{\code{h11}}{had diarrhea recently}             
+#'     \item{\code{h11a}}{how long diarrhea lasted}         
+#'     \item{\code{h11b}}{blood in the stools}              
+#'     \item{\code{h12a}}{diarrhea: government hosp.}       
+#'     \item{\code{h12b}}{diarrhea: govt health cen - na}   
+#'     \item{\code{h12c}}{diarrhea: govt health pos - na}   
+#'     \item{\code{h12d}}{diarrhea: mobile clinic   - na}   
+#'     \item{\code{h12e}}{diarrhea: comm.health work- na}   
+#'     \item{\code{h12f}}{diarrhea:cs rhc/ govt. clinic}    
+#'     \item{\code{h12g}}{diarrhea:cs family welfare wkr}   
+#'     \item{\code{h12h}}{diarrhea:cs lady health visitr}   
+#'     \item{\code{h12i}}{diarrhea: cs public secto - na}   
+#'     \item{\code{h12j}}{diarrhea: private hosp/clin.}     
+#'     \item{\code{h12k}}{diarrhea: private pharmacy}       
+#'     \item{\code{h12l}}{diarrhea: private doctor}         
+#'     \item{\code{h12m}}{diarrhea: private mobile  - na}   
+#'     \item{\code{h12n}}{diarrhea: comm.health wor - na}   
+#'     \item{\code{h12o}}{diarrhea: cs med.priv sec - na}   
+#'     \item{\code{h12p}}{diarrhea: cs med.priv sec - na}   
+#'     \item{\code{h12q}}{diarrhea: cs med.priv sec - na}   
+#'     \item{\code{h12r}}{diarrhea: cs med.priv sec - na}   
+#'     \item{\code{h12s}}{diarrhea: shop}                   
+#'     \item{\code{h12t}}{diarrhea: traditional pra - na}   
+#'     \item{\code{h12u}}{diarrhea:cs homeopath}            
+#'     \item{\code{h12v}}{diarrhea:cs hakim}                
+#'     \item{\code{h12w}}{diarrhea:cs faith healer}         
+#'     \item{\code{h12x}}{diarrhea: other}                  
+#'     \item{\code{h12y}}{diarrhea: no treatment}           
+#'     \item{\code{h12z}}{diarrhea: medical treatment}      
+#'     \item{\code{h13}}{given oral rehydration}            
+#'     \item{\code{h13a}}{days given ors}                   
+#'     \item{\code{h14}}{given recommend. home solution}    
+#'     \item{\code{h14a}}{days given fluid}                 
+#'     \item{\code{h15}}{given other pills or syrups}       
+#'     \item{\code{h15a}}{given antibiotics}                
+#'     \item{\code{h15b}}{given an injection}               
+#'     \item{\code{h15c}}{given an intravenous (iv)}        
+#'     \item{\code{h15d}}{given home remedy, herbal med.}   
+#'     \item{\code{h15e}}{given cs: unknown pill/syrup}     
+#'     \item{\code{h15f}}{given cs rice water}              
+#'     \item{\code{h15g}}{given cs lassi}                   
+#'     \item{\code{h15h}}{given cs other fluid}             
+#'     \item{\code{h16}}{increase or decrease fluids}       
+#'     \item{\code{h18}}{increase or decrease in foods}     
+#'     \item{\code{h18a}}{breastfeeding change}             
+#'     \item{\code{h20}}{given other treatment}             
+#'     \item{\code{h21a}}{given no treatment}               
+#'     \item{\code{h21}}{received any treatment}            
+#'     \item{\code{h22}}{had fever in last two weeks}       
+#'     \item{\code{h31}}{had cough in last two weeks}       
+#'     \item{\code{h31a}}{how long cough lasted}            
+#'     \item{\code{h31b}}{short, rapid breaths}             
+#'     \item{\code{h32a}}{fever/cough: government hosp.}    
+#'     \item{\code{h32b}}{fever/cough: govt health  - na}   
+#'     \item{\code{h32c}}{fever/cough: govt health  - na}   
+#'     \item{\code{h32d}}{fever/cough: mobile clini - na}   
+#'     \item{\code{h32e}}{fever/cough: comm.health w- na}   
+#'     \item{\code{h32f}}{fever/cough: cs rhc/ govt clin}   
+#'     \item{\code{h32g}}{fever/cough:cs family welf wkr}   
+#'     \item{\code{h32h}}{fever/cough:cs lady health vst}   
+#'     \item{\code{h32i}}{fever/cough: cs public se - na}   
+#'     \item{\code{h32j}}{fever/cough: private hosp/clin}   
+#'     \item{\code{h32k}}{fever/cough: private pharmacy}    
+#'     \item{\code{h32l}}{fever/cough: private doctor}      
+#'     \item{\code{h32m}}{fever/cough: private mobi - na}   
+#'     \item{\code{h32n}}{fever/cough: comm.health  - na}   
+#'     \item{\code{h32o}}{fever/cough: cs med.priv  - na}   
+#'     \item{\code{h32p}}{fever/cough: cs med.priv  - na}   
+#'     \item{\code{h32q}}{fever/cough: cs med.priv  - na}   
+#'     \item{\code{h32r}}{fever/cough: cs med.priv  - na}   
+#'     \item{\code{h32s}}{fever/cough: shop}                
+#'     \item{\code{h32t}}{fever/cough: traditional  - na}   
+#'     \item{\code{h32u}}{fever/cough:cs homeopath}         
+#'     \item{\code{h32v}}{fever/cough:cs hakim}             
+#'     \item{\code{h32w}}{fever/cough:cs faith healer}      
+#'     \item{\code{h32x}}{fever/cough: other}               
+#'     \item{\code{h32y}}{fever/cough: no treatment}        
+#'     \item{\code{h32z}}{fever/cough: medical treatment}   
+#'     \item{\code{h33}}{given antibiotics}                 
+#'     \item{\code{h33a}}{given antimalarials}              
+#'     \item{\code{h34}}{given cough syrup}                 
+#'     \item{\code{h35}}{given other pills or syrups}       
+#'     \item{\code{h35a}}{given unknown pills or syrups}    
+#'     \item{\code{h36}}{given injection}                   
+#'     \item{\code{h36a}}{given home remedy, herbal med.}   
+#'     \item{\code{h37a}}{given cs other treatment  - na}   
+#'     \item{\code{h37b}}{given cs other treatment  - na}   
+#'     \item{\code{h37c}}{given cs other treatment  - na}   
+#'     \item{\code{h37d}}{given cs other treatment  - na}   
+#'     \item{\code{h37}}{other treatment for cough}         
+#'     \item{\code{h38a}}{given no treatment}               
+#'     \item{\code{h38}}{given any treatment for cough}     
+#'     \item{\code{hwidx}}{index to birth history}          
+#'     \item{\code{hw1}}{age in months}                     
+#'     \item{\code{hw2}}{weight in kilograms (1 dec.)}      
+#'     \item{\code{hw3}}{height in centimeters (1 dec.)}    
+#'     \item{\code{hw4}}{ht/a percentile}                   
+#'     \item{\code{hw5}}{ht/a standard deviations}          
+#'     \item{\code{hw6}}{ht/a percent of ref. median}       
+#'     \item{\code{hw7}}{wt/a percentile}                   
+#'     \item{\code{hw8}}{wt/a standard deviations}          
+#'     \item{\code{hw9}}{wt/a percent of ref. median}       
+#'     \item{\code{hw10}}{wt/ht percentile}                 
+#'     \item{\code{hw11}}{wt/ht standard deviations}        
+#'     \item{\code{hw12}}{wt/ht percent of ref. median}     
+#'     \item{\code{hw13}}{reason not measured}              
+#'     \item{\code{hw14}}{bcg scar on arm or shoulder}      
+#'     \item{\code{hw15}}{height: lying or standing}        
+#'     \item{\code{hw16}}{day of birth of child}            
+#'     \item{\code{hw17}}{date measured (day)}              
+#'     \item{\code{hw18}}{date measured (month)}            
+#'     \item{\code{hw19}}{date measured (year)}             
+#'     \item{\code{hw20}}{arm circumference (cms - 1d)}     
+#'     \item{\code{hw21}}{arm circ/a percentile}            
+#'     \item{\code{hw22}}{arm circ/a standard deviations}   
+#'     \item{\code{hw23}}{arm c/a percent of ref. median}   
+#'     \item{\code{hw24}}{arm circ/ht percentile}           
+#'     \item{\code{hw25}}{arm cir/ht standard deviations}   
+#'     \item{\code{hw26}}{arm cir/ht percent ref. median}   
+#'     \item{\code{awfacte1}}{all women exp factor - educ 1}
+#'     \item{\code{awfacte2}}{all women exp factor - educ 2}
+#'     \item{\code{awfactk}}{all woman factor - karachi}    
+#'     \item{\code{seduc1}}{educational level for awfacte1} 
+#'     \item{\code{seduc2}}{educational level for awfacte2} 
+#'     \item{\code{sdist}}{district}                        
+#'     \item{\code{sclust}}{cluster number}                 
+#'     \item{\code{shusbln}}{husband's line number}         
+#'     \item{\code{shusband}}{first wife or not}            
+#'     \item{\code{slang1}}{language of questionnaire}      
+#'     \item{\code{slang2}}{language of interview}          
+#'     \item{\code{slang3}}{native language of respondent}  
+#'     \item{\code{stransl}}{translator used}               
+#'     \item{\code{s111}}{highest educational level}        
+#'     \item{\code{s112}}{highest grade at that level}      
+#'     \item{\code{s115}}{write a letter}                   
+#'     \item{\code{s125e}}{has a room cooler}               
+#'     \item{\code{s125f}}{has a washing machine}           
+#'     \item{\code{s125g}}{has a water pump}                
+#'     \item{\code{s126c}}{has a car, van or tractor}       
+#'     \item{\code{s130}}{province visitor is from}         
+#'     \item{\code{s311}}{first pill, consult medical}      
+#'     \item{\code{s312}}{first pill, preferred method}     
+#'     \item{\code{s313}}{first pill, preferred method}     
+#'     \item{\code{s314}}{first pill, other meths discsd}   
+#'     \item{\code{s315a}}{discusseed iud}                  
+#'     \item{\code{s315b}}{discussed injections}            
+#'     \item{\code{s315c}}{discussed diaphragm,foam,jelly}  
+#'     \item{\code{s315d}}{discussed condom}                
+#'     \item{\code{s315e}}{discussed female sterilization}  
+#'     \item{\code{s315f}}{discussed male sterilization}    
+#'     \item{\code{s315g}}{discussed periodic abstinence}   
+#'     \item{\code{s315h}}{discussed withdrawal}            
+#'     \item{\code{s315i}}{discussed other}                 
+#'     \item{\code{s316}}{satisfied with information}       
+#'     \item{\code{s321}}{reason not using}                 
+#'     \item{\code{s327a}}{shown condom package}            
+#'     \item{\code{s327b}}{brand of condoms shown}          
+#'     \item{\code{s329}}{cost of condom}                   
+#'     \item{\code{s330}}{cost of iud/ster/injections}      
+#'     \item{\code{s339}}{if own choice, desire to use}     
+#'     \item{\code{s349}}{message effective}                
+#'     \item{\code{s409}}{advised to eat more during prg}   
+#'     \item{\code{s410}}{weighed during pregnancy}         
+#'     \item{\code{s415}}{hours in labor - last birth}      
+#'     \item{\code{s431a}}{fed water before breast}         
+#'     \item{\code{s431b}}{fed ghutti before breast}        
+#'     \item{\code{s431c}}{fed honey before breast}         
+#'     \item{\code{s431d}}{fed sugar before breast}         
+#'     \item{\code{s431e}}{fed other before breast}         
+#'     \item{\code{s431f}}{fed other milk before breast}    
+#'     \item{\code{s431g}}{fed ghee before breast}          
+#'     \item{\code{s431h}}{fed butter before breast}        
+#'     \item{\code{s431i}}{fed oil before breast}           
+#'     \item{\code{s431j}}{fed tea before breast}           
+#'     \item{\code{s431k}}{fed herbal water before breast}  
+#'     \item{\code{s431l}}{fed rose water before breast}    
+#'     \item{\code{s431m}}{fed ghur before breast}          
+#'     \item{\code{s431n}}{fed nothing before breast}       
+#'     \item{\code{s439a}}{times given plain water}         
+#'     \item{\code{s439b}}{times given ghutti}              
+#'     \item{\code{s439c}}{times given sugar/honey water}   
+#'     \item{\code{s439d}}{times given juice}               
+#'     \item{\code{s439e}}{times given herbal tea}          
+#'     \item{\code{s439f}}{times given gripe water}         
+#'     \item{\code{s439g}}{times given baby formula}        
+#'     \item{\code{s439h}}{times given fresh milk}          
+#'     \item{\code{s439i}}{times given tinned/powd milk}    
+#'     \item{\code{s439j}}{times given other liquids}       
+#'     \item{\code{s439k}}{times given solid/mushy foods}   
+#'     \item{\code{s442}}{ever drink from nipple}           
+#'     \item{\code{s443}}{age for nipple regular basis}     
+#'     \item{\code{s495}}{amount of liquid for ors}         
+#'     \item{\code{sv420}}{measurer's code}                 
+#'     \item{\code{sv421}}{assistant measurer's code}       
+#'     \item{\code{s503}}{last four weeks cohabitation}     
+#'     \item{\code{s504}}{always apart or not 4 weeks}      
+#'     \item{\code{s505}}{time apart}                       
+#'     \item{\code{s510}}{blood relationship with spouse}   
+#'     \item{\code{s513d}}{presence of mother-in-law}       
+#'     \item{\code{s513e}}{presence of other female}        
+#'     \item{\code{s603}}{desire future child}              
+#'     \item{\code{s604}}{sex preference for next}          
+#'     \item{\code{s605}}{time for future birth (number)}   
+#'     \item{\code{s615}}{time to wait before sex (num.)}   
+#'     \item{\code{s618}}{ideal number of children}         
+#'     \item{\code{s619a}}{additional boys wanted}          
+#'     \item{\code{s619b}}{additional girls wanted}         
+#'     \item{\code{s619c}}{additional of either sex want}   
+#'     \item{\code{s620}}{education for sons}               
+#'     \item{\code{s621}}{daughters schooling}              
+#'     \item{\code{s622}}{ideal age marriage boys}          
+#'     \item{\code{s623}}{ideal age marriage - girls}       
+#'     \item{\code{s624}}{go to hospital alone}             
+#'     \item{\code{s702}}{age of husband}                   
+#'     \item{\code{s704}}{husbands level of education}      
+#'     \item{\code{s705}}{husbands highest grade}           
+#'     \item{\code{s711}}{would like to work if job}        
+#'     \item{\code{s718}}{child minder}                     
+#'     \item{\code{s719}}{work before marriage}             
+#'     \item{\code{s720}}{work just after marriage}         
+#'     \item{\code{s722}}{age when first worked}            
+#'     \item{\code{s723a}}{began work - financial need}     
+#'     \item{\code{s723b}}{began work - supplem family in}  
+#'     \item{\code{s723c}}{began work - personal fulfillm}  
+#'     \item{\code{s723d}}{began work - husb sick/dead}     
+#'     \item{\code{s723e}}{began work - divorce/separatio}  
+#'     \item{\code{s723f}}{began work - other reason}       
+#'     \item{\code{idx94}}{index to birth history}          
+#'     \item{\code{s426}}{duration of abstinence}           
+#'     \item{\code{s428}}{who suggested no breastfeeding}   
+#'     \item{\code{s448}}{age solid/mushy food daily}       
+#'     \item{\code{sp0d}}{polio 0 day}                      
+#'     \item{\code{sp0m}}{polio 0 month}                    
+#'     \item{\code{sp0y}}{polio 0 year}                     
+#'     \item{\code{s458}}{cause of death rept by md}        
+#'     \item{\code{s459a}}{med cause death: fever}          
+#'     \item{\code{s459b}}{med cause death: diarrhea}       
+#'     \item{\code{s459c}}{med cause death: cough}          
+#'     \item{\code{s459d}}{med cause death: measles}        
+#'     \item{\code{s459e}}{med cause death: vomiting}       
+#'     \item{\code{s459f}}{med cause death: convulsions}    
+#'     \item{\code{s459g}}{med cause death: other}          
+#'     \item{\code{s459h}}{med cause death: pneumonia}      
+#'     \item{\code{s460a}}{mother cause death: fever}       
+#'     \item{\code{s460b}}{mother cause death: diarrhea}    
+#'     \item{\code{s460c}}{mother cause death: cough}       
+#'     \item{\code{s460d}}{mother cause death: measles}     
+#'     \item{\code{s460e}}{mother cause death: vomiting}    
+#'     \item{\code{s460f}}{mother cause death: convulsion}  
+#'     \item{\code{s460g}}{mother cause death: other}       
+#'     \item{\code{s460h}}{mother cause death: pneumonia}   
+#'     \item{\code{s484}}{days given fluid (h15f,g,h=1)}    
+#'     \item{\code{s810d}}{date child measured (day)}       
+#'     \item{\code{s810m}}{date child measure (month)}      
+#'     \item{\code{s810y}}{date child measured (year)}      
+#' 
+#'       
+#'
+#'   }
+#'
+#' @author
+#'  \enumerate{
+#'   \item{Muhammad Yaseen } {(\email{myaseen208@@gmail.com})}
+#'   }
+#'
+#' @references
+#' \enumerate{
+#'   \item National Institute of Population Studies (NIPS), Pakistan (\url{http://nips.org.pk/Home.htm}).
+#'  }
+#'
+#' @import tibble
+#'
+#' @examples
+#'  load("PKBR21")
+#'  PKBR21
+#'  
+NULL

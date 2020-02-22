@@ -1,0 +1,525 @@
+#' @title Pakistan Demographic and Health Survey 2006-07 Vaccination of Women Data
+#' @name  PKVW51
+#' @description \code{PKVW51} data of Vaccination of Women from Pakistan Demographic and Health Survey 2006-07.
+#' \describe{
+#'     \item{\code{qhclust}}{cluster number}                                               
+#'     \item{\code{qhnumber}}{household number}                                            
+#'     \item{\code{qqtype}}{type of questionnaire (numeric)}                               
+#'     \item{\code{qline}}{line number of woman/deceased woman/child/stillbirth}           
+#'     \item{\code{rec.type}}{}                                                            
+#'     \item{\code{qcluster}}{cluster number}                                              
+#'     \item{\code{qnumber}}{household number}                                             
+#'     \item{\code{qregion}}{region of residence}                                          
+#'     \item{\code{qdist}}{district}                                                       
+#'     \item{\code{qlocal3}}{city \ town \ countryside - 3 values}                           
+#'     \item{\code{qlocal4}}{city \ town \ countryside}                                      
+#'     \item{\code{typeq}}{type of questionnaire (alpha)}                                  
+#'     \item{\code{qintd}}{day of interview}                                               
+#'     \item{\code{qintm}}{month of interview}                                             
+#'     \item{\code{qinty}}{year of interview}                                              
+#'     \item{\code{qintnum}}{interviewer number}                                           
+#'     \item{\code{qresult}}{result of individual interview}                               
+#'     \item{\code{qvisits}}{total number of visits}                                       
+#'     \item{\code{qqlang}}{language of questionaire}                                      
+#'     \item{\code{qilang}}{language of interview}                                         
+#'     \item{\code{qwlang}}{language woman speaks a home}                                  
+#'     \item{\code{qsuperv}}{supervisor number}                                            
+#'     \item{\code{qfedit}}{field editor number}                                           
+#'     \item{\code{qoedit}}{office editor number}                                          
+#'     \item{\code{qkeyer}}{data entry clerk}                                              
+#'     \item{\code{qintc}}{date of interview (cmc)}                                        
+#'     \item{\code{qweight}}{sample weight (6 decimals)}                                   
+#'     \item{\code{qtype}}{type of place of residence}                                     
+#'     \item{\code{qres}}{usual resident or visitor}                                       
+#'     \item{\code{m101.1}}{line number}                                                   
+#'     \item{\code{m101.2}}{line number}                                                   
+#'     \item{\code{m101.3}}{line number}                                                   
+#'     \item{\code{m101.4}}{line number}                                                   
+#'     \item{\code{m101.5}}{line number}                                                   
+#'     \item{\code{m101.6}}{line number}                                                   
+#'     \item{\code{m103.1}}{sex of respondent}                                             
+#'     \item{\code{m103.2}}{sex of respondent}                                             
+#'     \item{\code{m103.3}}{sex of respondent}                                             
+#'     \item{\code{m103.4}}{sex of respondent}                                             
+#'     \item{\code{m103.5}}{sex of respondent}                                             
+#'     \item{\code{m103.6}}{sex of respondent}                                             
+#'     \item{\code{m104.1}}{age of respondent}                                             
+#'     \item{\code{m104.2}}{age of respondent}                                             
+#'     \item{\code{m104.3}}{age of respondent}                                             
+#'     \item{\code{m104.4}}{age of respondent}                                             
+#'     \item{\code{m104.5}}{age of respondent}                                             
+#'     \item{\code{m104.6}}{age of respondent}                                             
+#'     \item{\code{m105.1}}{relationship with deceased woman}                              
+#'     \item{\code{m105.2}}{relationship with deceased woman}                              
+#'     \item{\code{m105.3}}{relationship with deceased woman}                              
+#'     \item{\code{m105.4}}{relationship with deceased woman}                              
+#'     \item{\code{m105.5}}{relationship with deceased woman}                              
+#'     \item{\code{m105.6}}{relationship with deceased woman}                              
+#'     \item{\code{m106.1}}{number of classes passed}                                      
+#'     \item{\code{m106.2}}{number of classes passed}                                      
+#'     \item{\code{m106.3}}{number of classes passed}                                      
+#'     \item{\code{m106.4}}{number of classes passed}                                      
+#'     \item{\code{m106.5}}{number of classes passed}                                      
+#'     \item{\code{m106.6}}{number of classes passed}                                      
+#'     \item{\code{m107.1}}{respondent present when deceased first fell ill}               
+#'     \item{\code{m107.2}}{respondent present when deceased first fell ill}               
+#'     \item{\code{m107.3}}{respondent present when deceased first fell ill}               
+#'     \item{\code{m107.4}}{respondent present when deceased first fell ill}               
+#'     \item{\code{m107.5}}{respondent present when deceased first fell ill}               
+#'     \item{\code{m107.6}}{respondent present when deceased first fell ill}               
+#'     \item{\code{m108.1}}{respondent present when deceased was taken to hospital}        
+#'     \item{\code{m108.2}}{respondent present when deceased was taken to hospital}        
+#'     \item{\code{m108.3}}{respondent present when deceased was taken to hospital}        
+#'     \item{\code{m108.4}}{respondent present when deceased was taken to hospital}        
+#'     \item{\code{m108.5}}{respondent present when deceased was taken to hospital}        
+#'     \item{\code{m108.6}}{respondent present when deceased was taken to hospital}        
+#'     \item{\code{m109.1}}{present when deceased died}                                    
+#'     \item{\code{m109.2}}{present when deceased died}                                    
+#'     \item{\code{m109.3}}{present when deceased died}                                    
+#'     \item{\code{m109.4}}{present when deceased died}                                    
+#'     \item{\code{m109.5}}{present when deceased died}                                    
+#'     \item{\code{m109.6}}{present when deceased died}                                    
+#'     \item{\code{m110.1}}{line number of main respondent}                                
+#'     \item{\code{m110.2}}{line number of main respondent}                                
+#'     \item{\code{m110.3}}{line number of main respondent}                                
+#'     \item{\code{m110.4}}{line number of main respondent}                                
+#'     \item{\code{m110.5}}{line number of main respondent}                                
+#'     \item{\code{m110.6}}{line number of main respondent}                                
+#'     \item{\code{m100}}{number of respondents for woman}                                 
+#'     \item{\code{m201h}}{start of interview (hours)}                                     
+#'     \item{\code{m201m}}{start of interview (minutes)}                                   
+#'     \item{\code{m204m}}{month when deceased died}                                       
+#'     \item{\code{m204y}}{year when deceased died}                                        
+#'     \item{\code{m205}}{age at the time death}                                           
+#'     \item{\code{m206}}{at the time of death, usual member of household}                 
+#'     \item{\code{m207}}{ever attended school}                                            
+#'     \item{\code{m208}}{highest classes passed}                                          
+#'     \item{\code{m209}}{working for wages or salary when she died}                       
+#'     \item{\code{m210}}{occupation of deceased woman}                                    
+#'     \item{\code{m211}}{mother tongue of deceased}                                       
+#'     \item{\code{m212}}{marital status at the time death}                                
+#'     \item{\code{m214}}{husband's age at the time deceased death}                        
+#'     \item{\code{m215}}{deceased's husband ever attended school}                         
+#'     \item{\code{m216}}{highest class passed by deceased's husband}                      
+#'     \item{\code{m217}}{deceased's husband occupation}                                   
+#'     \item{\code{dcat.1}}{******* direct, indirect, incidental cause of death}           
+#'     \item{\code{dcat.2}}{******* direct, indirect, incidental cause of death}           
+#'     \item{\code{dcat.3}}{******* direct, indirect, incidental cause of death}           
+#'     \item{\code{dcat.4}}{******* direct, indirect, incidental cause of death}           
+#'     \item{\code{vacmi.1}}{most probable immediate cause}                                
+#'     \item{\code{vacmi.2}}{most probable immediate cause}                                
+#'     \item{\code{vacmi.3}}{most probable immediate cause}                                
+#'     \item{\code{vacmi.4}}{most probable immediate cause}                                
+#'     \item{\code{vacmu.1}}{most probable underlying cause (see vacmi for labels)}        
+#'     \item{\code{vacmu.2}}{most probable underlying cause (see vacmi for labels)}        
+#'     \item{\code{vacmu.3}}{most probable underlying cause (see vacmi for labels)}        
+#'     \item{\code{vacmu.4}}{most probable underlying cause (see vacmi for labels)}        
+#'     \item{\code{vacpi.1}}{possible immediate cause (see vacmi for labels)}              
+#'     \item{\code{vacpi.2}}{possible immediate cause (see vacmi for labels)}              
+#'     \item{\code{vacpi.3}}{possible immediate cause (see vacmi for labels)}              
+#'     \item{\code{vacpi.4}}{possible immediate cause (see vacmi for labels)}              
+#'     \item{\code{vacpu.1}}{possible underlying cause (see vacmi for labels)}             
+#'     \item{\code{vacpu.2}}{possible underlying cause (see vacmi for labels)}             
+#'     \item{\code{vacpu.3}}{possible underlying cause (see vacmi for labels)}             
+#'     \item{\code{vacpu.4}}{possible underlying cause (see vacmi for labels)}             
+#'     \item{\code{del1.1}}{first delay - to get transport}                                
+#'     \item{\code{del1.2}}{first delay - to get transport}                                
+#'     \item{\code{del1.3}}{first delay - to get transport}                                
+#'     \item{\code{del1.4}}{first delay - to get transport}                                
+#'     \item{\code{del2.1}}{second delay - to reach health facility}                       
+#'     \item{\code{del2.2}}{second delay - to reach health facility}                       
+#'     \item{\code{del2.3}}{second delay - to reach health facility}                       
+#'     \item{\code{del2.4}}{second delay - to reach health facility}                       
+#'     \item{\code{del3.1}}{third delay - to get service from provider}                    
+#'     \item{\code{del3.2}}{third delay - to get service from provider}                    
+#'     \item{\code{del3.3}}{third delay - to get service from provider}                    
+#'     \item{\code{del3.4}}{third delay - to get service from provider}                    
+#'     \item{\code{dqual.1}}{f. reviewer's assessment of the quality of data (0-10)}       
+#'     \item{\code{dqual.2}}{f. reviewer's assessment of the quality of data (0-10)}       
+#'     \item{\code{dqual.3}}{f. reviewer's assessment of the quality of data (0-10)}       
+#'     \item{\code{dqual.4}}{f. reviewer's assessment of the quality of data (0-10)}       
+#'     \item{\code{m204c}}{cmc death}                                                      
+#'     \item{\code{m204f}}{cmc flag}                                                       
+#'     \item{\code{gprobi}}{grouped probable immediate cause (2nd set from pakistan)}      
+#'     \item{\code{gprobu}}{grouped probable underlying cause  (see gprobi for labels)}    
+#'     \item{\code{gpossi}}{grouped possible immediate cause  (see gprobi for labels)}     
+#'     \item{\code{gpossu}}{grouped possible underlying cause  (see gprobi for labels)}    
+#'     \item{\code{oldcause}}{cause of death}                                              
+#'     \item{\code{findcat}}{******* direct, indirect, incidental cause of death  (origin} 
+#'     \item{\code{gcause1}}{immediate cause of death (icd-10 codes) final set of codes b} 
+#'     \item{\code{gcause2}}{immediate cause of death (group)}                             
+#'     \item{\code{gcause3}}{immediate cause of death (group final)}                       
+#'     \item{\code{gcause1r}}{immediate cause of death (icd-10 codes) work for maternal de}
+#'     \item{\code{gcause1n}}{immediate cause of death (icd-10 codes) maternal deaths (fin}
+#'     \item{\code{gcausemr}}{immediate cause of death (icd-10 codes) work for maternal de}
+#'     \item{\code{gcausemn}}{immediate cause of death (icd-10 codes) maternal deaths (mat}
+#'     \item{\code{vimmn.1}}{immediate cause of death numeric}                             
+#'     \item{\code{vimmn.2}}{immediate cause of death numeric}                             
+#'     \item{\code{vimmn.3}}{immediate cause of death numeric}                             
+#'     \item{\code{vimmn.4}}{immediate cause of death numeric}                             
+#'     \item{\code{vimmgn.1}}{immed group numeric}                                         
+#'     \item{\code{vimmgn.2}}{immed group numeric}                                         
+#'     \item{\code{vimmgn.3}}{immed group numeric}                                         
+#'     \item{\code{vimmgn.4}}{immed group numeric}                                         
+#'     \item{\code{vundn.1}}{underlying cause of death numeric ( see vimmn for labels)}    
+#'     \item{\code{vundn.2}}{underlying cause of death numeric ( see vimmn for labels)}    
+#'     \item{\code{vundn.3}}{underlying cause of death numeric ( see vimmn for labels)}    
+#'     \item{\code{vundn.4}}{underlying cause of death numeric ( see vimmn for labels)}    
+#'     \item{\code{vunngn.1}}{under numeric group}                                         
+#'     \item{\code{vunngn.2}}{under numeric group}                                         
+#'     \item{\code{vunngn.3}}{under numeric group}                                         
+#'     \item{\code{vunngn.4}}{under numeric group}                                         
+#'     \item{\code{vfidx}}{number of underlying cause coded by reviewers}                  
+#'     \item{\code{matdth}}{when died according to doctorrs' evaluation (from pakistan)}   
+#'     \item{\code{gcauseu1}}{underlying cause of death (icd-10 codes)}                    
+#'     \item{\code{gcauseu3}}{underlying cause of death (group final)}                     
+#'     \item{\code{gcausu1r}}{underlying cause of death (icd-10 codes) work for maternal d}
+#'     \item{\code{gcausu1n}}{underlying cause of death (icd-10 codes) maternal deaths (fi}
+#'     \item{\code{gcauseur}}{underlying cause of death (icd-10 codes) work for maternal d}
+#'     \item{\code{gcauseun}}{underlying cause of death (icd-10 codes) maternal deaths (ma}
+#'     \item{\code{mideath}}{maternal immediate cause of death for direct/indirect matern} 
+#'     \item{\code{mudeath}}{maternal underlying cause of death for direct/indirect mater} 
+#'     \item{\code{fm300}}{never married but with data in section 3}                       
+#'     \item{\code{m301}}{ever have live birth}                                            
+#'     \item{\code{m302}}{number of live births she had}                                   
+#'     \item{\code{m303t}}{number of total surviving children}                             
+#'     \item{\code{m303b}}{number of surviving boys}                                       
+#'     \item{\code{m303g}}{number of surviving girls}                                      
+#'     \item{\code{m304}}{ever have miscarriage, abortion etc}                             
+#'     \item{\code{m305}}{number of pregnancy losses}                                      
+#'     \item{\code{fm306}}{q306 (filter): check 301 and 304}                               
+#'     \item{\code{m307}}{had caesarean section}                                           
+#'     \item{\code{m308}}{had pregnancy during last 3-yrs, regardless of outcome}          
+#'     \item{\code{m309u}}{time before her death,last pregnancy end (unit)}                
+#'     \item{\code{m309n}}{time before her death, last pregnancy end (period)}             
+#'     \item{\code{m310}}{outcome of last pregnancy}                                       
+#'     \item{\code{m311}}{last born child still alive}                                     
+#'     \item{\code{m312}}{age of last alive child}                                         
+#'     \item{\code{m313u}}{age of child at the time deceased's death (unit)}               
+#'     \item{\code{m313n}}{age of child at the time deceased's death (period)}             
+#'     \item{\code{m314u}}{time after her last birth/delivery/abortion etc (unit)}         
+#'     \item{\code{m314n}}{time after her last birth/delivery/abortion etc (period)}       
+#'     \item{\code{m315}}{pregnant at the time death}                                      
+#'     \item{\code{m316}}{months of pregnancy when died}                                   
+#'     \item{\code{m317}}{died during delivery, abortion or miscarriage}                   
+#'     \item{\code{m318}}{died before labour pain begans, bfore birth or during aborti}    
+#'     \item{\code{m319}}{died after delivery, abortion or miscarriage}                    
+#'     \item{\code{m320u}}{period after delivery, abortion or miscarriage died (unit)}     
+#'     \item{\code{m320n}}{period after delivery, abortion or miscarriage died (period)}   
+#'     \item{\code{m321}}{died within 40-days of delivery, abortion or miscarriage}        
+#'     \item{\code{m501}}{place of death}                                                  
+#'     \item{\code{m502}}{name of hospital/clinic where she died}                          
+#'     \item{\code{m503}}{anyone at the hospital told the reason of death}                 
+#'     \item{\code{m504a}}{reasons given by the hospital/clinic(1)}                        
+#'     \item{\code{m504b}}{reasons given by the hospital/clinic(2)}                        
+#'     \item{\code{m504c}}{reasons given by the hospital/clinic(3)}                        
+#'     \item{\code{m505a}}{main cause of death in respondent's view(1)}                    
+#'     \item{\code{m505b}}{main cause of death in respondent's view(2)}                    
+#'     \item{\code{m505c}}{main cause of death in respondent's view(3)}                    
+#'     \item{\code{m506.01}}{high blood pressure or hypertension}                          
+#'     \item{\code{m506.02}}{high blood pressure or hypertension}                          
+#'     \item{\code{m506.03}}{high blood pressure or hypertension}                          
+#'     \item{\code{m506.04}}{high blood pressure or hypertension}                          
+#'     \item{\code{m506.05}}{high blood pressure or hypertension}                          
+#'     \item{\code{m506.06}}{high blood pressure or hypertension}                          
+#'     \item{\code{m506.07}}{high blood pressure or hypertension}                          
+#'     \item{\code{m506.08}}{high blood pressure or hypertension}                          
+#'     \item{\code{m506.09}}{high blood pressure or hypertension}                          
+#'     \item{\code{m506.10}}{high blood pressure or hypertension}                          
+#'     \item{\code{m506.11}}{high blood pressure or hypertension}                          
+#'     \item{\code{m506.12}}{high blood pressure or hypertension}                          
+#'     \item{\code{m506.13}}{high blood pressure or hypertension}                          
+#'     \item{\code{m507}}{deceased was hospitalized}                                       
+#'     \item{\code{m508u}}{duration of hospitalization before death (unit)}                
+#'     \item{\code{m508n}}{duration of hospitalization before death (period)}              
+#'     \item{\code{m509a}}{reason or hospitalization(1)}                                   
+#'     \item{\code{m509b}}{reason or hospitalization(2)}                                   
+#'     \item{\code{m509c}}{reason or hospitalization(3)}                                   
+#'     \item{\code{m510}}{have operation before death}                                     
+#'     \item{\code{m511}}{have fever}                                                      
+#'     \item{\code{m511u}}{days/months her fever last (unit)}                              
+#'     \item{\code{m511n}}{days/months her fever last (period)}                            
+#'     \item{\code{m511b}}{was fever continous or on and off}                              
+#'     \item{\code{m512}}{was breathless doing light work}                                 
+#'     \item{\code{m512a}}{was breathless when she was lying down/asleep}                  
+#'     \item{\code{m513}}{have rapid heart beat (palpitations)}                            
+#'     \item{\code{m514}}{have wheezing}                                                   
+#'     \item{\code{m515}}{have a cough}                                                    
+#'     \item{\code{m515u}}{how long have a cough (unit)}                                   
+#'     \item{\code{m515n}}{how long have a cough (period)}                                 
+#'     \item{\code{m515b}}{cough produce sputum}                                           
+#'     \item{\code{m515c}}{cough has a blood}                                              
+#'     \item{\code{m516}}{have a chest pain}                                               
+#'     \item{\code{m516u}}{days/months has chest pain (unit)}                              
+#'     \item{\code{m516n}}{days/months has chest pain (period)}                            
+#'     \item{\code{m516b}}{chest pain mild, moderate or severe}                            
+#'     \item{\code{m516c}}{chest pain starts suddenly or gradually}                        
+#'     \item{\code{m516d}}{pain at or near the center of chest}                            
+#'     \item{\code{m517}}{have diarrhea}                                                   
+#'     \item{\code{m517a}}{number of times a day have loose motion}                        
+#'     \item{\code{m517b}}{have blood in the stools}                                       
+#'     \item{\code{m518}}{have poor appetite or loss of apetite}                           
+#'     \item{\code{m518u}}{how long have poor apetite (unit)}                              
+#'     \item{\code{m518n}}{how long have poor apetite (period)}                            
+#'     \item{\code{m519}}{pain in swallowing}                                              
+#'     \item{\code{m520}}{difficulty in swallowing}                                        
+#'     \item{\code{m521}}{have headache}                                                   
+#'     \item{\code{m521u}}{days/months have headache (units)}                              
+#'     \item{\code{m521n}}{days/months have headache (period)}                             
+#'     \item{\code{m522}}{passed blood in her urine}                                       
+#'     \item{\code{m522u}}{days/months passed blood in urine (units)}                      
+#'     \item{\code{m522n}}{days/months passed blood in urine (period)}                     
+#'     \item{\code{m523}}{pain while urinating}                                            
+#'     \item{\code{m523u}}{days/months have pain when urinating (units)}                   
+#'     \item{\code{m523n}}{days/months have pain when urinating (period)}                  
+#'     \item{\code{m524}}{unable to pass urine}                                            
+#'     \item{\code{m525}}{urinate many times in a day}                                     
+#'     \item{\code{m526}}{have any type of pain anywhere in the body}                      
+#'     \item{\code{m527}}{have abdominal pain}                                             
+#'     \item{\code{m527u}}{how long abdominal pain last (units)}                           
+#'     \item{\code{m527n}}{how long abdominal pain last (period)}                          
+#'     \item{\code{m527b}}{abdominal pain mild, moderate or severe}                        
+#'     \item{\code{m527c}}{abdominal pian in upper belly , lower or all over belly}        
+#'     \item{\code{m528}}{have abdominal distension}                                       
+#'     \item{\code{m528u}}{days/months was abdomen distened (units)}                       
+#'     \item{\code{m528n}}{days/months was abdomen distened (period)}                      
+#'     \item{\code{m528b}}{distension come rapidly within days or slowly over several w}   
+#'     \item{\code{m529}}{have a mass in her abdomen}                                      
+#'     \item{\code{m530}}{have vomiting}                                                   
+#'     \item{\code{m530u}}{days/months have vomitting (unit)}                              
+#'     \item{\code{m530n}}{days/months have vomiting (period)}                             
+#'     \item{\code{m530b}}{vomitted blood}                                                 
+#'     \item{\code{m531}}{become mentally confuse}                                         
+#'     \item{\code{m532}}{loose consciousness}                                             
+#'     \item{\code{m532u}}{how long remained unconcious (units)}                           
+#'     \item{\code{m532n}}{how long remained unconcious (period)}                          
+#'     \item{\code{m532b}}{became unconcious suddenly or gradually}                        
+#'     \item{\code{m533}}{became paralyze before death}                                    
+#'     \item{\code{m533u}}{how long the paralyze last (units)}                             
+#'     \item{\code{m533n}}{how long the paralyze last (period)}                            
+#'     \item{\code{m533b}}{paralysis on only one side or both side of body}                
+#'     \item{\code{m534}}{have stiffness in whole body}                                    
+#'     \item{\code{m535}}{have neck pain}                                                  
+#'     \item{\code{m536}}{have fits or convulsions}                                        
+#'     \item{\code{m536u}}{days/months have fits (units)}                                  
+#'     \item{\code{m536n}}{days/months have fits (period)}                                 
+#'     \item{\code{m536b}}{frequency of fits in a day}                                     
+#'     \item{\code{m537}}{have an ulcer or swelling in the breast}                         
+#'     \item{\code{m538}}{have vaginal bleeding when was not having mensrual period}       
+#'     \item{\code{m538u}}{days/months did have bleeding (units)}                          
+#'     \item{\code{m538n}}{days/months did have bledding (period)}                         
+#'     \item{\code{m538b}}{did the bleeding persist till death}                            
+#'     \item{\code{m539}}{have abnormal vaginal discharge}                                 
+#'     \item{\code{m540}}{have swelling on her ankles}                                     
+#'     \item{\code{m541}}{have swelling or puffiness on hands and/or face}                 
+#'     \item{\code{m541u}}{days/months have swelling on hands or face (units)}             
+#'     \item{\code{m541n}}{days/months have swelling on hands or face (period)}            
+#'     \item{\code{m542}}{lose weight}                                                     
+#'     \item{\code{m543}}{have sores in the mouth}                                         
+#'     \item{\code{m544}}{looked pale}                                                     
+#'     \item{\code{m545}}{have any skin disease}                                           
+#'     \item{\code{m546}}{eyes yellowish in color due to jaundice}                         
+#'     \item{\code{m546u}}{days/months have yellow eyes (units)}                           
+#'     \item{\code{m546n}}{days/months have yellow eyes (period)}                          
+#'     \item{\code{m547}}{ever complain of having blurred vision}                          
+#'     \item{\code{m548}}{have difficulty in openng mouth}                                 
+#'     \item{\code{m549}}{have difficulty in passing stools}                               
+#'     \item{\code{m550}}{feel dizzy}                                                      
+#'     \item{\code{m551}}{have general weakness or fatigue}                                
+#'     \item{\code{m551u}}{days/months have weakness (units)}                              
+#'     \item{\code{m551n}}{days/month have weakness (period)}                              
+#'     \item{\code{m552}}{have any ulcers on the body}                                     
+#'     \item{\code{m553a}}{other symptoms not elsewhere mention(1)}                        
+#'     \item{\code{m553b}}{other symptoms not elsewhere mention(2)}                        
+#'     \item{\code{m553c}}{other symptoms not elsewhere mention(3)}                        
+#'     \item{\code{m554}}{people think that she ha an evil eye or shadow}                  
+#'     \item{\code{m555}}{faith healer called or give amulets or spiritual healing}        
+#'     \item{\code{m556a}}{give details(1)}                                                
+#'     \item{\code{m556b}}{give details(2)}                                                
+#'     \item{\code{m556c}}{give details(3)}                                                
+#'     \item{\code{fm601}}{q601 (filter): check 511}                                       
+#'     \item{\code{m602u}}{how long before she died did the fever start (unit)}            
+#'     \item{\code{m602n}}{how long before she died did the fever start (period)}          
+#'     \item{\code{m603u}}{how long did the fever last (unit)}                             
+#'     \item{\code{m603n}}{how long did the fever last (period)}                           
+#'     \item{\code{m604}}{was the fever very high}                                         
+#'     \item{\code{m605}}{have fever with chills}                                          
+#'     \item{\code{m606}}{was prescribed anti-malarial tablets for fever}                  
+#'     \item{\code{m607}}{colour changed during her last illness}                          
+#'     \item{\code{m607a}}{deceased's colour was}                                          
+#'     \item{\code{m608}}{had vomiting during last illness}                                
+#'     \item{\code{m608u}}{how long before she died did the vomiting start (unit)}         
+#'     \item{\code{m608n}}{how long before she died did the vomiting start (period)}       
+#'     \item{\code{m609}}{ever vomit pure blood}                                           
+#'     \item{\code{m610}}{have any difficulty with urination}                              
+#'     \item{\code{m610a.1}}{urination problems}                                           
+#'     \item{\code{m610a.2}}{urination problems}                                           
+#'     \item{\code{m610a.3}}{urination problems}                                           
+#'     \item{\code{m610a.4}}{urination problems}                                           
+#'     \item{\code{m610a.5}}{urination problems}                                           
+#'     \item{\code{m610a.6}}{urination problems}                                           
+#'     \item{\code{m611}}{when did the feve start}                                         
+#'     \item{\code{m612u}}{how long before/after child birth, miscarriage or abortion f}   
+#'     \item{\code{m612n}}{how long before/after cild birth, miscarriage or abortion fe}   
+#'     \item{\code{m613}}{have convulsions with fever}                                     
+#'     \item{\code{fm614}}{q614 (filter): check 515}                                       
+#'     \item{\code{m615u}}{how long before she died did the cough start (units)}           
+#'     \item{\code{m615n}}{how long before she died did the cough start (period)}          
+#'     \item{\code{m616}}{was any sputum when she coughed}                                 
+#'     \item{\code{m617}}{coughed with blood}                                              
+#'     \item{\code{m617a}}{details for coughing(1)}                                        
+#'     \item{\code{m617b}}{details for coughing(2)}                                        
+#'     \item{\code{m617c}}{details for coughing(3)}                                        
+#'     \item{\code{m618}}{loose weight during illness}                                     
+#'     \item{\code{m619}}{ever have any fever}                                             
+#'     \item{\code{m619a}}{how much fever}                                                 
+#'     \item{\code{m620}}{was short of breath}                                             
+#'     \item{\code{m620u}}{how long have short of breath (units)}                          
+#'     \item{\code{m620n}}{how long have short of breath (period)}                         
+#'     \item{\code{fm621}}{q621 (filter): check 526}                                       
+#'     \item{\code{m622}}{kind of pain}                                                    
+#'     \item{\code{m623}}{site(s) of the pain}                                             
+#'     \item{\code{m624u}}{how long before she died did the pain start (units)}            
+#'     \item{\code{m624n}}{how long before she died did the pain start (period)}           
+#'     \item{\code{m625u}}{how long did it last the pain (units)}                          
+#'     \item{\code{m625n}}{how long did it last the pain (period)}                         
+#'     \item{\code{m626a}}{if it was in abdomen, which specific side(1)}                   
+#'     \item{\code{m626b}}{if it was in abdomen, which specific side(2)}                   
+#'     \item{\code{m627}}{was any pain in th elower abdomen}                               
+#'     \item{\code{m628}}{was the pain accompanied by fever}                               
+#'     \item{\code{m629}}{was the fever mild, moderate or high}                            
+#'     \item{\code{m630}}{was the pain accompanied by vomiting}                            
+#'     \item{\code{m631}}{when did the pain start}                                         
+#'     \item{\code{fm632}}{q632 (filter): check 536}                                       
+#'     \item{\code{m633}}{have a history of convulsions or epilepsy}                       
+#'     \item{\code{m634}}{have convulsions in last illness}                                
+#'     \item{\code{m634u}}{how long before she died did the pain start (units)}            
+#'     \item{\code{m634n}}{how long before she died did the pain start (period)}           
+#'     \item{\code{m635}}{have high blood pressure before death}                           
+#'     \item{\code{m636}}{have severe headache before she died}                            
+#'     \item{\code{m637}}{have change in her vision before she died}                       
+#'     \item{\code{m638a}}{state of conciousness before she died(1)}                       
+#'     \item{\code{m638b}}{state of conciousness before she died(2)}                       
+#'     \item{\code{fm639}}{q639 (filter): check 540 and 541}                               
+#'     \item{\code{m640.1}}{place of site of swelling on the body}                         
+#'     \item{\code{m640.2}}{place of site of swelling on the body}                         
+#'     \item{\code{m640.3}}{place of site of swelling on the body}                         
+#'     \item{\code{m640.4}}{place of site of swelling on the body}                         
+#'     \item{\code{m641u}}{how long before she died did have this swelling (units)}        
+#'     \item{\code{m641n}}{how long before she died did have this swelling (period)}       
+#'     \item{\code{m642u}}{time when swelling start in relation to delivery of the baby}   
+#'     \item{\code{m642n}}{time when swelling start in relation to delivery of the baby}   
+#'     \item{\code{m643}}{time of death, was short of breath}                              
+#'     \item{\code{m644}}{colour changed during her last illness}                          
+#'     \item{\code{m645}}{have also any urinary problems}                                  
+#'     \item{\code{m645a.1}}{urinary problems}                                             
+#'     \item{\code{m645a.2}}{urinary problems}                                             
+#'     \item{\code{m645a.3}}{urinary problems}                                             
+#'     \item{\code{m645a.4}}{urinary problems}                                             
+#'     \item{\code{m645a.5}}{urinary problems}                                             
+#'     \item{\code{fm701}}{q701 (filter): check 308}                                       
+#'     \item{\code{m702}}{during last pregnancy, see anyone for antenatal care}            
+#'     \item{\code{m703}}{whom to see antenatal care}                                      
+#'     \item{\code{m704}}{first visit for antenatal care, for any problem or for check}    
+#'     \item{\code{m705a}}{type of problem to visit for antenatal care(1)}                 
+#'     \item{\code{m705b}}{type of problem to visit for antenatal care(2)}                 
+#'     \item{\code{m705c}}{type of problem to visit for antenatal care(3)}                 
+#'     \item{\code{m706}}{number of pregnant month on first visit for antenatal care}      
+#'     \item{\code{m707}}{number of visits for antenatal care in the last pregnancy}       
+#'     \item{\code{m708}}{was referred by health care provider to go to a specialist}      
+#'     \item{\code{m709}}{reasons for not antenatal care during last pregnancy}            
+#'     \item{\code{m710}}{have tetanus injection during last pregnancy}                    
+#'     \item{\code{m711}}{have blood pressure measure during last pregnancy}               
+#'     \item{\code{m712}}{status of blood pressure during last pregnancy}                  
+#'     \item{\code{m713}}{prescribed medicines for blood pressure}                         
+#'     \item{\code{m714}}{using any family planning method before she became pregnant}     
+#'     \item{\code{m715}}{wanted the last pregnancy}                                       
+#'     \item{\code{m716}}{did any thing to end last pregnancy}                             
+#'     \item{\code{m717}}{steps taken to end the last pregnancy}                           
+#'     \item{\code{m718}}{person whom to seek help to end last pregnancy}                  
+#'     \item{\code{fm719}}{q719 (filter): check 310}                                       
+#'     \item{\code{m720}}{have a foul-smelling discharge from vagina after miscarriage}    
+#'     \item{\code{m721}}{have a fever after miscarriage/abortion}                         
+#'     \item{\code{m722}}{have abdominal distension after the miscarriage/abortion}        
+#'     \item{\code{m723}}{during last pregnancy, have swelling around ankles}              
+#'     \item{\code{m724}}{face puffy during pregnancy}                                     
+#'     \item{\code{m725}}{during last pregnancy, complained about blurred vision}          
+#'     \item{\code{m726}}{during last pregnancy, have bleeding from vagina}                
+#'     \item{\code{m727}}{bleeding wet her clothes}                                        
+#'     \item{\code{m728}}{bleeding wet the bed}                                            
+#'     \item{\code{m729}}{was there so much blood as to wet the floor}                     
+#'     \item{\code{m730}}{was in pain while bleeding}                                      
+#'     \item{\code{m731}}{did the bleeding contains clots}                                 
+#'     \item{\code{m732}}{someone examine her internally during last pregnancy}            
+#'     \item{\code{m733}}{during vaginal examination, cause any bleeding or make th eb}    
+#'     \item{\code{m734}}{did the bleeding persist until she died}                         
+#'     \item{\code{fm801}}{q801 (filter): check 317, 319, 321}                             
+#'     \item{\code{m802}}{have bleeding from vagina}                                       
+#'     \item{\code{m803}}{bleeding start before or after the birth/delivery}               
+#'     \item{\code{m804}}{was she in pain while bleeding}                                  
+#'     \item{\code{m805}}{pain start before the labor pains started}                       
+#'     \item{\code{m806}}{place of delivery}                                               
+#'     \item{\code{m807}}{person who assisted with the delivery}                           
+#'     \item{\code{m808}}{any instruments used to assist in last pregnancy}                
+#'     \item{\code{m809}}{during last pregnancy, someone cut vagina to make room for t}    
+#'     \item{\code{m810}}{was a tear in vagina after last delivery}                        
+#'     \item{\code{m811}}{during the delivery, birth attendant examine vagina}             
+#'     \item{\code{m812}}{water bag break before the labor pains started}                  
+#'     \item{\code{m813}}{how long was in labor}                                           
+#'     \item{\code{m814}}{was given any drugs just before or during labor}                 
+#'     \item{\code{m815}}{what were the drugs used for}                                    
+#'     \item{\code{m816}}{have a lot bleeding before delivering the baby}                  
+#'     \item{\code{m817}}{the bleeding wet her clothes}                                    
+#'     \item{\code{m818}}{the bleeding wet the bed}                                        
+#'     \item{\code{m819}}{was there so much blood as to wet the floor}                     
+#'     \item{\code{m820}}{died before or after delivering the baby}                        
+#'     \item{\code{m821}}{have facing difficulty in delivering the baby}                   
+#'     \item{\code{m822}}{part of baby came out first}                                     
+#'     \item{\code{m823}}{did the placenta came out}                                       
+#'     \item{\code{m824u}}{how long after the baby came did the placenta come out (unit}   
+#'     \item{\code{m824n}}{how long after the baby came did the placenta come out (peri}   
+#'     \item{\code{m825}}{all the placenta come out or only part}                          
+#'     \item{\code{m826}}{have a lot of bleeding after delivering the baby}                
+#'     \item{\code{m827}}{the bleeding wet her clothes}                                    
+#'     \item{\code{m828}}{the bleeding wet the bed}                                        
+#'     \item{\code{m829}}{was there so much blood as to wet the floor}                     
+#'     \item{\code{m830}}{have a foul-smelling discharge from her vagina after the bab}    
+#'     \item{\code{m831}}{have a pain in her legs after the baby was born}                 
+#'     \item{\code{m832}}{have a fever after the baby was born}                            
+#'     \item{\code{m833u}}{how long after the delivery did the fever start (units)}        
+#'     \item{\code{m833n}}{how long after the delivery did the fever start (period)}       
+#'     \item{\code{m834}}{have any fits or rigors with the fever}                          
+#'     \item{\code{m835}}{the fits stop after the baby was born}                           
+#'     \item{\code{m836u}}{how long did the fever last (units)}                            
+#'     \item{\code{m836n}}{how long did the fever last (period)}                           
+#'     \item{\code{m837}}{was having the fever when she died}                              
+#'     \item{\code{m838}}{was the colour of eyes yellow after the baby was born}           
+#'     \item{\code{m839}}{after the delivery, birth attendant examine vagina}              
+#'     \item{\code{m901}}{have any serious accient or injury before she died}              
+#'     \item{\code{m902}}{details of accident or injury}                                   
+#'     \item{\code{m903u}}{how long before she died did this happen (units)}               
+#'     \item{\code{m903n}}{how long before she died did this happen (period)}              
+#'     \item{\code{m904}}{hurt herself intentionally or someone else did this}             
+#'     \item{\code{m905}}{think that was trying to commit suicide}                         
+#'     \item{\code{m906}}{think that injury was the main cause of her death}               
+#' 
+#' 
+#'
+#'   }
+#'
+#' @author
+#'  \enumerate{
+#'   \item{Muhammad Yaseen } {(\email{myaseen208@@gmail.com})}
+#'   }
+#'
+#' @references
+#' \enumerate{
+#'   \item National Institute of Population Studies (NIPS), Pakistan (\url{http://nips.org.pk/Home.htm}).
+#'  }
+#'
+#' @import tibble
+#'
+#' @examples
+#' load("PKVW51")
+#' PKVW51
+NULL

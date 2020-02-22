@@ -1,0 +1,2557 @@
+#' @title Pakistan Demographic and Health Survey 1990-91 Household Recode Data
+#' @name  PKHR21
+#' @description \code{PKHR21} data of Household Recode from Pakistan Demographic and Health Survey 1990-91.
+#' \describe{
+#'     \item{\code{hhid}}{case identification}               
+#'     \item{\code{hv000}}{country code and phase}           
+#'     \item{\code{hv001}}{cluster number}                   
+#'     \item{\code{hv002}}{household number}                 
+#'     \item{\code{hv003}}{respondent's line number}         
+#'     \item{\code{hv004}}{ultimate area unit}               
+#'     \item{\code{hv005}}{sample weight}                    
+#'     \item{\code{hv006}}{month of interview}               
+#'     \item{\code{hv007}}{year of interview}                
+#'     \item{\code{hv008}}{date of interview (cmc)}          
+#'     \item{\code{hv009}}{number of household members}      
+#'     \item{\code{hv010}}{number of eligible women in hh}   
+#'     \item{\code{hv011}}{number of eligible men in hh}     
+#'     \item{\code{hv012}}{number of de jure members}        
+#'     \item{\code{hv013}}{number of de facto members}       
+#'     \item{\code{hv014}}{number of children 5 and under}   
+#'     \item{\code{hv015}}{result of household interview}    
+#'     \item{\code{hv016}}{day of interview}                 
+#'     \item{\code{hv017}}{number of visits}                 
+#'     \item{\code{hv018}}{interviewer identification}       
+#'     \item{\code{hv019}}{keyer identification}             
+#'     \item{\code{hv020}}{ever-married sample}              
+#'     \item{\code{hv021}}{primary sampling unit}            
+#'     \item{\code{hv022}}{sample stratum number}            
+#'     \item{\code{hv023}}{sample domain}                    
+#'     \item{\code{hv024}}{region}                           
+#'     \item{\code{hv025}}{type of place of residence}       
+#'     \item{\code{hv026}}{place of residence}               
+#'     \item{\code{hv027}}{selection for male/husb. int.}    
+#'     \item{\code{hv028}}{sample weight for male subsamp}   
+#'     \item{\code{hv201}}{source of drinking water}         
+#'     \item{\code{hv202}}{source of non-drinking water}     
+#'     \item{\code{hv203}}{same source of water}             
+#'     \item{\code{hv204}}{time to get to water source}      
+#'     \item{\code{hv205}}{type of toilet facility}          
+#'     \item{\code{hv206}}{has electricity}                  
+#'     \item{\code{hv207}}{has radio}                        
+#'     \item{\code{hv208}}{has television}                   
+#'     \item{\code{hv209}}{has refrigerator}                 
+#'     \item{\code{hv210}}{has bicycle}                      
+#'     \item{\code{hv211}}{has motorcycle}                   
+#'     \item{\code{hv212}}{has car                   - na}   
+#'     \item{\code{hv213}}{main floor material       - na}   
+#'     \item{\code{hv214}}{main wall material}               
+#'     \item{\code{hv215}}{main roof material}               
+#'     \item{\code{hv216}}{rooms for sleeping}               
+#'     \item{\code{hv217}}{relationship structure}           
+#'     \item{\code{hv218}}{line number of head of househ.}   
+#'     \item{\code{hv219}}{sex of head of household}         
+#'     \item{\code{hv220}}{age of head of household}         
+#'     \item{\code{hvidx.01}}{line number}                   
+#'     \item{\code{hv101.01}}{relationship to head}          
+#'     \item{\code{hv102.01}}{usual resident}                
+#'     \item{\code{hv103.01}}{slept last night}              
+#'     \item{\code{hv104.01}}{sex of household member}       
+#'     \item{\code{hv105.01}}{age of household members}      
+#'     \item{\code{hv106.01}}{highest educational level}     
+#'     \item{\code{hv107.01}}{highest year of education}     
+#'     \item{\code{hv108.01}}{education in single years}     
+#'     \item{\code{hv109.01}}{educational attainment}        
+#'     \item{\code{hv110.01}}{member still in school}        
+#'     \item{\code{hv111.01}}{mother alive              - na}
+#'     \item{\code{hv112.01}}{mother's line number}          
+#'     \item{\code{hv113.01}}{father alive              - na}
+#'     \item{\code{hv114.01}}{father's line number}          
+#'     \item{\code{hv115.01}}{current marital status}        
+#'     \item{\code{hv116.01}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.01}}{eligibility for female intview}
+#'     \item{\code{hv118.01}}{eligibility for male interview}
+#'     \item{\code{hvidx.02}}{line number}                   
+#'     \item{\code{hv101.02}}{relationship to head}          
+#'     \item{\code{hv102.02}}{usual resident}                
+#'     \item{\code{hv103.02}}{slept last night}              
+#'     \item{\code{hv104.02}}{sex of household member}       
+#'     \item{\code{hv105.02}}{age of household members}      
+#'     \item{\code{hv106.02}}{highest educational level}     
+#'     \item{\code{hv107.02}}{highest year of education}     
+#'     \item{\code{hv108.02}}{education in single years}     
+#'     \item{\code{hv109.02}}{educational attainment}        
+#'     \item{\code{hv110.02}}{member still in school}        
+#'     \item{\code{hv111.02}}{mother alive              - na}
+#'     \item{\code{hv112.02}}{mother's line number}          
+#'     \item{\code{hv113.02}}{father alive              - na}
+#'     \item{\code{hv114.02}}{father's line number}          
+#'     \item{\code{hv115.02}}{current marital status}        
+#'     \item{\code{hv116.02}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.02}}{eligibility for female intview}
+#'     \item{\code{hv118.02}}{eligibility for male interview}
+#'     \item{\code{hvidx.03}}{line number}                   
+#'     \item{\code{hv101.03}}{relationship to head}          
+#'     \item{\code{hv102.03}}{usual resident}                
+#'     \item{\code{hv103.03}}{slept last night}              
+#'     \item{\code{hv104.03}}{sex of household member}       
+#'     \item{\code{hv105.03}}{age of household members}      
+#'     \item{\code{hv106.03}}{highest educational level}     
+#'     \item{\code{hv107.03}}{highest year of education}     
+#'     \item{\code{hv108.03}}{education in single years}     
+#'     \item{\code{hv109.03}}{educational attainment}        
+#'     \item{\code{hv110.03}}{member still in school}        
+#'     \item{\code{hv111.03}}{mother alive              - na}
+#'     \item{\code{hv112.03}}{mother's line number}          
+#'     \item{\code{hv113.03}}{father alive              - na}
+#'     \item{\code{hv114.03}}{father's line number}          
+#'     \item{\code{hv115.03}}{current marital status}        
+#'     \item{\code{hv116.03}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.03}}{eligibility for female intview}
+#'     \item{\code{hv118.03}}{eligibility for male interview}
+#'     \item{\code{hvidx.04}}{line number}                   
+#'     \item{\code{hv101.04}}{relationship to head}          
+#'     \item{\code{hv102.04}}{usual resident}                
+#'     \item{\code{hv103.04}}{slept last night}              
+#'     \item{\code{hv104.04}}{sex of household member}       
+#'     \item{\code{hv105.04}}{age of household members}      
+#'     \item{\code{hv106.04}}{highest educational level}     
+#'     \item{\code{hv107.04}}{highest year of education}     
+#'     \item{\code{hv108.04}}{education in single years}     
+#'     \item{\code{hv109.04}}{educational attainment}        
+#'     \item{\code{hv110.04}}{member still in school}        
+#'     \item{\code{hv111.04}}{mother alive              - na}
+#'     \item{\code{hv112.04}}{mother's line number}          
+#'     \item{\code{hv113.04}}{father alive              - na}
+#'     \item{\code{hv114.04}}{father's line number}          
+#'     \item{\code{hv115.04}}{current marital status}        
+#'     \item{\code{hv116.04}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.04}}{eligibility for female intview}
+#'     \item{\code{hv118.04}}{eligibility for male interview}
+#'     \item{\code{hvidx.05}}{line number}                   
+#'     \item{\code{hv101.05}}{relationship to head}          
+#'     \item{\code{hv102.05}}{usual resident}                
+#'     \item{\code{hv103.05}}{slept last night}              
+#'     \item{\code{hv104.05}}{sex of household member}       
+#'     \item{\code{hv105.05}}{age of household members}      
+#'     \item{\code{hv106.05}}{highest educational level}     
+#'     \item{\code{hv107.05}}{highest year of education}     
+#'     \item{\code{hv108.05}}{education in single years}     
+#'     \item{\code{hv109.05}}{educational attainment}        
+#'     \item{\code{hv110.05}}{member still in school}        
+#'     \item{\code{hv111.05}}{mother alive              - na}
+#'     \item{\code{hv112.05}}{mother's line number}          
+#'     \item{\code{hv113.05}}{father alive              - na}
+#'     \item{\code{hv114.05}}{father's line number}          
+#'     \item{\code{hv115.05}}{current marital status}        
+#'     \item{\code{hv116.05}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.05}}{eligibility for female intview}
+#'     \item{\code{hv118.05}}{eligibility for male interview}
+#'     \item{\code{hvidx.06}}{line number}                   
+#'     \item{\code{hv101.06}}{relationship to head}          
+#'     \item{\code{hv102.06}}{usual resident}                
+#'     \item{\code{hv103.06}}{slept last night}              
+#'     \item{\code{hv104.06}}{sex of household member}       
+#'     \item{\code{hv105.06}}{age of household members}      
+#'     \item{\code{hv106.06}}{highest educational level}     
+#'     \item{\code{hv107.06}}{highest year of education}     
+#'     \item{\code{hv108.06}}{education in single years}     
+#'     \item{\code{hv109.06}}{educational attainment}        
+#'     \item{\code{hv110.06}}{member still in school}        
+#'     \item{\code{hv111.06}}{mother alive              - na}
+#'     \item{\code{hv112.06}}{mother's line number}          
+#'     \item{\code{hv113.06}}{father alive              - na}
+#'     \item{\code{hv114.06}}{father's line number}          
+#'     \item{\code{hv115.06}}{current marital status}        
+#'     \item{\code{hv116.06}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.06}}{eligibility for female intview}
+#'     \item{\code{hv118.06}}{eligibility for male interview}
+#'     \item{\code{hvidx.07}}{line number}                   
+#'     \item{\code{hv101.07}}{relationship to head}          
+#'     \item{\code{hv102.07}}{usual resident}                
+#'     \item{\code{hv103.07}}{slept last night}              
+#'     \item{\code{hv104.07}}{sex of household member}       
+#'     \item{\code{hv105.07}}{age of household members}      
+#'     \item{\code{hv106.07}}{highest educational level}     
+#'     \item{\code{hv107.07}}{highest year of education}     
+#'     \item{\code{hv108.07}}{education in single years}     
+#'     \item{\code{hv109.07}}{educational attainment}        
+#'     \item{\code{hv110.07}}{member still in school}        
+#'     \item{\code{hv111.07}}{mother alive              - na}
+#'     \item{\code{hv112.07}}{mother's line number}          
+#'     \item{\code{hv113.07}}{father alive              - na}
+#'     \item{\code{hv114.07}}{father's line number}          
+#'     \item{\code{hv115.07}}{current marital status}        
+#'     \item{\code{hv116.07}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.07}}{eligibility for female intview}
+#'     \item{\code{hv118.07}}{eligibility for male interview}
+#'     \item{\code{hvidx.08}}{line number}                   
+#'     \item{\code{hv101.08}}{relationship to head}          
+#'     \item{\code{hv102.08}}{usual resident}                
+#'     \item{\code{hv103.08}}{slept last night}              
+#'     \item{\code{hv104.08}}{sex of household member}       
+#'     \item{\code{hv105.08}}{age of household members}      
+#'     \item{\code{hv106.08}}{highest educational level}     
+#'     \item{\code{hv107.08}}{highest year of education}     
+#'     \item{\code{hv108.08}}{education in single years}     
+#'     \item{\code{hv109.08}}{educational attainment}        
+#'     \item{\code{hv110.08}}{member still in school}        
+#'     \item{\code{hv111.08}}{mother alive              - na}
+#'     \item{\code{hv112.08}}{mother's line number}          
+#'     \item{\code{hv113.08}}{father alive              - na}
+#'     \item{\code{hv114.08}}{father's line number}          
+#'     \item{\code{hv115.08}}{current marital status}        
+#'     \item{\code{hv116.08}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.08}}{eligibility for female intview}
+#'     \item{\code{hv118.08}}{eligibility for male interview}
+#'     \item{\code{hvidx.09}}{line number}                   
+#'     \item{\code{hv101.09}}{relationship to head}          
+#'     \item{\code{hv102.09}}{usual resident}                
+#'     \item{\code{hv103.09}}{slept last night}              
+#'     \item{\code{hv104.09}}{sex of household member}       
+#'     \item{\code{hv105.09}}{age of household members}      
+#'     \item{\code{hv106.09}}{highest educational level}     
+#'     \item{\code{hv107.09}}{highest year of education}     
+#'     \item{\code{hv108.09}}{education in single years}     
+#'     \item{\code{hv109.09}}{educational attainment}        
+#'     \item{\code{hv110.09}}{member still in school}        
+#'     \item{\code{hv111.09}}{mother alive              - na}
+#'     \item{\code{hv112.09}}{mother's line number}          
+#'     \item{\code{hv113.09}}{father alive              - na}
+#'     \item{\code{hv114.09}}{father's line number}          
+#'     \item{\code{hv115.09}}{current marital status}        
+#'     \item{\code{hv116.09}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.09}}{eligibility for female intview}
+#'     \item{\code{hv118.09}}{eligibility for male interview}
+#'     \item{\code{hvidx.10}}{line number}                   
+#'     \item{\code{hv101.10}}{relationship to head}          
+#'     \item{\code{hv102.10}}{usual resident}                
+#'     \item{\code{hv103.10}}{slept last night}              
+#'     \item{\code{hv104.10}}{sex of household member}       
+#'     \item{\code{hv105.10}}{age of household members}      
+#'     \item{\code{hv106.10}}{highest educational level}     
+#'     \item{\code{hv107.10}}{highest year of education}     
+#'     \item{\code{hv108.10}}{education in single years}     
+#'     \item{\code{hv109.10}}{educational attainment}        
+#'     \item{\code{hv110.10}}{member still in school}        
+#'     \item{\code{hv111.10}}{mother alive              - na}
+#'     \item{\code{hv112.10}}{mother's line number}          
+#'     \item{\code{hv113.10}}{father alive              - na}
+#'     \item{\code{hv114.10}}{father's line number}          
+#'     \item{\code{hv115.10}}{current marital status}        
+#'     \item{\code{hv116.10}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.10}}{eligibility for female intview}
+#'     \item{\code{hv118.10}}{eligibility for male interview}
+#'     \item{\code{hvidx.11}}{line number}                   
+#'     \item{\code{hv101.11}}{relationship to head}          
+#'     \item{\code{hv102.11}}{usual resident}                
+#'     \item{\code{hv103.11}}{slept last night}              
+#'     \item{\code{hv104.11}}{sex of household member}       
+#'     \item{\code{hv105.11}}{age of household members}      
+#'     \item{\code{hv106.11}}{highest educational level}     
+#'     \item{\code{hv107.11}}{highest year of education}     
+#'     \item{\code{hv108.11}}{education in single years}     
+#'     \item{\code{hv109.11}}{educational attainment}        
+#'     \item{\code{hv110.11}}{member still in school}        
+#'     \item{\code{hv111.11}}{mother alive              - na}
+#'     \item{\code{hv112.11}}{mother's line number}          
+#'     \item{\code{hv113.11}}{father alive              - na}
+#'     \item{\code{hv114.11}}{father's line number}          
+#'     \item{\code{hv115.11}}{current marital status}        
+#'     \item{\code{hv116.11}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.11}}{eligibility for female intview}
+#'     \item{\code{hv118.11}}{eligibility for male interview}
+#'     \item{\code{hvidx.12}}{line number}                   
+#'     \item{\code{hv101.12}}{relationship to head}          
+#'     \item{\code{hv102.12}}{usual resident}                
+#'     \item{\code{hv103.12}}{slept last night}              
+#'     \item{\code{hv104.12}}{sex of household member}       
+#'     \item{\code{hv105.12}}{age of household members}      
+#'     \item{\code{hv106.12}}{highest educational level}     
+#'     \item{\code{hv107.12}}{highest year of education}     
+#'     \item{\code{hv108.12}}{education in single years}     
+#'     \item{\code{hv109.12}}{educational attainment}        
+#'     \item{\code{hv110.12}}{member still in school}        
+#'     \item{\code{hv111.12}}{mother alive              - na}
+#'     \item{\code{hv112.12}}{mother's line number}          
+#'     \item{\code{hv113.12}}{father alive              - na}
+#'     \item{\code{hv114.12}}{father's line number}          
+#'     \item{\code{hv115.12}}{current marital status}        
+#'     \item{\code{hv116.12}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.12}}{eligibility for female intview}
+#'     \item{\code{hv118.12}}{eligibility for male interview}
+#'     \item{\code{hvidx.13}}{line number}                   
+#'     \item{\code{hv101.13}}{relationship to head}          
+#'     \item{\code{hv102.13}}{usual resident}                
+#'     \item{\code{hv103.13}}{slept last night}              
+#'     \item{\code{hv104.13}}{sex of household member}       
+#'     \item{\code{hv105.13}}{age of household members}      
+#'     \item{\code{hv106.13}}{highest educational level}     
+#'     \item{\code{hv107.13}}{highest year of education}     
+#'     \item{\code{hv108.13}}{education in single years}     
+#'     \item{\code{hv109.13}}{educational attainment}        
+#'     \item{\code{hv110.13}}{member still in school}        
+#'     \item{\code{hv111.13}}{mother alive              - na}
+#'     \item{\code{hv112.13}}{mother's line number}          
+#'     \item{\code{hv113.13}}{father alive              - na}
+#'     \item{\code{hv114.13}}{father's line number}          
+#'     \item{\code{hv115.13}}{current marital status}        
+#'     \item{\code{hv116.13}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.13}}{eligibility for female intview}
+#'     \item{\code{hv118.13}}{eligibility for male interview}
+#'     \item{\code{hvidx.14}}{line number}                   
+#'     \item{\code{hv101.14}}{relationship to head}          
+#'     \item{\code{hv102.14}}{usual resident}                
+#'     \item{\code{hv103.14}}{slept last night}              
+#'     \item{\code{hv104.14}}{sex of household member}       
+#'     \item{\code{hv105.14}}{age of household members}      
+#'     \item{\code{hv106.14}}{highest educational level}     
+#'     \item{\code{hv107.14}}{highest year of education}     
+#'     \item{\code{hv108.14}}{education in single years}     
+#'     \item{\code{hv109.14}}{educational attainment}        
+#'     \item{\code{hv110.14}}{member still in school}        
+#'     \item{\code{hv111.14}}{mother alive              - na}
+#'     \item{\code{hv112.14}}{mother's line number}          
+#'     \item{\code{hv113.14}}{father alive              - na}
+#'     \item{\code{hv114.14}}{father's line number}          
+#'     \item{\code{hv115.14}}{current marital status}        
+#'     \item{\code{hv116.14}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.14}}{eligibility for female intview}
+#'     \item{\code{hv118.14}}{eligibility for male interview}
+#'     \item{\code{hvidx.15}}{line number}                   
+#'     \item{\code{hv101.15}}{relationship to head}          
+#'     \item{\code{hv102.15}}{usual resident}                
+#'     \item{\code{hv103.15}}{slept last night}              
+#'     \item{\code{hv104.15}}{sex of household member}       
+#'     \item{\code{hv105.15}}{age of household members}      
+#'     \item{\code{hv106.15}}{highest educational level}     
+#'     \item{\code{hv107.15}}{highest year of education}     
+#'     \item{\code{hv108.15}}{education in single years}     
+#'     \item{\code{hv109.15}}{educational attainment}        
+#'     \item{\code{hv110.15}}{member still in school}        
+#'     \item{\code{hv111.15}}{mother alive              - na}
+#'     \item{\code{hv112.15}}{mother's line number}          
+#'     \item{\code{hv113.15}}{father alive              - na}
+#'     \item{\code{hv114.15}}{father's line number}          
+#'     \item{\code{hv115.15}}{current marital status}        
+#'     \item{\code{hv116.15}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.15}}{eligibility for female intview}
+#'     \item{\code{hv118.15}}{eligibility for male interview}
+#'     \item{\code{hvidx.16}}{line number}                   
+#'     \item{\code{hv101.16}}{relationship to head}          
+#'     \item{\code{hv102.16}}{usual resident}                
+#'     \item{\code{hv103.16}}{slept last night}              
+#'     \item{\code{hv104.16}}{sex of household member}       
+#'     \item{\code{hv105.16}}{age of household members}      
+#'     \item{\code{hv106.16}}{highest educational level}     
+#'     \item{\code{hv107.16}}{highest year of education}     
+#'     \item{\code{hv108.16}}{education in single years}     
+#'     \item{\code{hv109.16}}{educational attainment}        
+#'     \item{\code{hv110.16}}{member still in school}        
+#'     \item{\code{hv111.16}}{mother alive              - na}
+#'     \item{\code{hv112.16}}{mother's line number}          
+#'     \item{\code{hv113.16}}{father alive              - na}
+#'     \item{\code{hv114.16}}{father's line number}          
+#'     \item{\code{hv115.16}}{current marital status}        
+#'     \item{\code{hv116.16}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.16}}{eligibility for female intview}
+#'     \item{\code{hv118.16}}{eligibility for male interview}
+#'     \item{\code{hvidx.17}}{line number}                   
+#'     \item{\code{hv101.17}}{relationship to head}          
+#'     \item{\code{hv102.17}}{usual resident}                
+#'     \item{\code{hv103.17}}{slept last night}              
+#'     \item{\code{hv104.17}}{sex of household member}       
+#'     \item{\code{hv105.17}}{age of household members}      
+#'     \item{\code{hv106.17}}{highest educational level}     
+#'     \item{\code{hv107.17}}{highest year of education}     
+#'     \item{\code{hv108.17}}{education in single years}     
+#'     \item{\code{hv109.17}}{educational attainment}        
+#'     \item{\code{hv110.17}}{member still in school}        
+#'     \item{\code{hv111.17}}{mother alive              - na}
+#'     \item{\code{hv112.17}}{mother's line number}          
+#'     \item{\code{hv113.17}}{father alive              - na}
+#'     \item{\code{hv114.17}}{father's line number}          
+#'     \item{\code{hv115.17}}{current marital status}        
+#'     \item{\code{hv116.17}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.17}}{eligibility for female intview}
+#'     \item{\code{hv118.17}}{eligibility for male interview}
+#'     \item{\code{hvidx.18}}{line number}                   
+#'     \item{\code{hv101.18}}{relationship to head}          
+#'     \item{\code{hv102.18}}{usual resident}                
+#'     \item{\code{hv103.18}}{slept last night}              
+#'     \item{\code{hv104.18}}{sex of household member}       
+#'     \item{\code{hv105.18}}{age of household members}      
+#'     \item{\code{hv106.18}}{highest educational level}     
+#'     \item{\code{hv107.18}}{highest year of education}     
+#'     \item{\code{hv108.18}}{education in single years}     
+#'     \item{\code{hv109.18}}{educational attainment}        
+#'     \item{\code{hv110.18}}{member still in school}        
+#'     \item{\code{hv111.18}}{mother alive              - na}
+#'     \item{\code{hv112.18}}{mother's line number}          
+#'     \item{\code{hv113.18}}{father alive              - na}
+#'     \item{\code{hv114.18}}{father's line number}          
+#'     \item{\code{hv115.18}}{current marital status}        
+#'     \item{\code{hv116.18}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.18}}{eligibility for female intview}
+#'     \item{\code{hv118.18}}{eligibility for male interview}
+#'     \item{\code{hvidx.19}}{line number}                   
+#'     \item{\code{hv101.19}}{relationship to head}          
+#'     \item{\code{hv102.19}}{usual resident}                
+#'     \item{\code{hv103.19}}{slept last night}              
+#'     \item{\code{hv104.19}}{sex of household member}       
+#'     \item{\code{hv105.19}}{age of household members}      
+#'     \item{\code{hv106.19}}{highest educational level}     
+#'     \item{\code{hv107.19}}{highest year of education}     
+#'     \item{\code{hv108.19}}{education in single years}     
+#'     \item{\code{hv109.19}}{educational attainment}        
+#'     \item{\code{hv110.19}}{member still in school}        
+#'     \item{\code{hv111.19}}{mother alive              - na}
+#'     \item{\code{hv112.19}}{mother's line number}          
+#'     \item{\code{hv113.19}}{father alive              - na}
+#'     \item{\code{hv114.19}}{father's line number}          
+#'     \item{\code{hv115.19}}{current marital status}        
+#'     \item{\code{hv116.19}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.19}}{eligibility for female intview}
+#'     \item{\code{hv118.19}}{eligibility for male interview}
+#'     \item{\code{hvidx.20}}{line number}                   
+#'     \item{\code{hv101.20}}{relationship to head}          
+#'     \item{\code{hv102.20}}{usual resident}                
+#'     \item{\code{hv103.20}}{slept last night}              
+#'     \item{\code{hv104.20}}{sex of household member}       
+#'     \item{\code{hv105.20}}{age of household members}      
+#'     \item{\code{hv106.20}}{highest educational level}     
+#'     \item{\code{hv107.20}}{highest year of education}     
+#'     \item{\code{hv108.20}}{education in single years}     
+#'     \item{\code{hv109.20}}{educational attainment}        
+#'     \item{\code{hv110.20}}{member still in school}        
+#'     \item{\code{hv111.20}}{mother alive              - na}
+#'     \item{\code{hv112.20}}{mother's line number}          
+#'     \item{\code{hv113.20}}{father alive              - na}
+#'     \item{\code{hv114.20}}{father's line number}          
+#'     \item{\code{hv115.20}}{current marital status}        
+#'     \item{\code{hv116.20}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.20}}{eligibility for female intview}
+#'     \item{\code{hv118.20}}{eligibility for male interview}
+#'     \item{\code{hvidx.21}}{line number}                   
+#'     \item{\code{hv101.21}}{relationship to head}          
+#'     \item{\code{hv102.21}}{usual resident}                
+#'     \item{\code{hv103.21}}{slept last night}              
+#'     \item{\code{hv104.21}}{sex of household member}       
+#'     \item{\code{hv105.21}}{age of household members}      
+#'     \item{\code{hv106.21}}{highest educational level}     
+#'     \item{\code{hv107.21}}{highest year of education}     
+#'     \item{\code{hv108.21}}{education in single years}     
+#'     \item{\code{hv109.21}}{educational attainment}        
+#'     \item{\code{hv110.21}}{member still in school}        
+#'     \item{\code{hv111.21}}{mother alive              - na}
+#'     \item{\code{hv112.21}}{mother's line number}          
+#'     \item{\code{hv113.21}}{father alive              - na}
+#'     \item{\code{hv114.21}}{father's line number}          
+#'     \item{\code{hv115.21}}{current marital status}        
+#'     \item{\code{hv116.21}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.21}}{eligibility for female intview}
+#'     \item{\code{hv118.21}}{eligibility for male interview}
+#'     \item{\code{hvidx.22}}{line number}                   
+#'     \item{\code{hv101.22}}{relationship to head}          
+#'     \item{\code{hv102.22}}{usual resident}                
+#'     \item{\code{hv103.22}}{slept last night}              
+#'     \item{\code{hv104.22}}{sex of household member}       
+#'     \item{\code{hv105.22}}{age of household members}      
+#'     \item{\code{hv106.22}}{highest educational level}     
+#'     \item{\code{hv107.22}}{highest year of education}     
+#'     \item{\code{hv108.22}}{education in single years}     
+#'     \item{\code{hv109.22}}{educational attainment}        
+#'     \item{\code{hv110.22}}{member still in school}        
+#'     \item{\code{hv111.22}}{mother alive              - na}
+#'     \item{\code{hv112.22}}{mother's line number}          
+#'     \item{\code{hv113.22}}{father alive              - na}
+#'     \item{\code{hv114.22}}{father's line number}          
+#'     \item{\code{hv115.22}}{current marital status}        
+#'     \item{\code{hv116.22}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.22}}{eligibility for female intview}
+#'     \item{\code{hv118.22}}{eligibility for male interview}
+#'     \item{\code{hvidx.23}}{line number}                   
+#'     \item{\code{hv101.23}}{relationship to head}          
+#'     \item{\code{hv102.23}}{usual resident}                
+#'     \item{\code{hv103.23}}{slept last night}              
+#'     \item{\code{hv104.23}}{sex of household member}       
+#'     \item{\code{hv105.23}}{age of household members}      
+#'     \item{\code{hv106.23}}{highest educational level}     
+#'     \item{\code{hv107.23}}{highest year of education}     
+#'     \item{\code{hv108.23}}{education in single years}     
+#'     \item{\code{hv109.23}}{educational attainment}        
+#'     \item{\code{hv110.23}}{member still in school}        
+#'     \item{\code{hv111.23}}{mother alive              - na}
+#'     \item{\code{hv112.23}}{mother's line number}          
+#'     \item{\code{hv113.23}}{father alive              - na}
+#'     \item{\code{hv114.23}}{father's line number}          
+#'     \item{\code{hv115.23}}{current marital status}        
+#'     \item{\code{hv116.23}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.23}}{eligibility for female intview}
+#'     \item{\code{hv118.23}}{eligibility for male interview}
+#'     \item{\code{hvidx.24}}{line number}                   
+#'     \item{\code{hv101.24}}{relationship to head}          
+#'     \item{\code{hv102.24}}{usual resident}                
+#'     \item{\code{hv103.24}}{slept last night}              
+#'     \item{\code{hv104.24}}{sex of household member}       
+#'     \item{\code{hv105.24}}{age of household members}      
+#'     \item{\code{hv106.24}}{highest educational level}     
+#'     \item{\code{hv107.24}}{highest year of education}     
+#'     \item{\code{hv108.24}}{education in single years}     
+#'     \item{\code{hv109.24}}{educational attainment}        
+#'     \item{\code{hv110.24}}{member still in school}        
+#'     \item{\code{hv111.24}}{mother alive              - na}
+#'     \item{\code{hv112.24}}{mother's line number}          
+#'     \item{\code{hv113.24}}{father alive              - na}
+#'     \item{\code{hv114.24}}{father's line number}          
+#'     \item{\code{hv115.24}}{current marital status}        
+#'     \item{\code{hv116.24}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.24}}{eligibility for female intview}
+#'     \item{\code{hv118.24}}{eligibility for male interview}
+#'     \item{\code{hvidx.25}}{line number}                   
+#'     \item{\code{hv101.25}}{relationship to head}          
+#'     \item{\code{hv102.25}}{usual resident}                
+#'     \item{\code{hv103.25}}{slept last night}              
+#'     \item{\code{hv104.25}}{sex of household member}       
+#'     \item{\code{hv105.25}}{age of household members}      
+#'     \item{\code{hv106.25}}{highest educational level}     
+#'     \item{\code{hv107.25}}{highest year of education}     
+#'     \item{\code{hv108.25}}{education in single years}     
+#'     \item{\code{hv109.25}}{educational attainment}        
+#'     \item{\code{hv110.25}}{member still in school}        
+#'     \item{\code{hv111.25}}{mother alive              - na}
+#'     \item{\code{hv112.25}}{mother's line number}          
+#'     \item{\code{hv113.25}}{father alive              - na}
+#'     \item{\code{hv114.25}}{father's line number}          
+#'     \item{\code{hv115.25}}{current marital status}        
+#'     \item{\code{hv116.25}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.25}}{eligibility for female intview}
+#'     \item{\code{hv118.25}}{eligibility for male interview}
+#'     \item{\code{hvidx.26}}{line number}                   
+#'     \item{\code{hv101.26}}{relationship to head}          
+#'     \item{\code{hv102.26}}{usual resident}                
+#'     \item{\code{hv103.26}}{slept last night}              
+#'     \item{\code{hv104.26}}{sex of household member}       
+#'     \item{\code{hv105.26}}{age of household members}      
+#'     \item{\code{hv106.26}}{highest educational level}     
+#'     \item{\code{hv107.26}}{highest year of education}     
+#'     \item{\code{hv108.26}}{education in single years}     
+#'     \item{\code{hv109.26}}{educational attainment}        
+#'     \item{\code{hv110.26}}{member still in school}        
+#'     \item{\code{hv111.26}}{mother alive              - na}
+#'     \item{\code{hv112.26}}{mother's line number}          
+#'     \item{\code{hv113.26}}{father alive              - na}
+#'     \item{\code{hv114.26}}{father's line number}          
+#'     \item{\code{hv115.26}}{current marital status}        
+#'     \item{\code{hv116.26}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.26}}{eligibility for female intview}
+#'     \item{\code{hv118.26}}{eligibility for male interview}
+#'     \item{\code{hvidx.27}}{line number}                   
+#'     \item{\code{hv101.27}}{relationship to head}          
+#'     \item{\code{hv102.27}}{usual resident}                
+#'     \item{\code{hv103.27}}{slept last night}              
+#'     \item{\code{hv104.27}}{sex of household member}       
+#'     \item{\code{hv105.27}}{age of household members}      
+#'     \item{\code{hv106.27}}{highest educational level}     
+#'     \item{\code{hv107.27}}{highest year of education}     
+#'     \item{\code{hv108.27}}{education in single years}     
+#'     \item{\code{hv109.27}}{educational attainment}        
+#'     \item{\code{hv110.27}}{member still in school}        
+#'     \item{\code{hv111.27}}{mother alive              - na}
+#'     \item{\code{hv112.27}}{mother's line number}          
+#'     \item{\code{hv113.27}}{father alive              - na}
+#'     \item{\code{hv114.27}}{father's line number}          
+#'     \item{\code{hv115.27}}{current marital status}        
+#'     \item{\code{hv116.27}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.27}}{eligibility for female intview}
+#'     \item{\code{hv118.27}}{eligibility for male interview}
+#'     \item{\code{hvidx.28}}{line number}                   
+#'     \item{\code{hv101.28}}{relationship to head}          
+#'     \item{\code{hv102.28}}{usual resident}                
+#'     \item{\code{hv103.28}}{slept last night}              
+#'     \item{\code{hv104.28}}{sex of household member}       
+#'     \item{\code{hv105.28}}{age of household members}      
+#'     \item{\code{hv106.28}}{highest educational level}     
+#'     \item{\code{hv107.28}}{highest year of education}     
+#'     \item{\code{hv108.28}}{education in single years}     
+#'     \item{\code{hv109.28}}{educational attainment}        
+#'     \item{\code{hv110.28}}{member still in school}        
+#'     \item{\code{hv111.28}}{mother alive              - na}
+#'     \item{\code{hv112.28}}{mother's line number}          
+#'     \item{\code{hv113.28}}{father alive              - na}
+#'     \item{\code{hv114.28}}{father's line number}          
+#'     \item{\code{hv115.28}}{current marital status}        
+#'     \item{\code{hv116.28}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.28}}{eligibility for female intview}
+#'     \item{\code{hv118.28}}{eligibility for male interview}
+#'     \item{\code{hvidx.29}}{line number}                   
+#'     \item{\code{hv101.29}}{relationship to head}          
+#'     \item{\code{hv102.29}}{usual resident}                
+#'     \item{\code{hv103.29}}{slept last night}              
+#'     \item{\code{hv104.29}}{sex of household member}       
+#'     \item{\code{hv105.29}}{age of household members}      
+#'     \item{\code{hv106.29}}{highest educational level}     
+#'     \item{\code{hv107.29}}{highest year of education}     
+#'     \item{\code{hv108.29}}{education in single years}     
+#'     \item{\code{hv109.29}}{educational attainment}        
+#'     \item{\code{hv110.29}}{member still in school}        
+#'     \item{\code{hv111.29}}{mother alive              - na}
+#'     \item{\code{hv112.29}}{mother's line number}          
+#'     \item{\code{hv113.29}}{father alive              - na}
+#'     \item{\code{hv114.29}}{father's line number}          
+#'     \item{\code{hv115.29}}{current marital status}        
+#'     \item{\code{hv116.29}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.29}}{eligibility for female intview}
+#'     \item{\code{hv118.29}}{eligibility for male interview}
+#'     \item{\code{hvidx.30}}{line number}                   
+#'     \item{\code{hv101.30}}{relationship to head}          
+#'     \item{\code{hv102.30}}{usual resident}                
+#'     \item{\code{hv103.30}}{slept last night}              
+#'     \item{\code{hv104.30}}{sex of household member}       
+#'     \item{\code{hv105.30}}{age of household members}      
+#'     \item{\code{hv106.30}}{highest educational level}     
+#'     \item{\code{hv107.30}}{highest year of education}     
+#'     \item{\code{hv108.30}}{education in single years}     
+#'     \item{\code{hv109.30}}{educational attainment}        
+#'     \item{\code{hv110.30}}{member still in school}        
+#'     \item{\code{hv111.30}}{mother alive              - na}
+#'     \item{\code{hv112.30}}{mother's line number}          
+#'     \item{\code{hv113.30}}{father alive              - na}
+#'     \item{\code{hv114.30}}{father's line number}          
+#'     \item{\code{hv115.30}}{current marital status}        
+#'     \item{\code{hv116.30}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.30}}{eligibility for female intview}
+#'     \item{\code{hv118.30}}{eligibility for male interview}
+#'     \item{\code{hvidx.31}}{line number}                   
+#'     \item{\code{hv101.31}}{relationship to head}          
+#'     \item{\code{hv102.31}}{usual resident}                
+#'     \item{\code{hv103.31}}{slept last night}              
+#'     \item{\code{hv104.31}}{sex of household member}       
+#'     \item{\code{hv105.31}}{age of household members}      
+#'     \item{\code{hv106.31}}{highest educational level}     
+#'     \item{\code{hv107.31}}{highest year of education}     
+#'     \item{\code{hv108.31}}{education in single years}     
+#'     \item{\code{hv109.31}}{educational attainment}        
+#'     \item{\code{hv110.31}}{member still in school}        
+#'     \item{\code{hv111.31}}{mother alive              - na}
+#'     \item{\code{hv112.31}}{mother's line number}          
+#'     \item{\code{hv113.31}}{father alive              - na}
+#'     \item{\code{hv114.31}}{father's line number}          
+#'     \item{\code{hv115.31}}{current marital status}        
+#'     \item{\code{hv116.31}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.31}}{eligibility for female intview}
+#'     \item{\code{hv118.31}}{eligibility for male interview}
+#'     \item{\code{hvidx.32}}{line number}                   
+#'     \item{\code{hv101.32}}{relationship to head}          
+#'     \item{\code{hv102.32}}{usual resident}                
+#'     \item{\code{hv103.32}}{slept last night}              
+#'     \item{\code{hv104.32}}{sex of household member}       
+#'     \item{\code{hv105.32}}{age of household members}      
+#'     \item{\code{hv106.32}}{highest educational level}     
+#'     \item{\code{hv107.32}}{highest year of education}     
+#'     \item{\code{hv108.32}}{education in single years}     
+#'     \item{\code{hv109.32}}{educational attainment}        
+#'     \item{\code{hv110.32}}{member still in school}        
+#'     \item{\code{hv111.32}}{mother alive              - na}
+#'     \item{\code{hv112.32}}{mother's line number}          
+#'     \item{\code{hv113.32}}{father alive              - na}
+#'     \item{\code{hv114.32}}{father's line number}          
+#'     \item{\code{hv115.32}}{current marital status}        
+#'     \item{\code{hv116.32}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.32}}{eligibility for female intview}
+#'     \item{\code{hv118.32}}{eligibility for male interview}
+#'     \item{\code{hvidx.33}}{line number}                   
+#'     \item{\code{hv101.33}}{relationship to head}          
+#'     \item{\code{hv102.33}}{usual resident}                
+#'     \item{\code{hv103.33}}{slept last night}              
+#'     \item{\code{hv104.33}}{sex of household member}       
+#'     \item{\code{hv105.33}}{age of household members}      
+#'     \item{\code{hv106.33}}{highest educational level}     
+#'     \item{\code{hv107.33}}{highest year of education}     
+#'     \item{\code{hv108.33}}{education in single years}     
+#'     \item{\code{hv109.33}}{educational attainment}        
+#'     \item{\code{hv110.33}}{member still in school}        
+#'     \item{\code{hv111.33}}{mother alive              - na}
+#'     \item{\code{hv112.33}}{mother's line number}          
+#'     \item{\code{hv113.33}}{father alive              - na}
+#'     \item{\code{hv114.33}}{father's line number}          
+#'     \item{\code{hv115.33}}{current marital status}        
+#'     \item{\code{hv116.33}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.33}}{eligibility for female intview}
+#'     \item{\code{hv118.33}}{eligibility for male interview}
+#'     \item{\code{hvidx.34}}{line number}                   
+#'     \item{\code{hv101.34}}{relationship to head}          
+#'     \item{\code{hv102.34}}{usual resident}                
+#'     \item{\code{hv103.34}}{slept last night}              
+#'     \item{\code{hv104.34}}{sex of household member}       
+#'     \item{\code{hv105.34}}{age of household members}      
+#'     \item{\code{hv106.34}}{highest educational level}     
+#'     \item{\code{hv107.34}}{highest year of education}     
+#'     \item{\code{hv108.34}}{education in single years}     
+#'     \item{\code{hv109.34}}{educational attainment}        
+#'     \item{\code{hv110.34}}{member still in school}        
+#'     \item{\code{hv111.34}}{mother alive              - na}
+#'     \item{\code{hv112.34}}{mother's line number}          
+#'     \item{\code{hv113.34}}{father alive              - na}
+#'     \item{\code{hv114.34}}{father's line number}          
+#'     \item{\code{hv115.34}}{current marital status}        
+#'     \item{\code{hv116.34}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.34}}{eligibility for female intview}
+#'     \item{\code{hv118.34}}{eligibility for male interview}
+#'     \item{\code{hvidx.35}}{line number}                   
+#'     \item{\code{hv101.35}}{relationship to head}          
+#'     \item{\code{hv102.35}}{usual resident}                
+#'     \item{\code{hv103.35}}{slept last night}              
+#'     \item{\code{hv104.35}}{sex of household member}       
+#'     \item{\code{hv105.35}}{age of household members}      
+#'     \item{\code{hv106.35}}{highest educational level}     
+#'     \item{\code{hv107.35}}{highest year of education}     
+#'     \item{\code{hv108.35}}{education in single years}     
+#'     \item{\code{hv109.35}}{educational attainment}        
+#'     \item{\code{hv110.35}}{member still in school}        
+#'     \item{\code{hv111.35}}{mother alive              - na}
+#'     \item{\code{hv112.35}}{mother's line number}          
+#'     \item{\code{hv113.35}}{father alive              - na}
+#'     \item{\code{hv114.35}}{father's line number}          
+#'     \item{\code{hv115.35}}{current marital status}        
+#'     \item{\code{hv116.35}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.35}}{eligibility for female intview}
+#'     \item{\code{hv118.35}}{eligibility for male interview}
+#'     \item{\code{hvidx.36}}{line number}                   
+#'     \item{\code{hv101.36}}{relationship to head}          
+#'     \item{\code{hv102.36}}{usual resident}                
+#'     \item{\code{hv103.36}}{slept last night}              
+#'     \item{\code{hv104.36}}{sex of household member}       
+#'     \item{\code{hv105.36}}{age of household members}      
+#'     \item{\code{hv106.36}}{highest educational level}     
+#'     \item{\code{hv107.36}}{highest year of education}     
+#'     \item{\code{hv108.36}}{education in single years}     
+#'     \item{\code{hv109.36}}{educational attainment}        
+#'     \item{\code{hv110.36}}{member still in school}        
+#'     \item{\code{hv111.36}}{mother alive              - na}
+#'     \item{\code{hv112.36}}{mother's line number}          
+#'     \item{\code{hv113.36}}{father alive              - na}
+#'     \item{\code{hv114.36}}{father's line number}          
+#'     \item{\code{hv115.36}}{current marital status}        
+#'     \item{\code{hv116.36}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.36}}{eligibility for female intview}
+#'     \item{\code{hv118.36}}{eligibility for male interview}
+#'     \item{\code{hvidx.37}}{line number}                   
+#'     \item{\code{hv101.37}}{relationship to head}          
+#'     \item{\code{hv102.37}}{usual resident}                
+#'     \item{\code{hv103.37}}{slept last night}              
+#'     \item{\code{hv104.37}}{sex of household member}       
+#'     \item{\code{hv105.37}}{age of household members}      
+#'     \item{\code{hv106.37}}{highest educational level}     
+#'     \item{\code{hv107.37}}{highest year of education}     
+#'     \item{\code{hv108.37}}{education in single years}     
+#'     \item{\code{hv109.37}}{educational attainment}        
+#'     \item{\code{hv110.37}}{member still in school}        
+#'     \item{\code{hv111.37}}{mother alive              - na}
+#'     \item{\code{hv112.37}}{mother's line number}          
+#'     \item{\code{hv113.37}}{father alive              - na}
+#'     \item{\code{hv114.37}}{father's line number}          
+#'     \item{\code{hv115.37}}{current marital status}        
+#'     \item{\code{hv116.37}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.37}}{eligibility for female intview}
+#'     \item{\code{hv118.37}}{eligibility for male interview}
+#'     \item{\code{hvidx.38}}{line number}                   
+#'     \item{\code{hv101.38}}{relationship to head}          
+#'     \item{\code{hv102.38}}{usual resident}                
+#'     \item{\code{hv103.38}}{slept last night}              
+#'     \item{\code{hv104.38}}{sex of household member}       
+#'     \item{\code{hv105.38}}{age of household members}      
+#'     \item{\code{hv106.38}}{highest educational level}     
+#'     \item{\code{hv107.38}}{highest year of education}     
+#'     \item{\code{hv108.38}}{education in single years}     
+#'     \item{\code{hv109.38}}{educational attainment}        
+#'     \item{\code{hv110.38}}{member still in school}        
+#'     \item{\code{hv111.38}}{mother alive              - na}
+#'     \item{\code{hv112.38}}{mother's line number}          
+#'     \item{\code{hv113.38}}{father alive              - na}
+#'     \item{\code{hv114.38}}{father's line number}          
+#'     \item{\code{hv115.38}}{current marital status}        
+#'     \item{\code{hv116.38}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.38}}{eligibility for female intview}
+#'     \item{\code{hv118.38}}{eligibility for male interview}
+#'     \item{\code{hvidx.39}}{line number}                   
+#'     \item{\code{hv101.39}}{relationship to head}          
+#'     \item{\code{hv102.39}}{usual resident}                
+#'     \item{\code{hv103.39}}{slept last night}              
+#'     \item{\code{hv104.39}}{sex of household member}       
+#'     \item{\code{hv105.39}}{age of household members}      
+#'     \item{\code{hv106.39}}{highest educational level}     
+#'     \item{\code{hv107.39}}{highest year of education}     
+#'     \item{\code{hv108.39}}{education in single years}     
+#'     \item{\code{hv109.39}}{educational attainment}        
+#'     \item{\code{hv110.39}}{member still in school}        
+#'     \item{\code{hv111.39}}{mother alive              - na}
+#'     \item{\code{hv112.39}}{mother's line number}          
+#'     \item{\code{hv113.39}}{father alive              - na}
+#'     \item{\code{hv114.39}}{father's line number}          
+#'     \item{\code{hv115.39}}{current marital status}        
+#'     \item{\code{hv116.39}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.39}}{eligibility for female intview}
+#'     \item{\code{hv118.39}}{eligibility for male interview}
+#'     \item{\code{hvidx.40}}{line number}                   
+#'     \item{\code{hv101.40}}{relationship to head}          
+#'     \item{\code{hv102.40}}{usual resident}                
+#'     \item{\code{hv103.40}}{slept last night}              
+#'     \item{\code{hv104.40}}{sex of household member}       
+#'     \item{\code{hv105.40}}{age of household members}      
+#'     \item{\code{hv106.40}}{highest educational level}     
+#'     \item{\code{hv107.40}}{highest year of education}     
+#'     \item{\code{hv108.40}}{education in single years}     
+#'     \item{\code{hv109.40}}{educational attainment}        
+#'     \item{\code{hv110.40}}{member still in school}        
+#'     \item{\code{hv111.40}}{mother alive              - na}
+#'     \item{\code{hv112.40}}{mother's line number}          
+#'     \item{\code{hv113.40}}{father alive              - na}
+#'     \item{\code{hv114.40}}{father's line number}          
+#'     \item{\code{hv115.40}}{current marital status}        
+#'     \item{\code{hv116.40}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.40}}{eligibility for female intview}
+#'     \item{\code{hv118.40}}{eligibility for male interview}
+#'     \item{\code{hvidx.41}}{line number}                   
+#'     \item{\code{hv101.41}}{relationship to head}          
+#'     \item{\code{hv102.41}}{usual resident}                
+#'     \item{\code{hv103.41}}{slept last night}              
+#'     \item{\code{hv104.41}}{sex of household member}       
+#'     \item{\code{hv105.41}}{age of household members}      
+#'     \item{\code{hv106.41}}{highest educational level}     
+#'     \item{\code{hv107.41}}{highest year of education}     
+#'     \item{\code{hv108.41}}{education in single years}     
+#'     \item{\code{hv109.41}}{educational attainment}        
+#'     \item{\code{hv110.41}}{member still in school}        
+#'     \item{\code{hv111.41}}{mother alive              - na}
+#'     \item{\code{hv112.41}}{mother's line number}          
+#'     \item{\code{hv113.41}}{father alive              - na}
+#'     \item{\code{hv114.41}}{father's line number}          
+#'     \item{\code{hv115.41}}{current marital status}        
+#'     \item{\code{hv116.41}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.41}}{eligibility for female intview}
+#'     \item{\code{hv118.41}}{eligibility for male interview}
+#'     \item{\code{hvidx.42}}{line number}                   
+#'     \item{\code{hv101.42}}{relationship to head}          
+#'     \item{\code{hv102.42}}{usual resident}                
+#'     \item{\code{hv103.42}}{slept last night}              
+#'     \item{\code{hv104.42}}{sex of household member}       
+#'     \item{\code{hv105.42}}{age of household members}      
+#'     \item{\code{hv106.42}}{highest educational level}     
+#'     \item{\code{hv107.42}}{highest year of education}     
+#'     \item{\code{hv108.42}}{education in single years}     
+#'     \item{\code{hv109.42}}{educational attainment}        
+#'     \item{\code{hv110.42}}{member still in school}        
+#'     \item{\code{hv111.42}}{mother alive              - na}
+#'     \item{\code{hv112.42}}{mother's line number}          
+#'     \item{\code{hv113.42}}{father alive              - na}
+#'     \item{\code{hv114.42}}{father's line number}          
+#'     \item{\code{hv115.42}}{current marital status}        
+#'     \item{\code{hv116.42}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.42}}{eligibility for female intview}
+#'     \item{\code{hv118.42}}{eligibility for male interview}
+#'     \item{\code{hvidx.43}}{line number}                   
+#'     \item{\code{hv101.43}}{relationship to head}          
+#'     \item{\code{hv102.43}}{usual resident}                
+#'     \item{\code{hv103.43}}{slept last night}              
+#'     \item{\code{hv104.43}}{sex of household member}       
+#'     \item{\code{hv105.43}}{age of household members}      
+#'     \item{\code{hv106.43}}{highest educational level}     
+#'     \item{\code{hv107.43}}{highest year of education}     
+#'     \item{\code{hv108.43}}{education in single years}     
+#'     \item{\code{hv109.43}}{educational attainment}        
+#'     \item{\code{hv110.43}}{member still in school}        
+#'     \item{\code{hv111.43}}{mother alive              - na}
+#'     \item{\code{hv112.43}}{mother's line number}          
+#'     \item{\code{hv113.43}}{father alive              - na}
+#'     \item{\code{hv114.43}}{father's line number}          
+#'     \item{\code{hv115.43}}{current marital status}        
+#'     \item{\code{hv116.43}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.43}}{eligibility for female intview}
+#'     \item{\code{hv118.43}}{eligibility for male interview}
+#'     \item{\code{hvidx.44}}{line number}                   
+#'     \item{\code{hv101.44}}{relationship to head}          
+#'     \item{\code{hv102.44}}{usual resident}                
+#'     \item{\code{hv103.44}}{slept last night}              
+#'     \item{\code{hv104.44}}{sex of household member}       
+#'     \item{\code{hv105.44}}{age of household members}      
+#'     \item{\code{hv106.44}}{highest educational level}     
+#'     \item{\code{hv107.44}}{highest year of education}     
+#'     \item{\code{hv108.44}}{education in single years}     
+#'     \item{\code{hv109.44}}{educational attainment}        
+#'     \item{\code{hv110.44}}{member still in school}        
+#'     \item{\code{hv111.44}}{mother alive              - na}
+#'     \item{\code{hv112.44}}{mother's line number}          
+#'     \item{\code{hv113.44}}{father alive              - na}
+#'     \item{\code{hv114.44}}{father's line number}          
+#'     \item{\code{hv115.44}}{current marital status}        
+#'     \item{\code{hv116.44}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.44}}{eligibility for female intview}
+#'     \item{\code{hv118.44}}{eligibility for male interview}
+#'     \item{\code{hvidx.45}}{line number}                   
+#'     \item{\code{hv101.45}}{relationship to head}          
+#'     \item{\code{hv102.45}}{usual resident}                
+#'     \item{\code{hv103.45}}{slept last night}              
+#'     \item{\code{hv104.45}}{sex of household member}       
+#'     \item{\code{hv105.45}}{age of household members}      
+#'     \item{\code{hv106.45}}{highest educational level}     
+#'     \item{\code{hv107.45}}{highest year of education}     
+#'     \item{\code{hv108.45}}{education in single years}     
+#'     \item{\code{hv109.45}}{educational attainment}        
+#'     \item{\code{hv110.45}}{member still in school}        
+#'     \item{\code{hv111.45}}{mother alive              - na}
+#'     \item{\code{hv112.45}}{mother's line number}          
+#'     \item{\code{hv113.45}}{father alive              - na}
+#'     \item{\code{hv114.45}}{father's line number}          
+#'     \item{\code{hv115.45}}{current marital status}        
+#'     \item{\code{hv116.45}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.45}}{eligibility for female intview}
+#'     \item{\code{hv118.45}}{eligibility for male interview}
+#'     \item{\code{hvidx.46}}{line number}                   
+#'     \item{\code{hv101.46}}{relationship to head}          
+#'     \item{\code{hv102.46}}{usual resident}                
+#'     \item{\code{hv103.46}}{slept last night}              
+#'     \item{\code{hv104.46}}{sex of household member}       
+#'     \item{\code{hv105.46}}{age of household members}      
+#'     \item{\code{hv106.46}}{highest educational level}     
+#'     \item{\code{hv107.46}}{highest year of education}     
+#'     \item{\code{hv108.46}}{education in single years}     
+#'     \item{\code{hv109.46}}{educational attainment}        
+#'     \item{\code{hv110.46}}{member still in school}        
+#'     \item{\code{hv111.46}}{mother alive              - na}
+#'     \item{\code{hv112.46}}{mother's line number}          
+#'     \item{\code{hv113.46}}{father alive              - na}
+#'     \item{\code{hv114.46}}{father's line number}          
+#'     \item{\code{hv115.46}}{current marital status}        
+#'     \item{\code{hv116.46}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.46}}{eligibility for female intview}
+#'     \item{\code{hv118.46}}{eligibility for male interview}
+#'     \item{\code{hvidx.47}}{line number}                   
+#'     \item{\code{hv101.47}}{relationship to head}          
+#'     \item{\code{hv102.47}}{usual resident}                
+#'     \item{\code{hv103.47}}{slept last night}              
+#'     \item{\code{hv104.47}}{sex of household member}       
+#'     \item{\code{hv105.47}}{age of household members}      
+#'     \item{\code{hv106.47}}{highest educational level}     
+#'     \item{\code{hv107.47}}{highest year of education}     
+#'     \item{\code{hv108.47}}{education in single years}     
+#'     \item{\code{hv109.47}}{educational attainment}        
+#'     \item{\code{hv110.47}}{member still in school}        
+#'     \item{\code{hv111.47}}{mother alive              - na}
+#'     \item{\code{hv112.47}}{mother's line number}          
+#'     \item{\code{hv113.47}}{father alive              - na}
+#'     \item{\code{hv114.47}}{father's line number}          
+#'     \item{\code{hv115.47}}{current marital status}        
+#'     \item{\code{hv116.47}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.47}}{eligibility for female intview}
+#'     \item{\code{hv118.47}}{eligibility for male interview}
+#'     \item{\code{hvidx.48}}{line number}                   
+#'     \item{\code{hv101.48}}{relationship to head}          
+#'     \item{\code{hv102.48}}{usual resident}                
+#'     \item{\code{hv103.48}}{slept last night}              
+#'     \item{\code{hv104.48}}{sex of household member}       
+#'     \item{\code{hv105.48}}{age of household members}      
+#'     \item{\code{hv106.48}}{highest educational level}     
+#'     \item{\code{hv107.48}}{highest year of education}     
+#'     \item{\code{hv108.48}}{education in single years}     
+#'     \item{\code{hv109.48}}{educational attainment}        
+#'     \item{\code{hv110.48}}{member still in school}        
+#'     \item{\code{hv111.48}}{mother alive              - na}
+#'     \item{\code{hv112.48}}{mother's line number}          
+#'     \item{\code{hv113.48}}{father alive              - na}
+#'     \item{\code{hv114.48}}{father's line number}          
+#'     \item{\code{hv115.48}}{current marital status}        
+#'     \item{\code{hv116.48}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.48}}{eligibility for female intview}
+#'     \item{\code{hv118.48}}{eligibility for male interview}
+#'     \item{\code{hvidx.49}}{line number}                   
+#'     \item{\code{hv101.49}}{relationship to head}          
+#'     \item{\code{hv102.49}}{usual resident}                
+#'     \item{\code{hv103.49}}{slept last night}              
+#'     \item{\code{hv104.49}}{sex of household member}       
+#'     \item{\code{hv105.49}}{age of household members}      
+#'     \item{\code{hv106.49}}{highest educational level}     
+#'     \item{\code{hv107.49}}{highest year of education}     
+#'     \item{\code{hv108.49}}{education in single years}     
+#'     \item{\code{hv109.49}}{educational attainment}        
+#'     \item{\code{hv110.49}}{member still in school}        
+#'     \item{\code{hv111.49}}{mother alive              - na}
+#'     \item{\code{hv112.49}}{mother's line number}          
+#'     \item{\code{hv113.49}}{father alive              - na}
+#'     \item{\code{hv114.49}}{father's line number}          
+#'     \item{\code{hv115.49}}{current marital status}        
+#'     \item{\code{hv116.49}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.49}}{eligibility for female intview}
+#'     \item{\code{hv118.49}}{eligibility for male interview}
+#'     \item{\code{hvidx.50}}{line number}                   
+#'     \item{\code{hv101.50}}{relationship to head}          
+#'     \item{\code{hv102.50}}{usual resident}                
+#'     \item{\code{hv103.50}}{slept last night}              
+#'     \item{\code{hv104.50}}{sex of household member}       
+#'     \item{\code{hv105.50}}{age of household members}      
+#'     \item{\code{hv106.50}}{highest educational level}     
+#'     \item{\code{hv107.50}}{highest year of education}     
+#'     \item{\code{hv108.50}}{education in single years}     
+#'     \item{\code{hv109.50}}{educational attainment}        
+#'     \item{\code{hv110.50}}{member still in school}        
+#'     \item{\code{hv111.50}}{mother alive              - na}
+#'     \item{\code{hv112.50}}{mother's line number}          
+#'     \item{\code{hv113.50}}{father alive              - na}
+#'     \item{\code{hv114.50}}{father's line number}          
+#'     \item{\code{hv115.50}}{current marital status}        
+#'     \item{\code{hv116.50}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.50}}{eligibility for female intview}
+#'     \item{\code{hv118.50}}{eligibility for male interview}
+#'     \item{\code{hvidx.51}}{line number}                   
+#'     \item{\code{hv101.51}}{relationship to head}          
+#'     \item{\code{hv102.51}}{usual resident}                
+#'     \item{\code{hv103.51}}{slept last night}              
+#'     \item{\code{hv104.51}}{sex of household member}       
+#'     \item{\code{hv105.51}}{age of household members}      
+#'     \item{\code{hv106.51}}{highest educational level}     
+#'     \item{\code{hv107.51}}{highest year of education}     
+#'     \item{\code{hv108.51}}{education in single years}     
+#'     \item{\code{hv109.51}}{educational attainment}        
+#'     \item{\code{hv110.51}}{member still in school}        
+#'     \item{\code{hv111.51}}{mother alive              - na}
+#'     \item{\code{hv112.51}}{mother's line number}          
+#'     \item{\code{hv113.51}}{father alive              - na}
+#'     \item{\code{hv114.51}}{father's line number}          
+#'     \item{\code{hv115.51}}{current marital status}        
+#'     \item{\code{hv116.51}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.51}}{eligibility for female intview}
+#'     \item{\code{hv118.51}}{eligibility for male interview}
+#'     \item{\code{hvidx.52}}{line number}                   
+#'     \item{\code{hv101.52}}{relationship to head}          
+#'     \item{\code{hv102.52}}{usual resident}                
+#'     \item{\code{hv103.52}}{slept last night}              
+#'     \item{\code{hv104.52}}{sex of household member}       
+#'     \item{\code{hv105.52}}{age of household members}      
+#'     \item{\code{hv106.52}}{highest educational level}     
+#'     \item{\code{hv107.52}}{highest year of education}     
+#'     \item{\code{hv108.52}}{education in single years}     
+#'     \item{\code{hv109.52}}{educational attainment}        
+#'     \item{\code{hv110.52}}{member still in school}        
+#'     \item{\code{hv111.52}}{mother alive              - na}
+#'     \item{\code{hv112.52}}{mother's line number}          
+#'     \item{\code{hv113.52}}{father alive              - na}
+#'     \item{\code{hv114.52}}{father's line number}          
+#'     \item{\code{hv115.52}}{current marital status}        
+#'     \item{\code{hv116.52}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.52}}{eligibility for female intview}
+#'     \item{\code{hv118.52}}{eligibility for male interview}
+#'     \item{\code{hvidx.53}}{line number}                   
+#'     \item{\code{hv101.53}}{relationship to head}          
+#'     \item{\code{hv102.53}}{usual resident}                
+#'     \item{\code{hv103.53}}{slept last night}              
+#'     \item{\code{hv104.53}}{sex of household member}       
+#'     \item{\code{hv105.53}}{age of household members}      
+#'     \item{\code{hv106.53}}{highest educational level}     
+#'     \item{\code{hv107.53}}{highest year of education}     
+#'     \item{\code{hv108.53}}{education in single years}     
+#'     \item{\code{hv109.53}}{educational attainment}        
+#'     \item{\code{hv110.53}}{member still in school}        
+#'     \item{\code{hv111.53}}{mother alive              - na}
+#'     \item{\code{hv112.53}}{mother's line number}          
+#'     \item{\code{hv113.53}}{father alive              - na}
+#'     \item{\code{hv114.53}}{father's line number}          
+#'     \item{\code{hv115.53}}{current marital status}        
+#'     \item{\code{hv116.53}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.53}}{eligibility for female intview}
+#'     \item{\code{hv118.53}}{eligibility for male interview}
+#'     \item{\code{hvidx.54}}{line number}                   
+#'     \item{\code{hv101.54}}{relationship to head}          
+#'     \item{\code{hv102.54}}{usual resident}                
+#'     \item{\code{hv103.54}}{slept last night}              
+#'     \item{\code{hv104.54}}{sex of household member}       
+#'     \item{\code{hv105.54}}{age of household members}      
+#'     \item{\code{hv106.54}}{highest educational level}     
+#'     \item{\code{hv107.54}}{highest year of education}     
+#'     \item{\code{hv108.54}}{education in single years}     
+#'     \item{\code{hv109.54}}{educational attainment}        
+#'     \item{\code{hv110.54}}{member still in school}        
+#'     \item{\code{hv111.54}}{mother alive              - na}
+#'     \item{\code{hv112.54}}{mother's line number}          
+#'     \item{\code{hv113.54}}{father alive              - na}
+#'     \item{\code{hv114.54}}{father's line number}          
+#'     \item{\code{hv115.54}}{current marital status}        
+#'     \item{\code{hv116.54}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.54}}{eligibility for female intview}
+#'     \item{\code{hv118.54}}{eligibility for male interview}
+#'     \item{\code{hvidx.55}}{line number}                   
+#'     \item{\code{hv101.55}}{relationship to head}          
+#'     \item{\code{hv102.55}}{usual resident}                
+#'     \item{\code{hv103.55}}{slept last night}              
+#'     \item{\code{hv104.55}}{sex of household member}       
+#'     \item{\code{hv105.55}}{age of household members}      
+#'     \item{\code{hv106.55}}{highest educational level}     
+#'     \item{\code{hv107.55}}{highest year of education}     
+#'     \item{\code{hv108.55}}{education in single years}     
+#'     \item{\code{hv109.55}}{educational attainment}        
+#'     \item{\code{hv110.55}}{member still in school}        
+#'     \item{\code{hv111.55}}{mother alive              - na}
+#'     \item{\code{hv112.55}}{mother's line number}          
+#'     \item{\code{hv113.55}}{father alive              - na}
+#'     \item{\code{hv114.55}}{father's line number}          
+#'     \item{\code{hv115.55}}{current marital status}        
+#'     \item{\code{hv116.55}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.55}}{eligibility for female intview}
+#'     \item{\code{hv118.55}}{eligibility for male interview}
+#'     \item{\code{shdist}}{district}                        
+#'     \item{\code{shclust}}{cluster number}                 
+#'     \item{\code{sh6e}}{has a room cooler}                 
+#'     \item{\code{sh6f}}{has a washing machine}             
+#'     \item{\code{sh6g}}{has a water pump}                  
+#'     \item{\code{sh7c}}{has a car, van or tractor}         
+#'     \item{\code{idxh4.01}}{index to household schedule}   
+#'     \item{\code{shlev.01}}{level of education}            
+#'     \item{\code{shgra.01}}{highest grade completed}       
+#'     \item{\code{idxh4.02}}{index to household schedule}   
+#'     \item{\code{shlev.02}}{level of education}            
+#'     \item{\code{shgra.02}}{highest grade completed}       
+#'     \item{\code{idxh4.03}}{index to household schedule}   
+#'     \item{\code{shlev.03}}{level of education}            
+#'     \item{\code{shgra.03}}{highest grade completed}       
+#'     \item{\code{idxh4.04}}{index to household schedule}   
+#'     \item{\code{shlev.04}}{level of education}            
+#'     \item{\code{shgra.04}}{highest grade completed}       
+#'     \item{\code{idxh4.05}}{index to household schedule}   
+#'     \item{\code{shlev.05}}{level of education}            
+#'     \item{\code{shgra.05}}{highest grade completed}       
+#'     \item{\code{idxh4.06}}{index to household schedule}   
+#'     \item{\code{shlev.06}}{level of education}            
+#'     \item{\code{shgra.06}}{highest grade completed}       
+#'     \item{\code{idxh4.07}}{index to household schedule}   
+#'     \item{\code{shlev.07}}{level of education}            
+#'     \item{\code{shgra.07}}{highest grade completed}       
+#'     \item{\code{idxh4.08}}{index to household schedule}   
+#'     \item{\code{shlev.08}}{level of education}            
+#'     \item{\code{shgra.08}}{highest grade completed}       
+#'     \item{\code{idxh4.09}}{index to household schedule}   
+#'     \item{\code{shlev.09}}{level of education}            
+#'     \item{\code{shgra.09}}{highest grade completed}       
+#'     \item{\code{idxh4.10}}{index to household schedule}   
+#'     \item{\code{shlev.10}}{level of education}            
+#'     \item{\code{shgra.10}}{highest grade completed}       
+#'     \item{\code{idxh4.11}}{index to household schedule}   
+#'     \item{\code{shlev.11}}{level of education}            
+#'     \item{\code{shgra.11}}{highest grade completed}       
+#'     \item{\code{idxh4.12}}{index to household schedule}   
+#'     \item{\code{shlev.12}}{level of education}            
+#'     \item{\code{shgra.12}}{highest grade completed}       
+#'     \item{\code{idxh4.13}}{index to household schedule}   
+#'     \item{\code{shlev.13}}{level of education}            
+#'     \item{\code{shgra.13}}{highest grade completed}       
+#'     \item{\code{idxh4.14}}{index to household schedule}   
+#'     \item{\code{shlev.14}}{level of education}            
+#'     \item{\code{shgra.14}}{highest grade completed}       
+#'     \item{\code{idxh4.15}}{index to household schedule}   
+#'     \item{\code{shlev.15}}{level of education}            
+#'     \item{\code{shgra.15}}{highest grade completed}       
+#'     \item{\code{idxh4.16}}{index to household schedule}   
+#'     \item{\code{shlev.16}}{level of education}            
+#'     \item{\code{shgra.16}}{highest grade completed}       
+#'     \item{\code{idxh4.17}}{index to household schedule}   
+#'     \item{\code{shlev.17}}{level of education}            
+#'     \item{\code{shgra.17}}{highest grade completed}       
+#'     \item{\code{idxh4.18}}{index to household schedule}   
+#'     \item{\code{shlev.18}}{level of education}            
+#'     \item{\code{shgra.18}}{highest grade completed}       
+#'     \item{\code{idxh4.19}}{index to household schedule}   
+#'     \item{\code{shlev.19}}{level of education}            
+#'     \item{\code{shgra.19}}{highest grade completed}       
+#'     \item{\code{idxh4.20}}{index to household schedule}   
+#'     \item{\code{shlev.20}}{level of education}            
+#'     \item{\code{shgra.20}}{highest grade completed}       
+#'     \item{\code{idxh4.21}}{index to household schedule}   
+#'     \item{\code{shlev.21}}{level of education}            
+#'     \item{\code{shgra.21}}{highest grade completed}       
+#'     \item{\code{idxh4.22}}{index to household schedule}   
+#'     \item{\code{shlev.22}}{level of education}            
+#'     \item{\code{shgra.22}}{highest grade completed}       
+#'     \item{\code{idxh4.23}}{index to household schedule}   
+#'     \item{\code{shlev.23}}{level of education}            
+#'     \item{\code{shgra.23}}{highest grade completed}       
+#'     \item{\code{idxh4.24}}{index to household schedule}   
+#'     \item{\code{shlev.24}}{level of education}            
+#'     \item{\code{shgra.24}}{highest grade completed}       
+#'     \item{\code{idxh4.25}}{index to household schedule}   
+#'     \item{\code{shlev.25}}{level of education}            
+#'     \item{\code{shgra.25}}{highest grade completed}       
+#'     \item{\code{idxh4.26}}{index to household schedule}   
+#'     \item{\code{shlev.26}}{level of education}            
+#'     \item{\code{shgra.26}}{highest grade completed}       
+#'     \item{\code{idxh4.27}}{index to household schedule}   
+#'     \item{\code{shlev.27}}{level of education}            
+#'     \item{\code{shgra.27}}{highest grade completed}       
+#'     \item{\code{idxh4.28}}{index to household schedule}   
+#'     \item{\code{shlev.28}}{level of education}            
+#'     \item{\code{shgra.28}}{highest grade completed}       
+#'     \item{\code{idxh4.29}}{index to household schedule}   
+#'     \item{\code{shlev.29}}{level of education}            
+#'     \item{\code{shgra.29}}{highest grade completed}       
+#'     \item{\code{idxh4.30}}{index to household schedule}   
+#'     \item{\code{shlev.30}}{level of education}            
+#'     \item{\code{shgra.30}}{highest grade completed}       
+#'     \item{\code{idxh4.31}}{index to household schedule}   
+#'     \item{\code{shlev.31}}{level of education}            
+#'     \item{\code{shgra.31}}{highest grade completed}       
+#'     \item{\code{idxh4.32}}{index to household schedule}   
+#'     \item{\code{shlev.32}}{level of education}            
+#'     \item{\code{shgra.32}}{highest grade completed}       
+#'     \item{\code{idxh4.33}}{index to household schedule}   
+#'     \item{\code{shlev.33}}{level of education}            
+#'     \item{\code{shgra.33}}{highest grade completed}       
+#'     \item{\code{idxh4.34}}{index to household schedule}   
+#'     \item{\code{shlev.34}}{level of education}            
+#'     \item{\code{shgra.34}}{highest grade completed}       
+#'     \item{\code{idxh4.35}}{index to household schedule}   
+#'     \item{\code{shlev.35}}{level of education}            
+#'     \item{\code{shgra.35}}{highest grade completed}       
+#'     \item{\code{idxh4.36}}{index to household schedule}   
+#'     \item{\code{shlev.36}}{level of education}            
+#'     \item{\code{shgra.36}}{highest grade completed}       
+#'     \item{\code{idxh4.37}}{index to household schedule}   
+#'     \item{\code{shlev.37}}{level of education}            
+#'     \item{\code{shgra.37}}{highest grade completed}       
+#'     \item{\code{idxh4.38}}{index to household schedule}   
+#'     \item{\code{shlev.38}}{level of education}            
+#'     \item{\code{shgra.38}}{highest grade completed}       
+#'     \item{\code{idxh4.39}}{index to household schedule}   
+#'     \item{\code{shlev.39}}{level of education}            
+#'     \item{\code{shgra.39}}{highest grade completed}       
+#'     \item{\code{idxh4.40}}{index to household schedule}   
+#'     \item{\code{shlev.40}}{level of education}            
+#'     \item{\code{shgra.40}}{highest grade completed}       
+#'     \item{\code{idxh4.41}}{index to household schedule}   
+#'     \item{\code{shlev.41}}{level of education}            
+#'     \item{\code{shgra.41}}{highest grade completed}       
+#'     \item{\code{idxh4.42}}{index to household schedule}   
+#'     \item{\code{shlev.42}}{level of education}            
+#'     \item{\code{shgra.42}}{highest grade completed}       
+#'     \item{\code{idxh4.43}}{index to household schedule}   
+#'     \item{\code{shlev.43}}{level of education}            
+#'     \item{\code{shgra.43}}{highest grade completed}       
+#'     \item{\code{idxh4.44}}{index to household schedule}   
+#'     \item{\code{shlev.44}}{level of education}            
+#'     \item{\code{shgra.44}}{highest grade completed}       
+#'     \item{\code{idxh4.45}}{index to household schedule}   
+#'     \item{\code{shlev.45}}{level of education}            
+#'     \item{\code{shgra.45}}{highest grade completed}       
+#'     \item{\code{idxh4.46}}{index to household schedule}   
+#'     \item{\code{shlev.46}}{level of education}            
+#'     \item{\code{shgra.46}}{highest grade completed}       
+#'     \item{\code{idxh4.47}}{index to household schedule}   
+#'     \item{\code{shlev.47}}{level of education}            
+#'     \item{\code{shgra.47}}{highest grade completed}       
+#'     \item{\code{idxh4.48}}{index to household schedule}   
+#'     \item{\code{shlev.48}}{level of education}            
+#'     \item{\code{shgra.48}}{highest grade completed}       
+#'     \item{\code{idxh4.49}}{index to household schedule}   
+#'     \item{\code{shlev.49}}{level of education}            
+#'     \item{\code{shgra.49}}{highest grade completed}       
+#'     \item{\code{idxh4.50}}{index to household schedule}   
+#'     \item{\code{shlev.50}}{level of education}            
+#'     \item{\code{shgra.50}}{highest grade completed}       
+#'     \item{\code{idxh4.51}}{index to household schedule}   
+#'     \item{\code{shlev.51}}{level of education}            
+#'     \item{\code{shgra.51}}{highest grade completed}       
+#'     \item{\code{idxh4.52}}{index to household schedule}   
+#'     \item{\code{shlev.52}}{level of education}            
+#'     \item{\code{shgra.52}}{highest grade completed}       
+#'     \item{\code{idxh4.53}}{index to household schedule}   
+#'     \item{\code{shlev.53}}{level of education}            
+#'     \item{\code{shgra.53}}{highest grade completed}       
+#'     \item{\code{idxh4.54}}{index to household schedule}   
+#'     \item{\code{shlev.54}}{level of education}            
+#'     \item{\code{shgra.54}}{highest grade completed}       
+#'     \item{\code{idxh4.55}}{index to household schedule}   
+#'     \item{\code{shlev.55}}{level of education}            
+#'     \item{\code{shgra.55}}{highest grade completed}       
+#'     \item{\code{hhid}}{case identification}               
+#'     \item{\code{hv000}}{country code and phase}           
+#'     \item{\code{hv001}}{cluster number}                   
+#'     \item{\code{hv002}}{household number}                 
+#'     \item{\code{hv003}}{respondent's line number}         
+#'     \item{\code{hv004}}{ultimate area unit}               
+#'     \item{\code{hv005}}{sample weight}                    
+#'     \item{\code{hv006}}{month of interview}               
+#'     \item{\code{hv007}}{year of interview}                
+#'     \item{\code{hv008}}{date of interview (cmc)}          
+#'     \item{\code{hv009}}{number of household members}      
+#'     \item{\code{hv010}}{number of eligible women in hh}   
+#'     \item{\code{hv011}}{number of eligible men in hh}     
+#'     \item{\code{hv012}}{number of de jure members}        
+#'     \item{\code{hv013}}{number of de facto members}       
+#'     \item{\code{hv014}}{number of children 5 and under}   
+#'     \item{\code{hv015}}{result of household interview}    
+#'     \item{\code{hv016}}{day of interview}                 
+#'     \item{\code{hv017}}{number of visits}                 
+#'     \item{\code{hv018}}{interviewer identification}       
+#'     \item{\code{hv019}}{keyer identification}             
+#'     \item{\code{hv020}}{ever-married sample}              
+#'     \item{\code{hv021}}{primary sampling unit}            
+#'     \item{\code{hv022}}{sample stratum number}            
+#'     \item{\code{hv023}}{sample domain}                    
+#'     \item{\code{hv024}}{region}                           
+#'     \item{\code{hv025}}{type of place of residence}       
+#'     \item{\code{hv026}}{place of residence}               
+#'     \item{\code{hv027}}{selection for male/husb. int.}    
+#'     \item{\code{hv028}}{sample weight for male subsamp}   
+#'     \item{\code{hv201}}{source of drinking water}         
+#'     \item{\code{hv202}}{source of non-drinking water}     
+#'     \item{\code{hv203}}{same source of water}             
+#'     \item{\code{hv204}}{time to get to water source}      
+#'     \item{\code{hv205}}{type of toilet facility}          
+#'     \item{\code{hv206}}{has electricity}                  
+#'     \item{\code{hv207}}{has radio}                        
+#'     \item{\code{hv208}}{has television}                   
+#'     \item{\code{hv209}}{has refrigerator}                 
+#'     \item{\code{hv210}}{has bicycle}                      
+#'     \item{\code{hv211}}{has motorcycle}                   
+#'     \item{\code{hv212}}{has car                   - na}   
+#'     \item{\code{hv213}}{main floor material       - na}   
+#'     \item{\code{hv214}}{main wall material}               
+#'     \item{\code{hv215}}{main roof material}               
+#'     \item{\code{hv216}}{rooms for sleeping}               
+#'     \item{\code{hv217}}{relationship structure}           
+#'     \item{\code{hv218}}{line number of head of househ.}   
+#'     \item{\code{hv219}}{sex of head of household}         
+#'     \item{\code{hv220}}{age of head of household}         
+#'     \item{\code{hvidx.01}}{line number}                   
+#'     \item{\code{hv101.01}}{relationship to head}          
+#'     \item{\code{hv102.01}}{usual resident}                
+#'     \item{\code{hv103.01}}{slept last night}              
+#'     \item{\code{hv104.01}}{sex of household member}       
+#'     \item{\code{hv105.01}}{age of household members}      
+#'     \item{\code{hv106.01}}{highest educational level}     
+#'     \item{\code{hv107.01}}{highest year of education}     
+#'     \item{\code{hv108.01}}{education in single years}     
+#'     \item{\code{hv109.01}}{educational attainment}        
+#'     \item{\code{hv110.01}}{member still in school}        
+#'     \item{\code{hv111.01}}{mother alive              - na}
+#'     \item{\code{hv112.01}}{mother's line number}          
+#'     \item{\code{hv113.01}}{father alive              - na}
+#'     \item{\code{hv114.01}}{father's line number}          
+#'     \item{\code{hv115.01}}{current marital status}        
+#'     \item{\code{hv116.01}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.01}}{eligibility for female intview}
+#'     \item{\code{hv118.01}}{eligibility for male interview}
+#'     \item{\code{hvidx.02}}{line number}                   
+#'     \item{\code{hv101.02}}{relationship to head}          
+#'     \item{\code{hv102.02}}{usual resident}                
+#'     \item{\code{hv103.02}}{slept last night}              
+#'     \item{\code{hv104.02}}{sex of household member}       
+#'     \item{\code{hv105.02}}{age of household members}      
+#'     \item{\code{hv106.02}}{highest educational level}     
+#'     \item{\code{hv107.02}}{highest year of education}     
+#'     \item{\code{hv108.02}}{education in single years}     
+#'     \item{\code{hv109.02}}{educational attainment}        
+#'     \item{\code{hv110.02}}{member still in school}        
+#'     \item{\code{hv111.02}}{mother alive              - na}
+#'     \item{\code{hv112.02}}{mother's line number}          
+#'     \item{\code{hv113.02}}{father alive              - na}
+#'     \item{\code{hv114.02}}{father's line number}          
+#'     \item{\code{hv115.02}}{current marital status}        
+#'     \item{\code{hv116.02}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.02}}{eligibility for female intview}
+#'     \item{\code{hv118.02}}{eligibility for male interview}
+#'     \item{\code{hvidx.03}}{line number}                   
+#'     \item{\code{hv101.03}}{relationship to head}          
+#'     \item{\code{hv102.03}}{usual resident}                
+#'     \item{\code{hv103.03}}{slept last night}              
+#'     \item{\code{hv104.03}}{sex of household member}       
+#'     \item{\code{hv105.03}}{age of household members}      
+#'     \item{\code{hv106.03}}{highest educational level}     
+#'     \item{\code{hv107.03}}{highest year of education}     
+#'     \item{\code{hv108.03}}{education in single years}     
+#'     \item{\code{hv109.03}}{educational attainment}        
+#'     \item{\code{hv110.03}}{member still in school}        
+#'     \item{\code{hv111.03}}{mother alive              - na}
+#'     \item{\code{hv112.03}}{mother's line number}          
+#'     \item{\code{hv113.03}}{father alive              - na}
+#'     \item{\code{hv114.03}}{father's line number}          
+#'     \item{\code{hv115.03}}{current marital status}        
+#'     \item{\code{hv116.03}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.03}}{eligibility for female intview}
+#'     \item{\code{hv118.03}}{eligibility for male interview}
+#'     \item{\code{hvidx.04}}{line number}                   
+#'     \item{\code{hv101.04}}{relationship to head}          
+#'     \item{\code{hv102.04}}{usual resident}                
+#'     \item{\code{hv103.04}}{slept last night}              
+#'     \item{\code{hv104.04}}{sex of household member}       
+#'     \item{\code{hv105.04}}{age of household members}      
+#'     \item{\code{hv106.04}}{highest educational level}     
+#'     \item{\code{hv107.04}}{highest year of education}     
+#'     \item{\code{hv108.04}}{education in single years}     
+#'     \item{\code{hv109.04}}{educational attainment}        
+#'     \item{\code{hv110.04}}{member still in school}        
+#'     \item{\code{hv111.04}}{mother alive              - na}
+#'     \item{\code{hv112.04}}{mother's line number}          
+#'     \item{\code{hv113.04}}{father alive              - na}
+#'     \item{\code{hv114.04}}{father's line number}          
+#'     \item{\code{hv115.04}}{current marital status}        
+#'     \item{\code{hv116.04}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.04}}{eligibility for female intview}
+#'     \item{\code{hv118.04}}{eligibility for male interview}
+#'     \item{\code{hvidx.05}}{line number}                   
+#'     \item{\code{hv101.05}}{relationship to head}          
+#'     \item{\code{hv102.05}}{usual resident}                
+#'     \item{\code{hv103.05}}{slept last night}              
+#'     \item{\code{hv104.05}}{sex of household member}       
+#'     \item{\code{hv105.05}}{age of household members}      
+#'     \item{\code{hv106.05}}{highest educational level}     
+#'     \item{\code{hv107.05}}{highest year of education}     
+#'     \item{\code{hv108.05}}{education in single years}     
+#'     \item{\code{hv109.05}}{educational attainment}        
+#'     \item{\code{hv110.05}}{member still in school}        
+#'     \item{\code{hv111.05}}{mother alive              - na}
+#'     \item{\code{hv112.05}}{mother's line number}          
+#'     \item{\code{hv113.05}}{father alive              - na}
+#'     \item{\code{hv114.05}}{father's line number}          
+#'     \item{\code{hv115.05}}{current marital status}        
+#'     \item{\code{hv116.05}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.05}}{eligibility for female intview}
+#'     \item{\code{hv118.05}}{eligibility for male interview}
+#'     \item{\code{hvidx.06}}{line number}                   
+#'     \item{\code{hv101.06}}{relationship to head}          
+#'     \item{\code{hv102.06}}{usual resident}                
+#'     \item{\code{hv103.06}}{slept last night}              
+#'     \item{\code{hv104.06}}{sex of household member}       
+#'     \item{\code{hv105.06}}{age of household members}      
+#'     \item{\code{hv106.06}}{highest educational level}     
+#'     \item{\code{hv107.06}}{highest year of education}     
+#'     \item{\code{hv108.06}}{education in single years}     
+#'     \item{\code{hv109.06}}{educational attainment}        
+#'     \item{\code{hv110.06}}{member still in school}        
+#'     \item{\code{hv111.06}}{mother alive              - na}
+#'     \item{\code{hv112.06}}{mother's line number}          
+#'     \item{\code{hv113.06}}{father alive              - na}
+#'     \item{\code{hv114.06}}{father's line number}          
+#'     \item{\code{hv115.06}}{current marital status}        
+#'     \item{\code{hv116.06}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.06}}{eligibility for female intview}
+#'     \item{\code{hv118.06}}{eligibility for male interview}
+#'     \item{\code{hvidx.07}}{line number}                   
+#'     \item{\code{hv101.07}}{relationship to head}          
+#'     \item{\code{hv102.07}}{usual resident}                
+#'     \item{\code{hv103.07}}{slept last night}              
+#'     \item{\code{hv104.07}}{sex of household member}       
+#'     \item{\code{hv105.07}}{age of household members}      
+#'     \item{\code{hv106.07}}{highest educational level}     
+#'     \item{\code{hv107.07}}{highest year of education}     
+#'     \item{\code{hv108.07}}{education in single years}     
+#'     \item{\code{hv109.07}}{educational attainment}        
+#'     \item{\code{hv110.07}}{member still in school}        
+#'     \item{\code{hv111.07}}{mother alive              - na}
+#'     \item{\code{hv112.07}}{mother's line number}          
+#'     \item{\code{hv113.07}}{father alive              - na}
+#'     \item{\code{hv114.07}}{father's line number}          
+#'     \item{\code{hv115.07}}{current marital status}        
+#'     \item{\code{hv116.07}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.07}}{eligibility for female intview}
+#'     \item{\code{hv118.07}}{eligibility for male interview}
+#'     \item{\code{hvidx.08}}{line number}                   
+#'     \item{\code{hv101.08}}{relationship to head}          
+#'     \item{\code{hv102.08}}{usual resident}                
+#'     \item{\code{hv103.08}}{slept last night}              
+#'     \item{\code{hv104.08}}{sex of household member}       
+#'     \item{\code{hv105.08}}{age of household members}      
+#'     \item{\code{hv106.08}}{highest educational level}     
+#'     \item{\code{hv107.08}}{highest year of education}     
+#'     \item{\code{hv108.08}}{education in single years}     
+#'     \item{\code{hv109.08}}{educational attainment}        
+#'     \item{\code{hv110.08}}{member still in school}        
+#'     \item{\code{hv111.08}}{mother alive              - na}
+#'     \item{\code{hv112.08}}{mother's line number}          
+#'     \item{\code{hv113.08}}{father alive              - na}
+#'     \item{\code{hv114.08}}{father's line number}          
+#'     \item{\code{hv115.08}}{current marital status}        
+#'     \item{\code{hv116.08}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.08}}{eligibility for female intview}
+#'     \item{\code{hv118.08}}{eligibility for male interview}
+#'     \item{\code{hvidx.09}}{line number}                   
+#'     \item{\code{hv101.09}}{relationship to head}          
+#'     \item{\code{hv102.09}}{usual resident}                
+#'     \item{\code{hv103.09}}{slept last night}              
+#'     \item{\code{hv104.09}}{sex of household member}       
+#'     \item{\code{hv105.09}}{age of household members}      
+#'     \item{\code{hv106.09}}{highest educational level}     
+#'     \item{\code{hv107.09}}{highest year of education}     
+#'     \item{\code{hv108.09}}{education in single years}     
+#'     \item{\code{hv109.09}}{educational attainment}        
+#'     \item{\code{hv110.09}}{member still in school}        
+#'     \item{\code{hv111.09}}{mother alive              - na}
+#'     \item{\code{hv112.09}}{mother's line number}          
+#'     \item{\code{hv113.09}}{father alive              - na}
+#'     \item{\code{hv114.09}}{father's line number}          
+#'     \item{\code{hv115.09}}{current marital status}        
+#'     \item{\code{hv116.09}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.09}}{eligibility for female intview}
+#'     \item{\code{hv118.09}}{eligibility for male interview}
+#'     \item{\code{hvidx.10}}{line number}                   
+#'     \item{\code{hv101.10}}{relationship to head}          
+#'     \item{\code{hv102.10}}{usual resident}                
+#'     \item{\code{hv103.10}}{slept last night}              
+#'     \item{\code{hv104.10}}{sex of household member}       
+#'     \item{\code{hv105.10}}{age of household members}      
+#'     \item{\code{hv106.10}}{highest educational level}     
+#'     \item{\code{hv107.10}}{highest year of education}     
+#'     \item{\code{hv108.10}}{education in single years}     
+#'     \item{\code{hv109.10}}{educational attainment}        
+#'     \item{\code{hv110.10}}{member still in school}        
+#'     \item{\code{hv111.10}}{mother alive              - na}
+#'     \item{\code{hv112.10}}{mother's line number}          
+#'     \item{\code{hv113.10}}{father alive              - na}
+#'     \item{\code{hv114.10}}{father's line number}          
+#'     \item{\code{hv115.10}}{current marital status}        
+#'     \item{\code{hv116.10}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.10}}{eligibility for female intview}
+#'     \item{\code{hv118.10}}{eligibility for male interview}
+#'     \item{\code{hvidx.11}}{line number}                   
+#'     \item{\code{hv101.11}}{relationship to head}          
+#'     \item{\code{hv102.11}}{usual resident}                
+#'     \item{\code{hv103.11}}{slept last night}              
+#'     \item{\code{hv104.11}}{sex of household member}       
+#'     \item{\code{hv105.11}}{age of household members}      
+#'     \item{\code{hv106.11}}{highest educational level}     
+#'     \item{\code{hv107.11}}{highest year of education}     
+#'     \item{\code{hv108.11}}{education in single years}     
+#'     \item{\code{hv109.11}}{educational attainment}        
+#'     \item{\code{hv110.11}}{member still in school}        
+#'     \item{\code{hv111.11}}{mother alive              - na}
+#'     \item{\code{hv112.11}}{mother's line number}          
+#'     \item{\code{hv113.11}}{father alive              - na}
+#'     \item{\code{hv114.11}}{father's line number}          
+#'     \item{\code{hv115.11}}{current marital status}        
+#'     \item{\code{hv116.11}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.11}}{eligibility for female intview}
+#'     \item{\code{hv118.11}}{eligibility for male interview}
+#'     \item{\code{hvidx.12}}{line number}                   
+#'     \item{\code{hv101.12}}{relationship to head}          
+#'     \item{\code{hv102.12}}{usual resident}                
+#'     \item{\code{hv103.12}}{slept last night}              
+#'     \item{\code{hv104.12}}{sex of household member}       
+#'     \item{\code{hv105.12}}{age of household members}      
+#'     \item{\code{hv106.12}}{highest educational level}     
+#'     \item{\code{hv107.12}}{highest year of education}     
+#'     \item{\code{hv108.12}}{education in single years}     
+#'     \item{\code{hv109.12}}{educational attainment}        
+#'     \item{\code{hv110.12}}{member still in school}        
+#'     \item{\code{hv111.12}}{mother alive              - na}
+#'     \item{\code{hv112.12}}{mother's line number}          
+#'     \item{\code{hv113.12}}{father alive              - na}
+#'     \item{\code{hv114.12}}{father's line number}          
+#'     \item{\code{hv115.12}}{current marital status}        
+#'     \item{\code{hv116.12}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.12}}{eligibility for female intview}
+#'     \item{\code{hv118.12}}{eligibility for male interview}
+#'     \item{\code{hvidx.13}}{line number}                   
+#'     \item{\code{hv101.13}}{relationship to head}          
+#'     \item{\code{hv102.13}}{usual resident}                
+#'     \item{\code{hv103.13}}{slept last night}              
+#'     \item{\code{hv104.13}}{sex of household member}       
+#'     \item{\code{hv105.13}}{age of household members}      
+#'     \item{\code{hv106.13}}{highest educational level}     
+#'     \item{\code{hv107.13}}{highest year of education}     
+#'     \item{\code{hv108.13}}{education in single years}     
+#'     \item{\code{hv109.13}}{educational attainment}        
+#'     \item{\code{hv110.13}}{member still in school}        
+#'     \item{\code{hv111.13}}{mother alive              - na}
+#'     \item{\code{hv112.13}}{mother's line number}          
+#'     \item{\code{hv113.13}}{father alive              - na}
+#'     \item{\code{hv114.13}}{father's line number}          
+#'     \item{\code{hv115.13}}{current marital status}        
+#'     \item{\code{hv116.13}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.13}}{eligibility for female intview}
+#'     \item{\code{hv118.13}}{eligibility for male interview}
+#'     \item{\code{hvidx.14}}{line number}                   
+#'     \item{\code{hv101.14}}{relationship to head}          
+#'     \item{\code{hv102.14}}{usual resident}                
+#'     \item{\code{hv103.14}}{slept last night}              
+#'     \item{\code{hv104.14}}{sex of household member}       
+#'     \item{\code{hv105.14}}{age of household members}      
+#'     \item{\code{hv106.14}}{highest educational level}     
+#'     \item{\code{hv107.14}}{highest year of education}     
+#'     \item{\code{hv108.14}}{education in single years}     
+#'     \item{\code{hv109.14}}{educational attainment}        
+#'     \item{\code{hv110.14}}{member still in school}        
+#'     \item{\code{hv111.14}}{mother alive              - na}
+#'     \item{\code{hv112.14}}{mother's line number}          
+#'     \item{\code{hv113.14}}{father alive              - na}
+#'     \item{\code{hv114.14}}{father's line number}          
+#'     \item{\code{hv115.14}}{current marital status}        
+#'     \item{\code{hv116.14}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.14}}{eligibility for female intview}
+#'     \item{\code{hv118.14}}{eligibility for male interview}
+#'     \item{\code{hvidx.15}}{line number}                   
+#'     \item{\code{hv101.15}}{relationship to head}          
+#'     \item{\code{hv102.15}}{usual resident}                
+#'     \item{\code{hv103.15}}{slept last night}              
+#'     \item{\code{hv104.15}}{sex of household member}       
+#'     \item{\code{hv105.15}}{age of household members}      
+#'     \item{\code{hv106.15}}{highest educational level}     
+#'     \item{\code{hv107.15}}{highest year of education}     
+#'     \item{\code{hv108.15}}{education in single years}     
+#'     \item{\code{hv109.15}}{educational attainment}        
+#'     \item{\code{hv110.15}}{member still in school}        
+#'     \item{\code{hv111.15}}{mother alive              - na}
+#'     \item{\code{hv112.15}}{mother's line number}          
+#'     \item{\code{hv113.15}}{father alive              - na}
+#'     \item{\code{hv114.15}}{father's line number}          
+#'     \item{\code{hv115.15}}{current marital status}        
+#'     \item{\code{hv116.15}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.15}}{eligibility for female intview}
+#'     \item{\code{hv118.15}}{eligibility for male interview}
+#'     \item{\code{hvidx.16}}{line number}                   
+#'     \item{\code{hv101.16}}{relationship to head}          
+#'     \item{\code{hv102.16}}{usual resident}                
+#'     \item{\code{hv103.16}}{slept last night}              
+#'     \item{\code{hv104.16}}{sex of household member}       
+#'     \item{\code{hv105.16}}{age of household members}      
+#'     \item{\code{hv106.16}}{highest educational level}     
+#'     \item{\code{hv107.16}}{highest year of education}     
+#'     \item{\code{hv108.16}}{education in single years}     
+#'     \item{\code{hv109.16}}{educational attainment}        
+#'     \item{\code{hv110.16}}{member still in school}        
+#'     \item{\code{hv111.16}}{mother alive              - na}
+#'     \item{\code{hv112.16}}{mother's line number}          
+#'     \item{\code{hv113.16}}{father alive              - na}
+#'     \item{\code{hv114.16}}{father's line number}          
+#'     \item{\code{hv115.16}}{current marital status}        
+#'     \item{\code{hv116.16}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.16}}{eligibility for female intview}
+#'     \item{\code{hv118.16}}{eligibility for male interview}
+#'     \item{\code{hvidx.17}}{line number}                   
+#'     \item{\code{hv101.17}}{relationship to head}          
+#'     \item{\code{hv102.17}}{usual resident}                
+#'     \item{\code{hv103.17}}{slept last night}              
+#'     \item{\code{hv104.17}}{sex of household member}       
+#'     \item{\code{hv105.17}}{age of household members}      
+#'     \item{\code{hv106.17}}{highest educational level}     
+#'     \item{\code{hv107.17}}{highest year of education}     
+#'     \item{\code{hv108.17}}{education in single years}     
+#'     \item{\code{hv109.17}}{educational attainment}        
+#'     \item{\code{hv110.17}}{member still in school}        
+#'     \item{\code{hv111.17}}{mother alive              - na}
+#'     \item{\code{hv112.17}}{mother's line number}          
+#'     \item{\code{hv113.17}}{father alive              - na}
+#'     \item{\code{hv114.17}}{father's line number}          
+#'     \item{\code{hv115.17}}{current marital status}        
+#'     \item{\code{hv116.17}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.17}}{eligibility for female intview}
+#'     \item{\code{hv118.17}}{eligibility for male interview}
+#'     \item{\code{hvidx.18}}{line number}                   
+#'     \item{\code{hv101.18}}{relationship to head}          
+#'     \item{\code{hv102.18}}{usual resident}                
+#'     \item{\code{hv103.18}}{slept last night}              
+#'     \item{\code{hv104.18}}{sex of household member}       
+#'     \item{\code{hv105.18}}{age of household members}      
+#'     \item{\code{hv106.18}}{highest educational level}     
+#'     \item{\code{hv107.18}}{highest year of education}     
+#'     \item{\code{hv108.18}}{education in single years}     
+#'     \item{\code{hv109.18}}{educational attainment}        
+#'     \item{\code{hv110.18}}{member still in school}        
+#'     \item{\code{hv111.18}}{mother alive              - na}
+#'     \item{\code{hv112.18}}{mother's line number}          
+#'     \item{\code{hv113.18}}{father alive              - na}
+#'     \item{\code{hv114.18}}{father's line number}          
+#'     \item{\code{hv115.18}}{current marital status}        
+#'     \item{\code{hv116.18}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.18}}{eligibility for female intview}
+#'     \item{\code{hv118.18}}{eligibility for male interview}
+#'     \item{\code{hvidx.19}}{line number}                   
+#'     \item{\code{hv101.19}}{relationship to head}          
+#'     \item{\code{hv102.19}}{usual resident}                
+#'     \item{\code{hv103.19}}{slept last night}              
+#'     \item{\code{hv104.19}}{sex of household member}       
+#'     \item{\code{hv105.19}}{age of household members}      
+#'     \item{\code{hv106.19}}{highest educational level}     
+#'     \item{\code{hv107.19}}{highest year of education}     
+#'     \item{\code{hv108.19}}{education in single years}     
+#'     \item{\code{hv109.19}}{educational attainment}        
+#'     \item{\code{hv110.19}}{member still in school}        
+#'     \item{\code{hv111.19}}{mother alive              - na}
+#'     \item{\code{hv112.19}}{mother's line number}          
+#'     \item{\code{hv113.19}}{father alive              - na}
+#'     \item{\code{hv114.19}}{father's line number}          
+#'     \item{\code{hv115.19}}{current marital status}        
+#'     \item{\code{hv116.19}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.19}}{eligibility for female intview}
+#'     \item{\code{hv118.19}}{eligibility for male interview}
+#'     \item{\code{hvidx.20}}{line number}                   
+#'     \item{\code{hv101.20}}{relationship to head}          
+#'     \item{\code{hv102.20}}{usual resident}                
+#'     \item{\code{hv103.20}}{slept last night}              
+#'     \item{\code{hv104.20}}{sex of household member}       
+#'     \item{\code{hv105.20}}{age of household members}      
+#'     \item{\code{hv106.20}}{highest educational level}     
+#'     \item{\code{hv107.20}}{highest year of education}     
+#'     \item{\code{hv108.20}}{education in single years}     
+#'     \item{\code{hv109.20}}{educational attainment}        
+#'     \item{\code{hv110.20}}{member still in school}        
+#'     \item{\code{hv111.20}}{mother alive              - na}
+#'     \item{\code{hv112.20}}{mother's line number}          
+#'     \item{\code{hv113.20}}{father alive              - na}
+#'     \item{\code{hv114.20}}{father's line number}          
+#'     \item{\code{hv115.20}}{current marital status}        
+#'     \item{\code{hv116.20}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.20}}{eligibility for female intview}
+#'     \item{\code{hv118.20}}{eligibility for male interview}
+#'     \item{\code{hvidx.21}}{line number}                   
+#'     \item{\code{hv101.21}}{relationship to head}          
+#'     \item{\code{hv102.21}}{usual resident}                
+#'     \item{\code{hv103.21}}{slept last night}              
+#'     \item{\code{hv104.21}}{sex of household member}       
+#'     \item{\code{hv105.21}}{age of household members}      
+#'     \item{\code{hv106.21}}{highest educational level}     
+#'     \item{\code{hv107.21}}{highest year of education}     
+#'     \item{\code{hv108.21}}{education in single years}     
+#'     \item{\code{hv109.21}}{educational attainment}        
+#'     \item{\code{hv110.21}}{member still in school}        
+#'     \item{\code{hv111.21}}{mother alive              - na}
+#'     \item{\code{hv112.21}}{mother's line number}          
+#'     \item{\code{hv113.21}}{father alive              - na}
+#'     \item{\code{hv114.21}}{father's line number}          
+#'     \item{\code{hv115.21}}{current marital status}        
+#'     \item{\code{hv116.21}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.21}}{eligibility for female intview}
+#'     \item{\code{hv118.21}}{eligibility for male interview}
+#'     \item{\code{hvidx.22}}{line number}                   
+#'     \item{\code{hv101.22}}{relationship to head}          
+#'     \item{\code{hv102.22}}{usual resident}                
+#'     \item{\code{hv103.22}}{slept last night}              
+#'     \item{\code{hv104.22}}{sex of household member}       
+#'     \item{\code{hv105.22}}{age of household members}      
+#'     \item{\code{hv106.22}}{highest educational level}     
+#'     \item{\code{hv107.22}}{highest year of education}     
+#'     \item{\code{hv108.22}}{education in single years}     
+#'     \item{\code{hv109.22}}{educational attainment}        
+#'     \item{\code{hv110.22}}{member still in school}        
+#'     \item{\code{hv111.22}}{mother alive              - na}
+#'     \item{\code{hv112.22}}{mother's line number}          
+#'     \item{\code{hv113.22}}{father alive              - na}
+#'     \item{\code{hv114.22}}{father's line number}          
+#'     \item{\code{hv115.22}}{current marital status}        
+#'     \item{\code{hv116.22}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.22}}{eligibility for female intview}
+#'     \item{\code{hv118.22}}{eligibility for male interview}
+#'     \item{\code{hvidx.23}}{line number}                   
+#'     \item{\code{hv101.23}}{relationship to head}          
+#'     \item{\code{hv102.23}}{usual resident}                
+#'     \item{\code{hv103.23}}{slept last night}              
+#'     \item{\code{hv104.23}}{sex of household member}       
+#'     \item{\code{hv105.23}}{age of household members}      
+#'     \item{\code{hv106.23}}{highest educational level}     
+#'     \item{\code{hv107.23}}{highest year of education}     
+#'     \item{\code{hv108.23}}{education in single years}     
+#'     \item{\code{hv109.23}}{educational attainment}        
+#'     \item{\code{hv110.23}}{member still in school}        
+#'     \item{\code{hv111.23}}{mother alive              - na}
+#'     \item{\code{hv112.23}}{mother's line number}          
+#'     \item{\code{hv113.23}}{father alive              - na}
+#'     \item{\code{hv114.23}}{father's line number}          
+#'     \item{\code{hv115.23}}{current marital status}        
+#'     \item{\code{hv116.23}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.23}}{eligibility for female intview}
+#'     \item{\code{hv118.23}}{eligibility for male interview}
+#'     \item{\code{hvidx.24}}{line number}                   
+#'     \item{\code{hv101.24}}{relationship to head}          
+#'     \item{\code{hv102.24}}{usual resident}                
+#'     \item{\code{hv103.24}}{slept last night}              
+#'     \item{\code{hv104.24}}{sex of household member}       
+#'     \item{\code{hv105.24}}{age of household members}      
+#'     \item{\code{hv106.24}}{highest educational level}     
+#'     \item{\code{hv107.24}}{highest year of education}     
+#'     \item{\code{hv108.24}}{education in single years}     
+#'     \item{\code{hv109.24}}{educational attainment}        
+#'     \item{\code{hv110.24}}{member still in school}        
+#'     \item{\code{hv111.24}}{mother alive              - na}
+#'     \item{\code{hv112.24}}{mother's line number}          
+#'     \item{\code{hv113.24}}{father alive              - na}
+#'     \item{\code{hv114.24}}{father's line number}          
+#'     \item{\code{hv115.24}}{current marital status}        
+#'     \item{\code{hv116.24}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.24}}{eligibility for female intview}
+#'     \item{\code{hv118.24}}{eligibility for male interview}
+#'     \item{\code{hvidx.25}}{line number}                   
+#'     \item{\code{hv101.25}}{relationship to head}          
+#'     \item{\code{hv102.25}}{usual resident}                
+#'     \item{\code{hv103.25}}{slept last night}              
+#'     \item{\code{hv104.25}}{sex of household member}       
+#'     \item{\code{hv105.25}}{age of household members}      
+#'     \item{\code{hv106.25}}{highest educational level}     
+#'     \item{\code{hv107.25}}{highest year of education}     
+#'     \item{\code{hv108.25}}{education in single years}     
+#'     \item{\code{hv109.25}}{educational attainment}        
+#'     \item{\code{hv110.25}}{member still in school}        
+#'     \item{\code{hv111.25}}{mother alive              - na}
+#'     \item{\code{hv112.25}}{mother's line number}          
+#'     \item{\code{hv113.25}}{father alive              - na}
+#'     \item{\code{hv114.25}}{father's line number}          
+#'     \item{\code{hv115.25}}{current marital status}        
+#'     \item{\code{hv116.25}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.25}}{eligibility for female intview}
+#'     \item{\code{hv118.25}}{eligibility for male interview}
+#'     \item{\code{hvidx.26}}{line number}                   
+#'     \item{\code{hv101.26}}{relationship to head}          
+#'     \item{\code{hv102.26}}{usual resident}                
+#'     \item{\code{hv103.26}}{slept last night}              
+#'     \item{\code{hv104.26}}{sex of household member}       
+#'     \item{\code{hv105.26}}{age of household members}      
+#'     \item{\code{hv106.26}}{highest educational level}     
+#'     \item{\code{hv107.26}}{highest year of education}     
+#'     \item{\code{hv108.26}}{education in single years}     
+#'     \item{\code{hv109.26}}{educational attainment}        
+#'     \item{\code{hv110.26}}{member still in school}        
+#'     \item{\code{hv111.26}}{mother alive              - na}
+#'     \item{\code{hv112.26}}{mother's line number}          
+#'     \item{\code{hv113.26}}{father alive              - na}
+#'     \item{\code{hv114.26}}{father's line number}          
+#'     \item{\code{hv115.26}}{current marital status}        
+#'     \item{\code{hv116.26}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.26}}{eligibility for female intview}
+#'     \item{\code{hv118.26}}{eligibility for male interview}
+#'     \item{\code{hvidx.27}}{line number}                   
+#'     \item{\code{hv101.27}}{relationship to head}          
+#'     \item{\code{hv102.27}}{usual resident}                
+#'     \item{\code{hv103.27}}{slept last night}              
+#'     \item{\code{hv104.27}}{sex of household member}       
+#'     \item{\code{hv105.27}}{age of household members}      
+#'     \item{\code{hv106.27}}{highest educational level}     
+#'     \item{\code{hv107.27}}{highest year of education}     
+#'     \item{\code{hv108.27}}{education in single years}     
+#'     \item{\code{hv109.27}}{educational attainment}        
+#'     \item{\code{hv110.27}}{member still in school}        
+#'     \item{\code{hv111.27}}{mother alive              - na}
+#'     \item{\code{hv112.27}}{mother's line number}          
+#'     \item{\code{hv113.27}}{father alive              - na}
+#'     \item{\code{hv114.27}}{father's line number}          
+#'     \item{\code{hv115.27}}{current marital status}        
+#'     \item{\code{hv116.27}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.27}}{eligibility for female intview}
+#'     \item{\code{hv118.27}}{eligibility for male interview}
+#'     \item{\code{hvidx.28}}{line number}                   
+#'     \item{\code{hv101.28}}{relationship to head}          
+#'     \item{\code{hv102.28}}{usual resident}                
+#'     \item{\code{hv103.28}}{slept last night}              
+#'     \item{\code{hv104.28}}{sex of household member}       
+#'     \item{\code{hv105.28}}{age of household members}      
+#'     \item{\code{hv106.28}}{highest educational level}     
+#'     \item{\code{hv107.28}}{highest year of education}     
+#'     \item{\code{hv108.28}}{education in single years}     
+#'     \item{\code{hv109.28}}{educational attainment}        
+#'     \item{\code{hv110.28}}{member still in school}        
+#'     \item{\code{hv111.28}}{mother alive              - na}
+#'     \item{\code{hv112.28}}{mother's line number}          
+#'     \item{\code{hv113.28}}{father alive              - na}
+#'     \item{\code{hv114.28}}{father's line number}          
+#'     \item{\code{hv115.28}}{current marital status}        
+#'     \item{\code{hv116.28}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.28}}{eligibility for female intview}
+#'     \item{\code{hv118.28}}{eligibility for male interview}
+#'     \item{\code{hvidx.29}}{line number}                   
+#'     \item{\code{hv101.29}}{relationship to head}          
+#'     \item{\code{hv102.29}}{usual resident}                
+#'     \item{\code{hv103.29}}{slept last night}              
+#'     \item{\code{hv104.29}}{sex of household member}       
+#'     \item{\code{hv105.29}}{age of household members}      
+#'     \item{\code{hv106.29}}{highest educational level}     
+#'     \item{\code{hv107.29}}{highest year of education}     
+#'     \item{\code{hv108.29}}{education in single years}     
+#'     \item{\code{hv109.29}}{educational attainment}        
+#'     \item{\code{hv110.29}}{member still in school}        
+#'     \item{\code{hv111.29}}{mother alive              - na}
+#'     \item{\code{hv112.29}}{mother's line number}          
+#'     \item{\code{hv113.29}}{father alive              - na}
+#'     \item{\code{hv114.29}}{father's line number}          
+#'     \item{\code{hv115.29}}{current marital status}        
+#'     \item{\code{hv116.29}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.29}}{eligibility for female intview}
+#'     \item{\code{hv118.29}}{eligibility for male interview}
+#'     \item{\code{hvidx.30}}{line number}                   
+#'     \item{\code{hv101.30}}{relationship to head}          
+#'     \item{\code{hv102.30}}{usual resident}                
+#'     \item{\code{hv103.30}}{slept last night}              
+#'     \item{\code{hv104.30}}{sex of household member}       
+#'     \item{\code{hv105.30}}{age of household members}      
+#'     \item{\code{hv106.30}}{highest educational level}     
+#'     \item{\code{hv107.30}}{highest year of education}     
+#'     \item{\code{hv108.30}}{education in single years}     
+#'     \item{\code{hv109.30}}{educational attainment}        
+#'     \item{\code{hv110.30}}{member still in school}        
+#'     \item{\code{hv111.30}}{mother alive              - na}
+#'     \item{\code{hv112.30}}{mother's line number}          
+#'     \item{\code{hv113.30}}{father alive              - na}
+#'     \item{\code{hv114.30}}{father's line number}          
+#'     \item{\code{hv115.30}}{current marital status}        
+#'     \item{\code{hv116.30}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.30}}{eligibility for female intview}
+#'     \item{\code{hv118.30}}{eligibility for male interview}
+#'     \item{\code{hvidx.31}}{line number}                   
+#'     \item{\code{hv101.31}}{relationship to head}          
+#'     \item{\code{hv102.31}}{usual resident}                
+#'     \item{\code{hv103.31}}{slept last night}              
+#'     \item{\code{hv104.31}}{sex of household member}       
+#'     \item{\code{hv105.31}}{age of household members}      
+#'     \item{\code{hv106.31}}{highest educational level}     
+#'     \item{\code{hv107.31}}{highest year of education}     
+#'     \item{\code{hv108.31}}{education in single years}     
+#'     \item{\code{hv109.31}}{educational attainment}        
+#'     \item{\code{hv110.31}}{member still in school}        
+#'     \item{\code{hv111.31}}{mother alive              - na}
+#'     \item{\code{hv112.31}}{mother's line number}          
+#'     \item{\code{hv113.31}}{father alive              - na}
+#'     \item{\code{hv114.31}}{father's line number}          
+#'     \item{\code{hv115.31}}{current marital status}        
+#'     \item{\code{hv116.31}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.31}}{eligibility for female intview}
+#'     \item{\code{hv118.31}}{eligibility for male interview}
+#'     \item{\code{hvidx.32}}{line number}                   
+#'     \item{\code{hv101.32}}{relationship to head}          
+#'     \item{\code{hv102.32}}{usual resident}                
+#'     \item{\code{hv103.32}}{slept last night}              
+#'     \item{\code{hv104.32}}{sex of household member}       
+#'     \item{\code{hv105.32}}{age of household members}      
+#'     \item{\code{hv106.32}}{highest educational level}     
+#'     \item{\code{hv107.32}}{highest year of education}     
+#'     \item{\code{hv108.32}}{education in single years}     
+#'     \item{\code{hv109.32}}{educational attainment}        
+#'     \item{\code{hv110.32}}{member still in school}        
+#'     \item{\code{hv111.32}}{mother alive              - na}
+#'     \item{\code{hv112.32}}{mother's line number}          
+#'     \item{\code{hv113.32}}{father alive              - na}
+#'     \item{\code{hv114.32}}{father's line number}          
+#'     \item{\code{hv115.32}}{current marital status}        
+#'     \item{\code{hv116.32}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.32}}{eligibility for female intview}
+#'     \item{\code{hv118.32}}{eligibility for male interview}
+#'     \item{\code{hvidx.33}}{line number}                   
+#'     \item{\code{hv101.33}}{relationship to head}          
+#'     \item{\code{hv102.33}}{usual resident}                
+#'     \item{\code{hv103.33}}{slept last night}              
+#'     \item{\code{hv104.33}}{sex of household member}       
+#'     \item{\code{hv105.33}}{age of household members}      
+#'     \item{\code{hv106.33}}{highest educational level}     
+#'     \item{\code{hv107.33}}{highest year of education}     
+#'     \item{\code{hv108.33}}{education in single years}     
+#'     \item{\code{hv109.33}}{educational attainment}        
+#'     \item{\code{hv110.33}}{member still in school}        
+#'     \item{\code{hv111.33}}{mother alive              - na}
+#'     \item{\code{hv112.33}}{mother's line number}          
+#'     \item{\code{hv113.33}}{father alive              - na}
+#'     \item{\code{hv114.33}}{father's line number}          
+#'     \item{\code{hv115.33}}{current marital status}        
+#'     \item{\code{hv116.33}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.33}}{eligibility for female intview}
+#'     \item{\code{hv118.33}}{eligibility for male interview}
+#'     \item{\code{hvidx.34}}{line number}                   
+#'     \item{\code{hv101.34}}{relationship to head}          
+#'     \item{\code{hv102.34}}{usual resident}                
+#'     \item{\code{hv103.34}}{slept last night}              
+#'     \item{\code{hv104.34}}{sex of household member}       
+#'     \item{\code{hv105.34}}{age of household members}      
+#'     \item{\code{hv106.34}}{highest educational level}     
+#'     \item{\code{hv107.34}}{highest year of education}     
+#'     \item{\code{hv108.34}}{education in single years}     
+#'     \item{\code{hv109.34}}{educational attainment}        
+#'     \item{\code{hv110.34}}{member still in school}        
+#'     \item{\code{hv111.34}}{mother alive              - na}
+#'     \item{\code{hv112.34}}{mother's line number}          
+#'     \item{\code{hv113.34}}{father alive              - na}
+#'     \item{\code{hv114.34}}{father's line number}          
+#'     \item{\code{hv115.34}}{current marital status}        
+#'     \item{\code{hv116.34}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.34}}{eligibility for female intview}
+#'     \item{\code{hv118.34}}{eligibility for male interview}
+#'     \item{\code{hvidx.35}}{line number}                   
+#'     \item{\code{hv101.35}}{relationship to head}          
+#'     \item{\code{hv102.35}}{usual resident}                
+#'     \item{\code{hv103.35}}{slept last night}              
+#'     \item{\code{hv104.35}}{sex of household member}       
+#'     \item{\code{hv105.35}}{age of household members}      
+#'     \item{\code{hv106.35}}{highest educational level}     
+#'     \item{\code{hv107.35}}{highest year of education}     
+#'     \item{\code{hv108.35}}{education in single years}     
+#'     \item{\code{hv109.35}}{educational attainment}        
+#'     \item{\code{hv110.35}}{member still in school}        
+#'     \item{\code{hv111.35}}{mother alive              - na}
+#'     \item{\code{hv112.35}}{mother's line number}          
+#'     \item{\code{hv113.35}}{father alive              - na}
+#'     \item{\code{hv114.35}}{father's line number}          
+#'     \item{\code{hv115.35}}{current marital status}        
+#'     \item{\code{hv116.35}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.35}}{eligibility for female intview}
+#'     \item{\code{hv118.35}}{eligibility for male interview}
+#'     \item{\code{hvidx.36}}{line number}                   
+#'     \item{\code{hv101.36}}{relationship to head}          
+#'     \item{\code{hv102.36}}{usual resident}                
+#'     \item{\code{hv103.36}}{slept last night}              
+#'     \item{\code{hv104.36}}{sex of household member}       
+#'     \item{\code{hv105.36}}{age of household members}      
+#'     \item{\code{hv106.36}}{highest educational level}     
+#'     \item{\code{hv107.36}}{highest year of education}     
+#'     \item{\code{hv108.36}}{education in single years}     
+#'     \item{\code{hv109.36}}{educational attainment}        
+#'     \item{\code{hv110.36}}{member still in school}        
+#'     \item{\code{hv111.36}}{mother alive              - na}
+#'     \item{\code{hv112.36}}{mother's line number}          
+#'     \item{\code{hv113.36}}{father alive              - na}
+#'     \item{\code{hv114.36}}{father's line number}          
+#'     \item{\code{hv115.36}}{current marital status}        
+#'     \item{\code{hv116.36}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.36}}{eligibility for female intview}
+#'     \item{\code{hv118.36}}{eligibility for male interview}
+#'     \item{\code{hvidx.37}}{line number}                   
+#'     \item{\code{hv101.37}}{relationship to head}          
+#'     \item{\code{hv102.37}}{usual resident}                
+#'     \item{\code{hv103.37}}{slept last night}              
+#'     \item{\code{hv104.37}}{sex of household member}       
+#'     \item{\code{hv105.37}}{age of household members}      
+#'     \item{\code{hv106.37}}{highest educational level}     
+#'     \item{\code{hv107.37}}{highest year of education}     
+#'     \item{\code{hv108.37}}{education in single years}     
+#'     \item{\code{hv109.37}}{educational attainment}        
+#'     \item{\code{hv110.37}}{member still in school}        
+#'     \item{\code{hv111.37}}{mother alive              - na}
+#'     \item{\code{hv112.37}}{mother's line number}          
+#'     \item{\code{hv113.37}}{father alive              - na}
+#'     \item{\code{hv114.37}}{father's line number}          
+#'     \item{\code{hv115.37}}{current marital status}        
+#'     \item{\code{hv116.37}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.37}}{eligibility for female intview}
+#'     \item{\code{hv118.37}}{eligibility for male interview}
+#'     \item{\code{hvidx.38}}{line number}                   
+#'     \item{\code{hv101.38}}{relationship to head}          
+#'     \item{\code{hv102.38}}{usual resident}                
+#'     \item{\code{hv103.38}}{slept last night}              
+#'     \item{\code{hv104.38}}{sex of household member}       
+#'     \item{\code{hv105.38}}{age of household members}      
+#'     \item{\code{hv106.38}}{highest educational level}     
+#'     \item{\code{hv107.38}}{highest year of education}     
+#'     \item{\code{hv108.38}}{education in single years}     
+#'     \item{\code{hv109.38}}{educational attainment}        
+#'     \item{\code{hv110.38}}{member still in school}        
+#'     \item{\code{hv111.38}}{mother alive              - na}
+#'     \item{\code{hv112.38}}{mother's line number}          
+#'     \item{\code{hv113.38}}{father alive              - na}
+#'     \item{\code{hv114.38}}{father's line number}          
+#'     \item{\code{hv115.38}}{current marital status}        
+#'     \item{\code{hv116.38}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.38}}{eligibility for female intview}
+#'     \item{\code{hv118.38}}{eligibility for male interview}
+#'     \item{\code{hvidx.39}}{line number}                   
+#'     \item{\code{hv101.39}}{relationship to head}          
+#'     \item{\code{hv102.39}}{usual resident}                
+#'     \item{\code{hv103.39}}{slept last night}              
+#'     \item{\code{hv104.39}}{sex of household member}       
+#'     \item{\code{hv105.39}}{age of household members}      
+#'     \item{\code{hv106.39}}{highest educational level}     
+#'     \item{\code{hv107.39}}{highest year of education}     
+#'     \item{\code{hv108.39}}{education in single years}     
+#'     \item{\code{hv109.39}}{educational attainment}        
+#'     \item{\code{hv110.39}}{member still in school}        
+#'     \item{\code{hv111.39}}{mother alive              - na}
+#'     \item{\code{hv112.39}}{mother's line number}          
+#'     \item{\code{hv113.39}}{father alive              - na}
+#'     \item{\code{hv114.39}}{father's line number}          
+#'     \item{\code{hv115.39}}{current marital status}        
+#'     \item{\code{hv116.39}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.39}}{eligibility for female intview}
+#'     \item{\code{hv118.39}}{eligibility for male interview}
+#'     \item{\code{hvidx.40}}{line number}                   
+#'     \item{\code{hv101.40}}{relationship to head}          
+#'     \item{\code{hv102.40}}{usual resident}                
+#'     \item{\code{hv103.40}}{slept last night}              
+#'     \item{\code{hv104.40}}{sex of household member}       
+#'     \item{\code{hv105.40}}{age of household members}      
+#'     \item{\code{hv106.40}}{highest educational level}     
+#'     \item{\code{hv107.40}}{highest year of education}     
+#'     \item{\code{hv108.40}}{education in single years}     
+#'     \item{\code{hv109.40}}{educational attainment}        
+#'     \item{\code{hv110.40}}{member still in school}        
+#'     \item{\code{hv111.40}}{mother alive              - na}
+#'     \item{\code{hv112.40}}{mother's line number}          
+#'     \item{\code{hv113.40}}{father alive              - na}
+#'     \item{\code{hv114.40}}{father's line number}          
+#'     \item{\code{hv115.40}}{current marital status}        
+#'     \item{\code{hv116.40}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.40}}{eligibility for female intview}
+#'     \item{\code{hv118.40}}{eligibility for male interview}
+#'     \item{\code{hvidx.41}}{line number}                   
+#'     \item{\code{hv101.41}}{relationship to head}          
+#'     \item{\code{hv102.41}}{usual resident}                
+#'     \item{\code{hv103.41}}{slept last night}              
+#'     \item{\code{hv104.41}}{sex of household member}       
+#'     \item{\code{hv105.41}}{age of household members}      
+#'     \item{\code{hv106.41}}{highest educational level}     
+#'     \item{\code{hv107.41}}{highest year of education}     
+#'     \item{\code{hv108.41}}{education in single years}     
+#'     \item{\code{hv109.41}}{educational attainment}        
+#'     \item{\code{hv110.41}}{member still in school}        
+#'     \item{\code{hv111.41}}{mother alive              - na}
+#'     \item{\code{hv112.41}}{mother's line number}          
+#'     \item{\code{hv113.41}}{father alive              - na}
+#'     \item{\code{hv114.41}}{father's line number}          
+#'     \item{\code{hv115.41}}{current marital status}        
+#'     \item{\code{hv116.41}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.41}}{eligibility for female intview}
+#'     \item{\code{hv118.41}}{eligibility for male interview}
+#'     \item{\code{hvidx.42}}{line number}                   
+#'     \item{\code{hv101.42}}{relationship to head}          
+#'     \item{\code{hv102.42}}{usual resident}                
+#'     \item{\code{hv103.42}}{slept last night}              
+#'     \item{\code{hv104.42}}{sex of household member}       
+#'     \item{\code{hv105.42}}{age of household members}      
+#'     \item{\code{hv106.42}}{highest educational level}     
+#'     \item{\code{hv107.42}}{highest year of education}     
+#'     \item{\code{hv108.42}}{education in single years}     
+#'     \item{\code{hv109.42}}{educational attainment}        
+#'     \item{\code{hv110.42}}{member still in school}        
+#'     \item{\code{hv111.42}}{mother alive              - na}
+#'     \item{\code{hv112.42}}{mother's line number}          
+#'     \item{\code{hv113.42}}{father alive              - na}
+#'     \item{\code{hv114.42}}{father's line number}          
+#'     \item{\code{hv115.42}}{current marital status}        
+#'     \item{\code{hv116.42}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.42}}{eligibility for female intview}
+#'     \item{\code{hv118.42}}{eligibility for male interview}
+#'     \item{\code{hvidx.43}}{line number}                   
+#'     \item{\code{hv101.43}}{relationship to head}          
+#'     \item{\code{hv102.43}}{usual resident}                
+#'     \item{\code{hv103.43}}{slept last night}              
+#'     \item{\code{hv104.43}}{sex of household member}       
+#'     \item{\code{hv105.43}}{age of household members}      
+#'     \item{\code{hv106.43}}{highest educational level}     
+#'     \item{\code{hv107.43}}{highest year of education}     
+#'     \item{\code{hv108.43}}{education in single years}     
+#'     \item{\code{hv109.43}}{educational attainment}        
+#'     \item{\code{hv110.43}}{member still in school}        
+#'     \item{\code{hv111.43}}{mother alive              - na}
+#'     \item{\code{hv112.43}}{mother's line number}          
+#'     \item{\code{hv113.43}}{father alive              - na}
+#'     \item{\code{hv114.43}}{father's line number}          
+#'     \item{\code{hv115.43}}{current marital status}        
+#'     \item{\code{hv116.43}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.43}}{eligibility for female intview}
+#'     \item{\code{hv118.43}}{eligibility for male interview}
+#'     \item{\code{hvidx.44}}{line number}                   
+#'     \item{\code{hv101.44}}{relationship to head}          
+#'     \item{\code{hv102.44}}{usual resident}                
+#'     \item{\code{hv103.44}}{slept last night}              
+#'     \item{\code{hv104.44}}{sex of household member}       
+#'     \item{\code{hv105.44}}{age of household members}      
+#'     \item{\code{hv106.44}}{highest educational level}     
+#'     \item{\code{hv107.44}}{highest year of education}     
+#'     \item{\code{hv108.44}}{education in single years}     
+#'     \item{\code{hv109.44}}{educational attainment}        
+#'     \item{\code{hv110.44}}{member still in school}        
+#'     \item{\code{hv111.44}}{mother alive              - na}
+#'     \item{\code{hv112.44}}{mother's line number}          
+#'     \item{\code{hv113.44}}{father alive              - na}
+#'     \item{\code{hv114.44}}{father's line number}          
+#'     \item{\code{hv115.44}}{current marital status}        
+#'     \item{\code{hv116.44}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.44}}{eligibility for female intview}
+#'     \item{\code{hv118.44}}{eligibility for male interview}
+#'     \item{\code{hvidx.45}}{line number}                   
+#'     \item{\code{hv101.45}}{relationship to head}          
+#'     \item{\code{hv102.45}}{usual resident}                
+#'     \item{\code{hv103.45}}{slept last night}              
+#'     \item{\code{hv104.45}}{sex of household member}       
+#'     \item{\code{hv105.45}}{age of household members}      
+#'     \item{\code{hv106.45}}{highest educational level}     
+#'     \item{\code{hv107.45}}{highest year of education}     
+#'     \item{\code{hv108.45}}{education in single years}     
+#'     \item{\code{hv109.45}}{educational attainment}        
+#'     \item{\code{hv110.45}}{member still in school}        
+#'     \item{\code{hv111.45}}{mother alive              - na}
+#'     \item{\code{hv112.45}}{mother's line number}          
+#'     \item{\code{hv113.45}}{father alive              - na}
+#'     \item{\code{hv114.45}}{father's line number}          
+#'     \item{\code{hv115.45}}{current marital status}        
+#'     \item{\code{hv116.45}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.45}}{eligibility for female intview}
+#'     \item{\code{hv118.45}}{eligibility for male interview}
+#'     \item{\code{hvidx.46}}{line number}                   
+#'     \item{\code{hv101.46}}{relationship to head}          
+#'     \item{\code{hv102.46}}{usual resident}                
+#'     \item{\code{hv103.46}}{slept last night}              
+#'     \item{\code{hv104.46}}{sex of household member}       
+#'     \item{\code{hv105.46}}{age of household members}      
+#'     \item{\code{hv106.46}}{highest educational level}     
+#'     \item{\code{hv107.46}}{highest year of education}     
+#'     \item{\code{hv108.46}}{education in single years}     
+#'     \item{\code{hv109.46}}{educational attainment}        
+#'     \item{\code{hv110.46}}{member still in school}        
+#'     \item{\code{hv111.46}}{mother alive              - na}
+#'     \item{\code{hv112.46}}{mother's line number}          
+#'     \item{\code{hv113.46}}{father alive              - na}
+#'     \item{\code{hv114.46}}{father's line number}          
+#'     \item{\code{hv115.46}}{current marital status}        
+#'     \item{\code{hv116.46}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.46}}{eligibility for female intview}
+#'     \item{\code{hv118.46}}{eligibility for male interview}
+#'     \item{\code{hvidx.47}}{line number}                   
+#'     \item{\code{hv101.47}}{relationship to head}          
+#'     \item{\code{hv102.47}}{usual resident}                
+#'     \item{\code{hv103.47}}{slept last night}              
+#'     \item{\code{hv104.47}}{sex of household member}       
+#'     \item{\code{hv105.47}}{age of household members}      
+#'     \item{\code{hv106.47}}{highest educational level}     
+#'     \item{\code{hv107.47}}{highest year of education}     
+#'     \item{\code{hv108.47}}{education in single years}     
+#'     \item{\code{hv109.47}}{educational attainment}        
+#'     \item{\code{hv110.47}}{member still in school}        
+#'     \item{\code{hv111.47}}{mother alive              - na}
+#'     \item{\code{hv112.47}}{mother's line number}          
+#'     \item{\code{hv113.47}}{father alive              - na}
+#'     \item{\code{hv114.47}}{father's line number}          
+#'     \item{\code{hv115.47}}{current marital status}        
+#'     \item{\code{hv116.47}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.47}}{eligibility for female intview}
+#'     \item{\code{hv118.47}}{eligibility for male interview}
+#'     \item{\code{hvidx.48}}{line number}                   
+#'     \item{\code{hv101.48}}{relationship to head}          
+#'     \item{\code{hv102.48}}{usual resident}                
+#'     \item{\code{hv103.48}}{slept last night}              
+#'     \item{\code{hv104.48}}{sex of household member}       
+#'     \item{\code{hv105.48}}{age of household members}      
+#'     \item{\code{hv106.48}}{highest educational level}     
+#'     \item{\code{hv107.48}}{highest year of education}     
+#'     \item{\code{hv108.48}}{education in single years}     
+#'     \item{\code{hv109.48}}{educational attainment}        
+#'     \item{\code{hv110.48}}{member still in school}        
+#'     \item{\code{hv111.48}}{mother alive              - na}
+#'     \item{\code{hv112.48}}{mother's line number}          
+#'     \item{\code{hv113.48}}{father alive              - na}
+#'     \item{\code{hv114.48}}{father's line number}          
+#'     \item{\code{hv115.48}}{current marital status}        
+#'     \item{\code{hv116.48}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.48}}{eligibility for female intview}
+#'     \item{\code{hv118.48}}{eligibility for male interview}
+#'     \item{\code{hvidx.49}}{line number}                   
+#'     \item{\code{hv101.49}}{relationship to head}          
+#'     \item{\code{hv102.49}}{usual resident}                
+#'     \item{\code{hv103.49}}{slept last night}              
+#'     \item{\code{hv104.49}}{sex of household member}       
+#'     \item{\code{hv105.49}}{age of household members}      
+#'     \item{\code{hv106.49}}{highest educational level}     
+#'     \item{\code{hv107.49}}{highest year of education}     
+#'     \item{\code{hv108.49}}{education in single years}     
+#'     \item{\code{hv109.49}}{educational attainment}        
+#'     \item{\code{hv110.49}}{member still in school}        
+#'     \item{\code{hv111.49}}{mother alive              - na}
+#'     \item{\code{hv112.49}}{mother's line number}          
+#'     \item{\code{hv113.49}}{father alive              - na}
+#'     \item{\code{hv114.49}}{father's line number}          
+#'     \item{\code{hv115.49}}{current marital status}        
+#'     \item{\code{hv116.49}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.49}}{eligibility for female intview}
+#'     \item{\code{hv118.49}}{eligibility for male interview}
+#'     \item{\code{hvidx.50}}{line number}                   
+#'     \item{\code{hv101.50}}{relationship to head}          
+#'     \item{\code{hv102.50}}{usual resident}                
+#'     \item{\code{hv103.50}}{slept last night}              
+#'     \item{\code{hv104.50}}{sex of household member}       
+#'     \item{\code{hv105.50}}{age of household members}      
+#'     \item{\code{hv106.50}}{highest educational level}     
+#'     \item{\code{hv107.50}}{highest year of education}     
+#'     \item{\code{hv108.50}}{education in single years}     
+#'     \item{\code{hv109.50}}{educational attainment}        
+#'     \item{\code{hv110.50}}{member still in school}        
+#'     \item{\code{hv111.50}}{mother alive              - na}
+#'     \item{\code{hv112.50}}{mother's line number}          
+#'     \item{\code{hv113.50}}{father alive              - na}
+#'     \item{\code{hv114.50}}{father's line number}          
+#'     \item{\code{hv115.50}}{current marital status}        
+#'     \item{\code{hv116.50}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.50}}{eligibility for female intview}
+#'     \item{\code{hv118.50}}{eligibility for male interview}
+#'     \item{\code{hvidx.51}}{line number}                   
+#'     \item{\code{hv101.51}}{relationship to head}          
+#'     \item{\code{hv102.51}}{usual resident}                
+#'     \item{\code{hv103.51}}{slept last night}              
+#'     \item{\code{hv104.51}}{sex of household member}       
+#'     \item{\code{hv105.51}}{age of household members}      
+#'     \item{\code{hv106.51}}{highest educational level}     
+#'     \item{\code{hv107.51}}{highest year of education}     
+#'     \item{\code{hv108.51}}{education in single years}     
+#'     \item{\code{hv109.51}}{educational attainment}        
+#'     \item{\code{hv110.51}}{member still in school}        
+#'     \item{\code{hv111.51}}{mother alive              - na}
+#'     \item{\code{hv112.51}}{mother's line number}          
+#'     \item{\code{hv113.51}}{father alive              - na}
+#'     \item{\code{hv114.51}}{father's line number}          
+#'     \item{\code{hv115.51}}{current marital status}        
+#'     \item{\code{hv116.51}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.51}}{eligibility for female intview}
+#'     \item{\code{hv118.51}}{eligibility for male interview}
+#'     \item{\code{hvidx.52}}{line number}                   
+#'     \item{\code{hv101.52}}{relationship to head}          
+#'     \item{\code{hv102.52}}{usual resident}                
+#'     \item{\code{hv103.52}}{slept last night}              
+#'     \item{\code{hv104.52}}{sex of household member}       
+#'     \item{\code{hv105.52}}{age of household members}      
+#'     \item{\code{hv106.52}}{highest educational level}     
+#'     \item{\code{hv107.52}}{highest year of education}     
+#'     \item{\code{hv108.52}}{education in single years}     
+#'     \item{\code{hv109.52}}{educational attainment}        
+#'     \item{\code{hv110.52}}{member still in school}        
+#'     \item{\code{hv111.52}}{mother alive              - na}
+#'     \item{\code{hv112.52}}{mother's line number}          
+#'     \item{\code{hv113.52}}{father alive              - na}
+#'     \item{\code{hv114.52}}{father's line number}          
+#'     \item{\code{hv115.52}}{current marital status}        
+#'     \item{\code{hv116.52}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.52}}{eligibility for female intview}
+#'     \item{\code{hv118.52}}{eligibility for male interview}
+#'     \item{\code{hvidx.53}}{line number}                   
+#'     \item{\code{hv101.53}}{relationship to head}          
+#'     \item{\code{hv102.53}}{usual resident}                
+#'     \item{\code{hv103.53}}{slept last night}              
+#'     \item{\code{hv104.53}}{sex of household member}       
+#'     \item{\code{hv105.53}}{age of household members}      
+#'     \item{\code{hv106.53}}{highest educational level}     
+#'     \item{\code{hv107.53}}{highest year of education}     
+#'     \item{\code{hv108.53}}{education in single years}     
+#'     \item{\code{hv109.53}}{educational attainment}        
+#'     \item{\code{hv110.53}}{member still in school}        
+#'     \item{\code{hv111.53}}{mother alive              - na}
+#'     \item{\code{hv112.53}}{mother's line number}          
+#'     \item{\code{hv113.53}}{father alive              - na}
+#'     \item{\code{hv114.53}}{father's line number}          
+#'     \item{\code{hv115.53}}{current marital status}        
+#'     \item{\code{hv116.53}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.53}}{eligibility for female intview}
+#'     \item{\code{hv118.53}}{eligibility for male interview}
+#'     \item{\code{hvidx.54}}{line number}                   
+#'     \item{\code{hv101.54}}{relationship to head}          
+#'     \item{\code{hv102.54}}{usual resident}                
+#'     \item{\code{hv103.54}}{slept last night}              
+#'     \item{\code{hv104.54}}{sex of household member}       
+#'     \item{\code{hv105.54}}{age of household members}      
+#'     \item{\code{hv106.54}}{highest educational level}     
+#'     \item{\code{hv107.54}}{highest year of education}     
+#'     \item{\code{hv108.54}}{education in single years}     
+#'     \item{\code{hv109.54}}{educational attainment}        
+#'     \item{\code{hv110.54}}{member still in school}        
+#'     \item{\code{hv111.54}}{mother alive              - na}
+#'     \item{\code{hv112.54}}{mother's line number}          
+#'     \item{\code{hv113.54}}{father alive              - na}
+#'     \item{\code{hv114.54}}{father's line number}          
+#'     \item{\code{hv115.54}}{current marital status}        
+#'     \item{\code{hv116.54}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.54}}{eligibility for female intview}
+#'     \item{\code{hv118.54}}{eligibility for male interview}
+#'     \item{\code{hvidx.55}}{line number}                   
+#'     \item{\code{hv101.55}}{relationship to head}          
+#'     \item{\code{hv102.55}}{usual resident}                
+#'     \item{\code{hv103.55}}{slept last night}              
+#'     \item{\code{hv104.55}}{sex of household member}       
+#'     \item{\code{hv105.55}}{age of household members}      
+#'     \item{\code{hv106.55}}{highest educational level}     
+#'     \item{\code{hv107.55}}{highest year of education}     
+#'     \item{\code{hv108.55}}{education in single years}     
+#'     \item{\code{hv109.55}}{educational attainment}        
+#'     \item{\code{hv110.55}}{member still in school}        
+#'     \item{\code{hv111.55}}{mother alive              - na}
+#'     \item{\code{hv112.55}}{mother's line number}          
+#'     \item{\code{hv113.55}}{father alive              - na}
+#'     \item{\code{hv114.55}}{father's line number}          
+#'     \item{\code{hv115.55}}{current marital status}        
+#'     \item{\code{hv116.55}}{currently, formerly, never m.} 
+#'     \item{\code{hv117.55}}{eligibility for female intview}
+#'     \item{\code{hv118.55}}{eligibility for male interview}
+#'     \item{\code{shdist}}{district}                        
+#'     \item{\code{shclust}}{cluster number}                 
+#'     \item{\code{sh6e}}{has a room cooler}                 
+#'     \item{\code{sh6f}}{has a washing machine}             
+#'     \item{\code{sh6g}}{has a water pump}                  
+#'     \item{\code{sh7c}}{has a car, van or tractor}         
+#'     \item{\code{idxh4.01}}{index to household schedule}   
+#'     \item{\code{shlev.01}}{level of education}            
+#'     \item{\code{shgra.01}}{highest grade completed}       
+#'     \item{\code{idxh4.02}}{index to household schedule}   
+#'     \item{\code{shlev.02}}{level of education}            
+#'     \item{\code{shgra.02}}{highest grade completed}       
+#'     \item{\code{idxh4.03}}{index to household schedule}   
+#'     \item{\code{shlev.03}}{level of education}            
+#'     \item{\code{shgra.03}}{highest grade completed}       
+#'     \item{\code{idxh4.04}}{index to household schedule}   
+#'     \item{\code{shlev.04}}{level of education}            
+#'     \item{\code{shgra.04}}{highest grade completed}       
+#'     \item{\code{idxh4.05}}{index to household schedule}   
+#'     \item{\code{shlev.05}}{level of education}            
+#'     \item{\code{shgra.05}}{highest grade completed}       
+#'     \item{\code{idxh4.06}}{index to household schedule}   
+#'     \item{\code{shlev.06}}{level of education}            
+#'     \item{\code{shgra.06}}{highest grade completed}       
+#'     \item{\code{idxh4.07}}{index to household schedule}   
+#'     \item{\code{shlev.07}}{level of education}            
+#'     \item{\code{shgra.07}}{highest grade completed}       
+#'     \item{\code{idxh4.08}}{index to household schedule}   
+#'     \item{\code{shlev.08}}{level of education}            
+#'     \item{\code{shgra.08}}{highest grade completed}       
+#'     \item{\code{idxh4.09}}{index to household schedule}   
+#'     \item{\code{shlev.09}}{level of education}            
+#'     \item{\code{shgra.09}}{highest grade completed}       
+#'     \item{\code{idxh4.10}}{index to household schedule}   
+#'     \item{\code{shlev.10}}{level of education}            
+#'     \item{\code{shgra.10}}{highest grade completed}       
+#'     \item{\code{idxh4.11}}{index to household schedule}   
+#'     \item{\code{shlev.11}}{level of education}            
+#'     \item{\code{shgra.11}}{highest grade completed}       
+#'     \item{\code{idxh4.12}}{index to household schedule}   
+#'     \item{\code{shlev.12}}{level of education}            
+#'     \item{\code{shgra.12}}{highest grade completed}       
+#'     \item{\code{idxh4.13}}{index to household schedule}   
+#'     \item{\code{shlev.13}}{level of education}            
+#'     \item{\code{shgra.13}}{highest grade completed}       
+#'     \item{\code{idxh4.14}}{index to household schedule}   
+#'     \item{\code{shlev.14}}{level of education}            
+#'     \item{\code{shgra.14}}{highest grade completed}       
+#'     \item{\code{idxh4.15}}{index to household schedule}   
+#'     \item{\code{shlev.15}}{level of education}            
+#'     \item{\code{shgra.15}}{highest grade completed}       
+#'     \item{\code{idxh4.16}}{index to household schedule}   
+#'     \item{\code{shlev.16}}{level of education}            
+#'     \item{\code{shgra.16}}{highest grade completed}       
+#'     \item{\code{idxh4.17}}{index to household schedule}   
+#'     \item{\code{shlev.17}}{level of education}            
+#'     \item{\code{shgra.17}}{highest grade completed}       
+#'     \item{\code{idxh4.18}}{index to household schedule}   
+#'     \item{\code{shlev.18}}{level of education}            
+#'     \item{\code{shgra.18}}{highest grade completed}       
+#'     \item{\code{idxh4.19}}{index to household schedule}   
+#'     \item{\code{shlev.19}}{level of education}            
+#'     \item{\code{shgra.19}}{highest grade completed}       
+#'     \item{\code{idxh4.20}}{index to household schedule}   
+#'     \item{\code{shlev.20}}{level of education}            
+#'     \item{\code{shgra.20}}{highest grade completed}       
+#'     \item{\code{idxh4.21}}{index to household schedule}   
+#'     \item{\code{shlev.21}}{level of education}            
+#'     \item{\code{shgra.21}}{highest grade completed}       
+#'     \item{\code{idxh4.22}}{index to household schedule}   
+#'     \item{\code{shlev.22}}{level of education}            
+#'     \item{\code{shgra.22}}{highest grade completed}       
+#'     \item{\code{idxh4.23}}{index to household schedule}   
+#'     \item{\code{shlev.23}}{level of education}            
+#'     \item{\code{shgra.23}}{highest grade completed}       
+#'     \item{\code{idxh4.24}}{index to household schedule}   
+#'     \item{\code{shlev.24}}{level of education}            
+#'     \item{\code{shgra.24}}{highest grade completed}       
+#'     \item{\code{idxh4.25}}{index to household schedule}   
+#'     \item{\code{shlev.25}}{level of education}            
+#'     \item{\code{shgra.25}}{highest grade completed}       
+#'     \item{\code{idxh4.26}}{index to household schedule}   
+#'     \item{\code{shlev.26}}{level of education}            
+#'     \item{\code{shgra.26}}{highest grade completed}       
+#'     \item{\code{idxh4.27}}{index to household schedule}   
+#'     \item{\code{shlev.27}}{level of education}            
+#'     \item{\code{shgra.27}}{highest grade completed}       
+#'     \item{\code{idxh4.28}}{index to household schedule}   
+#'     \item{\code{shlev.28}}{level of education}            
+#'     \item{\code{shgra.28}}{highest grade completed}       
+#'     \item{\code{idxh4.29}}{index to household schedule}   
+#'     \item{\code{shlev.29}}{level of education}            
+#'     \item{\code{shgra.29}}{highest grade completed}       
+#'     \item{\code{idxh4.30}}{index to household schedule}   
+#'     \item{\code{shlev.30}}{level of education}            
+#'     \item{\code{shgra.30}}{highest grade completed}       
+#'     \item{\code{idxh4.31}}{index to household schedule}   
+#'     \item{\code{shlev.31}}{level of education}            
+#'     \item{\code{shgra.31}}{highest grade completed}       
+#'     \item{\code{idxh4.32}}{index to household schedule}   
+#'     \item{\code{shlev.32}}{level of education}            
+#'     \item{\code{shgra.32}}{highest grade completed}       
+#'     \item{\code{idxh4.33}}{index to household schedule}   
+#'     \item{\code{shlev.33}}{level of education}            
+#'     \item{\code{shgra.33}}{highest grade completed}       
+#'     \item{\code{idxh4.34}}{index to household schedule}   
+#'     \item{\code{shlev.34}}{level of education}            
+#'     \item{\code{shgra.34}}{highest grade completed}       
+#'     \item{\code{idxh4.35}}{index to household schedule}   
+#'     \item{\code{shlev.35}}{level of education}            
+#'     \item{\code{shgra.35}}{highest grade completed}       
+#'     \item{\code{idxh4.36}}{index to household schedule}   
+#'     \item{\code{shlev.36}}{level of education}            
+#'     \item{\code{shgra.36}}{highest grade completed}       
+#'     \item{\code{idxh4.37}}{index to household schedule}   
+#'     \item{\code{shlev.37}}{level of education}            
+#'     \item{\code{shgra.37}}{highest grade completed}       
+#'     \item{\code{idxh4.38}}{index to household schedule}   
+#'     \item{\code{shlev.38}}{level of education}            
+#'     \item{\code{shgra.38}}{highest grade completed}       
+#'     \item{\code{idxh4.39}}{index to household schedule}   
+#'     \item{\code{shlev.39}}{level of education}            
+#'     \item{\code{shgra.39}}{highest grade completed}       
+#'     \item{\code{idxh4.40}}{index to household schedule}   
+#'     \item{\code{shlev.40}}{level of education}            
+#'     \item{\code{shgra.40}}{highest grade completed}       
+#'     \item{\code{idxh4.41}}{index to household schedule}   
+#'     \item{\code{shlev.41}}{level of education}            
+#'     \item{\code{shgra.41}}{highest grade completed}       
+#'     \item{\code{idxh4.42}}{index to household schedule}   
+#'     \item{\code{shlev.42}}{level of education}            
+#'     \item{\code{shgra.42}}{highest grade completed}       
+#'     \item{\code{idxh4.43}}{index to household schedule}   
+#'     \item{\code{shlev.43}}{level of education}            
+#'     \item{\code{shgra.43}}{highest grade completed}       
+#'     \item{\code{idxh4.44}}{index to household schedule}   
+#'     \item{\code{shlev.44}}{level of education}            
+#'     \item{\code{shgra.44}}{highest grade completed}       
+#'     \item{\code{idxh4.45}}{index to household schedule}   
+#'     \item{\code{shlev.45}}{level of education}            
+#'     \item{\code{shgra.45}}{highest grade completed}       
+#'     \item{\code{idxh4.46}}{index to household schedule}   
+#'     \item{\code{shlev.46}}{level of education}            
+#'     \item{\code{shgra.46}}{highest grade completed}       
+#'     \item{\code{idxh4.47}}{index to household schedule}   
+#'     \item{\code{shlev.47}}{level of education}            
+#'     \item{\code{shgra.47}}{highest grade completed}       
+#'     \item{\code{idxh4.48}}{index to household schedule}   
+#'     \item{\code{shlev.48}}{level of education}            
+#'     \item{\code{shgra.48}}{highest grade completed}       
+#'     \item{\code{idxh4.49}}{index to household schedule}   
+#'     \item{\code{shlev.49}}{level of education}            
+#'     \item{\code{shgra.49}}{highest grade completed}       
+#'     \item{\code{idxh4.50}}{index to household schedule}   
+#'     \item{\code{shlev.50}}{level of education}            
+#'     \item{\code{shgra.50}}{highest grade completed}       
+#'     \item{\code{idxh4.51}}{index to household schedule}   
+#'     \item{\code{shlev.51}}{level of education}            
+#'     \item{\code{shgra.51}}{highest grade completed}       
+#'     \item{\code{idxh4.52}}{index to household schedule}   
+#'     \item{\code{shlev.52}}{level of education}            
+#'     \item{\code{shgra.52}}{highest grade completed}       
+#'     \item{\code{idxh4.53}}{index to household schedule}   
+#'     \item{\code{shlev.53}}{level of education}            
+#'     \item{\code{shgra.53}}{highest grade completed}       
+#'     \item{\code{idxh4.54}}{index to household schedule}   
+#'     \item{\code{shlev.54}}{level of education}            
+#'     \item{\code{shgra.54}}{highest grade completed}       
+#'     \item{\code{idxh4.55}}{index to household schedule}   
+#'     \item{\code{shlev.55}}{level of education}            
+#'     \item{\code{shgra.55}}{highest grade completed}       
+#' 
+#' 
+#'
+#'   }
+#'
+#' @author
+#'  \enumerate{
+#'   \item{Muhammad Yaseen } {(\email{myaseen208@@gmail.com})}
+#'   }
+#'
+#' @references
+#' \enumerate{
+#'   \item National Institute of Population Studies (NIPS), Pakistan (\url{http://nips.org.pk/Home.htm}).
+#'  }
+#'
+#' @import tibble
+#'
+#' @examples
+#' load("PKHR21")
+#' PKHR21
+NULL

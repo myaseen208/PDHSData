@@ -1,0 +1,2323 @@
+#' @title Pakistan Demographic and Health Survey 1990-91 Couples' Recode Data
+#' @name  PKCR21
+#' @description \code{PKCR21} data of Couples' Recode from Pakistan Demographic and Health Survey 1990-91.
+#' \describe{
+#'     \item{\code{caseid}}{case identification}            
+#'     \item{\code{v000}}{country code and phase}           
+#'     \item{\code{v001}}{cluster number}                   
+#'     \item{\code{v002}}{household number}                 
+#'     \item{\code{v003}}{respondent's line number}         
+#'     \item{\code{v004}}{ultimate area unit}               
+#'     \item{\code{v005}}{sample weight}                    
+#'     \item{\code{v006}}{month of interview}               
+#'     \item{\code{v007}}{year of interview}                
+#'     \item{\code{v008}}{date of interview (cmc)}          
+#'     \item{\code{v009}}{respondent's month of birth}      
+#'     \item{\code{v010}}{respondent's year of birth}       
+#'     \item{\code{v011}}{date of birth (cmc)}              
+#'     \item{\code{v012}}{current age - respondent}         
+#'     \item{\code{v013}}{age 5-year groups}                
+#'     \item{\code{v014}}{completeness of information}      
+#'     \item{\code{v015}}{result of individual interview}   
+#'     \item{\code{v016}}{day of interview}                 
+#'     \item{\code{v017}}{cmc start of calendar/health}     
+#'     \item{\code{v018}}{row of month of interview}        
+#'     \item{\code{v019}}{length of calendar}               
+#'     \item{\code{v020}}{ever-married sample}              
+#'     \item{\code{v021}}{primary sampling unit}            
+#'     \item{\code{v022}}{sample stratum number}            
+#'     \item{\code{v023}}{sample domain}                    
+#'     \item{\code{v024}}{region}                           
+#'     \item{\code{v025}}{type of place of residence}       
+#'     \item{\code{v026}}{de facto place of residence}      
+#'     \item{\code{v027}}{number of visits}                 
+#'     \item{\code{v028}}{interviewer identification}       
+#'     \item{\code{v029}}{keyer identification}             
+#'     \item{\code{v101}}{region}                           
+#'     \item{\code{v102}}{type of place of residence}       
+#'     \item{\code{v103}}{childhood place of residence}     
+#'     \item{\code{v104}}{years lived in place of res.}     
+#'     \item{\code{v105}}{type of place of previous res.}   
+#'     \item{\code{v106}}{highest educational level}        
+#'     \item{\code{v107}}{highest year of education}        
+#'     \item{\code{v108}}{literacy}                         
+#'     \item{\code{v109}}{reads newspaper once a week}      
+#'     \item{\code{v110}}{watches tv every week}            
+#'     \item{\code{v111}}{listens to radio every da - na}   
+#'     \item{\code{v112}}{listens to radio every week}      
+#'     \item{\code{v113}}{source of drinking water}         
+#'     \item{\code{v114}}{source of non-drinking water}     
+#'     \item{\code{v115}}{time to get to water source}      
+#'     \item{\code{v116}}{type of toilet facility}          
+#'     \item{\code{v119}}{has electricity}                  
+#'     \item{\code{v120}}{has radio}                        
+#'     \item{\code{v121}}{has television}                   
+#'     \item{\code{v122}}{has refrigerator}                 
+#'     \item{\code{v123}}{has bicycle}                      
+#'     \item{\code{v124}}{has motorcycle}                   
+#'     \item{\code{v125}}{has car                   - na}   
+#'     \item{\code{v127}}{main floor material       - na}   
+#'     \item{\code{v128}}{main wall material}               
+#'     \item{\code{v129}}{main roof material}               
+#'     \item{\code{v130}}{religion                  - na}   
+#'     \item{\code{v131}}{ethnicity                 - na}   
+#'     \item{\code{v133}}{education in single years}        
+#'     \item{\code{v134}}{de facto place of residence}      
+#'     \item{\code{v135}}{usual resident or visitor}        
+#'     \item{\code{v136}}{number of household members}      
+#'     \item{\code{v137}}{number of children 5 and under}   
+#'     \item{\code{v138}}{number of eligible women in hh}   
+#'     \item{\code{v139}}{de jure region of residence}      
+#'     \item{\code{v140}}{de jure type of place of res.}    
+#'     \item{\code{v141}}{de jure place of residence}       
+#'     \item{\code{v142}}{same source of water}             
+#'     \item{\code{v143}}{rooms for sleeping}               
+#'     \item{\code{v144}}{communities lived in >jan - na}   
+#'     \item{\code{v145}}{month moved to res. of ja - na}   
+#'     \item{\code{v146}}{year moved to res. of jan - na}   
+#'     \item{\code{v147}}{residence before jan.8?   - na}   
+#'     \item{\code{v148}}{respondent still in school}       
+#'     \item{\code{v149}}{educational attainment}           
+#'     \item{\code{v150}}{relationship to household head}   
+#'     \item{\code{v151}}{sex of household head}            
+#'     \item{\code{v152}}{age of household head}            
+#'     \item{\code{awfactt}}{all woman factor - total}      
+#'     \item{\code{awfactu}}{all woman factor - urban/rural}
+#'     \item{\code{awfactr}}{all woman factor - regional}   
+#'     \item{\code{awfacte}}{all woman factor - educati- na}
+#'     \item{\code{bidx.01}}{birth column number}           
+#'     \item{\code{bord.01}}{birth order number}            
+#'     \item{\code{b0.01}}{child is twin}                   
+#'     \item{\code{b1.01}}{month of birth}                  
+#'     \item{\code{b2.01}}{year of birth}                   
+#'     \item{\code{b3.01}}{date of birth (cmc)}             
+#'     \item{\code{b4.01}}{sex of child}                    
+#'     \item{\code{b5.01}}{child is alive}                  
+#'     \item{\code{b6.01}}{age at death}                    
+#'     \item{\code{b7.01}}{age at death (months-imputed)}   
+#'     \item{\code{b8.01}}{current age of child}            
+#'     \item{\code{b9.01}}{who child lives with}            
+#'     \item{\code{b10.01}}{completeness of information}    
+#'     \item{\code{b11.01}}{preceding birth interval}       
+#'     \item{\code{b12.01}}{succeeding birth interval}      
+#'     \item{\code{b13.01}}{flag for age at death}          
+#'     \item{\code{bidx.02}}{birth column number}           
+#'     \item{\code{bord.02}}{birth order number}            
+#'     \item{\code{b0.02}}{child is twin}                   
+#'     \item{\code{b1.02}}{month of birth}                  
+#'     \item{\code{b2.02}}{year of birth}                   
+#'     \item{\code{b3.02}}{date of birth (cmc)}             
+#'     \item{\code{b4.02}}{sex of child}                    
+#'     \item{\code{b5.02}}{child is alive}                  
+#'     \item{\code{b6.02}}{age at death}                    
+#'     \item{\code{b7.02}}{age at death (months-imputed)}   
+#'     \item{\code{b8.02}}{current age of child}            
+#'     \item{\code{b9.02}}{who child lives with}            
+#'     \item{\code{b10.02}}{completeness of information}    
+#'     \item{\code{b11.02}}{preceding birth interval}       
+#'     \item{\code{b12.02}}{succeeding birth interval}      
+#'     \item{\code{b13.02}}{flag for age at death}          
+#'     \item{\code{bidx.03}}{birth column number}           
+#'     \item{\code{bord.03}}{birth order number}            
+#'     \item{\code{b0.03}}{child is twin}                   
+#'     \item{\code{b1.03}}{month of birth}                  
+#'     \item{\code{b2.03}}{year of birth}                   
+#'     \item{\code{b3.03}}{date of birth (cmc)}             
+#'     \item{\code{b4.03}}{sex of child}                    
+#'     \item{\code{b5.03}}{child is alive}                  
+#'     \item{\code{b6.03}}{age at death}                    
+#'     \item{\code{b7.03}}{age at death (months-imputed)}   
+#'     \item{\code{b8.03}}{current age of child}            
+#'     \item{\code{b9.03}}{who child lives with}            
+#'     \item{\code{b10.03}}{completeness of information}    
+#'     \item{\code{b11.03}}{preceding birth interval}       
+#'     \item{\code{b12.03}}{succeeding birth interval}      
+#'     \item{\code{b13.03}}{flag for age at death}          
+#'     \item{\code{bidx.04}}{birth column number}           
+#'     \item{\code{bord.04}}{birth order number}            
+#'     \item{\code{b0.04}}{child is twin}                   
+#'     \item{\code{b1.04}}{month of birth}                  
+#'     \item{\code{b2.04}}{year of birth}                   
+#'     \item{\code{b3.04}}{date of birth (cmc)}             
+#'     \item{\code{b4.04}}{sex of child}                    
+#'     \item{\code{b5.04}}{child is alive}                  
+#'     \item{\code{b6.04}}{age at death}                    
+#'     \item{\code{b7.04}}{age at death (months-imputed)}   
+#'     \item{\code{b8.04}}{current age of child}            
+#'     \item{\code{b9.04}}{who child lives with}            
+#'     \item{\code{b10.04}}{completeness of information}    
+#'     \item{\code{b11.04}}{preceding birth interval}       
+#'     \item{\code{b12.04}}{succeeding birth interval}      
+#'     \item{\code{b13.04}}{flag for age at death}          
+#'     \item{\code{bidx.05}}{birth column number}           
+#'     \item{\code{bord.05}}{birth order number}            
+#'     \item{\code{b0.05}}{child is twin}                   
+#'     \item{\code{b1.05}}{month of birth}                  
+#'     \item{\code{b2.05}}{year of birth}                   
+#'     \item{\code{b3.05}}{date of birth (cmc)}             
+#'     \item{\code{b4.05}}{sex of child}                    
+#'     \item{\code{b5.05}}{child is alive}                  
+#'     \item{\code{b6.05}}{age at death}                    
+#'     \item{\code{b7.05}}{age at death (months-imputed)}   
+#'     \item{\code{b8.05}}{current age of child}            
+#'     \item{\code{b9.05}}{who child lives with}            
+#'     \item{\code{b10.05}}{completeness of information}    
+#'     \item{\code{b11.05}}{preceding birth interval}       
+#'     \item{\code{b12.05}}{succeeding birth interval}      
+#'     \item{\code{b13.05}}{flag for age at death}          
+#'     \item{\code{bidx.06}}{birth column number}           
+#'     \item{\code{bord.06}}{birth order number}            
+#'     \item{\code{b0.06}}{child is twin}                   
+#'     \item{\code{b1.06}}{month of birth}                  
+#'     \item{\code{b2.06}}{year of birth}                   
+#'     \item{\code{b3.06}}{date of birth (cmc)}             
+#'     \item{\code{b4.06}}{sex of child}                    
+#'     \item{\code{b5.06}}{child is alive}                  
+#'     \item{\code{b6.06}}{age at death}                    
+#'     \item{\code{b7.06}}{age at death (months-imputed)}   
+#'     \item{\code{b8.06}}{current age of child}            
+#'     \item{\code{b9.06}}{who child lives with}            
+#'     \item{\code{b10.06}}{completeness of information}    
+#'     \item{\code{b11.06}}{preceding birth interval}       
+#'     \item{\code{b12.06}}{succeeding birth interval}      
+#'     \item{\code{b13.06}}{flag for age at death}          
+#'     \item{\code{bidx.07}}{birth column number}           
+#'     \item{\code{bord.07}}{birth order number}            
+#'     \item{\code{b0.07}}{child is twin}                   
+#'     \item{\code{b1.07}}{month of birth}                  
+#'     \item{\code{b2.07}}{year of birth}                   
+#'     \item{\code{b3.07}}{date of birth (cmc)}             
+#'     \item{\code{b4.07}}{sex of child}                    
+#'     \item{\code{b5.07}}{child is alive}                  
+#'     \item{\code{b6.07}}{age at death}                    
+#'     \item{\code{b7.07}}{age at death (months-imputed)}   
+#'     \item{\code{b8.07}}{current age of child}            
+#'     \item{\code{b9.07}}{who child lives with}            
+#'     \item{\code{b10.07}}{completeness of information}    
+#'     \item{\code{b11.07}}{preceding birth interval}       
+#'     \item{\code{b12.07}}{succeeding birth interval}      
+#'     \item{\code{b13.07}}{flag for age at death}          
+#'     \item{\code{bidx.08}}{birth column number}           
+#'     \item{\code{bord.08}}{birth order number}            
+#'     \item{\code{b0.08}}{child is twin}                   
+#'     \item{\code{b1.08}}{month of birth}                  
+#'     \item{\code{b2.08}}{year of birth}                   
+#'     \item{\code{b3.08}}{date of birth (cmc)}             
+#'     \item{\code{b4.08}}{sex of child}                    
+#'     \item{\code{b5.08}}{child is alive}                  
+#'     \item{\code{b6.08}}{age at death}                    
+#'     \item{\code{b7.08}}{age at death (months-imputed)}   
+#'     \item{\code{b8.08}}{current age of child}            
+#'     \item{\code{b9.08}}{who child lives with}            
+#'     \item{\code{b10.08}}{completeness of information}    
+#'     \item{\code{b11.08}}{preceding birth interval}       
+#'     \item{\code{b12.08}}{succeeding birth interval}      
+#'     \item{\code{b13.08}}{flag for age at death}          
+#'     \item{\code{bidx.09}}{birth column number}           
+#'     \item{\code{bord.09}}{birth order number}            
+#'     \item{\code{b0.09}}{child is twin}                   
+#'     \item{\code{b1.09}}{month of birth}                  
+#'     \item{\code{b2.09}}{year of birth}                   
+#'     \item{\code{b3.09}}{date of birth (cmc)}             
+#'     \item{\code{b4.09}}{sex of child}                    
+#'     \item{\code{b5.09}}{child is alive}                  
+#'     \item{\code{b6.09}}{age at death}                    
+#'     \item{\code{b7.09}}{age at death (months-imputed)}   
+#'     \item{\code{b8.09}}{current age of child}            
+#'     \item{\code{b9.09}}{who child lives with}            
+#'     \item{\code{b10.09}}{completeness of information}    
+#'     \item{\code{b11.09}}{preceding birth interval}       
+#'     \item{\code{b12.09}}{succeeding birth interval}      
+#'     \item{\code{b13.09}}{flag for age at death}          
+#'     \item{\code{bidx.10}}{birth column number}           
+#'     \item{\code{bord.10}}{birth order number}            
+#'     \item{\code{b0.10}}{child is twin}                   
+#'     \item{\code{b1.10}}{month of birth}                  
+#'     \item{\code{b2.10}}{year of birth}                   
+#'     \item{\code{b3.10}}{date of birth (cmc)}             
+#'     \item{\code{b4.10}}{sex of child}                    
+#'     \item{\code{b5.10}}{child is alive}                  
+#'     \item{\code{b6.10}}{age at death}                    
+#'     \item{\code{b7.10}}{age at death (months-imputed)}   
+#'     \item{\code{b8.10}}{current age of child}            
+#'     \item{\code{b9.10}}{who child lives with}            
+#'     \item{\code{b10.10}}{completeness of information}    
+#'     \item{\code{b11.10}}{preceding birth interval}       
+#'     \item{\code{b12.10}}{succeeding birth interval}      
+#'     \item{\code{b13.10}}{flag for age at death}          
+#'     \item{\code{bidx.11}}{birth column number}           
+#'     \item{\code{bord.11}}{birth order number}            
+#'     \item{\code{b0.11}}{child is twin}                   
+#'     \item{\code{b1.11}}{month of birth}                  
+#'     \item{\code{b2.11}}{year of birth}                   
+#'     \item{\code{b3.11}}{date of birth (cmc)}             
+#'     \item{\code{b4.11}}{sex of child}                    
+#'     \item{\code{b5.11}}{child is alive}                  
+#'     \item{\code{b6.11}}{age at death}                    
+#'     \item{\code{b7.11}}{age at death (months-imputed)}   
+#'     \item{\code{b8.11}}{current age of child}            
+#'     \item{\code{b9.11}}{who child lives with}            
+#'     \item{\code{b10.11}}{completeness of information}    
+#'     \item{\code{b11.11}}{preceding birth interval}       
+#'     \item{\code{b12.11}}{succeeding birth interval}      
+#'     \item{\code{b13.11}}{flag for age at death}          
+#'     \item{\code{bidx.12}}{birth column number}           
+#'     \item{\code{bord.12}}{birth order number}            
+#'     \item{\code{b0.12}}{child is twin}                   
+#'     \item{\code{b1.12}}{month of birth}                  
+#'     \item{\code{b2.12}}{year of birth}                   
+#'     \item{\code{b3.12}}{date of birth (cmc)}             
+#'     \item{\code{b4.12}}{sex of child}                    
+#'     \item{\code{b5.12}}{child is alive}                  
+#'     \item{\code{b6.12}}{age at death}                    
+#'     \item{\code{b7.12}}{age at death (months-imputed)}   
+#'     \item{\code{b8.12}}{current age of child}            
+#'     \item{\code{b9.12}}{who child lives with}            
+#'     \item{\code{b10.12}}{completeness of information}    
+#'     \item{\code{b11.12}}{preceding birth interval}       
+#'     \item{\code{b12.12}}{succeeding birth interval}      
+#'     \item{\code{b13.12}}{flag for age at death}          
+#'     \item{\code{bidx.13}}{birth column number}           
+#'     \item{\code{bord.13}}{birth order number}            
+#'     \item{\code{b0.13}}{child is twin}                   
+#'     \item{\code{b1.13}}{month of birth}                  
+#'     \item{\code{b2.13}}{year of birth}                   
+#'     \item{\code{b3.13}}{date of birth (cmc)}             
+#'     \item{\code{b4.13}}{sex of child}                    
+#'     \item{\code{b5.13}}{child is alive}                  
+#'     \item{\code{b6.13}}{age at death}                    
+#'     \item{\code{b7.13}}{age at death (months-imputed)}   
+#'     \item{\code{b8.13}}{current age of child}            
+#'     \item{\code{b9.13}}{who child lives with}            
+#'     \item{\code{b10.13}}{completeness of information}    
+#'     \item{\code{b11.13}}{preceding birth interval}       
+#'     \item{\code{b12.13}}{succeeding birth interval}      
+#'     \item{\code{b13.13}}{flag for age at death}          
+#'     \item{\code{bidx.14}}{birth column number}           
+#'     \item{\code{bord.14}}{birth order number}            
+#'     \item{\code{b0.14}}{child is twin}                   
+#'     \item{\code{b1.14}}{month of birth}                  
+#'     \item{\code{b2.14}}{year of birth}                   
+#'     \item{\code{b3.14}}{date of birth (cmc)}             
+#'     \item{\code{b4.14}}{sex of child}                    
+#'     \item{\code{b5.14}}{child is alive}                  
+#'     \item{\code{b6.14}}{age at death}                    
+#'     \item{\code{b7.14}}{age at death (months-imputed)}   
+#'     \item{\code{b8.14}}{current age of child}            
+#'     \item{\code{b9.14}}{who child lives with}            
+#'     \item{\code{b10.14}}{completeness of information}    
+#'     \item{\code{b11.14}}{preceding birth interval}       
+#'     \item{\code{b12.14}}{succeeding birth interval}      
+#'     \item{\code{b13.14}}{flag for age at death}          
+#'     \item{\code{bidx.15}}{birth column number}           
+#'     \item{\code{bord.15}}{birth order number}            
+#'     \item{\code{b0.15}}{child is twin}                   
+#'     \item{\code{b1.15}}{month of birth}                  
+#'     \item{\code{b2.15}}{year of birth}                   
+#'     \item{\code{b3.15}}{date of birth (cmc)}             
+#'     \item{\code{b4.15}}{sex of child}                    
+#'     \item{\code{b5.15}}{child is alive}                  
+#'     \item{\code{b6.15}}{age at death}                    
+#'     \item{\code{b7.15}}{age at death (months-imputed)}   
+#'     \item{\code{b8.15}}{current age of child}            
+#'     \item{\code{b9.15}}{who child lives with}            
+#'     \item{\code{b10.15}}{completeness of information}    
+#'     \item{\code{b11.15}}{preceding birth interval}       
+#'     \item{\code{b12.15}}{succeeding birth interval}      
+#'     \item{\code{b13.15}}{flag for age at death}          
+#'     \item{\code{bidx.16}}{birth column number}           
+#'     \item{\code{bord.16}}{birth order number}            
+#'     \item{\code{b0.16}}{child is twin}                   
+#'     \item{\code{b1.16}}{month of birth}                  
+#'     \item{\code{b2.16}}{year of birth}                   
+#'     \item{\code{b3.16}}{date of birth (cmc)}             
+#'     \item{\code{b4.16}}{sex of child}                    
+#'     \item{\code{b5.16}}{child is alive}                  
+#'     \item{\code{b6.16}}{age at death}                    
+#'     \item{\code{b7.16}}{age at death (months-imputed)}   
+#'     \item{\code{b8.16}}{current age of child}            
+#'     \item{\code{b9.16}}{who child lives with}            
+#'     \item{\code{b10.16}}{completeness of information}    
+#'     \item{\code{b11.16}}{preceding birth interval}       
+#'     \item{\code{b12.16}}{succeeding birth interval}      
+#'     \item{\code{b13.16}}{flag for age at death}          
+#'     \item{\code{bidx.17}}{birth column number}           
+#'     \item{\code{bord.17}}{birth order number}            
+#'     \item{\code{b0.17}}{child is twin}                   
+#'     \item{\code{b1.17}}{month of birth}                  
+#'     \item{\code{b2.17}}{year of birth}                   
+#'     \item{\code{b3.17}}{date of birth (cmc)}             
+#'     \item{\code{b4.17}}{sex of child}                    
+#'     \item{\code{b5.17}}{child is alive}                  
+#'     \item{\code{b6.17}}{age at death}                    
+#'     \item{\code{b7.17}}{age at death (months-imputed)}   
+#'     \item{\code{b8.17}}{current age of child}            
+#'     \item{\code{b9.17}}{who child lives with}            
+#'     \item{\code{b10.17}}{completeness of information}    
+#'     \item{\code{b11.17}}{preceding birth interval}       
+#'     \item{\code{b12.17}}{succeeding birth interval}      
+#'     \item{\code{b13.17}}{flag for age at death}          
+#'     \item{\code{bidx.18}}{birth column number}           
+#'     \item{\code{bord.18}}{birth order number}            
+#'     \item{\code{b0.18}}{child is twin}                   
+#'     \item{\code{b1.18}}{month of birth}                  
+#'     \item{\code{b2.18}}{year of birth}                   
+#'     \item{\code{b3.18}}{date of birth (cmc)}             
+#'     \item{\code{b4.18}}{sex of child}                    
+#'     \item{\code{b5.18}}{child is alive}                  
+#'     \item{\code{b6.18}}{age at death}                    
+#'     \item{\code{b7.18}}{age at death (months-imputed)}   
+#'     \item{\code{b8.18}}{current age of child}            
+#'     \item{\code{b9.18}}{who child lives with}            
+#'     \item{\code{b10.18}}{completeness of information}    
+#'     \item{\code{b11.18}}{preceding birth interval}       
+#'     \item{\code{b12.18}}{succeeding birth interval}      
+#'     \item{\code{b13.18}}{flag for age at death}          
+#'     \item{\code{bidx.19}}{birth column number}           
+#'     \item{\code{bord.19}}{birth order number}            
+#'     \item{\code{b0.19}}{child is twin}                   
+#'     \item{\code{b1.19}}{month of birth}                  
+#'     \item{\code{b2.19}}{year of birth}                   
+#'     \item{\code{b3.19}}{date of birth (cmc)}             
+#'     \item{\code{b4.19}}{sex of child}                    
+#'     \item{\code{b5.19}}{child is alive}                  
+#'     \item{\code{b6.19}}{age at death}                    
+#'     \item{\code{b7.19}}{age at death (months-imputed)}   
+#'     \item{\code{b8.19}}{current age of child}            
+#'     \item{\code{b9.19}}{who child lives with}            
+#'     \item{\code{b10.19}}{completeness of information}    
+#'     \item{\code{b11.19}}{preceding birth interval}       
+#'     \item{\code{b12.19}}{succeeding birth interval}      
+#'     \item{\code{b13.19}}{flag for age at death}          
+#'     \item{\code{bidx.20}}{birth column number}           
+#'     \item{\code{bord.20}}{birth order number}            
+#'     \item{\code{b0.20}}{child is twin}                   
+#'     \item{\code{b1.20}}{month of birth}                  
+#'     \item{\code{b2.20}}{year of birth}                   
+#'     \item{\code{b3.20}}{date of birth (cmc)}             
+#'     \item{\code{b4.20}}{sex of child}                    
+#'     \item{\code{b5.20}}{child is alive}                  
+#'     \item{\code{b6.20}}{age at death}                    
+#'     \item{\code{b7.20}}{age at death (months-imputed)}   
+#'     \item{\code{b8.20}}{current age of child}            
+#'     \item{\code{b9.20}}{who child lives with}            
+#'     \item{\code{b10.20}}{completeness of information}    
+#'     \item{\code{b11.20}}{preceding birth interval}       
+#'     \item{\code{b12.20}}{succeeding birth interval}      
+#'     \item{\code{b13.20}}{flag for age at death}          
+#'     \item{\code{v201}}{total children ever born}         
+#'     \item{\code{v202}}{sons at home}                     
+#'     \item{\code{v203}}{daughters at home}                
+#'     \item{\code{v204}}{sons elsewhere}                   
+#'     \item{\code{v205}}{daughters elsewhere}              
+#'     \item{\code{v206}}{sons who have died}               
+#'     \item{\code{v207}}{daughters who have died}          
+#'     \item{\code{v208}}{births in last five years}        
+#'     \item{\code{v209}}{births in past year}              
+#'     \item{\code{v210}}{births in month of interview}     
+#'     \item{\code{v211}}{date of first birth (cmc)}        
+#'     \item{\code{v212}}{age of respondent at 1st birth}   
+#'     \item{\code{v213}}{currently pregnant}               
+#'     \item{\code{v214}}{duration of current pregnancy}    
+#'     \item{\code{v215}}{time since last menstrual perd}   
+#'     \item{\code{v216}}{menstruated in last six weeks}    
+#'     \item{\code{v217}}{knowledge of ovulatory cycle}     
+#'     \item{\code{v218}}{number of living children}        
+#'     \item{\code{v219}}{living children + current preg}   
+#'     \item{\code{v220}}{living children + curr preg 6+}   
+#'     \item{\code{v221}}{marriage to first birth int.}     
+#'     \item{\code{v222}}{last birth to interview}          
+#'     \item{\code{v223}}{completeness of curr preg. inf}   
+#'     \item{\code{v224}}{entries in birth history}         
+#'     \item{\code{v225}}{current pregnancy wanted}         
+#'     \item{\code{v226}}{time since last period (comp)}    
+#'     \item{\code{v227}}{flag for last period}             
+#'     \item{\code{v228}}{ever had a terminated pre - na}   
+#'     \item{\code{v229}}{month pregnancy ended     - na}   
+#'     \item{\code{v230}}{year pregnancy ended      - na}   
+#'     \item{\code{v231}}{cmc pregnancy ended       - na}   
+#'     \item{\code{v232}}{completeness of last term - na}   
+#'     \item{\code{v233}}{months when pregnancy end - na}   
+#'     \item{\code{v234}}{other such pregnancies    - na}   
+#'     \item{\code{v235}}{index last child prior to - na}   
+#'     \item{\code{v301}}{knowledge of any method}          
+#'     \item{\code{v302}}{ever use of any method}           
+#'     \item{\code{v303}}{knows source for modern method}   
+#'     \item{\code{v304a.01}}{type of method}               
+#'     \item{\code{v304.01}}{knows method}                  
+#'     \item{\code{v305.01}}{ever used method}              
+#'     \item{\code{v306.01}}{source known for method}       
+#'     \item{\code{v304a.02}}{type of method}               
+#'     \item{\code{v304.02}}{knows method}                  
+#'     \item{\code{v305.02}}{ever used method}              
+#'     \item{\code{v306.02}}{source known for method}       
+#'     \item{\code{v304a.03}}{type of method}               
+#'     \item{\code{v304.03}}{knows method}                  
+#'     \item{\code{v305.03}}{ever used method}              
+#'     \item{\code{v306.03}}{source known for method}       
+#'     \item{\code{v304a.04}}{type of method}               
+#'     \item{\code{v304.04}}{knows method}                  
+#'     \item{\code{v305.04}}{ever used method}              
+#'     \item{\code{v306.04}}{source known for method}       
+#'     \item{\code{v304a.05}}{type of method}               
+#'     \item{\code{v304.05}}{knows method}                  
+#'     \item{\code{v305.05}}{ever used method}              
+#'     \item{\code{v306.05}}{source known for method}       
+#'     \item{\code{v304a.06}}{type of method}               
+#'     \item{\code{v304.06}}{knows method}                  
+#'     \item{\code{v305.06}}{ever used method}              
+#'     \item{\code{v306.06}}{source known for method}       
+#'     \item{\code{v304a.07}}{type of method}               
+#'     \item{\code{v304.07}}{knows method}                  
+#'     \item{\code{v305.07}}{ever used method}              
+#'     \item{\code{v306.07}}{source known for method}       
+#'     \item{\code{v304a.08}}{type of method}               
+#'     \item{\code{v304.08}}{knows method}                  
+#'     \item{\code{v305.08}}{ever used method}              
+#'     \item{\code{v306.08}}{source known for method}       
+#'     \item{\code{v304a.09}}{type of method}               
+#'     \item{\code{v304.09}}{knows method}                  
+#'     \item{\code{v305.09}}{ever used method}              
+#'     \item{\code{v306.09}}{source known for method}       
+#'     \item{\code{v304a.10}}{type of method}               
+#'     \item{\code{v304.10}}{knows method}                  
+#'     \item{\code{v305.10}}{ever used method}              
+#'     \item{\code{v306.10}}{source known for method}       
+#'     \item{\code{v304a.11}}{type of method}               
+#'     \item{\code{v304.11}}{knows method}                  
+#'     \item{\code{v305.11}}{ever used method}              
+#'     \item{\code{v306.11}}{source known for method}       
+#'     \item{\code{v304a.12}}{type of method}               
+#'     \item{\code{v304.12}}{knows method}                  
+#'     \item{\code{v305.12}}{ever used method}              
+#'     \item{\code{v306.12}}{source known for method}       
+#'     \item{\code{v304a.13}}{type of method}               
+#'     \item{\code{v304.13}}{knows method}                  
+#'     \item{\code{v305.13}}{ever used method}              
+#'     \item{\code{v306.13}}{source known for method}       
+#'     \item{\code{v304a.14}}{type of method}               
+#'     \item{\code{v304.14}}{knows method}                  
+#'     \item{\code{v305.14}}{ever used method}              
+#'     \item{\code{v306.14}}{source known for method}       
+#'     \item{\code{v304a.15}}{type of method}               
+#'     \item{\code{v304.15}}{knows method}                  
+#'     \item{\code{v305.15}}{ever used method}              
+#'     \item{\code{v306.15}}{source known for method}       
+#'     \item{\code{v310}}{living children at first use}     
+#'     \item{\code{v311}}{children at first use (grpd)}     
+#'     \item{\code{v312}}{current contraceptive method}     
+#'     \item{\code{v313}}{current use by method type}       
+#'     \item{\code{v315}}{month of sterilization}           
+#'     \item{\code{v316}}{year of sterilization}            
+#'     \item{\code{v317}}{date of sterilization (cmc)}      
+#'     \item{\code{v318}}{completeness of information}      
+#'     \item{\code{v319}}{years since sterilization}        
+#'     \item{\code{v320}}{age at sterilization}             
+#'     \item{\code{v321}}{marital duration at steriliz.}    
+#'     \item{\code{v322}}{parity at sterilization}          
+#'     \item{\code{v323}}{brand of pill used}               
+#'     \item{\code{v325}}{cost of pills}                    
+#'     \item{\code{v326}}{last source for current users}    
+#'     \item{\code{v327}}{last source for users by type}    
+#'     \item{\code{v337}}{months of use of current meth}    
+#'     \item{\code{v338}}{problem with current meth - na}   
+#'     \item{\code{v339}}{problem with current metho- na}   
+#'     \item{\code{v359}}{last method disc. last 5 y- na}   
+#'     \item{\code{v360}}{reason of last discontinua- na}   
+#'     \item{\code{v361}}{pattern of use}                   
+#'     \item{\code{v362}}{intention to use}                 
+#'     \item{\code{v363}}{preferred future method}          
+#'     \item{\code{v364}}{contraceptive use & intention}    
+#'     \item{\code{v365}}{heard fp message on radio}        
+#'     \item{\code{v366}}{acceptability of media message}   
+#'     \item{\code{v367}}{wanted last child}                
+#'     \item{\code{v369}}{first method used}                
+#'     \item{\code{v370}}{source of first method    - na}   
+#'     \item{\code{v371}}{source of first method    - na}   
+#'     \item{\code{v372}}{shown pill package}               
+#'     \item{\code{v373}}{doctor/nurse for first pil- na}   
+#'     \item{\code{v374}}{doctor/nurse for last pills}      
+#'     \item{\code{v375}}{reason for current method - na}   
+#'     \item{\code{v376}}{main reason not to use a meth.}   
+#'     \item{\code{v377}}{source for future method}         
+#'     \item{\code{v378}}{source for future method}         
+#'     \item{\code{v379}}{source known for any method}      
+#'     \item{\code{v380}}{source known for any method}      
+#'     \item{\code{v381}}{time to get to source}            
+#'     \item{\code{v382}}{time to get to source(grouped)}   
+#'     \item{\code{v383}}{easy/difficult to get to place}   
+#'     \item{\code{v384}}{heard about fp on television}     
+#'     \item{\code{v385}}{contraceptive use before  - na}   
+#'     \item{\code{v386}}{month started method pre  - na}   
+#'     \item{\code{v387}}{year started method pre 8 - na}   
+#'     \item{\code{v388}}{date started method pre 8 - na}   
+#'     \item{\code{v389}}{months use prior to calen - na}   
+#'     \item{\code{v390}}{month stopped method pre  - na}   
+#'     \item{\code{v391}}{year stopped method pre 8 - na}   
+#'     \item{\code{v392}}{date stopped method pre 8 - na}   
+#'     \item{\code{v401}}{last birth ceasarean section}     
+#'     \item{\code{v404}}{currently breastfeeding}          
+#'     \item{\code{v405}}{currently amenorrheic}            
+#'     \item{\code{v406}}{currently abstaining}             
+#'     \item{\code{v407}}{times breastfed during night}     
+#'     \item{\code{v408}}{times breastfed during day}       
+#'     \item{\code{v409}}{gave child plain water}           
+#'     \item{\code{v409a}}{gave child sugar water}          
+#'     \item{\code{v410}}{gave child juice}                 
+#'     \item{\code{v410a}}{gave child herbal tea}           
+#'     \item{\code{v411}}{gave child powder/tinned milk}    
+#'     \item{\code{v411a}}{gave child baby formula}         
+#'     \item{\code{v412}}{gave child fresh milk}            
+#'     \item{\code{v413a}}{country specific: ghutti}        
+#'     \item{\code{v413b}}{country specific: gripe water}   
+#'     \item{\code{v413c}}{country specific other li - na}  
+#'     \item{\code{v413d}}{country specific other li - na}  
+#'     \item{\code{v413}}{gave child other liquid}          
+#'     \item{\code{v414a}}{country specific other fo - na}  
+#'     \item{\code{v414b}}{country specific other fo - na}  
+#'     \item{\code{v414c}}{country specific other fo - na}  
+#'     \item{\code{v414d}}{country specific other fo - na}  
+#'     \item{\code{v414}}{gave child solid or mushy food}   
+#'     \item{\code{v415}}{fed food in bottle with nipple}   
+#'     \item{\code{v416}}{heard of oral rehydration}        
+#'     \item{\code{v417}}{entries in maternity table}       
+#'     \item{\code{v418}}{entries in health table}          
+#'     \item{\code{v419}}{entries in height/weight table}   
+#'     \item{\code{v420}}{measurer's code          -  na}   
+#'     \item{\code{v421}}{assistant measurer's code - na}   
+#'     \item{\code{v422}}{ever prepared ors solution}       
+#'     \item{\code{v423}}{quantity of water for ors}        
+#'     \item{\code{v424a}}{ors source: government hosp.}    
+#'     \item{\code{v424b}}{ors source: govt health c - na}  
+#'     \item{\code{v424c}}{ors source: govt health p - na}  
+#'     \item{\code{v424d}}{ors source: mobile clinic - na}  
+#'     \item{\code{v424e}}{ors source: comm.health w - na}  
+#'     \item{\code{v424f}}{ors source:cs rhc/ govt clinin}  
+#'     \item{\code{v424g}}{ors source:cs fam welfare wrkr}  
+#'     \item{\code{v424h}}{ors source:cs lady health wrkr}  
+#'     \item{\code{v424i}}{ors source:cs pub. mobile team}  
+#'     \item{\code{v424j}}{ors source: private hosp/clin.}  
+#'     \item{\code{v424k}}{ors source: private pharmacy}    
+#'     \item{\code{v424l}}{ors source: private doctor}      
+#'     \item{\code{v424m}}{ors source: private mobil - na}  
+#'     \item{\code{v424n}}{ors source: comm.health w - na}  
+#'     \item{\code{v424o}}{ors source: cs med.priv s - na}  
+#'     \item{\code{v424p}}{ors source: cs med.priv s - na}  
+#'     \item{\code{v424q}}{ors source: cs med.priv s - na}  
+#'     \item{\code{v424r}}{ors source: cs med.priv s - na}  
+#'     \item{\code{v424s}}{ors source: shop}                
+#'     \item{\code{v424t}}{ors source: traditional pr- na}  
+#'     \item{\code{v424u}}{ors source:cs hakim}             
+#'     \item{\code{v424v}}{ors source: cs oth.priv s - na}  
+#'     \item{\code{v424w}}{ors source: cs oth.priv s - na}  
+#'     \item{\code{v424x}}{ors source: other}               
+#'     \item{\code{v424y}}{ors source: unknown}             
+#'     \item{\code{v425}}{home fluid preparation teacher}   
+#'     \item{\code{v426}}{when child put to breast}         
+#'     \item{\code{v427}}{duration breastfeeding pr - na}   
+#'     \item{\code{v428}}{months breastfeeding pre  - na}   
+#'     \item{\code{v429}}{flag for breastfeeding pr - na}   
+#'     \item{\code{v430}}{duration of amenorrhea pr - na}   
+#'     \item{\code{v431}}{months of amenorrhea pre  - na}   
+#'     \item{\code{v432}}{flag for amenorrhea pre 8 - na}   
+#'     \item{\code{v433}}{duration of abstinence pr - na}   
+#'     \item{\code{v434}}{months of abstinence pre  - na}   
+#'     \item{\code{v435}}{flag for abstinence pre 8 - na}   
+#'     \item{\code{v436}}{arm circumference (cms-1d - na}   
+#'     \item{\code{v437}}{respondent's weight (kilo - na}   
+#'     \item{\code{v438}}{respondent's height (cms- - na}   
+#'     \item{\code{v439}}{ht/a percentile (resp.)   - na}   
+#'     \item{\code{v440}}{ht/a standard deviations  - na}   
+#'     \item{\code{v441}}{ht/a percent ref. median  - na}   
+#'     \item{\code{v442}}{wt/ht percent ref. median - na}   
+#'     \item{\code{v443}}{wt/ht percent ref. median - na}   
+#'     \item{\code{v444}}{wt/ht percent ref. median - na}   
+#'     \item{\code{v445}}{body mass index for respo - na}   
+#'     \item{\code{v446}}{rohrer's index for respon - na}   
+#'     \item{\code{v447}}{result of measurement of  - na}   
+#'     \item{\code{v501}}{current marital status}           
+#'     \item{\code{v502}}{currently/formerly/never marr.}   
+#'     \item{\code{v503}}{number of unions}                 
+#'     \item{\code{v504}}{husband lives in house}           
+#'     \item{\code{v505}}{number of other wives}            
+#'     \item{\code{v506}}{wife rank number}                 
+#'     \item{\code{v507}}{month of first marriage}          
+#'     \item{\code{v508}}{year of first marriage}           
+#'     \item{\code{v509}}{date of first marriage (cmc)}     
+#'     \item{\code{v510}}{completeness of date inform.}     
+#'     \item{\code{v511}}{age at first marriage}            
+#'     \item{\code{v512}}{years since first marriage}       
+#'     \item{\code{v513}}{marital duration (grouped)}       
+#'     \item{\code{v525}}{age at first intercourse  - na}   
+#'     \item{\code{v526}}{frequency of intercourse  - na}   
+#'     \item{\code{v527}}{time since last intercour - na}   
+#'     \item{\code{v528}}{time since last intercour - na}   
+#'     \item{\code{v529}}{time since last intercour - na}   
+#'     \item{\code{v530}}{flag for v529             - na}   
+#'     \item{\code{v531}}{age at first intercourse  - na}   
+#'     \item{\code{v532}}{flag for v531             - na}   
+#'     \item{\code{v533}}{usual frequency of interc - na}   
+#'     \item{\code{v602}}{fertility preference}             
+#'     \item{\code{v603}}{preferred waiting time}           
+#'     \item{\code{v604}}{preferred waiting time (grpd)}    
+#'     \item{\code{v605}}{desire for more children}         
+#'     \item{\code{v608}}{ideal post-partum abst. period}   
+#'     \item{\code{v609}}{sex while breastfeeding}          
+#'     \item{\code{v610}}{husband approves fp}              
+#'     \item{\code{v611}}{discussed fp with partner}        
+#'     \item{\code{v612}}{respondent approves fp}           
+#'     \item{\code{v613}}{ideal number of children}         
+#'     \item{\code{v614}}{ideal number of children (grp)}   
+#'     \item{\code{v615}}{best birth interval       - na}   
+#'     \item{\code{v616}}{time for future birth}            
+#'     \item{\code{v617}}{age youngest at future birth}     
+#'     \item{\code{v618}}{reason regrets sterilization}     
+#'     \item{\code{v619}}{think would have sterilization}   
+#'     \item{\code{v620}}{discussed number of children}     
+#'     \item{\code{v621}}{husbands desire for children}     
+#'     \item{\code{v623}}{exposure}                         
+#'     \item{\code{v624}}{unmet need}                       
+#'     \item{\code{v625}}{exposure (definition 2)}          
+#'     \item{\code{v626}}{unmet need (definition 2)}        
+#'     \item{\code{v701}}{partner's education level}        
+#'     \item{\code{v702}}{highest year of education}        
+#'     \item{\code{v704}}{partner's occupation}             
+#'     \item{\code{v705}}{partner's occupation}             
+#'     \item{\code{v707}}{type of land where works}         
+#'     \item{\code{v714}}{respondent currently working}     
+#'     \item{\code{v715}}{husbands education-single yrs}    
+#'     \item{\code{v716}}{respondent's occupation}          
+#'     \item{\code{v717}}{respondent's occupation}          
+#'     \item{\code{v718}}{current type of employment}       
+#'     \item{\code{v719}}{work for family, others, self}    
+#'     \item{\code{v720}}{earns cash for work}              
+#'     \item{\code{v721}}{works at home or away}            
+#'     \item{\code{v722}}{child with resp. at work}         
+#'     \item{\code{v723}}{child minder}                     
+#'     \item{\code{v724}}{ever worked since jan. 19 - na}   
+#'     \item{\code{v725}}{month started work before - na}   
+#'     \item{\code{v726}}{year started work before  - na}   
+#'     \item{\code{v727}}{month job prior to 8? end - na}   
+#'     \item{\code{v728}}{year job prior to 8? ende - na}   
+#'     \item{\code{v729}}{partner's educational attainm.}   
+#'     \item{\code{v801}}{time interview started}           
+#'     \item{\code{v802}}{time interview ended}             
+#'     \item{\code{v803}}{length of interview in minutes}   
+#'     \item{\code{v804}}{number of visits}                 
+#'     \item{\code{v805}}{interviewer identification}       
+#'     \item{\code{v806}}{keyer identification}             
+#'     \item{\code{v811}}{pres. children < 10 (sec 5)}      
+#'     \item{\code{v812}}{pres. husband (sec 5)}            
+#'     \item{\code{v813}}{pres. other males (sec 5)}        
+#'     \item{\code{v814}}{pres. other females (sec 5)}      
+#'     \item{\code{mcaseid}}{case identification}           
+#'     \item{\code{mv000}}{country code and phase}          
+#'     \item{\code{mv001}}{cluster number}                  
+#'     \item{\code{mv002}}{household number}                
+#'     \item{\code{mv003}}{respondent's line number}        
+#'     \item{\code{mv004}}{ultimate area unit}              
+#'     \item{\code{mv005}}{sample weight}                   
+#'     \item{\code{mv006}}{month of interview}              
+#'     \item{\code{mv007}}{year of interview}               
+#'     \item{\code{mv008}}{date of interview (cmc)}         
+#'     \item{\code{mv009}}{respondent's month of birth}     
+#'     \item{\code{mv010}}{respondent's year of birth}      
+#'     \item{\code{mv011}}{date of birth (cmc)}             
+#'     \item{\code{mv012}}{current age - respondent}        
+#'     \item{\code{mv013}}{age 5-year groups}               
+#'     \item{\code{mv014}}{completeness of information}     
+#'     \item{\code{mv015}}{result of individual interview}  
+#'     \item{\code{mv016}}{day of interview}                
+#'     \item{\code{mv021}}{primary sampling unit}           
+#'     \item{\code{mv022}}{sample stratum number}           
+#'     \item{\code{mv023}}{sample domain}                   
+#'     \item{\code{mv024}}{region}                          
+#'     \item{\code{mv025}}{type of place of residence}      
+#'     \item{\code{mv026}}{de facto place of residence}     
+#'     \item{\code{mv027}}{number of visits}                
+#'     \item{\code{mv028}}{interviewer identification}      
+#'     \item{\code{mv029}}{keyer identification}            
+#'     \item{\code{mv030}}{field supervisor          - na}  
+#'     \item{\code{mv031}}{field editor              - na}  
+#'     \item{\code{mv032}}{office editor             - na}  
+#'     \item{\code{mv033}}{ultimate area selection p - na}  
+#'     \item{\code{mv034.1}}{line numbers of wives}         
+#'     \item{\code{mv034.2}}{line numbers of wives}         
+#'     \item{\code{mv034.3}}{line numbers of wives}         
+#'     \item{\code{mv034.4}}{line numbers of wives}         
+#'     \item{\code{mv034.5}}{line numbers of wives}         
+#'     \item{\code{mv034.6}}{line numbers of wives}         
+#'     \item{\code{mv034.7}}{line numbers of wives}         
+#'     \item{\code{mv034.8}}{line numbers of wives}         
+#'     \item{\code{mv035}}{number of wives, partners}       
+#'     \item{\code{mv801}}{time interview started}          
+#'     \item{\code{mv802}}{time interview ended}            
+#'     \item{\code{mv803}}{length of interview in minutes}  
+#'     \item{\code{mv101}}{region}                          
+#'     \item{\code{mv102}}{type of place of residence}      
+#'     \item{\code{mv103}}{childhood place of residence}    
+#'     \item{\code{mv104}}{years lived in place of res.}    
+#'     \item{\code{mv105}}{type of place of previous res.}  
+#'     \item{\code{mv106}}{highest educational level}       
+#'     \item{\code{mv107}}{highest year of education}       
+#'     \item{\code{mv108}}{literacy}                        
+#'     \item{\code{mv109}}{reads newspaper once a week}     
+#'     \item{\code{mv110}}{watches tv every week}           
+#'     \item{\code{mv111}}{listens to radio every da - na}  
+#'     \item{\code{mv112}}{listens to radio every week}     
+#'     \item{\code{mv130}}{religion                  - na}  
+#'     \item{\code{mv131}}{ethnicity                 - na}  
+#'     \item{\code{mv133}}{education in single years}       
+#'     \item{\code{mv134}}{de facto place of residence}     
+#'     \item{\code{mv135}}{usual resident or visitor}       
+#'     \item{\code{mv136}}{number of household members}     
+#'     \item{\code{mv138}}{number of eligible men in hh}    
+#'     \item{\code{mv148}}{respondent still in school}      
+#'     \item{\code{mv149}}{educational attainment}          
+#'     \item{\code{mv150}}{relationship to household head}  
+#'     \item{\code{mv151}}{sex of household head}           
+#'     \item{\code{mv152}}{age of household head}           
+#'     \item{\code{mv201}}{total children ever born  - na}  
+#'     \item{\code{mv202}}{sons at home              - na}  
+#'     \item{\code{mv203}}{daughters at home         - na}  
+#'     \item{\code{mv204}}{sons elsewhere            - na}  
+#'     \item{\code{mv205}}{daughters elsewhere       - na}  
+#'     \item{\code{mv206}}{sons who have died        - na}  
+#'     \item{\code{mv207}}{daughters who have died   - na}  
+#'     \item{\code{mv213}}{partner currently pregnant}      
+#'     \item{\code{mv218}}{number of living children}       
+#'     \item{\code{mv225}}{current pregnancy wanted  - na}  
+#'     \item{\code{mv301}}{knowledge of any method}         
+#'     \item{\code{mv302}}{ever use of any method}          
+#'     \item{\code{mv304a01}}{type of method}               
+#'     \item{\code{mv304.01}}{knows method}                 
+#'     \item{\code{mv305.01}}{ever used method}             
+#'     \item{\code{mv304a02}}{type of method}               
+#'     \item{\code{mv304.02}}{knows method}                 
+#'     \item{\code{mv305.02}}{ever used method}             
+#'     \item{\code{mv304a03}}{type of method}               
+#'     \item{\code{mv304.03}}{knows method}                 
+#'     \item{\code{mv305.03}}{ever used method}             
+#'     \item{\code{mv304a04}}{type of method}               
+#'     \item{\code{mv304.04}}{knows method}                 
+#'     \item{\code{mv305.04}}{ever used method}             
+#'     \item{\code{mv304a05}}{type of method}               
+#'     \item{\code{mv304.05}}{knows method}                 
+#'     \item{\code{mv305.05}}{ever used method}             
+#'     \item{\code{mv304a06}}{type of method}               
+#'     \item{\code{mv304.06}}{knows method}                 
+#'     \item{\code{mv305.06}}{ever used method}             
+#'     \item{\code{mv304a07}}{type of method}               
+#'     \item{\code{mv304.07}}{knows method}                 
+#'     \item{\code{mv305.07}}{ever used method}             
+#'     \item{\code{mv304a08}}{type of method}               
+#'     \item{\code{mv304.08}}{knows method}                 
+#'     \item{\code{mv305.08}}{ever used method}             
+#'     \item{\code{mv304a09}}{type of method}               
+#'     \item{\code{mv304.09}}{knows method}                 
+#'     \item{\code{mv305.09}}{ever used method}             
+#'     \item{\code{mv304a10}}{type of method}               
+#'     \item{\code{mv304.10}}{knows method}                 
+#'     \item{\code{mv305.10}}{ever used method}             
+#'     \item{\code{mv304a11}}{type of method}               
+#'     \item{\code{mv304.11}}{knows method}                 
+#'     \item{\code{mv305.11}}{ever used method}             
+#'     \item{\code{mv304a12}}{type of method}               
+#'     \item{\code{mv304.12}}{knows method}                 
+#'     \item{\code{mv305.12}}{ever used method}             
+#'     \item{\code{mv304a13}}{type of method}               
+#'     \item{\code{mv304.13}}{knows method}                 
+#'     \item{\code{mv305.13}}{ever used method}             
+#'     \item{\code{mv304a14}}{type of method}               
+#'     \item{\code{mv304.14}}{knows method}                 
+#'     \item{\code{mv305.14}}{ever used method}             
+#'     \item{\code{mv304a15}}{type of method}               
+#'     \item{\code{mv304.15}}{knows method}                 
+#'     \item{\code{mv305.15}}{ever used method}             
+#'     \item{\code{mv312}}{current contraceptive method}    
+#'     \item{\code{mv313}}{current use by method type}      
+#'     \item{\code{mv361}}{pattern of use}                  
+#'     \item{\code{mv362}}{intention to use}                
+#'     \item{\code{mv363}}{preferred future method}         
+#'     \item{\code{mv364}}{contraceptive use & intention}   
+#'     \item{\code{mv366a}}{acceptability of radio me - na} 
+#'     \item{\code{mv366b}}{acceptability of tv messa - na} 
+#'     \item{\code{mv367}}{wanted last child         - na}  
+#'     \item{\code{mv375a}}{main reason not using a method} 
+#'     \item{\code{mv376}}{main reason not to use a meth.}  
+#'     \item{\code{mv384a}}{heard fp on radio last months}  
+#'     \item{\code{mv384b}}{heard fp on tv last months}     
+#'     \item{\code{mv384c}}{heard fp newspaper last m - na} 
+#'     \item{\code{mv384d}}{heard fp on poster last m - na} 
+#'     \item{\code{mv384e}}{heard fp brochures last m - na} 
+#'     \item{\code{mv501}}{current marital status}          
+#'     \item{\code{mv502}}{currently/formerly/never marr.}  
+#'     \item{\code{mv503}}{number of unions}                
+#'     \item{\code{mv505}}{number of wives, partners}       
+#'     \item{\code{mv507}}{month of first marriage}         
+#'     \item{\code{mv508}}{year of first marriage}          
+#'     \item{\code{mv509}}{date of first marriage (cmc)}    
+#'     \item{\code{mv510}}{completeness of date inform.}    
+#'     \item{\code{mv511}}{age at first marriage}           
+#'     \item{\code{mv512}}{years since first marriage}      
+#'     \item{\code{mv513}}{marital duration (grouped)}      
+#'     \item{\code{mv525}}{age at first intercourse  - na}  
+#'     \item{\code{mv527}}{time since last intercour - na}  
+#'     \item{\code{mv531}}{age at first intercourse  - na}  
+#'     \item{\code{mv532}}{flag for mv531            - na}  
+#'     \item{\code{mv534}}{have a regular sex partne - na}  
+#'     \item{\code{mv535}}{have ever been married    - na}  
+#'     \item{\code{mv602}}{fertility preference}            
+#'     \item{\code{mv603}}{preferred waiting time}          
+#'     \item{\code{mv604}}{preferred waiting time (grpd)}   
+#'     \item{\code{mv605}}{desire for more children}        
+#'     \item{\code{mv610}}{wife approves fp}                
+#'     \item{\code{mv611}}{discussed fp with partner}       
+#'     \item{\code{mv612}}{respondent approves fp}          
+#'     \item{\code{mv613}}{ideal number of children}        
+#'     \item{\code{mv614}}{ideal number of children (grp)}  
+#'     \item{\code{mv616}}{time for future birth}           
+#'     \item{\code{mv621}}{wifes desire for children}       
+#'     \item{\code{mv627}}{ideal number of boys}            
+#'     \item{\code{mv628}}{ideal number of girls}           
+#'     \item{\code{mv629}}{ideal number of either sex}      
+#'     \item{\code{mv630a}}{discussed fp with partner - na} 
+#'     \item{\code{mv630b}}{discussed fp with mother  - na} 
+#'     \item{\code{mv630c}}{discussed fp with father  - na} 
+#'     \item{\code{mv630d}}{discussed fp with sister( - na} 
+#'     \item{\code{mv630e}}{discussed fp with brother - na} 
+#'     \item{\code{mv630f}}{discussed fp with daughte - na} 
+#'     \item{\code{mv630g}}{discussed fp with mother- - na} 
+#'     \item{\code{mv630h}}{discussed fp with friends - na} 
+#'     \item{\code{mv630i}}{discussed fp -country spe - na} 
+#'     \item{\code{mv630j}}{discussed fp -country spe - na} 
+#'     \item{\code{mv630k}}{discussed fp -country spe - na} 
+#'     \item{\code{mv630l}}{discussed fp -country spe - na} 
+#'     \item{\code{mv630x}}{discussed fp with others  - na} 
+#'     \item{\code{mv714}}{respondent currently work - na}  
+#'     \item{\code{mv716}}{respondent's occupation}         
+#'     \item{\code{mv717}}{respondent's occupation}         
+#'     \item{\code{mv719}}{work for family, others,  - na}  
+#'     \item{\code{mv731}}{worked in last 12 months  - na}  
+#'     \item{\code{mv732}}{employment all year/seaso - na}  
+#'     \item{\code{mv733}}{months worked in last 12  - na}  
+#'     \item{\code{mv736}}{earnings for work         - na}  
+#'     \item{\code{mv740}}{type of land where resp. works}  
+#'     \item{\code{mv751}}{ever heard of aids        - na}  
+#'     \item{\code{mv752a}}{aids: radio               - na} 
+#'     \item{\code{mv752b}}{aids: television          - na} 
+#'     \item{\code{mv752c}}{aids: newspapers/magazine - na} 
+#'     \item{\code{mv752d}}{aids: pamphlets/posters   - na} 
+#'     \item{\code{mv752e}}{aids: clinic/health worke - na} 
+#'     \item{\code{mv752f}}{aids: churches/mosques    - na} 
+#'     \item{\code{mv752g}}{aids: schools/teachers    - na} 
+#'     \item{\code{mv752h}}{aids: community meetings  - na} 
+#'     \item{\code{mv752i}}{aids: friends/relatives   - na} 
+#'     \item{\code{mv752j}}{aids: work place          - na} 
+#'     \item{\code{mv752k}}{aids: country specific    - na} 
+#'     \item{\code{mv752l}}{aids: country specific    - na} 
+#'     \item{\code{mv752m}}{aids: country specific    - na} 
+#'     \item{\code{mv752n}}{aids: country specific    - na} 
+#'     \item{\code{mv752o}}{aids: country specific    - na} 
+#'     \item{\code{mv752x}}{aids: other responses     - na} 
+#'     \item{\code{mv753}}{ways to avoid aids        - na}  
+#'     \item{\code{mv754a}}{aids: safe sex            - na} 
+#'     \item{\code{mv754b}}{aids: abstain from sex    - na} 
+#'     \item{\code{mv754c}}{aids: use condoms during  - na} 
+#'     \item{\code{mv754d}}{aids: only one sex partne - na} 
+#'     \item{\code{mv754e}}{aids: avoid sex prostitut - na} 
+#'     \item{\code{mv754f}}{aids: avoid sex homosexua - na} 
+#'     \item{\code{mv754g}}{aids: avoid blood transfu - na} 
+#'     \item{\code{mv754h}}{aids: avoid injections    - na} 
+#'     \item{\code{mv754i}}{aids: avoid kissing       - na} 
+#'     \item{\code{mv754j}}{aids: avoid mosquito bite - na} 
+#'     \item{\code{mv754k}}{aids: protection trad. he - na} 
+#'     \item{\code{mv754l}}{aids: country specific    - na} 
+#'     \item{\code{mv754m}}{aids: country specific    - na} 
+#'     \item{\code{mv754n}}{aids: country specific    - na} 
+#'     \item{\code{mv754o}}{aids: country specific    - na} 
+#'     \item{\code{mv754x}}{aids: other responses     - na} 
+#'     \item{\code{mv754z}}{aids: dk ways to avoid ai - na} 
+#'     \item{\code{mv755b}}{safe sex: abstain from se - na} 
+#'     \item{\code{mv755c}}{safe sex: use condoms dur - na} 
+#'     \item{\code{mv755d}}{safe sex: only one partne - na} 
+#'     \item{\code{mv755e}}{safe sex: avoid prostitut - na} 
+#'     \item{\code{mv755f}}{safe sex: avoid homosexua - na} 
+#'     \item{\code{mv755l}}{safe sex: country specifi - na} 
+#'     \item{\code{mv755m}}{safe sex: country specifi - na} 
+#'     \item{\code{mv755n}}{safe sex: country specifi - na} 
+#'     \item{\code{mv755o}}{safe sex: country specifi - na} 
+#'     \item{\code{mv755x}}{safe sex: other responses - na} 
+#'     \item{\code{mv755z}}{safe sex: dk meaning      - na} 
+#'     \item{\code{mv756}}{can a healthy person have - na}  
+#'     \item{\code{mv757}}{is aids a fatal disease   - na}  
+#'     \item{\code{mv758}}{chances of getting aids   - na}  
+#'     \item{\code{mv760a}}{behavior: did not start s - na} 
+#'     \item{\code{mv760b}}{behavior: stopped all sex - na} 
+#'     \item{\code{mv760c}}{behavior: started using c - na} 
+#'     \item{\code{mv760d}}{behavior: only one sex pa - na} 
+#'     \item{\code{mv760e}}{behavior: reduced partner - na} 
+#'     \item{\code{mv760f}}{behavior: ask spouse fait - na} 
+#'     \item{\code{mv760g}}{behavior: no homosexual c - na} 
+#'     \item{\code{mv760i}}{behavior: stopped injecti - na} 
+#'     \item{\code{mv760l}}{behavior: country specifi - na} 
+#'     \item{\code{mv760m}}{behavior: country specifi - na} 
+#'     \item{\code{mv760n}}{behavior: country specifi - na} 
+#'     \item{\code{mv760o}}{behavior: country specifi - na} 
+#'     \item{\code{mv760p}}{behavior: avoid sex w. pr - na} 
+#'     \item{\code{mv760v}}{behavior: no nonsexual ch - na} 
+#'     \item{\code{mv760w}}{behavior: other nonsexual - na} 
+#'     \item{\code{mv760x}}{behavior: other responses - na} 
+#'     \item{\code{mv760y}}{behavior: no change       - na} 
+#'     \item{\code{mv760z}}{behavior: don't know      - na} 
+#'     \item{\code{mv761}}{last intercourse used con - na}  
+#'     \item{\code{mv762}}{source for condoms        - na}  
+#'     \item{\code{mv763}}{partners in last 12 month - na}  
+#'     \item{\code{mv764}}{knowledge of condom       - na}  
+#'     \item{\code{mv765}}{ever use of condom        - na}  
+#'     \item{\code{awfacte1}}{all women exp factor - educ 1}
+#'     \item{\code{awfacte2}}{all women exp factor - educ 2}
+#'     \item{\code{awfactk}}{all woman factor - karachi}    
+#'     \item{\code{seduc1}}{educational level for awfacte1} 
+#'     \item{\code{seduc2}}{educational level for awfacte2} 
+#'     \item{\code{sdist}}{district}                        
+#'     \item{\code{sclust}}{cluster number}                 
+#'     \item{\code{shusbln}}{husband's line number}         
+#'     \item{\code{shusband}}{first wife or not}            
+#'     \item{\code{slang1}}{language of questionnaire}      
+#'     \item{\code{slang2}}{language of interview}          
+#'     \item{\code{slang3}}{native language of respondent}  
+#'     \item{\code{stransl}}{translator used}               
+#'     \item{\code{s111}}{highest educational level}        
+#'     \item{\code{s112}}{highest grade at that level}      
+#'     \item{\code{s115}}{write a letter}                   
+#'     \item{\code{s125e}}{has a room cooler}               
+#'     \item{\code{s125f}}{has a washing machine}           
+#'     \item{\code{s125g}}{has a water pump}                
+#'     \item{\code{s126c}}{has a car, van or tractor}       
+#'     \item{\code{s130}}{province visitor is from}         
+#'     \item{\code{s311}}{first pill, consult medical}      
+#'     \item{\code{s312}}{first pill, preferred method}     
+#'     \item{\code{s313}}{first pill, preferred method}     
+#'     \item{\code{s314}}{first pill, other meths discsd}   
+#'     \item{\code{s315a}}{discusseed iud}                  
+#'     \item{\code{s315b}}{discussed injections}            
+#'     \item{\code{s315c}}{discussed diaphragm,foam,jelly}  
+#'     \item{\code{s315d}}{discussed condom}                
+#'     \item{\code{s315e}}{discussed female sterilization}  
+#'     \item{\code{s315f}}{discussed male sterilization}    
+#'     \item{\code{s315g}}{discussed periodic abstinence}   
+#'     \item{\code{s315h}}{discussed withdrawal}            
+#'     \item{\code{s315i}}{discussed other}                 
+#'     \item{\code{s316}}{satisfied with information}       
+#'     \item{\code{s321}}{reason not using}                 
+#'     \item{\code{s327a}}{shown condom package}            
+#'     \item{\code{s327b}}{brand of condoms shown}          
+#'     \item{\code{s329}}{cost of condom}                   
+#'     \item{\code{s330}}{cost of iud/ster/injections}      
+#'     \item{\code{s339}}{if own choice, desire to use}     
+#'     \item{\code{s349}}{message effective}                
+#'     \item{\code{s409}}{advised to eat more during prg}   
+#'     \item{\code{s410}}{weighed during pregnancy}         
+#'     \item{\code{s415}}{hours in labor - last birth}      
+#'     \item{\code{s431a}}{fed water before breast}         
+#'     \item{\code{s431b}}{fed ghutti before breast}        
+#'     \item{\code{s431c}}{fed honey before breast}         
+#'     \item{\code{s431d}}{fed sugar before breast}         
+#'     \item{\code{s431e}}{fed other before breast}         
+#'     \item{\code{s431f}}{fed other milk before breast}    
+#'     \item{\code{s431g}}{fed ghee before breast}          
+#'     \item{\code{s431h}}{fed butter before breast}        
+#'     \item{\code{s431i}}{fed oil before breast}           
+#'     \item{\code{s431j}}{fed tea before breast}           
+#'     \item{\code{s431k}}{fed herbal water before breast}  
+#'     \item{\code{s431l}}{fed rose water before breast}    
+#'     \item{\code{s431m}}{fed ghur before breast}          
+#'     \item{\code{s431n}}{fed nothing before breast}       
+#'     \item{\code{s439a}}{times given plain water}         
+#'     \item{\code{s439b}}{times given ghutti}              
+#'     \item{\code{s439c}}{times given sugar/honey water}   
+#'     \item{\code{s439d}}{times given juice}               
+#'     \item{\code{s439e}}{times given herbal tea}          
+#'     \item{\code{s439f}}{times given gripe water}         
+#'     \item{\code{s439g}}{times given baby formula}        
+#'     \item{\code{s439h}}{times given fresh milk}          
+#'     \item{\code{s439i}}{times given tinned/powd milk}    
+#'     \item{\code{s439j}}{times given other liquids}       
+#'     \item{\code{s439k}}{times given solid/mushy foods}   
+#'     \item{\code{s442}}{ever drink from nipple}           
+#'     \item{\code{s443}}{age for nipple regular basis}     
+#'     \item{\code{s495}}{amount of liquid for ors}         
+#'     \item{\code{sv420}}{measurer's code}                 
+#'     \item{\code{sv421}}{assistant measurer's code}       
+#'     \item{\code{s503}}{last four weeks cohabitation}     
+#'     \item{\code{s504}}{always apart or not 4 weeks}      
+#'     \item{\code{s505}}{time apart}                       
+#'     \item{\code{s510}}{blood relationship with spouse}   
+#'     \item{\code{s513d}}{presence of mother-in-law}       
+#'     \item{\code{s513e}}{presence of other female}        
+#'     \item{\code{s603}}{desire future child}              
+#'     \item{\code{s604}}{sex preference for next}          
+#'     \item{\code{s605}}{time for future birth (number)}   
+#'     \item{\code{s615}}{time to wait before sex (num.)}   
+#'     \item{\code{s618}}{ideal number of children}         
+#'     \item{\code{s619a}}{additional boys wanted}          
+#'     \item{\code{s619b}}{additional girls wanted}         
+#'     \item{\code{s619c}}{additional of either sex want}   
+#'     \item{\code{s620}}{education for sons}               
+#'     \item{\code{s621}}{daughters schooling}              
+#'     \item{\code{s622}}{ideal age marriage boys}          
+#'     \item{\code{s623}}{ideal age marriage - girls}       
+#'     \item{\code{s624}}{go to hospital alone}             
+#'     \item{\code{s702}}{age of husband}                   
+#'     \item{\code{s704}}{husbands level of education}      
+#'     \item{\code{s705}}{husbands highest grade}           
+#'     \item{\code{s711}}{would like to work if job}        
+#'     \item{\code{s718}}{child minder}                     
+#'     \item{\code{s719}}{work before marriage}             
+#'     \item{\code{s720}}{work just after marriage}         
+#'     \item{\code{s722}}{age when first worked}            
+#'     \item{\code{s723a}}{began work - financial need}     
+#'     \item{\code{s723b}}{began work - supplem family in}  
+#'     \item{\code{s723c}}{began work - personal fulfillm}  
+#'     \item{\code{s723d}}{began work - husb sick/dead}     
+#'     \item{\code{s723e}}{began work - divorce/separatio}  
+#'     \item{\code{s723f}}{began work - other reason}       
+#'     \item{\code{hsdist}}{district}                       
+#'     \item{\code{hsclust}}{cluster number}                
+#'     \item{\code{hslang1}}{language of questionnaire}     
+#'     \item{\code{hslang2}}{language of interview}         
+#'     \item{\code{hslang3}}{native language of respondent} 
+#'     \item{\code{hstransl}}{translator used}              
+#'     \item{\code{hs108}}{highest educational level}       
+#'     \item{\code{hs109}}{highest grade at that level}     
+#'     \item{\code{hs112}}{write a letter}                  
+#'     \item{\code{hs201.1}}{contraceptive method}          
+#'     \item{\code{hs204.1}}{knows source for method}       
+#'     \item{\code{hs201.2}}{contraceptive method}          
+#'     \item{\code{hs204.2}}{knows source for method}       
+#'     \item{\code{hs201.3}}{contraceptive method}          
+#'     \item{\code{hs204.3}}{knows source for method}       
+#'     \item{\code{hs201.4}}{contraceptive method}          
+#'     \item{\code{hs204.4}}{knows source for method}       
+#'     \item{\code{hs201.5}}{contraceptive method}          
+#'     \item{\code{hs204.5}}{knows source for method}       
+#'     \item{\code{hs201.6}}{contraceptive method}          
+#'     \item{\code{hs204.6}}{knows source for method}       
+#'     \item{\code{hs201.7}}{contraceptive method}          
+#'     \item{\code{hs204.7}}{knows source for method}       
+#'     \item{\code{hs201.8}}{contraceptive method}          
+#'     \item{\code{hs204.8}}{knows source for method}       
+#'     \item{\code{hs208}}{first method}                    
+#'     \item{\code{hs209}}{living children at first use}    
+#'     \item{\code{hs214}}{knowledge of brand name}         
+#'     \item{\code{hs215}}{cost of pill packet}             
+#'     \item{\code{hs216}}{shown condom package}            
+#'     \item{\code{hs217}}{knowledge of brand name}         
+#'     \item{\code{hs218}}{cost of condom}                  
+#'     \item{\code{hs219}}{source of current method}        
+#'     \item{\code{hs220}}{time to get to source}           
+#'     \item{\code{hs221}}{easy/difficult to go to source}  
+#'     \item{\code{hs223m}}{month of sterilization}         
+#'     \item{\code{hs223y}}{year of sterilization}          
+#'     \item{\code{hs223c}}{cmc husband marriage}           
+#'     \item{\code{hs223f}}{flag for date of sterilization} 
+#'     \item{\code{hs224}}{duration of current use <mnth>}  
+#'     \item{\code{hs227}}{if own choice, desire to use}    
+#'     \item{\code{hs230}}{source for future method}        
+#'     \item{\code{hs231}}{know source for fp}              
+#'     \item{\code{hs232}}{source for family planning}      
+#'     \item{\code{hs233}}{time from home to place}         
+#'     \item{\code{hs234}}{easy/difficult to get to place}  
+#'     \item{\code{hs237}}{message effective}               
+#'     \item{\code{hs238}}{acceptability of media message}  
+#'     \item{\code{hs306a}}{presence of children}           
+#'     \item{\code{hs306b}}{presence of wife}               
+#'     \item{\code{hs306c}}{presence of father/brother}     
+#'     \item{\code{hs306d}}{presence of other males}        
+#'     \item{\code{hs306e}}{presence of other females}      
+#'     \item{\code{hs401a}}{number of own sons}             
+#'     \item{\code{hs401b}}{number of own daughters}        
+#'     \item{\code{hs404}}{desire future child}             
+#'     \item{\code{hs405}}{sex preference for next}         
+#'     \item{\code{hs407}}{regret sterilization}            
+#'     \item{\code{hs408}}{reason regrets sterilization}    
+#'     \item{\code{hs409}}{think would have sterilization}  
+#'     \item{\code{hs412}}{discussed number children}       
+#'     \item{\code{hs414}}{time to wait before sex}         
+#'     \item{\code{hs415}}{stop breastfeeding before sex}   
+#'     \item{\code{hs419}}{education for sons}              
+#'     \item{\code{hs420}}{daughters schooling}             
+#'     \item{\code{hs421}}{ideal age marriage boys}         
+#'     \item{\code{hs422}}{ideal age marriage - girls}      
+#'     \item{\code{hs423}}{can wife go to hospital alone?}  
+#'     \item{\code{caseid}}{case identification}            
+#'     \item{\code{v000}}{country code and phase}           
+#'     \item{\code{v001}}{cluster number}                   
+#'     \item{\code{v002}}{household number}                 
+#'     \item{\code{v003}}{respondent's line number}         
+#'     \item{\code{v004}}{ultimate area unit}               
+#'     \item{\code{v005}}{sample weight}                    
+#'     \item{\code{v006}}{month of interview}               
+#'     \item{\code{v007}}{year of interview}                
+#'     \item{\code{v008}}{date of interview (cmc)}          
+#'     \item{\code{v009}}{respondent's month of birth}      
+#'     \item{\code{v010}}{respondent's year of birth}       
+#'     \item{\code{v011}}{date of birth (cmc)}              
+#'     \item{\code{v012}}{current age - respondent}         
+#'     \item{\code{v013}}{age 5-year groups}                
+#'     \item{\code{v014}}{completeness of information}      
+#'     \item{\code{v015}}{result of individual interview}   
+#'     \item{\code{v016}}{day of interview}                 
+#'     \item{\code{v017}}{cmc start of calendar/health}     
+#'     \item{\code{v018}}{row of month of interview}        
+#'     \item{\code{v019}}{length of calendar}               
+#'     \item{\code{v020}}{ever-married sample}              
+#'     \item{\code{v021}}{primary sampling unit}            
+#'     \item{\code{v022}}{sample stratum number}            
+#'     \item{\code{v023}}{sample domain}                    
+#'     \item{\code{v024}}{region}                           
+#'     \item{\code{v025}}{type of place of residence}       
+#'     \item{\code{v026}}{de facto place of residence}      
+#'     \item{\code{v027}}{number of visits}                 
+#'     \item{\code{v028}}{interviewer identification}       
+#'     \item{\code{v029}}{keyer identification}             
+#'     \item{\code{v101}}{region}                           
+#'     \item{\code{v102}}{type of place of residence}       
+#'     \item{\code{v103}}{childhood place of residence}     
+#'     \item{\code{v104}}{years lived in place of res.}     
+#'     \item{\code{v105}}{type of place of previous res.}   
+#'     \item{\code{v106}}{highest educational level}        
+#'     \item{\code{v107}}{highest year of education}        
+#'     \item{\code{v108}}{literacy}                         
+#'     \item{\code{v109}}{reads newspaper once a week}      
+#'     \item{\code{v110}}{watches tv every week}            
+#'     \item{\code{v111}}{listens to radio every da - na}   
+#'     \item{\code{v112}}{listens to radio every week}      
+#'     \item{\code{v113}}{source of drinking water}         
+#'     \item{\code{v114}}{source of non-drinking water}     
+#'     \item{\code{v115}}{time to get to water source}      
+#'     \item{\code{v116}}{type of toilet facility}          
+#'     \item{\code{v119}}{has electricity}                  
+#'     \item{\code{v120}}{has radio}                        
+#'     \item{\code{v121}}{has television}                   
+#'     \item{\code{v122}}{has refrigerator}                 
+#'     \item{\code{v123}}{has bicycle}                      
+#'     \item{\code{v124}}{has motorcycle}                   
+#'     \item{\code{v125}}{has car                   - na}   
+#'     \item{\code{v127}}{main floor material       - na}   
+#'     \item{\code{v128}}{main wall material}               
+#'     \item{\code{v129}}{main roof material}               
+#'     \item{\code{v130}}{religion                  - na}   
+#'     \item{\code{v131}}{ethnicity                 - na}   
+#'     \item{\code{v133}}{education in single years}        
+#'     \item{\code{v134}}{de facto place of residence}      
+#'     \item{\code{v135}}{usual resident or visitor}        
+#'     \item{\code{v136}}{number of household members}      
+#'     \item{\code{v137}}{number of children 5 and under}   
+#'     \item{\code{v138}}{number of eligible women in hh}   
+#'     \item{\code{v139}}{de jure region of residence}      
+#'     \item{\code{v140}}{de jure type of place of res.}    
+#'     \item{\code{v141}}{de jure place of residence}       
+#'     \item{\code{v142}}{same source of water}             
+#'     \item{\code{v143}}{rooms for sleeping}               
+#'     \item{\code{v144}}{communities lived in >jan - na}   
+#'     \item{\code{v145}}{month moved to res. of ja - na}   
+#'     \item{\code{v146}}{year moved to res. of jan - na}   
+#'     \item{\code{v147}}{residence before jan.8?   - na}   
+#'     \item{\code{v148}}{respondent still in school}       
+#'     \item{\code{v149}}{educational attainment}           
+#'     \item{\code{v150}}{relationship to household head}   
+#'     \item{\code{v151}}{sex of household head}            
+#'     \item{\code{v152}}{age of household head}            
+#'     \item{\code{awfactt}}{all woman factor - total}      
+#'     \item{\code{awfactu}}{all woman factor - urban/rural}
+#'     \item{\code{awfactr}}{all woman factor - regional}   
+#'     \item{\code{awfacte}}{all woman factor - educati- na}
+#'     \item{\code{bidx.01}}{birth column number}           
+#'     \item{\code{bord.01}}{birth order number}            
+#'     \item{\code{b0.01}}{child is twin}                   
+#'     \item{\code{b1.01}}{month of birth}                  
+#'     \item{\code{b2.01}}{year of birth}                   
+#'     \item{\code{b3.01}}{date of birth (cmc)}             
+#'     \item{\code{b4.01}}{sex of child}                    
+#'     \item{\code{b5.01}}{child is alive}                  
+#'     \item{\code{b6.01}}{age at death}                    
+#'     \item{\code{b7.01}}{age at death (months-imputed)}   
+#'     \item{\code{b8.01}}{current age of child}            
+#'     \item{\code{b9.01}}{who child lives with}            
+#'     \item{\code{b10.01}}{completeness of information}    
+#'     \item{\code{b11.01}}{preceding birth interval}       
+#'     \item{\code{b12.01}}{succeeding birth interval}      
+#'     \item{\code{b13.01}}{flag for age at death}          
+#'     \item{\code{bidx.02}}{birth column number}           
+#'     \item{\code{bord.02}}{birth order number}            
+#'     \item{\code{b0.02}}{child is twin}                   
+#'     \item{\code{b1.02}}{month of birth}                  
+#'     \item{\code{b2.02}}{year of birth}                   
+#'     \item{\code{b3.02}}{date of birth (cmc)}             
+#'     \item{\code{b4.02}}{sex of child}                    
+#'     \item{\code{b5.02}}{child is alive}                  
+#'     \item{\code{b6.02}}{age at death}                    
+#'     \item{\code{b7.02}}{age at death (months-imputed)}   
+#'     \item{\code{b8.02}}{current age of child}            
+#'     \item{\code{b9.02}}{who child lives with}            
+#'     \item{\code{b10.02}}{completeness of information}    
+#'     \item{\code{b11.02}}{preceding birth interval}       
+#'     \item{\code{b12.02}}{succeeding birth interval}      
+#'     \item{\code{b13.02}}{flag for age at death}          
+#'     \item{\code{bidx.03}}{birth column number}           
+#'     \item{\code{bord.03}}{birth order number}            
+#'     \item{\code{b0.03}}{child is twin}                   
+#'     \item{\code{b1.03}}{month of birth}                  
+#'     \item{\code{b2.03}}{year of birth}                   
+#'     \item{\code{b3.03}}{date of birth (cmc)}             
+#'     \item{\code{b4.03}}{sex of child}                    
+#'     \item{\code{b5.03}}{child is alive}                  
+#'     \item{\code{b6.03}}{age at death}                    
+#'     \item{\code{b7.03}}{age at death (months-imputed)}   
+#'     \item{\code{b8.03}}{current age of child}            
+#'     \item{\code{b9.03}}{who child lives with}            
+#'     \item{\code{b10.03}}{completeness of information}    
+#'     \item{\code{b11.03}}{preceding birth interval}       
+#'     \item{\code{b12.03}}{succeeding birth interval}      
+#'     \item{\code{b13.03}}{flag for age at death}          
+#'     \item{\code{bidx.04}}{birth column number}           
+#'     \item{\code{bord.04}}{birth order number}            
+#'     \item{\code{b0.04}}{child is twin}                   
+#'     \item{\code{b1.04}}{month of birth}                  
+#'     \item{\code{b2.04}}{year of birth}                   
+#'     \item{\code{b3.04}}{date of birth (cmc)}             
+#'     \item{\code{b4.04}}{sex of child}                    
+#'     \item{\code{b5.04}}{child is alive}                  
+#'     \item{\code{b6.04}}{age at death}                    
+#'     \item{\code{b7.04}}{age at death (months-imputed)}   
+#'     \item{\code{b8.04}}{current age of child}            
+#'     \item{\code{b9.04}}{who child lives with}            
+#'     \item{\code{b10.04}}{completeness of information}    
+#'     \item{\code{b11.04}}{preceding birth interval}       
+#'     \item{\code{b12.04}}{succeeding birth interval}      
+#'     \item{\code{b13.04}}{flag for age at death}          
+#'     \item{\code{bidx.05}}{birth column number}           
+#'     \item{\code{bord.05}}{birth order number}            
+#'     \item{\code{b0.05}}{child is twin}                   
+#'     \item{\code{b1.05}}{month of birth}                  
+#'     \item{\code{b2.05}}{year of birth}                   
+#'     \item{\code{b3.05}}{date of birth (cmc)}             
+#'     \item{\code{b4.05}}{sex of child}                    
+#'     \item{\code{b5.05}}{child is alive}                  
+#'     \item{\code{b6.05}}{age at death}                    
+#'     \item{\code{b7.05}}{age at death (months-imputed)}   
+#'     \item{\code{b8.05}}{current age of child}            
+#'     \item{\code{b9.05}}{who child lives with}            
+#'     \item{\code{b10.05}}{completeness of information}    
+#'     \item{\code{b11.05}}{preceding birth interval}       
+#'     \item{\code{b12.05}}{succeeding birth interval}      
+#'     \item{\code{b13.05}}{flag for age at death}          
+#'     \item{\code{bidx.06}}{birth column number}           
+#'     \item{\code{bord.06}}{birth order number}            
+#'     \item{\code{b0.06}}{child is twin}                   
+#'     \item{\code{b1.06}}{month of birth}                  
+#'     \item{\code{b2.06}}{year of birth}                   
+#'     \item{\code{b3.06}}{date of birth (cmc)}             
+#'     \item{\code{b4.06}}{sex of child}                    
+#'     \item{\code{b5.06}}{child is alive}                  
+#'     \item{\code{b6.06}}{age at death}                    
+#'     \item{\code{b7.06}}{age at death (months-imputed)}   
+#'     \item{\code{b8.06}}{current age of child}            
+#'     \item{\code{b9.06}}{who child lives with}            
+#'     \item{\code{b10.06}}{completeness of information}    
+#'     \item{\code{b11.06}}{preceding birth interval}       
+#'     \item{\code{b12.06}}{succeeding birth interval}      
+#'     \item{\code{b13.06}}{flag for age at death}          
+#'     \item{\code{bidx.07}}{birth column number}           
+#'     \item{\code{bord.07}}{birth order number}            
+#'     \item{\code{b0.07}}{child is twin}                   
+#'     \item{\code{b1.07}}{month of birth}                  
+#'     \item{\code{b2.07}}{year of birth}                   
+#'     \item{\code{b3.07}}{date of birth (cmc)}             
+#'     \item{\code{b4.07}}{sex of child}                    
+#'     \item{\code{b5.07}}{child is alive}                  
+#'     \item{\code{b6.07}}{age at death}                    
+#'     \item{\code{b7.07}}{age at death (months-imputed)}   
+#'     \item{\code{b8.07}}{current age of child}            
+#'     \item{\code{b9.07}}{who child lives with}            
+#'     \item{\code{b10.07}}{completeness of information}    
+#'     \item{\code{b11.07}}{preceding birth interval}       
+#'     \item{\code{b12.07}}{succeeding birth interval}      
+#'     \item{\code{b13.07}}{flag for age at death}          
+#'     \item{\code{bidx.08}}{birth column number}           
+#'     \item{\code{bord.08}}{birth order number}            
+#'     \item{\code{b0.08}}{child is twin}                   
+#'     \item{\code{b1.08}}{month of birth}                  
+#'     \item{\code{b2.08}}{year of birth}                   
+#'     \item{\code{b3.08}}{date of birth (cmc)}             
+#'     \item{\code{b4.08}}{sex of child}                    
+#'     \item{\code{b5.08}}{child is alive}                  
+#'     \item{\code{b6.08}}{age at death}                    
+#'     \item{\code{b7.08}}{age at death (months-imputed)}   
+#'     \item{\code{b8.08}}{current age of child}            
+#'     \item{\code{b9.08}}{who child lives with}            
+#'     \item{\code{b10.08}}{completeness of information}    
+#'     \item{\code{b11.08}}{preceding birth interval}       
+#'     \item{\code{b12.08}}{succeeding birth interval}      
+#'     \item{\code{b13.08}}{flag for age at death}          
+#'     \item{\code{bidx.09}}{birth column number}           
+#'     \item{\code{bord.09}}{birth order number}            
+#'     \item{\code{b0.09}}{child is twin}                   
+#'     \item{\code{b1.09}}{month of birth}                  
+#'     \item{\code{b2.09}}{year of birth}                   
+#'     \item{\code{b3.09}}{date of birth (cmc)}             
+#'     \item{\code{b4.09}}{sex of child}                    
+#'     \item{\code{b5.09}}{child is alive}                  
+#'     \item{\code{b6.09}}{age at death}                    
+#'     \item{\code{b7.09}}{age at death (months-imputed)}   
+#'     \item{\code{b8.09}}{current age of child}            
+#'     \item{\code{b9.09}}{who child lives with}            
+#'     \item{\code{b10.09}}{completeness of information}    
+#'     \item{\code{b11.09}}{preceding birth interval}       
+#'     \item{\code{b12.09}}{succeeding birth interval}      
+#'     \item{\code{b13.09}}{flag for age at death}          
+#'     \item{\code{bidx.10}}{birth column number}           
+#'     \item{\code{bord.10}}{birth order number}            
+#'     \item{\code{b0.10}}{child is twin}                   
+#'     \item{\code{b1.10}}{month of birth}                  
+#'     \item{\code{b2.10}}{year of birth}                   
+#'     \item{\code{b3.10}}{date of birth (cmc)}             
+#'     \item{\code{b4.10}}{sex of child}                    
+#'     \item{\code{b5.10}}{child is alive}                  
+#'     \item{\code{b6.10}}{age at death}                    
+#'     \item{\code{b7.10}}{age at death (months-imputed)}   
+#'     \item{\code{b8.10}}{current age of child}            
+#'     \item{\code{b9.10}}{who child lives with}            
+#'     \item{\code{b10.10}}{completeness of information}    
+#'     \item{\code{b11.10}}{preceding birth interval}       
+#'     \item{\code{b12.10}}{succeeding birth interval}      
+#'     \item{\code{b13.10}}{flag for age at death}          
+#'     \item{\code{bidx.11}}{birth column number}           
+#'     \item{\code{bord.11}}{birth order number}            
+#'     \item{\code{b0.11}}{child is twin}                   
+#'     \item{\code{b1.11}}{month of birth}                  
+#'     \item{\code{b2.11}}{year of birth}                   
+#'     \item{\code{b3.11}}{date of birth (cmc)}             
+#'     \item{\code{b4.11}}{sex of child}                    
+#'     \item{\code{b5.11}}{child is alive}                  
+#'     \item{\code{b6.11}}{age at death}                    
+#'     \item{\code{b7.11}}{age at death (months-imputed)}   
+#'     \item{\code{b8.11}}{current age of child}            
+#'     \item{\code{b9.11}}{who child lives with}            
+#'     \item{\code{b10.11}}{completeness of information}    
+#'     \item{\code{b11.11}}{preceding birth interval}       
+#'     \item{\code{b12.11}}{succeeding birth interval}      
+#'     \item{\code{b13.11}}{flag for age at death}          
+#'     \item{\code{bidx.12}}{birth column number}           
+#'     \item{\code{bord.12}}{birth order number}            
+#'     \item{\code{b0.12}}{child is twin}                   
+#'     \item{\code{b1.12}}{month of birth}                  
+#'     \item{\code{b2.12}}{year of birth}                   
+#'     \item{\code{b3.12}}{date of birth (cmc)}             
+#'     \item{\code{b4.12}}{sex of child}                    
+#'     \item{\code{b5.12}}{child is alive}                  
+#'     \item{\code{b6.12}}{age at death}                    
+#'     \item{\code{b7.12}}{age at death (months-imputed)}   
+#'     \item{\code{b8.12}}{current age of child}            
+#'     \item{\code{b9.12}}{who child lives with}            
+#'     \item{\code{b10.12}}{completeness of information}    
+#'     \item{\code{b11.12}}{preceding birth interval}       
+#'     \item{\code{b12.12}}{succeeding birth interval}      
+#'     \item{\code{b13.12}}{flag for age at death}          
+#'     \item{\code{bidx.13}}{birth column number}           
+#'     \item{\code{bord.13}}{birth order number}            
+#'     \item{\code{b0.13}}{child is twin}                   
+#'     \item{\code{b1.13}}{month of birth}                  
+#'     \item{\code{b2.13}}{year of birth}                   
+#'     \item{\code{b3.13}}{date of birth (cmc)}             
+#'     \item{\code{b4.13}}{sex of child}                    
+#'     \item{\code{b5.13}}{child is alive}                  
+#'     \item{\code{b6.13}}{age at death}                    
+#'     \item{\code{b7.13}}{age at death (months-imputed)}   
+#'     \item{\code{b8.13}}{current age of child}            
+#'     \item{\code{b9.13}}{who child lives with}            
+#'     \item{\code{b10.13}}{completeness of information}    
+#'     \item{\code{b11.13}}{preceding birth interval}       
+#'     \item{\code{b12.13}}{succeeding birth interval}      
+#'     \item{\code{b13.13}}{flag for age at death}          
+#'     \item{\code{bidx.14}}{birth column number}           
+#'     \item{\code{bord.14}}{birth order number}            
+#'     \item{\code{b0.14}}{child is twin}                   
+#'     \item{\code{b1.14}}{month of birth}                  
+#'     \item{\code{b2.14}}{year of birth}                   
+#'     \item{\code{b3.14}}{date of birth (cmc)}             
+#'     \item{\code{b4.14}}{sex of child}                    
+#'     \item{\code{b5.14}}{child is alive}                  
+#'     \item{\code{b6.14}}{age at death}                    
+#'     \item{\code{b7.14}}{age at death (months-imputed)}   
+#'     \item{\code{b8.14}}{current age of child}            
+#'     \item{\code{b9.14}}{who child lives with}            
+#'     \item{\code{b10.14}}{completeness of information}    
+#'     \item{\code{b11.14}}{preceding birth interval}       
+#'     \item{\code{b12.14}}{succeeding birth interval}      
+#'     \item{\code{b13.14}}{flag for age at death}          
+#'     \item{\code{bidx.15}}{birth column number}           
+#'     \item{\code{bord.15}}{birth order number}            
+#'     \item{\code{b0.15}}{child is twin}                   
+#'     \item{\code{b1.15}}{month of birth}                  
+#'     \item{\code{b2.15}}{year of birth}                   
+#'     \item{\code{b3.15}}{date of birth (cmc)}             
+#'     \item{\code{b4.15}}{sex of child}                    
+#'     \item{\code{b5.15}}{child is alive}                  
+#'     \item{\code{b6.15}}{age at death}                    
+#'     \item{\code{b7.15}}{age at death (months-imputed)}   
+#'     \item{\code{b8.15}}{current age of child}            
+#'     \item{\code{b9.15}}{who child lives with}            
+#'     \item{\code{b10.15}}{completeness of information}    
+#'     \item{\code{b11.15}}{preceding birth interval}       
+#'     \item{\code{b12.15}}{succeeding birth interval}      
+#'     \item{\code{b13.15}}{flag for age at death}          
+#'     \item{\code{bidx.16}}{birth column number}           
+#'     \item{\code{bord.16}}{birth order number}            
+#'     \item{\code{b0.16}}{child is twin}                   
+#'     \item{\code{b1.16}}{month of birth}                  
+#'     \item{\code{b2.16}}{year of birth}                   
+#'     \item{\code{b3.16}}{date of birth (cmc)}             
+#'     \item{\code{b4.16}}{sex of child}                    
+#'     \item{\code{b5.16}}{child is alive}                  
+#'     \item{\code{b6.16}}{age at death}                    
+#'     \item{\code{b7.16}}{age at death (months-imputed)}   
+#'     \item{\code{b8.16}}{current age of child}            
+#'     \item{\code{b9.16}}{who child lives with}            
+#'     \item{\code{b10.16}}{completeness of information}    
+#'     \item{\code{b11.16}}{preceding birth interval}       
+#'     \item{\code{b12.16}}{succeeding birth interval}      
+#'     \item{\code{b13.16}}{flag for age at death}          
+#'     \item{\code{bidx.17}}{birth column number}           
+#'     \item{\code{bord.17}}{birth order number}            
+#'     \item{\code{b0.17}}{child is twin}                   
+#'     \item{\code{b1.17}}{month of birth}                  
+#'     \item{\code{b2.17}}{year of birth}                   
+#'     \item{\code{b3.17}}{date of birth (cmc)}             
+#'     \item{\code{b4.17}}{sex of child}                    
+#'     \item{\code{b5.17}}{child is alive}                  
+#'     \item{\code{b6.17}}{age at death}                    
+#'     \item{\code{b7.17}}{age at death (months-imputed)}   
+#'     \item{\code{b8.17}}{current age of child}            
+#'     \item{\code{b9.17}}{who child lives with}            
+#'     \item{\code{b10.17}}{completeness of information}    
+#'     \item{\code{b11.17}}{preceding birth interval}       
+#'     \item{\code{b12.17}}{succeeding birth interval}      
+#'     \item{\code{b13.17}}{flag for age at death}          
+#'     \item{\code{bidx.18}}{birth column number}           
+#'     \item{\code{bord.18}}{birth order number}            
+#'     \item{\code{b0.18}}{child is twin}                   
+#'     \item{\code{b1.18}}{month of birth}                  
+#'     \item{\code{b2.18}}{year of birth}                   
+#'     \item{\code{b3.18}}{date of birth (cmc)}             
+#'     \item{\code{b4.18}}{sex of child}                    
+#'     \item{\code{b5.18}}{child is alive}                  
+#'     \item{\code{b6.18}}{age at death}                    
+#'     \item{\code{b7.18}}{age at death (months-imputed)}   
+#'     \item{\code{b8.18}}{current age of child}            
+#'     \item{\code{b9.18}}{who child lives with}            
+#'     \item{\code{b10.18}}{completeness of information}    
+#'     \item{\code{b11.18}}{preceding birth interval}       
+#'     \item{\code{b12.18}}{succeeding birth interval}      
+#'     \item{\code{b13.18}}{flag for age at death}          
+#'     \item{\code{bidx.19}}{birth column number}           
+#'     \item{\code{bord.19}}{birth order number}            
+#'     \item{\code{b0.19}}{child is twin}                   
+#'     \item{\code{b1.19}}{month of birth}                  
+#'     \item{\code{b2.19}}{year of birth}                   
+#'     \item{\code{b3.19}}{date of birth (cmc)}             
+#'     \item{\code{b4.19}}{sex of child}                    
+#'     \item{\code{b5.19}}{child is alive}                  
+#'     \item{\code{b6.19}}{age at death}                    
+#'     \item{\code{b7.19}}{age at death (months-imputed)}   
+#'     \item{\code{b8.19}}{current age of child}            
+#'     \item{\code{b9.19}}{who child lives with}            
+#'     \item{\code{b10.19}}{completeness of information}    
+#'     \item{\code{b11.19}}{preceding birth interval}       
+#'     \item{\code{b12.19}}{succeeding birth interval}      
+#'     \item{\code{b13.19}}{flag for age at death}          
+#'     \item{\code{bidx.20}}{birth column number}           
+#'     \item{\code{bord.20}}{birth order number}            
+#'     \item{\code{b0.20}}{child is twin}                   
+#'     \item{\code{b1.20}}{month of birth}                  
+#'     \item{\code{b2.20}}{year of birth}                   
+#'     \item{\code{b3.20}}{date of birth (cmc)}             
+#'     \item{\code{b4.20}}{sex of child}                    
+#'     \item{\code{b5.20}}{child is alive}                  
+#'     \item{\code{b6.20}}{age at death}                    
+#'     \item{\code{b7.20}}{age at death (months-imputed)}   
+#'     \item{\code{b8.20}}{current age of child}            
+#'     \item{\code{b9.20}}{who child lives with}            
+#'     \item{\code{b10.20}}{completeness of information}    
+#'     \item{\code{b11.20}}{preceding birth interval}       
+#'     \item{\code{b12.20}}{succeeding birth interval}      
+#'     \item{\code{b13.20}}{flag for age at death}          
+#'     \item{\code{v201}}{total children ever born}         
+#'     \item{\code{v202}}{sons at home}                     
+#'     \item{\code{v203}}{daughters at home}                
+#'     \item{\code{v204}}{sons elsewhere}                   
+#'     \item{\code{v205}}{daughters elsewhere}              
+#'     \item{\code{v206}}{sons who have died}               
+#'     \item{\code{v207}}{daughters who have died}          
+#'     \item{\code{v208}}{births in last five years}        
+#'     \item{\code{v209}}{births in past year}              
+#'     \item{\code{v210}}{births in month of interview}     
+#'     \item{\code{v211}}{date of first birth (cmc)}        
+#'     \item{\code{v212}}{age of respondent at 1st birth}   
+#'     \item{\code{v213}}{currently pregnant}               
+#'     \item{\code{v214}}{duration of current pregnancy}    
+#'     \item{\code{v215}}{time since last menstrual perd}   
+#'     \item{\code{v216}}{menstruated in last six weeks}    
+#'     \item{\code{v217}}{knowledge of ovulatory cycle}     
+#'     \item{\code{v218}}{number of living children}        
+#'     \item{\code{v219}}{living children + current preg}   
+#'     \item{\code{v220}}{living children + curr preg 6+}   
+#'     \item{\code{v221}}{marriage to first birth int.}     
+#'     \item{\code{v222}}{last birth to interview}          
+#'     \item{\code{v223}}{completeness of curr preg. inf}   
+#'     \item{\code{v224}}{entries in birth history}         
+#'     \item{\code{v225}}{current pregnancy wanted}         
+#'     \item{\code{v226}}{time since last period (comp)}    
+#'     \item{\code{v227}}{flag for last period}             
+#'     \item{\code{v228}}{ever had a terminated pre - na}   
+#'     \item{\code{v229}}{month pregnancy ended     - na}   
+#'     \item{\code{v230}}{year pregnancy ended      - na}   
+#'     \item{\code{v231}}{cmc pregnancy ended       - na}   
+#'     \item{\code{v232}}{completeness of last term - na}   
+#'     \item{\code{v233}}{months when pregnancy end - na}   
+#'     \item{\code{v234}}{other such pregnancies    - na}   
+#'     \item{\code{v235}}{index last child prior to - na}   
+#'     \item{\code{v301}}{knowledge of any method}          
+#'     \item{\code{v302}}{ever use of any method}           
+#'     \item{\code{v303}}{knows source for modern method}   
+#'     \item{\code{v304a.01}}{type of method}               
+#'     \item{\code{v304.01}}{knows method}                  
+#'     \item{\code{v305.01}}{ever used method}              
+#'     \item{\code{v306.01}}{source known for method}       
+#'     \item{\code{v304a.02}}{type of method}               
+#'     \item{\code{v304.02}}{knows method}                  
+#'     \item{\code{v305.02}}{ever used method}              
+#'     \item{\code{v306.02}}{source known for method}       
+#'     \item{\code{v304a.03}}{type of method}               
+#'     \item{\code{v304.03}}{knows method}                  
+#'     \item{\code{v305.03}}{ever used method}              
+#'     \item{\code{v306.03}}{source known for method}       
+#'     \item{\code{v304a.04}}{type of method}               
+#'     \item{\code{v304.04}}{knows method}                  
+#'     \item{\code{v305.04}}{ever used method}              
+#'     \item{\code{v306.04}}{source known for method}       
+#'     \item{\code{v304a.05}}{type of method}               
+#'     \item{\code{v304.05}}{knows method}                  
+#'     \item{\code{v305.05}}{ever used method}              
+#'     \item{\code{v306.05}}{source known for method}       
+#'     \item{\code{v304a.06}}{type of method}               
+#'     \item{\code{v304.06}}{knows method}                  
+#'     \item{\code{v305.06}}{ever used method}              
+#'     \item{\code{v306.06}}{source known for method}       
+#'     \item{\code{v304a.07}}{type of method}               
+#'     \item{\code{v304.07}}{knows method}                  
+#'     \item{\code{v305.07}}{ever used method}              
+#'     \item{\code{v306.07}}{source known for method}       
+#'     \item{\code{v304a.08}}{type of method}               
+#'     \item{\code{v304.08}}{knows method}                  
+#'     \item{\code{v305.08}}{ever used method}              
+#'     \item{\code{v306.08}}{source known for method}       
+#'     \item{\code{v304a.09}}{type of method}               
+#'     \item{\code{v304.09}}{knows method}                  
+#'     \item{\code{v305.09}}{ever used method}              
+#'     \item{\code{v306.09}}{source known for method}       
+#'     \item{\code{v304a.10}}{type of method}               
+#'     \item{\code{v304.10}}{knows method}                  
+#'     \item{\code{v305.10}}{ever used method}              
+#'     \item{\code{v306.10}}{source known for method}       
+#'     \item{\code{v304a.11}}{type of method}               
+#'     \item{\code{v304.11}}{knows method}                  
+#'     \item{\code{v305.11}}{ever used method}              
+#'     \item{\code{v306.11}}{source known for method}       
+#'     \item{\code{v304a.12}}{type of method}               
+#'     \item{\code{v304.12}}{knows method}                  
+#'     \item{\code{v305.12}}{ever used method}              
+#'     \item{\code{v306.12}}{source known for method}       
+#'     \item{\code{v304a.13}}{type of method}               
+#'     \item{\code{v304.13}}{knows method}                  
+#'     \item{\code{v305.13}}{ever used method}              
+#'     \item{\code{v306.13}}{source known for method}       
+#'     \item{\code{v304a.14}}{type of method}               
+#'     \item{\code{v304.14}}{knows method}                  
+#'     \item{\code{v305.14}}{ever used method}              
+#'     \item{\code{v306.14}}{source known for method}       
+#'     \item{\code{v304a.15}}{type of method}               
+#'     \item{\code{v304.15}}{knows method}                  
+#'     \item{\code{v305.15}}{ever used method}              
+#'     \item{\code{v306.15}}{source known for method}       
+#'     \item{\code{v310}}{living children at first use}     
+#'     \item{\code{v311}}{children at first use (grpd)}     
+#'     \item{\code{v312}}{current contraceptive method}     
+#'     \item{\code{v313}}{current use by method type}       
+#'     \item{\code{v315}}{month of sterilization}           
+#'     \item{\code{v316}}{year of sterilization}            
+#'     \item{\code{v317}}{date of sterilization (cmc)}      
+#'     \item{\code{v318}}{completeness of information}      
+#'     \item{\code{v319}}{years since sterilization}        
+#'     \item{\code{v320}}{age at sterilization}             
+#'     \item{\code{v321}}{marital duration at steriliz.}    
+#'     \item{\code{v322}}{parity at sterilization}          
+#'     \item{\code{v323}}{brand of pill used}               
+#'     \item{\code{v325}}{cost of pills}                    
+#'     \item{\code{v326}}{last source for current users}    
+#'     \item{\code{v327}}{last source for users by type}    
+#'     \item{\code{v337}}{months of use of current meth}    
+#'     \item{\code{v338}}{problem with current meth - na}   
+#'     \item{\code{v339}}{problem with current metho- na}   
+#'     \item{\code{v359}}{last method disc. last 5 y- na}   
+#'     \item{\code{v360}}{reason of last discontinua- na}   
+#'     \item{\code{v361}}{pattern of use}                   
+#'     \item{\code{v362}}{intention to use}                 
+#'     \item{\code{v363}}{preferred future method}          
+#'     \item{\code{v364}}{contraceptive use & intention}    
+#'     \item{\code{v365}}{heard fp message on radio}        
+#'     \item{\code{v366}}{acceptability of media message}   
+#'     \item{\code{v367}}{wanted last child}                
+#'     \item{\code{v369}}{first method used}                
+#'     \item{\code{v370}}{source of first method    - na}   
+#'     \item{\code{v371}}{source of first method    - na}   
+#'     \item{\code{v372}}{shown pill package}               
+#'     \item{\code{v373}}{doctor/nurse for first pil- na}   
+#'     \item{\code{v374}}{doctor/nurse for last pills}      
+#'     \item{\code{v375}}{reason for current method - na}   
+#'     \item{\code{v376}}{main reason not to use a meth.}   
+#'     \item{\code{v377}}{source for future method}         
+#'     \item{\code{v378}}{source for future method}         
+#'     \item{\code{v379}}{source known for any method}      
+#'     \item{\code{v380}}{source known for any method}      
+#'     \item{\code{v381}}{time to get to source}            
+#'     \item{\code{v382}}{time to get to source(grouped)}   
+#'     \item{\code{v383}}{easy/difficult to get to place}   
+#'     \item{\code{v384}}{heard about fp on television}     
+#'     \item{\code{v385}}{contraceptive use before  - na}   
+#'     \item{\code{v386}}{month started method pre  - na}   
+#'     \item{\code{v387}}{year started method pre 8 - na}   
+#'     \item{\code{v388}}{date started method pre 8 - na}   
+#'     \item{\code{v389}}{months use prior to calen - na}   
+#'     \item{\code{v390}}{month stopped method pre  - na}   
+#'     \item{\code{v391}}{year stopped method pre 8 - na}   
+#'     \item{\code{v392}}{date stopped method pre 8 - na}   
+#'     \item{\code{v401}}{last birth ceasarean section}     
+#'     \item{\code{v404}}{currently breastfeeding}          
+#'     \item{\code{v405}}{currently amenorrheic}            
+#'     \item{\code{v406}}{currently abstaining}             
+#'     \item{\code{v407}}{times breastfed during night}     
+#'     \item{\code{v408}}{times breastfed during day}       
+#'     \item{\code{v409}}{gave child plain water}           
+#'     \item{\code{v409a}}{gave child sugar water}          
+#'     \item{\code{v410}}{gave child juice}                 
+#'     \item{\code{v410a}}{gave child herbal tea}           
+#'     \item{\code{v411}}{gave child powder/tinned milk}    
+#'     \item{\code{v411a}}{gave child baby formula}         
+#'     \item{\code{v412}}{gave child fresh milk}            
+#'     \item{\code{v413a}}{country specific: ghutti}        
+#'     \item{\code{v413b}}{country specific: gripe water}   
+#'     \item{\code{v413c}}{country specific other li - na}  
+#'     \item{\code{v413d}}{country specific other li - na}  
+#'     \item{\code{v413}}{gave child other liquid}          
+#'     \item{\code{v414a}}{country specific other fo - na}  
+#'     \item{\code{v414b}}{country specific other fo - na}  
+#'     \item{\code{v414c}}{country specific other fo - na}  
+#'     \item{\code{v414d}}{country specific other fo - na}  
+#'     \item{\code{v414}}{gave child solid or mushy food}   
+#'     \item{\code{v415}}{fed food in bottle with nipple}   
+#'     \item{\code{v416}}{heard of oral rehydration}        
+#'     \item{\code{v417}}{entries in maternity table}       
+#'     \item{\code{v418}}{entries in health table}          
+#'     \item{\code{v419}}{entries in height/weight table}   
+#'     \item{\code{v420}}{measurer's code          -  na}   
+#'     \item{\code{v421}}{assistant measurer's code - na}   
+#'     \item{\code{v422}}{ever prepared ors solution}       
+#'     \item{\code{v423}}{quantity of water for ors}        
+#'     \item{\code{v424a}}{ors source: government hosp.}    
+#'     \item{\code{v424b}}{ors source: govt health c - na}  
+#'     \item{\code{v424c}}{ors source: govt health p - na}  
+#'     \item{\code{v424d}}{ors source: mobile clinic - na}  
+#'     \item{\code{v424e}}{ors source: comm.health w - na}  
+#'     \item{\code{v424f}}{ors source:cs rhc/ govt clinin}  
+#'     \item{\code{v424g}}{ors source:cs fam welfare wrkr}  
+#'     \item{\code{v424h}}{ors source:cs lady health wrkr}  
+#'     \item{\code{v424i}}{ors source:cs pub. mobile team}  
+#'     \item{\code{v424j}}{ors source: private hosp/clin.}  
+#'     \item{\code{v424k}}{ors source: private pharmacy}    
+#'     \item{\code{v424l}}{ors source: private doctor}      
+#'     \item{\code{v424m}}{ors source: private mobil - na}  
+#'     \item{\code{v424n}}{ors source: comm.health w - na}  
+#'     \item{\code{v424o}}{ors source: cs med.priv s - na}  
+#'     \item{\code{v424p}}{ors source: cs med.priv s - na}  
+#'     \item{\code{v424q}}{ors source: cs med.priv s - na}  
+#'     \item{\code{v424r}}{ors source: cs med.priv s - na}  
+#'     \item{\code{v424s}}{ors source: shop}                
+#'     \item{\code{v424t}}{ors source: traditional pr- na}  
+#'     \item{\code{v424u}}{ors source:cs hakim}             
+#'     \item{\code{v424v}}{ors source: cs oth.priv s - na}  
+#'     \item{\code{v424w}}{ors source: cs oth.priv s - na}  
+#'     \item{\code{v424x}}{ors source: other}               
+#'     \item{\code{v424y}}{ors source: unknown}             
+#'     \item{\code{v425}}{home fluid preparation teacher}   
+#'     \item{\code{v426}}{when child put to breast}         
+#'     \item{\code{v427}}{duration breastfeeding pr - na}   
+#'     \item{\code{v428}}{months breastfeeding pre  - na}   
+#'     \item{\code{v429}}{flag for breastfeeding pr - na}   
+#'     \item{\code{v430}}{duration of amenorrhea pr - na}   
+#'     \item{\code{v431}}{months of amenorrhea pre  - na}   
+#'     \item{\code{v432}}{flag for amenorrhea pre 8 - na}   
+#'     \item{\code{v433}}{duration of abstinence pr - na}   
+#'     \item{\code{v434}}{months of abstinence pre  - na}   
+#'     \item{\code{v435}}{flag for abstinence pre 8 - na}   
+#'     \item{\code{v436}}{arm circumference (cms-1d - na}   
+#'     \item{\code{v437}}{respondent's weight (kilo - na}   
+#'     \item{\code{v438}}{respondent's height (cms- - na}   
+#'     \item{\code{v439}}{ht/a percentile (resp.)   - na}   
+#'     \item{\code{v440}}{ht/a standard deviations  - na}   
+#'     \item{\code{v441}}{ht/a percent ref. median  - na}   
+#'     \item{\code{v442}}{wt/ht percent ref. median - na}   
+#'     \item{\code{v443}}{wt/ht percent ref. median - na}   
+#'     \item{\code{v444}}{wt/ht percent ref. median - na}   
+#'     \item{\code{v445}}{body mass index for respo - na}   
+#'     \item{\code{v446}}{rohrer's index for respon - na}   
+#'     \item{\code{v447}}{result of measurement of  - na}   
+#'     \item{\code{v501}}{current marital status}           
+#'     \item{\code{v502}}{currently/formerly/never marr.}   
+#'     \item{\code{v503}}{number of unions}                 
+#'     \item{\code{v504}}{husband lives in house}           
+#'     \item{\code{v505}}{number of other wives}            
+#'     \item{\code{v506}}{wife rank number}                 
+#'     \item{\code{v507}}{month of first marriage}          
+#'     \item{\code{v508}}{year of first marriage}           
+#'     \item{\code{v509}}{date of first marriage (cmc)}     
+#'     \item{\code{v510}}{completeness of date inform.}     
+#'     \item{\code{v511}}{age at first marriage}            
+#'     \item{\code{v512}}{years since first marriage}       
+#'     \item{\code{v513}}{marital duration (grouped)}       
+#'     \item{\code{v525}}{age at first intercourse  - na}   
+#'     \item{\code{v526}}{frequency of intercourse  - na}   
+#'     \item{\code{v527}}{time since last intercour - na}   
+#'     \item{\code{v528}}{time since last intercour - na}   
+#'     \item{\code{v529}}{time since last intercour - na}   
+#'     \item{\code{v530}}{flag for v529             - na}   
+#'     \item{\code{v531}}{age at first intercourse  - na}   
+#'     \item{\code{v532}}{flag for v531             - na}   
+#'     \item{\code{v533}}{usual frequency of interc - na}   
+#'     \item{\code{v602}}{fertility preference}             
+#'     \item{\code{v603}}{preferred waiting time}           
+#'     \item{\code{v604}}{preferred waiting time (grpd)}    
+#'     \item{\code{v605}}{desire for more children}         
+#'     \item{\code{v608}}{ideal post-partum abst. period}   
+#'     \item{\code{v609}}{sex while breastfeeding}          
+#'     \item{\code{v610}}{husband approves fp}              
+#'     \item{\code{v611}}{discussed fp with partner}        
+#'     \item{\code{v612}}{respondent approves fp}           
+#'     \item{\code{v613}}{ideal number of children}         
+#'     \item{\code{v614}}{ideal number of children (grp)}   
+#'     \item{\code{v615}}{best birth interval       - na}   
+#'     \item{\code{v616}}{time for future birth}            
+#'     \item{\code{v617}}{age youngest at future birth}     
+#'     \item{\code{v618}}{reason regrets sterilization}     
+#'     \item{\code{v619}}{think would have sterilization}   
+#'     \item{\code{v620}}{discussed number of children}     
+#'     \item{\code{v621}}{husbands desire for children}     
+#'     \item{\code{v623}}{exposure}                         
+#'     \item{\code{v624}}{unmet need}                       
+#'     \item{\code{v625}}{exposure (definition 2)}          
+#'     \item{\code{v626}}{unmet need (definition 2)}        
+#'     \item{\code{v701}}{partner's education level}        
+#'     \item{\code{v702}}{highest year of education}        
+#'     \item{\code{v704}}{partner's occupation}             
+#'     \item{\code{v705}}{partner's occupation}             
+#'     \item{\code{v707}}{type of land where works}         
+#'     \item{\code{v714}}{respondent currently working}     
+#'     \item{\code{v715}}{husbands education-single yrs}    
+#'     \item{\code{v716}}{respondent's occupation}          
+#'     \item{\code{v717}}{respondent's occupation}          
+#'     \item{\code{v718}}{current type of employment}       
+#'     \item{\code{v719}}{work for family, others, self}    
+#'     \item{\code{v720}}{earns cash for work}              
+#'     \item{\code{v721}}{works at home or away}            
+#'     \item{\code{v722}}{child with resp. at work}         
+#'     \item{\code{v723}}{child minder}                     
+#'     \item{\code{v724}}{ever worked since jan. 19 - na}   
+#'     \item{\code{v725}}{month started work before - na}   
+#'     \item{\code{v726}}{year started work before  - na}   
+#'     \item{\code{v727}}{month job prior to 8? end - na}   
+#'     \item{\code{v728}}{year job prior to 8? ende - na}   
+#'     \item{\code{v729}}{partner's educational attainm.}   
+#'     \item{\code{v801}}{time interview started}           
+#'     \item{\code{v802}}{time interview ended}             
+#'     \item{\code{v803}}{length of interview in minutes}   
+#'     \item{\code{v804}}{number of visits}                 
+#'     \item{\code{v805}}{interviewer identification}       
+#'     \item{\code{v806}}{keyer identification}             
+#'     \item{\code{v811}}{pres. children < 10 (sec 5)}      
+#'     \item{\code{v812}}{pres. husband (sec 5)}            
+#'     \item{\code{v813}}{pres. other males (sec 5)}        
+#'     \item{\code{v814}}{pres. other females (sec 5)}      
+#'     \item{\code{mcaseid}}{case identification}           
+#'     \item{\code{mv000}}{country code and phase}          
+#'     \item{\code{mv001}}{cluster number}                  
+#'     \item{\code{mv002}}{household number}                
+#'     \item{\code{mv003}}{respondent's line number}        
+#'     \item{\code{mv004}}{ultimate area unit}              
+#'     \item{\code{mv005}}{sample weight}                   
+#'     \item{\code{mv006}}{month of interview}              
+#'     \item{\code{mv007}}{year of interview}               
+#'     \item{\code{mv008}}{date of interview (cmc)}         
+#'     \item{\code{mv009}}{respondent's month of birth}     
+#'     \item{\code{mv010}}{respondent's year of birth}      
+#'     \item{\code{mv011}}{date of birth (cmc)}             
+#'     \item{\code{mv012}}{current age - respondent}        
+#'     \item{\code{mv013}}{age 5-year groups}               
+#'     \item{\code{mv014}}{completeness of information}     
+#'     \item{\code{mv015}}{result of individual interview}  
+#'     \item{\code{mv016}}{day of interview}                
+#'     \item{\code{mv021}}{primary sampling unit}           
+#'     \item{\code{mv022}}{sample stratum number}           
+#'     \item{\code{mv023}}{sample domain}                   
+#'     \item{\code{mv024}}{region}                          
+#'     \item{\code{mv025}}{type of place of residence}      
+#'     \item{\code{mv026}}{de facto place of residence}     
+#'     \item{\code{mv027}}{number of visits}                
+#'     \item{\code{mv028}}{interviewer identification}      
+#'     \item{\code{mv029}}{keyer identification}            
+#'     \item{\code{mv030}}{field supervisor          - na}  
+#'     \item{\code{mv031}}{field editor              - na}  
+#'     \item{\code{mv032}}{office editor             - na}  
+#'     \item{\code{mv033}}{ultimate area selection p - na}  
+#'     \item{\code{mv034.1}}{line numbers of wives}         
+#'     \item{\code{mv034.2}}{line numbers of wives}         
+#'     \item{\code{mv034.3}}{line numbers of wives}         
+#'     \item{\code{mv034.4}}{line numbers of wives}         
+#'     \item{\code{mv034.5}}{line numbers of wives}         
+#'     \item{\code{mv034.6}}{line numbers of wives}         
+#'     \item{\code{mv034.7}}{line numbers of wives}         
+#'     \item{\code{mv034.8}}{line numbers of wives}         
+#'     \item{\code{mv035}}{number of wives, partners}       
+#'     \item{\code{mv801}}{time interview started}          
+#'     \item{\code{mv802}}{time interview ended}            
+#'     \item{\code{mv803}}{length of interview in minutes}  
+#'     \item{\code{mv101}}{region}                          
+#'     \item{\code{mv102}}{type of place of residence}      
+#'     \item{\code{mv103}}{childhood place of residence}    
+#'     \item{\code{mv104}}{years lived in place of res.}    
+#'     \item{\code{mv105}}{type of place of previous res.}  
+#'     \item{\code{mv106}}{highest educational level}       
+#'     \item{\code{mv107}}{highest year of education}       
+#'     \item{\code{mv108}}{literacy}                        
+#'     \item{\code{mv109}}{reads newspaper once a week}     
+#'     \item{\code{mv110}}{watches tv every week}           
+#'     \item{\code{mv111}}{listens to radio every da - na}  
+#'     \item{\code{mv112}}{listens to radio every week}     
+#'     \item{\code{mv130}}{religion                  - na}  
+#'     \item{\code{mv131}}{ethnicity                 - na}  
+#'     \item{\code{mv133}}{education in single years}       
+#'     \item{\code{mv134}}{de facto place of residence}     
+#'     \item{\code{mv135}}{usual resident or visitor}       
+#'     \item{\code{mv136}}{number of household members}     
+#'     \item{\code{mv138}}{number of eligible men in hh}    
+#'     \item{\code{mv148}}{respondent still in school}      
+#'     \item{\code{mv149}}{educational attainment}          
+#'     \item{\code{mv150}}{relationship to household head}  
+#'     \item{\code{mv151}}{sex of household head}           
+#'     \item{\code{mv152}}{age of household head}           
+#'     \item{\code{mv201}}{total children ever born  - na}  
+#'     \item{\code{mv202}}{sons at home              - na}  
+#'     \item{\code{mv203}}{daughters at home         - na}  
+#'     \item{\code{mv204}}{sons elsewhere            - na}  
+#'     \item{\code{mv205}}{daughters elsewhere       - na}  
+#'     \item{\code{mv206}}{sons who have died        - na}  
+#'     \item{\code{mv207}}{daughters who have died   - na}  
+#'     \item{\code{mv213}}{partner currently pregnant}      
+#'     \item{\code{mv218}}{number of living children}       
+#'     \item{\code{mv225}}{current pregnancy wanted  - na}  
+#'     \item{\code{mv301}}{knowledge of any method}         
+#'     \item{\code{mv302}}{ever use of any method}          
+#'     \item{\code{mv304a01}}{type of method}               
+#'     \item{\code{mv304.01}}{knows method}                 
+#'     \item{\code{mv305.01}}{ever used method}             
+#'     \item{\code{mv304a02}}{type of method}               
+#'     \item{\code{mv304.02}}{knows method}                 
+#'     \item{\code{mv305.02}}{ever used method}             
+#'     \item{\code{mv304a03}}{type of method}               
+#'     \item{\code{mv304.03}}{knows method}                 
+#'     \item{\code{mv305.03}}{ever used method}             
+#'     \item{\code{mv304a04}}{type of method}               
+#'     \item{\code{mv304.04}}{knows method}                 
+#'     \item{\code{mv305.04}}{ever used method}             
+#'     \item{\code{mv304a05}}{type of method}               
+#'     \item{\code{mv304.05}}{knows method}                 
+#'     \item{\code{mv305.05}}{ever used method}             
+#'     \item{\code{mv304a06}}{type of method}               
+#'     \item{\code{mv304.06}}{knows method}                 
+#'     \item{\code{mv305.06}}{ever used method}             
+#'     \item{\code{mv304a07}}{type of method}               
+#'     \item{\code{mv304.07}}{knows method}                 
+#'     \item{\code{mv305.07}}{ever used method}             
+#'     \item{\code{mv304a08}}{type of method}               
+#'     \item{\code{mv304.08}}{knows method}                 
+#'     \item{\code{mv305.08}}{ever used method}             
+#'     \item{\code{mv304a09}}{type of method}               
+#'     \item{\code{mv304.09}}{knows method}                 
+#'     \item{\code{mv305.09}}{ever used method}             
+#'     \item{\code{mv304a10}}{type of method}               
+#'     \item{\code{mv304.10}}{knows method}                 
+#'     \item{\code{mv305.10}}{ever used method}             
+#'     \item{\code{mv304a11}}{type of method}               
+#'     \item{\code{mv304.11}}{knows method}                 
+#'     \item{\code{mv305.11}}{ever used method}             
+#'     \item{\code{mv304a12}}{type of method}               
+#'     \item{\code{mv304.12}}{knows method}                 
+#'     \item{\code{mv305.12}}{ever used method}             
+#'     \item{\code{mv304a13}}{type of method}               
+#'     \item{\code{mv304.13}}{knows method}                 
+#'     \item{\code{mv305.13}}{ever used method}             
+#'     \item{\code{mv304a14}}{type of method}               
+#'     \item{\code{mv304.14}}{knows method}                 
+#'     \item{\code{mv305.14}}{ever used method}             
+#'     \item{\code{mv304a15}}{type of method}               
+#'     \item{\code{mv304.15}}{knows method}                 
+#'     \item{\code{mv305.15}}{ever used method}             
+#'     \item{\code{mv312}}{current contraceptive method}    
+#'     \item{\code{mv313}}{current use by method type}      
+#'     \item{\code{mv361}}{pattern of use}                  
+#'     \item{\code{mv362}}{intention to use}                
+#'     \item{\code{mv363}}{preferred future method}         
+#'     \item{\code{mv364}}{contraceptive use & intention}   
+#'     \item{\code{mv366a}}{acceptability of radio me - na} 
+#'     \item{\code{mv366b}}{acceptability of tv messa - na} 
+#'     \item{\code{mv367}}{wanted last child         - na}  
+#'     \item{\code{mv375a}}{main reason not using a method} 
+#'     \item{\code{mv376}}{main reason not to use a meth.}  
+#'     \item{\code{mv384a}}{heard fp on radio last months}  
+#'     \item{\code{mv384b}}{heard fp on tv last months}     
+#'     \item{\code{mv384c}}{heard fp newspaper last m - na} 
+#'     \item{\code{mv384d}}{heard fp on poster last m - na} 
+#'     \item{\code{mv384e}}{heard fp brochures last m - na} 
+#'     \item{\code{mv501}}{current marital status}          
+#'     \item{\code{mv502}}{currently/formerly/never marr.}  
+#'     \item{\code{mv503}}{number of unions}                
+#'     \item{\code{mv505}}{number of wives, partners}       
+#'     \item{\code{mv507}}{month of first marriage}         
+#'     \item{\code{mv508}}{year of first marriage}          
+#'     \item{\code{mv509}}{date of first marriage (cmc)}    
+#'     \item{\code{mv510}}{completeness of date inform.}    
+#'     \item{\code{mv511}}{age at first marriage}           
+#'     \item{\code{mv512}}{years since first marriage}      
+#'     \item{\code{mv513}}{marital duration (grouped)}      
+#'     \item{\code{mv525}}{age at first intercourse  - na}  
+#'     \item{\code{mv527}}{time since last intercour - na}  
+#'     \item{\code{mv531}}{age at first intercourse  - na}  
+#'     \item{\code{mv532}}{flag for mv531            - na}  
+#'     \item{\code{mv534}}{have a regular sex partne - na}  
+#'     \item{\code{mv535}}{have ever been married    - na}  
+#'     \item{\code{mv602}}{fertility preference}            
+#'     \item{\code{mv603}}{preferred waiting time}          
+#'     \item{\code{mv604}}{preferred waiting time (grpd)}   
+#'     \item{\code{mv605}}{desire for more children}        
+#'     \item{\code{mv610}}{wife approves fp}                
+#'     \item{\code{mv611}}{discussed fp with partner}       
+#'     \item{\code{mv612}}{respondent approves fp}          
+#'     \item{\code{mv613}}{ideal number of children}        
+#'     \item{\code{mv614}}{ideal number of children (grp)}  
+#'     \item{\code{mv616}}{time for future birth}           
+#'     \item{\code{mv621}}{wifes desire for children}       
+#'     \item{\code{mv627}}{ideal number of boys}            
+#'     \item{\code{mv628}}{ideal number of girls}           
+#'     \item{\code{mv629}}{ideal number of either sex}      
+#'     \item{\code{mv630a}}{discussed fp with partner - na} 
+#'     \item{\code{mv630b}}{discussed fp with mother  - na} 
+#'     \item{\code{mv630c}}{discussed fp with father  - na} 
+#'     \item{\code{mv630d}}{discussed fp with sister( - na} 
+#'     \item{\code{mv630e}}{discussed fp with brother - na} 
+#'     \item{\code{mv630f}}{discussed fp with daughte - na} 
+#'     \item{\code{mv630g}}{discussed fp with mother- - na} 
+#'     \item{\code{mv630h}}{discussed fp with friends - na} 
+#'     \item{\code{mv630i}}{discussed fp -country spe - na} 
+#'     \item{\code{mv630j}}{discussed fp -country spe - na} 
+#'     \item{\code{mv630k}}{discussed fp -country spe - na} 
+#'     \item{\code{mv630l}}{discussed fp -country spe - na} 
+#'     \item{\code{mv630x}}{discussed fp with others  - na} 
+#'     \item{\code{mv714}}{respondent currently work - na}  
+#'     \item{\code{mv716}}{respondent's occupation}         
+#'     \item{\code{mv717}}{respondent's occupation}         
+#'     \item{\code{mv719}}{work for family, others,  - na}  
+#'     \item{\code{mv731}}{worked in last 12 months  - na}  
+#'     \item{\code{mv732}}{employment all year/seaso - na}  
+#'     \item{\code{mv733}}{months worked in last 12  - na}  
+#'     \item{\code{mv736}}{earnings for work         - na}  
+#'     \item{\code{mv740}}{type of land where resp. works}  
+#'     \item{\code{mv751}}{ever heard of aids        - na}  
+#'     \item{\code{mv752a}}{aids: radio               - na} 
+#'     \item{\code{mv752b}}{aids: television          - na} 
+#'     \item{\code{mv752c}}{aids: newspapers/magazine - na} 
+#'     \item{\code{mv752d}}{aids: pamphlets/posters   - na} 
+#'     \item{\code{mv752e}}{aids: clinic/health worke - na} 
+#'     \item{\code{mv752f}}{aids: churches/mosques    - na} 
+#'     \item{\code{mv752g}}{aids: schools/teachers    - na} 
+#'     \item{\code{mv752h}}{aids: community meetings  - na} 
+#'     \item{\code{mv752i}}{aids: friends/relatives   - na} 
+#'     \item{\code{mv752j}}{aids: work place          - na} 
+#'     \item{\code{mv752k}}{aids: country specific    - na} 
+#'     \item{\code{mv752l}}{aids: country specific    - na} 
+#'     \item{\code{mv752m}}{aids: country specific    - na} 
+#'     \item{\code{mv752n}}{aids: country specific    - na} 
+#'     \item{\code{mv752o}}{aids: country specific    - na} 
+#'     \item{\code{mv752x}}{aids: other responses     - na} 
+#'     \item{\code{mv753}}{ways to avoid aids        - na}  
+#'     \item{\code{mv754a}}{aids: safe sex            - na} 
+#'     \item{\code{mv754b}}{aids: abstain from sex    - na} 
+#'     \item{\code{mv754c}}{aids: use condoms during  - na} 
+#'     \item{\code{mv754d}}{aids: only one sex partne - na} 
+#'     \item{\code{mv754e}}{aids: avoid sex prostitut - na} 
+#'     \item{\code{mv754f}}{aids: avoid sex homosexua - na} 
+#'     \item{\code{mv754g}}{aids: avoid blood transfu - na} 
+#'     \item{\code{mv754h}}{aids: avoid injections    - na} 
+#'     \item{\code{mv754i}}{aids: avoid kissing       - na} 
+#'     \item{\code{mv754j}}{aids: avoid mosquito bite - na} 
+#'     \item{\code{mv754k}}{aids: protection trad. he - na} 
+#'     \item{\code{mv754l}}{aids: country specific    - na} 
+#'     \item{\code{mv754m}}{aids: country specific    - na} 
+#'     \item{\code{mv754n}}{aids: country specific    - na} 
+#'     \item{\code{mv754o}}{aids: country specific    - na} 
+#'     \item{\code{mv754x}}{aids: other responses     - na} 
+#'     \item{\code{mv754z}}{aids: dk ways to avoid ai - na} 
+#'     \item{\code{mv755b}}{safe sex: abstain from se - na} 
+#'     \item{\code{mv755c}}{safe sex: use condoms dur - na} 
+#'     \item{\code{mv755d}}{safe sex: only one partne - na} 
+#'     \item{\code{mv755e}}{safe sex: avoid prostitut - na} 
+#'     \item{\code{mv755f}}{safe sex: avoid homosexua - na} 
+#'     \item{\code{mv755l}}{safe sex: country specifi - na} 
+#'     \item{\code{mv755m}}{safe sex: country specifi - na} 
+#'     \item{\code{mv755n}}{safe sex: country specifi - na} 
+#'     \item{\code{mv755o}}{safe sex: country specifi - na} 
+#'     \item{\code{mv755x}}{safe sex: other responses - na} 
+#'     \item{\code{mv755z}}{safe sex: dk meaning      - na} 
+#'     \item{\code{mv756}}{can a healthy person have - na}  
+#'     \item{\code{mv757}}{is aids a fatal disease   - na}  
+#'     \item{\code{mv758}}{chances of getting aids   - na}  
+#'     \item{\code{mv760a}}{behavior: did not start s - na} 
+#'     \item{\code{mv760b}}{behavior: stopped all sex - na} 
+#'     \item{\code{mv760c}}{behavior: started using c - na} 
+#'     \item{\code{mv760d}}{behavior: only one sex pa - na} 
+#'     \item{\code{mv760e}}{behavior: reduced partner - na} 
+#'     \item{\code{mv760f}}{behavior: ask spouse fait - na} 
+#'     \item{\code{mv760g}}{behavior: no homosexual c - na} 
+#'     \item{\code{mv760i}}{behavior: stopped injecti - na} 
+#'     \item{\code{mv760l}}{behavior: country specifi - na} 
+#'     \item{\code{mv760m}}{behavior: country specifi - na} 
+#'     \item{\code{mv760n}}{behavior: country specifi - na} 
+#'     \item{\code{mv760o}}{behavior: country specifi - na} 
+#'     \item{\code{mv760p}}{behavior: avoid sex w. pr - na} 
+#'     \item{\code{mv760v}}{behavior: no nonsexual ch - na} 
+#'     \item{\code{mv760w}}{behavior: other nonsexual - na} 
+#'     \item{\code{mv760x}}{behavior: other responses - na} 
+#'     \item{\code{mv760y}}{behavior: no change       - na} 
+#'     \item{\code{mv760z}}{behavior: don't know      - na} 
+#'     \item{\code{mv761}}{last intercourse used con - na}  
+#'     \item{\code{mv762}}{source for condoms        - na}  
+#'     \item{\code{mv763}}{partners in last 12 month - na}  
+#'     \item{\code{mv764}}{knowledge of condom       - na}  
+#'     \item{\code{mv765}}{ever use of condom        - na}  
+#'     \item{\code{awfacte1}}{all women exp factor - educ 1}
+#'     \item{\code{awfacte2}}{all women exp factor - educ 2}
+#'     \item{\code{awfactk}}{all woman factor - karachi}    
+#'     \item{\code{seduc1}}{educational level for awfacte1} 
+#'     \item{\code{seduc2}}{educational level for awfacte2} 
+#'     \item{\code{sdist}}{district}                        
+#'     \item{\code{sclust}}{cluster number}                 
+#'     \item{\code{shusbln}}{husband's line number}         
+#'     \item{\code{shusband}}{first wife or not}            
+#'     \item{\code{slang1}}{language of questionnaire}      
+#'     \item{\code{slang2}}{language of interview}          
+#'     \item{\code{slang3}}{native language of respondent}  
+#'     \item{\code{stransl}}{translator used}               
+#'     \item{\code{s111}}{highest educational level}        
+#'     \item{\code{s112}}{highest grade at that level}      
+#'     \item{\code{s115}}{write a letter}                   
+#'     \item{\code{s125e}}{has a room cooler}               
+#'     \item{\code{s125f}}{has a washing machine}           
+#'     \item{\code{s125g}}{has a water pump}                
+#'     \item{\code{s126c}}{has a car, van or tractor}       
+#'     \item{\code{s130}}{province visitor is from}         
+#'     \item{\code{s311}}{first pill, consult medical}      
+#'     \item{\code{s312}}{first pill, preferred method}     
+#'     \item{\code{s313}}{first pill, preferred method}     
+#'     \item{\code{s314}}{first pill, other meths discsd}   
+#'     \item{\code{s315a}}{discusseed iud}                  
+#'     \item{\code{s315b}}{discussed injections}            
+#'     \item{\code{s315c}}{discussed diaphragm,foam,jelly}  
+#'     \item{\code{s315d}}{discussed condom}                
+#'     \item{\code{s315e}}{discussed female sterilization}  
+#'     \item{\code{s315f}}{discussed male sterilization}    
+#'     \item{\code{s315g}}{discussed periodic abstinence}   
+#'     \item{\code{s315h}}{discussed withdrawal}            
+#'     \item{\code{s315i}}{discussed other}                 
+#'     \item{\code{s316}}{satisfied with information}       
+#'     \item{\code{s321}}{reason not using}                 
+#'     \item{\code{s327a}}{shown condom package}            
+#'     \item{\code{s327b}}{brand of condoms shown}          
+#'     \item{\code{s329}}{cost of condom}                   
+#'     \item{\code{s330}}{cost of iud/ster/injections}      
+#'     \item{\code{s339}}{if own choice, desire to use}     
+#'     \item{\code{s349}}{message effective}                
+#'     \item{\code{s409}}{advised to eat more during prg}   
+#'     \item{\code{s410}}{weighed during pregnancy}         
+#'     \item{\code{s415}}{hours in labor - last birth}      
+#'     \item{\code{s431a}}{fed water before breast}         
+#'     \item{\code{s431b}}{fed ghutti before breast}        
+#'     \item{\code{s431c}}{fed honey before breast}         
+#'     \item{\code{s431d}}{fed sugar before breast}         
+#'     \item{\code{s431e}}{fed other before breast}         
+#'     \item{\code{s431f}}{fed other milk before breast}    
+#'     \item{\code{s431g}}{fed ghee before breast}          
+#'     \item{\code{s431h}}{fed butter before breast}        
+#'     \item{\code{s431i}}{fed oil before breast}           
+#'     \item{\code{s431j}}{fed tea before breast}           
+#'     \item{\code{s431k}}{fed herbal water before breast}  
+#'     \item{\code{s431l}}{fed rose water before breast}    
+#'     \item{\code{s431m}}{fed ghur before breast}          
+#'     \item{\code{s431n}}{fed nothing before breast}       
+#'     \item{\code{s439a}}{times given plain water}         
+#'     \item{\code{s439b}}{times given ghutti}              
+#'     \item{\code{s439c}}{times given sugar/honey water}   
+#'     \item{\code{s439d}}{times given juice}               
+#'     \item{\code{s439e}}{times given herbal tea}          
+#'     \item{\code{s439f}}{times given gripe water}         
+#'     \item{\code{s439g}}{times given baby formula}        
+#'     \item{\code{s439h}}{times given fresh milk}          
+#'     \item{\code{s439i}}{times given tinned/powd milk}    
+#'     \item{\code{s439j}}{times given other liquids}       
+#'     \item{\code{s439k}}{times given solid/mushy foods}   
+#'     \item{\code{s442}}{ever drink from nipple}           
+#'     \item{\code{s443}}{age for nipple regular basis}     
+#'     \item{\code{s495}}{amount of liquid for ors}         
+#'     \item{\code{sv420}}{measurer's code}                 
+#'     \item{\code{sv421}}{assistant measurer's code}       
+#'     \item{\code{s503}}{last four weeks cohabitation}     
+#'     \item{\code{s504}}{always apart or not 4 weeks}      
+#'     \item{\code{s505}}{time apart}                       
+#'     \item{\code{s510}}{blood relationship with spouse}   
+#'     \item{\code{s513d}}{presence of mother-in-law}       
+#'     \item{\code{s513e}}{presence of other female}        
+#'     \item{\code{s603}}{desire future child}              
+#'     \item{\code{s604}}{sex preference for next}          
+#'     \item{\code{s605}}{time for future birth (number)}   
+#'     \item{\code{s615}}{time to wait before sex (num.)}   
+#'     \item{\code{s618}}{ideal number of children}         
+#'     \item{\code{s619a}}{additional boys wanted}          
+#'     \item{\code{s619b}}{additional girls wanted}         
+#'     \item{\code{s619c}}{additional of either sex want}   
+#'     \item{\code{s620}}{education for sons}               
+#'     \item{\code{s621}}{daughters schooling}              
+#'     \item{\code{s622}}{ideal age marriage boys}          
+#'     \item{\code{s623}}{ideal age marriage - girls}       
+#'     \item{\code{s624}}{go to hospital alone}             
+#'     \item{\code{s702}}{age of husband}                   
+#'     \item{\code{s704}}{husbands level of education}      
+#'     \item{\code{s705}}{husbands highest grade}           
+#'     \item{\code{s711}}{would like to work if job}        
+#'     \item{\code{s718}}{child minder}                     
+#'     \item{\code{s719}}{work before marriage}             
+#'     \item{\code{s720}}{work just after marriage}         
+#'     \item{\code{s722}}{age when first worked}            
+#'     \item{\code{s723a}}{began work - financial need}     
+#'     \item{\code{s723b}}{began work - supplem family in}  
+#'     \item{\code{s723c}}{began work - personal fulfillm}  
+#'     \item{\code{s723d}}{began work - husb sick/dead}     
+#'     \item{\code{s723e}}{began work - divorce/separatio}  
+#'     \item{\code{s723f}}{began work - other reason}       
+#'     \item{\code{hsdist}}{district}                       
+#'     \item{\code{hsclust}}{cluster number}                
+#'     \item{\code{hslang1}}{language of questionnaire}     
+#'     \item{\code{hslang2}}{language of interview}         
+#'     \item{\code{hslang3}}{native language of respondent} 
+#'     \item{\code{hstransl}}{translator used}              
+#'     \item{\code{hs108}}{highest educational level}       
+#'     \item{\code{hs109}}{highest grade at that level}     
+#'     \item{\code{hs112}}{write a letter}                  
+#'     \item{\code{hs201.1}}{contraceptive method}          
+#'     \item{\code{hs204.1}}{knows source for method}       
+#'     \item{\code{hs201.2}}{contraceptive method}          
+#'     \item{\code{hs204.2}}{knows source for method}       
+#'     \item{\code{hs201.3}}{contraceptive method}          
+#'     \item{\code{hs204.3}}{knows source for method}       
+#'     \item{\code{hs201.4}}{contraceptive method}          
+#'     \item{\code{hs204.4}}{knows source for method}       
+#'     \item{\code{hs201.5}}{contraceptive method}          
+#'     \item{\code{hs204.5}}{knows source for method}       
+#'     \item{\code{hs201.6}}{contraceptive method}          
+#'     \item{\code{hs204.6}}{knows source for method}       
+#'     \item{\code{hs201.7}}{contraceptive method}          
+#'     \item{\code{hs204.7}}{knows source for method}       
+#'     \item{\code{hs201.8}}{contraceptive method}          
+#'     \item{\code{hs204.8}}{knows source for method}       
+#'     \item{\code{hs208}}{first method}                    
+#'     \item{\code{hs209}}{living children at first use}    
+#'     \item{\code{hs214}}{knowledge of brand name}         
+#'     \item{\code{hs215}}{cost of pill packet}             
+#'     \item{\code{hs216}}{shown condom package}            
+#'     \item{\code{hs217}}{knowledge of brand name}         
+#'     \item{\code{hs218}}{cost of condom}                  
+#'     \item{\code{hs219}}{source of current method}        
+#'     \item{\code{hs220}}{time to get to source}           
+#'     \item{\code{hs221}}{easy/difficult to go to source}  
+#'     \item{\code{hs223m}}{month of sterilization}         
+#'     \item{\code{hs223y}}{year of sterilization}          
+#'     \item{\code{hs223c}}{cmc husband marriage}           
+#'     \item{\code{hs223f}}{flag for date of sterilization} 
+#'     \item{\code{hs224}}{duration of current use <mnth>}  
+#'     \item{\code{hs227}}{if own choice, desire to use}    
+#'     \item{\code{hs230}}{source for future method}        
+#'     \item{\code{hs231}}{know source for fp}              
+#'     \item{\code{hs232}}{source for family planning}      
+#'     \item{\code{hs233}}{time from home to place}         
+#'     \item{\code{hs234}}{easy/difficult to get to place}  
+#'     \item{\code{hs237}}{message effective}               
+#'     \item{\code{hs238}}{acceptability of media message}  
+#'     \item{\code{hs306a}}{presence of children}           
+#'     \item{\code{hs306b}}{presence of wife}               
+#'     \item{\code{hs306c}}{presence of father/brother}     
+#'     \item{\code{hs306d}}{presence of other males}        
+#'     \item{\code{hs306e}}{presence of other females}      
+#'     \item{\code{hs401a}}{number of own sons}             
+#'     \item{\code{hs401b}}{number of own daughters}        
+#'     \item{\code{hs404}}{desire future child}             
+#'     \item{\code{hs405}}{sex preference for next}         
+#'     \item{\code{hs407}}{regret sterilization}            
+#'     \item{\code{hs408}}{reason regrets sterilization}    
+#'     \item{\code{hs409}}{think would have sterilization}  
+#'     \item{\code{hs412}}{discussed number children}       
+#'     \item{\code{hs414}}{time to wait before sex}         
+#'     \item{\code{hs415}}{stop breastfeeding before sex}   
+#'     \item{\code{hs419}}{education for sons}              
+#'     \item{\code{hs420}}{daughters schooling}             
+#'     \item{\code{hs421}}{ideal age marriage boys}         
+#'     \item{\code{hs422}}{ideal age marriage - girls}      
+#'     \item{\code{hs423}}{can wife go to hospital alone?}  
+#' 
+#' 
+#'   }
+#'
+#' @author
+#'  \enumerate{
+#'   \item{Muhammad Yaseen } {(\email{myaseen208@@gmail.com})}
+#'   }
+#'
+#' @references
+#' \enumerate{
+#'   \item National Institute of Population Studies (NIPS), Pakistan (\url{http://nips.org.pk/Home.htm}).
+#'  }
+#'
+#' @import tibble
+#'
+#' @examples
+#' load("PKCR21")
+#' PKCR21
+NULL
+
