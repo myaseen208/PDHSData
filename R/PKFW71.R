@@ -44,6 +44,6 @@
 #' @import tibble
 #'
 #' @examples
-#' load("PKFW71")
+#' data("PKFW71")
 #' PKFW71
 NULL

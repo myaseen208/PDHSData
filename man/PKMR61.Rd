@@ -1108,7 +1108,7 @@
   }
 }
 \examples{
-load("PKMR61")
+data("PKMR61")
 PKMR61
 }
 \references{

@@ -520,6 +520,6 @@
 #' @import tibble
 #'
 #' @examples
-#' load("PKVW51")
+#' data("PKVW51")
 #' PKVW51
 NULL

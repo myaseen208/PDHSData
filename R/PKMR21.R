@@ -685,6 +685,6 @@
 #' @import tibble
 #'
 #' @examples
-#' load("PKMR21")
+#' data("PKMR21")
 #' PKMR21
 NULL

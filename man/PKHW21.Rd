@@ -17,7 +17,7 @@
   }
 }
 \examples{
-load("PKHW21")
+data("PKHW21")
 PKHW21
 }
 \references{

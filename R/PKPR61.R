@@ -300,6 +300,6 @@
 #' @import tibble
 #'
 #' @examples
-#' load("PKPR61")
+#' data("PKPR61")
 #' PKPR61
 NULL

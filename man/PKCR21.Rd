@@ -2309,7 +2309,7 @@
   }
 }
 \examples{
-load("PKCR21")
+data("PKCR21")
 PKCR21
 }
 \references{

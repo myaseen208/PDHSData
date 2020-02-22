@@ -24,6 +24,6 @@
 #' @import tibble
 #'
 #' @examples
-#' load("PKWI21")
+#' data("PKWI21")
 #' PKWI21
 NULL

@@ -343,7 +343,7 @@
   }
 }
 \examples{
-load("PKHR52")
+data("PKHR52")
 PKHR52
 }
 \references{

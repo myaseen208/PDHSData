@@ -4821,7 +4821,7 @@
   }
 }
 \examples{
-load("PKIR21")
+data("PKIR21")
 PKIR21
 }
 \references{

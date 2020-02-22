@@ -2552,6 +2552,6 @@
 #' @import tibble
 #'
 #' @examples
-#' load("PKHR21")
+#' data("PKHR21")
 #' PKHR21
 NULL

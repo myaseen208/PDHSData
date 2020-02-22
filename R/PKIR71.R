@@ -5349,6 +5349,6 @@
 #' @import tibble
 #'
 #' @examples
-#' load("PKIR71")
+#' data("PKIR71")
 #' PKIR71
 NULL

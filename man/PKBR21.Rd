@@ -689,7 +689,7 @@
   }
 }
 \examples{
- load("PKBR21")
+ data("PKBR21")
  PKBR21
  
 }
